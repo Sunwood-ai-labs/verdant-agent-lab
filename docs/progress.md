@@ -2,7 +2,7 @@
 
 ## Checkpoint 1 — base recreation
 
-Status: complete
+Status: characterless base complete; HTML visual reconstruction incomplete
 
 - [x] remove people, mascots, and humanoid robots from the 4:3 scene
 - [x] preserve the lab footprint, greenhouse, solar wing, cafe, lab, desks, paths, and garden
@@ -35,6 +35,21 @@ Status: in progress
 ## Checkpoint 3 — original builder runtime
 
 Status: first usable version complete
+
+### Fidelity correction (2026-07-15)
+
+Status: incomplete. The builder's 14-anchor score was only a structural
+diagnostic. It did not validate asset contents, direction, scale, counts, or
+site topology. `assets/layouts/reference-instance-ledger.v1.json` currently
+contains 13 unresolved source instances, and `npm run
+validate:reference-fidelity` must fail until each is visually verified.
+
+- [x] add a no-UI characterless canonical render
+- [x] make builder footprint aspect ratio and layout rotation renderable
+- [x] add the failing object-level fidelity ledger and validator
+- [ ] replace all source-mismatched assets and directional variants
+- [ ] reconstruct missing room/topology layers in HTML
+- [ ] produce canonical target/render diffs and obtain all-instance signoff
 
 - [x] render scene objects from layout JSON
 - [x] select, move, delete, and persist furniture

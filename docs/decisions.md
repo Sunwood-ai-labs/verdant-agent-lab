@@ -105,3 +105,13 @@ Decision: call 94.2 the "14-anchor structural placement score" everywhere.
 
 Reason: the scorer evaluates manifest semantics, centers, and footprints; it
 does not inspect sprite content or full-image perceptual similarity.
+
+## D-014 — visual-fidelity claim requires a per-instance ledger
+
+Decision: do not call this project a complete reproduction until every
+non-character reference instance is verified by content, facing, silhouette,
+scale, count, layer, and canonical rendered evidence.
+
+Reason: the prior 14-anchor score allowed wrong furniture, wrong directions,
+and whole missing rooms to be labeled as close. The correction is encoded in
+`reference-instance-ledger.v1.json` and the failing fidelity validator.

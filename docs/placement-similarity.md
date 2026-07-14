@@ -1,4 +1,8 @@
-# Reference-derived placement similarity
+# Reference-derived placement diagnostic
+
+> This is a structural location diagnostic only. It does not establish visual
+> fidelity or complete reproduction. The authoritative gate is
+> `docs/reference-fidelity-gate.md`.
 
 ## Coordinate model
 

@@ -145,3 +145,16 @@ npm run test:update-proofs
 
 This separation prevents random object UIDs and transition timing from silently
 rewriting committed evidence.
+
+## 12. Do not substitute structural alignment for visual reproduction
+
+The first reconstruction attempt passed a 14-anchor location score but used
+wrong furniture silhouettes, no rendered rotation, generic stage flooring, and
+a faded source image as a backdrop. That was a structural prototype, not a
+faithful recreation. The corrective contract is in
+`docs/reference-fidelity-gate.md` and must pass before any complete-reproduction
+claim.
+
+Use `canonical.html` for the current no-UI characterless reference-oriented
+render. Treat `builder.html` as a separate modular editor until its source
+instance ledger is fully verified.

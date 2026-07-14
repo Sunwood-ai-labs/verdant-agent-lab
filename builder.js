@@ -138,9 +138,11 @@ function gridPoint(event) {
   };
 }
 
-function visualWidth(asset) {
-  const largest = Math.max(asset.footprint?.w ?? 1, asset.footprint?.h ?? 1);
-  return Math.max(4.8, Math.min(30, largest * 3.6));
+function visualBounds(asset) {
+  return {
+    width: Math.max(2.5, Math.min(100, (asset.footprint?.w ?? 1) / WORLD.cols * 100)),
+    height: Math.max(3.333, Math.min(100, (asset.footprint?.h ?? 1) / WORLD.rows * 100)),
+  };
 }
 
 function updatePlacedSelection() {
@@ -154,7 +156,8 @@ function applyObjectPosition(button, instance, asset) {
   button.style.left = `${instance.col / WORLD.cols * 100}%`;
   button.style.top = `${instance.row / WORLD.rows * 100}%`;
   button.style.zIndex = String(instance.row * 10 + (asset.zBias ?? 0));
-  button.setAttribute('aria-label', `${titleFromId(asset.id)}、列${instance.col}、行${instance.row}`);
+  button.style.setProperty('--rotation', `${instance.rotation ?? 0}deg`);
+  button.setAttribute('aria-label', `${titleFromId(asset.id)}、列${instance.col}、行${instance.row}、回転${instance.rotation ?? 0}度`);
 }
 
 function selectInstance(instance) {
@@ -172,7 +175,9 @@ function objectElement(instance) {
   button.type = 'button';
   button.className = `placed-object${instance.uid === selectedUid ? ' is-selected' : ''}`;
   button.dataset.uid = instance.uid;
-  button.style.width = `${visualWidth(asset)}%`;
+  const bounds = visualBounds(asset);
+  button.style.width = `${bounds.width}%`;
+  button.style.height = `${bounds.height}%`;
   button.setAttribute('aria-pressed', String(instance.uid === selectedUid));
   button.innerHTML = `<img src="${asset.spriteUrl}" alt="" draggable="false" />`;
   applyObjectPosition(button, instance, asset);

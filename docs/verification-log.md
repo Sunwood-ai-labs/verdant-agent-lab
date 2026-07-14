@@ -1,5 +1,25 @@
 # Verification and failure log
 
+## Fidelity-claim correction — 2026-07-15
+
+The user correctly rejected the previous completion claim. The visible builder
+was a structural prototype: it rendered generic generated assets above a 42%
+reference overlay. Its 94.2 result measured only 14 semantic/position anchors,
+not asset content, facing, silhouette, scale, counts, or room topology.
+
+Immediate corrective rules now used in this retry:
+
+- the current work is explicitly labeled incomplete
+- `canonical.html` is the no-UI characterless visual render; `builder.html` is
+  a separate modular prototype until the fidelity ledger is fully verified
+- `validate:reference-fidelity` intentionally fails while any source instance
+  is missing, proxy, mismatched, or unverified
+- all future comparison evidence must use the canonical render, never a faded
+  reference behind unrelated assets
+
+The first ledger records 13 unresolved P0/P1 site instances. This is the
+authoritative state; passing UI/anchor tests do not override it.
+
 ## Environment gate
 
 At session start, system memory use was 91.3%. The largest consumers were two
