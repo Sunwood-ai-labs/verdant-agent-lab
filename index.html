@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#172315" />
+    <meta name="description" content="緑に包まれたオリジナルのピクセルエージェント研究所" />
+    <title>Verdant Agent Lab — Interactive Floor</title>
+    <link rel="preload" href="assets/scene-clean.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="viewport" aria-label="Verdant Agent Lab の俯瞰図">
+      <section class="scene-shell" aria-label="インタラクティブな研究所マップ">
+        <div class="scene" id="scene">
+          <img
+            class="scene__art"
+            src="assets/scene-clean.png"
+            alt="森と庭に囲まれた、木造のAI研究所を真上から見たピクセルアート"
+            width="1448"
+            height="1086"
+            draggable="false"
+          />
+
+          <div class="scene__sunwash" aria-hidden="true"></div>
+          <div class="scene__glass-glint scene__glass-glint--greenhouse" aria-hidden="true"></div>
+          <div class="scene__glass-glint scene__glass-glint--lab" aria-hidden="true"></div>
+          <div class="scene__vignette" aria-hidden="true"></div>
+          <div class="scene__grain" aria-hidden="true"></div>
+
+          <nav class="zones" id="zones" aria-label="研究所のエリア" aria-hidden="true" inert>
+            <button class="zone zone--solar" style="--thumb:url('assets/parts/solar-wing.png')" data-zone="Solar Array" aria-label="ソーラー設備"></button>
+            <button class="zone zone--reception" style="--thumb:url('assets/parts/reception.png')" data-zone="Reception" aria-label="受付"></button>
+            <button class="zone zone--cafe" style="--thumb:url('assets/parts/garden-cafe.png')" data-zone="Garden Café" aria-label="ガーデンカフェ"></button>
+            <button class="zone zone--greenhouse" style="--thumb:url('assets/parts/greenhouse.png')" data-zone="Greenhouse" aria-label="温室"></button>
+            <button class="zone zone--studio" style="--thumb:url('assets/parts/work-studio.png')" data-zone="Work Studio" aria-label="ワークスタジオ"></button>
+            <button class="zone zone--meeting" style="--thumb:url('assets/parts/meeting-room.png')" data-zone="Meeting Room" aria-label="ミーティングルーム"></button>
+            <button class="zone zone--ai-lab" style="--thumb:url('assets/parts/ai-lab.png')" data-zone="AI Lab" aria-label="AIラボ"></button>
+            <button class="zone zone--workstations" style="--thumb:url('assets/parts/workstations.png')" data-zone="Team Workstations" aria-label="チーム作業席"></button>
+            <button class="zone zone--lounge" style="--thumb:url('assets/parts/quiet-lounge.png')" data-zone="Quiet Lounge" aria-label="ラウンジ"></button>
+            <button class="zone zone--entrance" style="--thumb:url('assets/parts/garden-entrance.png')" data-zone="Garden Entrance" aria-label="ガーデン入口"></button>
+          </nav>
+
+          <div class="scene__fireflies" aria-hidden="true">
+            <i style="--x: 8%; --y: 82%; --delay: -1s"></i>
+            <i style="--x: 24%; --y: 89%; --delay: -4s"></i>
+            <i style="--x: 39%; --y: 91%; --delay: -2s"></i>
+            <i style="--x: 71%; --y: 87%; --delay: -5s"></i>
+            <i style="--x: 91%; --y: 80%; --delay: -3s"></i>
+          </div>
+        </div>
+
+        <nav class="controls" aria-label="表示設定">
+          <button class="controls__button" id="zoneToggle" type="button" aria-label="探索エリアを表示" aria-controls="zones" aria-expanded="false" aria-pressed="false">
+            <span class="controls__mark" aria-hidden="true"></span>
+            EXPLORE
+          </button>
+          <button class="controls__button" id="zoomToggle" type="button" aria-label="マップを拡大" aria-pressed="false">
+            ZOOM
+          </button>
+        </nav>
+
+        <p class="hint" id="hint" aria-live="polite">ポインター移動で視点がわずかに動きます</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

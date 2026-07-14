@@ -1,0 +1,8 @@
+.DS_Store
+assets/reference-original.jpg
+research/pixel-agents/sources/
+proof/*.png
+!proof/desktop-clean.png
+!proof/desktop-explore.png
+!proof/mobile-clean.png
+!proof/mobile-zoom-corner.png
