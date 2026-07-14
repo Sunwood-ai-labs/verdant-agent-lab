@@ -15,6 +15,10 @@
 glass segment independently addressable. The chroma source and alpha master
 sheet are retained beside the split assets as reproducible intermediate data.
 
+`generated/technology/` adds 12 independent energy, compute, display, input,
+lighting, lab, cafe, and utility sprites. `manifests/technology.v1.json` records
+surface mounting, state variants, footprints, anchors, and z-order hints.
+
 ## Object crop inventory
 
 Architecture and environment:

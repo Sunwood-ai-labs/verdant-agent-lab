@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "packId": "verdant-technology",
+  "title": "Verdant Technology",
+  "tileSize": 32,
+  "source": "project-original-imagegen",
+  "items": [
+    {
+      "id": "solar-array",
+      "category": "energy",
+      "sprite": "../generated/technology/solar-array.png",
+      "footprint": { "w": 4, "h": 3 },
+      "zBias": 2
+    },
+    {
+      "id": "server-rack",
+      "category": "compute",
+      "sprite": "../generated/technology/server-rack.png",
+      "footprint": { "w": 3, "h": 3 },
+      "stateVariants": ["idle", "active", "warning"],
+      "zBias": 3
+    },
+    {
+      "id": "single-monitor",
+      "category": "display",
+      "sprite": "../generated/technology/single-monitor.png",
+      "mount": "surface",
+      "footprint": { "w": 2, "h": 1 },
+      "stateVariants": ["off", "active", "waiting"],
+      "zBias": 5
+    },
+    {
+      "id": "dual-monitor",
+      "category": "display",
+      "sprite": "../generated/technology/dual-monitor.png",
+      "mount": "surface",
+      "footprint": { "w": 3, "h": 1 },
+      "stateVariants": ["off", "active", "waiting"],
+      "zBias": 5
+    },
+    {
+      "id": "laptop",
+      "category": "compute",
+      "sprite": "../generated/technology/laptop.png",
+      "mount": "surface",
+      "footprint": { "w": 2, "h": 1 },
+      "stateVariants": ["closed", "active"],
+      "zBias": 5
+    },
+    {
+      "id": "keyboard-mouse",
+      "category": "input",
+      "sprite": "../generated/technology/keyboard-mouse.png",
+      "mount": "surface",
+      "footprint": { "w": 2, "h": 1 },
+      "zBias": 6
+    },
+    {
+      "id": "brass-desk-lamp",
+      "category": "lighting",
+      "sprite": "../generated/technology/brass-desk-lamp.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "stateVariants": ["off", "on"],
+      "zBias": 6
+    },
+    {
+      "id": "environment-display",
+      "category": "display",
+      "sprite": "../generated/technology/environment-display.png",
+      "footprint": { "w": 2, "h": 1 },
+      "wallMount": true,
+      "stateVariants": ["good", "warning"],
+      "zBias": 1
+    },
+    {
+      "id": "lab-console",
+      "category": "lab",
+      "sprite": "../generated/technology/lab-console.png",
+      "footprint": { "w": 3, "h": 2 },
+      "surfaceAnchors": [
+        { "id": "left", "x": 0.34, "y": 0.4 },
+        { "id": "right", "x": 0.66, "y": 0.4 }
+      ],
+      "zBias": 3
+    },
+    {
+      "id": "robotics-platform",
+      "category": "lab",
+      "sprite": "../generated/technology/robotics-platform.png",
+      "footprint": { "w": 3, "h": 3 },
+      "stateVariants": ["idle", "scanning"],
+      "zBias": 2
+    },
+    {
+      "id": "espresso-machine",
+      "category": "cafe",
+      "sprite": "../generated/technology/espresso-machine.png",
+      "mount": "surface",
+      "footprint": { "w": 2, "h": 2 },
+      "stateVariants": ["idle", "brewing"],
+      "zBias": 5
+    },
+    {
+      "id": "recycling-bin-set",
+      "category": "utility",
+      "sprite": "../generated/technology/recycling-bin-set.png",
+      "footprint": { "w": 4, "h": 2 },
+      "zBias": 2
+    }
+  ]
+}
