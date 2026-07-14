@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "world": {
+    "cols": 40,
+    "rows": 30
+  },
+  "objects": [
+    {
+      "uid": "desk-a1",
+      "assetId": "single-desk",
+      "col": 11,
+      "row": 9,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "chair-a1",
+      "assetId": "rolling-office-chair",
+      "col": 29,
+      "row": 22,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "monitor-a1",
+      "assetId": "single-monitor",
+      "col": 11,
+      "row": 8,
+      "rotation": 0,
+      "state": "active"
+    },
+    {
+      "uid": "keyboard-a1",
+      "assetId": "keyboard-mouse",
+      "col": 11,
+      "row": 10,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "mug-a1",
+      "assetId": "coffee-mug",
+      "col": 14,
+      "row": 9,
+      "rotation": 0,
+      "state": "full"
+    },
+    {
+      "uid": "plant-a1",
+      "assetId": "succulent",
+      "col": 8,
+      "row": 9,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "sofa-a1",
+      "assetId": "olive-sofa",
+      "col": 29,
+      "row": 9,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "table-a1",
+      "assetId": "round-coffee-table",
+      "col": 29,
+      "row": 16,
+      "rotation": 0,
+      "state": "default"
+    },
+    {
+      "uid": "coffee-mug-mrko0b9l-dyad",
+      "assetId": "coffee-mug",
+      "col": 28,
+      "row": 19,
+      "rotation": 0,
+      "state": "default"
+    }
+  ]
+}

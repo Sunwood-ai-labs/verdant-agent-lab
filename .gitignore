@@ -10,3 +10,11 @@ proof/*.png
 !proof/mobile-clean.png
 !proof/mobile-zoom-corner.png
 !proof/builder.png
+!proof/builder-original-v2.png
+!proof/builder-placing-v3.png
+!proof/builder-inspector-v3.png
+!proof/builder-dragged-v3.png
+!proof/builder-reference-v3.png
+!proof/builder-focus-v3.png
+!proof/builder-mobile-full-v3.png
+!proof/verdant-layout-export-v1.json

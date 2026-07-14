@@ -42,6 +42,9 @@ Status: first usable version complete
 - [x] export the current layout as JSON
 - [x] keep characters disabled and absent
 - [x] add Playwright coverage for load/place/persist/drag/reference/delete
+- [x] add keyboard placement/movement and programmatic selected-state coverage
+- [x] capture desktop placement/inspector/drag/reference/focus proof states
+- [x] capture a complete 390px mobile catalog/stage/inspector proof
+- [x] add original VERDANT BUILDER branding and visual-non-similarity QA
 - [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default
-- [ ] add original branding and visual-non-similarity QA

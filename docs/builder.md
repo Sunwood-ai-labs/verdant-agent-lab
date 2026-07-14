@@ -13,6 +13,8 @@ are still changing.
 - select and inspect object UID, category, pack, grid position, and z bias
 - delete with the inspector button, Delete, or Backspace
 - clear selection with Escape
+- place the selected catalog item from the keyboard with Enter or Space
+- move the focused placed object with Arrow keys (Shift moves five tiles)
 - persist layout to localStorage
 - reset from `assets/layouts/starter.v1.json`
 - export the current layout as JSON
@@ -45,6 +47,11 @@ scene projection later without changing manifests or saved layouts.
 4. a chair can be dragged to another grid cell
 5. the reference layer toggles
 6. a selected sofa can be deleted
+7. filters and assets expose their pressed state
+8. keyboard placement and keyboard movement update the inspector and label
+
+`tests/proof.spec.js` captures the placement, inspector, drag, reference,
+focus, exported JSON, and 390px-wide mobile states as durable proof artifacts.
 
 Run:
 

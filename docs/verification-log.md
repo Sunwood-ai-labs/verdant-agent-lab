@@ -86,14 +86,44 @@ The current implementation calculates this for both axes and includes a
 - `proof/desktop-explore.png`
 - `proof/mobile-clean.png`
 - `proof/mobile-zoom-corner.png`
+- `proof/builder-placing-v3.png`
+- `proof/builder-inspector-v3.png`
+- `proof/builder-dragged-v3.png`
+- `proof/builder-reference-v3.png`
+- `proof/builder-focus-v3.png`
+- `proof/builder-mobile-full-v3.png`
+- `proof/verdant-layout-export-v1.json`
+
+## Builder interaction and accessibility gate
+
+The builder review found that click and drag worked, but state was not fully
+expressed to assistive technology and the placed objects had no equivalent
+keyboard movement path. The repair added:
+
+- `aria-pressed` for filters, catalog choices, and placed-object selection
+- focus restoration after catalog/filter rerenders
+- Enter/Space placement on the stage
+- Arrow and Shift+Arrow movement for placed objects
+- 44px control targets and visible high-contrast focus rings
+- `pointercancel` and lost-capture cleanup for interrupted drags
+- live object-count and position labels
+- a two-column 390px mobile catalog
+
+The proof capture is automated so the evidence cannot silently drift from the
+current implementation.
 
 ## Current automated gates
 
 ```bash
 node --check script.js
+node --check builder.js
 jq empty assets/manifests/*.json
 git diff --check
+npm test
 ```
+
+Latest result: 6 Playwright tests passed, including the desktop/mobile proof
+capture suite.
 
 For every manifest, each `sprite` path must resolve to a real file. Every split
 sprite must be 362×362 RGBA with both transparent and nontransparent pixels.

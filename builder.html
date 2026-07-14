@@ -29,11 +29,11 @@
       <aside class="catalog" aria-label="アセットカタログ">
         <div class="catalog__heading">
           <p>ASSET CATALOG</p>
-          <span id="assetCount">0 OBJECTS</span>
+          <span id="assetCount" aria-live="polite">0 OBJECTS</span>
         </div>
         <label class="catalog__search">
           <span class="sr-only">アセットを検索</span>
-          <input id="assetSearch" type="search" placeholder="SEARCH OBJECTS" autocomplete="off" />
+          <input id="assetSearch" type="search" placeholder="SEARCH OBJECTS" autocomplete="off" aria-controls="catalogGrid" />
         </label>
         <div class="catalog__filters" id="categoryFilters" aria-label="カテゴリ絞り込み"></div>
         <div class="catalog__grid" id="catalogGrid" aria-live="polite"></div>
@@ -47,7 +47,7 @@
         </div>
 
         <div class="stage-shell">
-          <div class="stage" id="stage" tabindex="0" aria-label="家具を配置する40列30行のピクセルラボ">
+          <div class="stage" id="stage" tabindex="0" aria-label="家具を配置する40列30行のピクセルラボ" aria-describedby="builderHint">
             <img class="stage__reference" src="assets/scene-clean.png" alt="" aria-hidden="true" />
             <div class="stage__objects" id="placedObjects"></div>
             <div class="stage__cursor" id="tileCursor" aria-hidden="true"></div>

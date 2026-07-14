@@ -53,3 +53,12 @@ ownership even when memory use exceeds 90%.
 
 Reason: preserving user work is more important than reclaiming memory for a
 noncritical local render.
+
+## D-008 — reference imagery is opt-in inside the builder
+
+Decision: the builder chrome and default stage do not use the source scene as a
+decorative background. The clean scene is available only through the explicit
+REFERENCE toggle.
+
+Reason: the builder must read as an original product, while the reference
+remains available as a practical placement guide when requested.

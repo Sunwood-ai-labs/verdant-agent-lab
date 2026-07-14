@@ -79,11 +79,14 @@ function renderFilters() {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = `filter-chip${category === activeCategory ? ' is-active' : ''}`;
+    button.dataset.category = category;
+    button.setAttribute('aria-pressed', String(category === activeCategory));
     button.textContent = category;
     button.addEventListener('click', () => {
       activeCategory = category;
       renderFilters();
       renderCatalog();
+      requestAnimationFrame(() => categoryFilters.querySelector(`[data-category="${category}"]`)?.focus());
     });
     return button;
   }));
@@ -96,12 +99,15 @@ function renderCatalog() {
     const searchMatch = !query || `${asset.id} ${asset.category}`.includes(query);
     return categoryMatch && searchMatch;
   });
+  assetCount.textContent = `${visible.length} / ${assets.length} OBJECTS`;
 
   catalogGrid.replaceChildren(...visible.map((asset) => {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = `asset-card${asset.id === selectedAssetId ? ' is-selected' : ''}`;
     button.dataset.assetId = asset.id;
+    button.title = titleFromId(asset.id);
+    button.setAttribute('aria-pressed', String(asset.id === selectedAssetId));
     button.innerHTML = `<img src="${asset.spriteUrl}" alt="" /><strong>${titleFromId(asset.id)}</strong><span>${asset.category}</span>`;
     button.addEventListener('click', () => {
       selectedAssetId = selectedAssetId === asset.id ? null : asset.id;
@@ -109,6 +115,7 @@ function renderCatalog() {
       stage.classList.toggle('is-placing', Boolean(selectedAssetId));
       renderCatalog();
       renderInspector();
+      requestAnimationFrame(() => catalogGrid.querySelector(`[data-asset-id="${asset.id}"]`)?.focus());
       showHint(selectedAssetId ? `${titleFromId(asset.id)} を選択。床をクリックして配置。` : '配置ツールを解除しました。');
     });
     return button;
@@ -139,7 +146,24 @@ function visualWidth(asset) {
 function updatePlacedSelection() {
   document.querySelectorAll('.placed-object').forEach((element) => {
     element.classList.toggle('is-selected', element.dataset.uid === selectedUid);
+    element.setAttribute('aria-pressed', String(element.dataset.uid === selectedUid));
   });
+}
+
+function applyObjectPosition(button, instance, asset) {
+  button.style.left = `${instance.col / WORLD.cols * 100}%`;
+  button.style.top = `${instance.row / WORLD.rows * 100}%`;
+  button.style.zIndex = String(instance.row * 10 + (asset.zBias ?? 0));
+  button.setAttribute('aria-label', `${titleFromId(asset.id)}、列${instance.col}、行${instance.row}`);
+}
+
+function selectInstance(instance) {
+  selectedUid = instance.uid;
+  selectedAssetId = null;
+  stage.classList.remove('is-placing');
+  renderCatalog();
+  renderInspector();
+  updatePlacedSelection();
 }
 
 function objectElement(instance) {
@@ -148,23 +172,16 @@ function objectElement(instance) {
   button.type = 'button';
   button.className = `placed-object${instance.uid === selectedUid ? ' is-selected' : ''}`;
   button.dataset.uid = instance.uid;
-  button.style.left = `${instance.col / WORLD.cols * 100}%`;
-  button.style.top = `${instance.row / WORLD.rows * 100}%`;
   button.style.width = `${visualWidth(asset)}%`;
-  button.style.zIndex = String(instance.row * 10 + (asset.zBias ?? 0));
-  button.setAttribute('aria-label', `${titleFromId(asset.id)}、列${instance.col}、行${instance.row}`);
+  button.setAttribute('aria-pressed', String(instance.uid === selectedUid));
   button.innerHTML = `<img src="${asset.spriteUrl}" alt="" draggable="false" />`;
+  applyObjectPosition(button, instance, asset);
 
   button.addEventListener('pointerdown', (event) => {
-    selectedUid = instance.uid;
-    selectedAssetId = null;
-    stage.classList.remove('is-placing');
+    selectInstance(instance);
     dragMoved = false;
     dragging = { uid: instance.uid, pointerId: event.pointerId };
     button.setPointerCapture(event.pointerId);
-    renderCatalog();
-    renderInspector();
-    updatePlacedSelection();
   });
 
   button.addEventListener('pointermove', (event) => {
@@ -173,9 +190,7 @@ function objectElement(instance) {
     const point = gridPoint(event);
     instance.col = point.col;
     instance.row = point.row;
-    button.style.left = `${instance.col / WORLD.cols * 100}%`;
-    button.style.top = `${instance.row / WORLD.rows * 100}%`;
-    button.style.zIndex = String(instance.row * 10 + (asset.zBias ?? 0));
+    applyObjectPosition(button, instance, asset);
     renderInspector();
   });
 
@@ -184,6 +199,46 @@ function objectElement(instance) {
     dragging = null;
     saveLayout();
     showHint(dragMoved ? 'オブジェクトをグリッドへ移動しました。' : 'オブジェクトを選択しました。');
+  });
+
+  const cancelDrag = () => {
+    if (!dragging || dragging.uid !== instance.uid) return;
+    dragging = null;
+    dragMoved = false;
+    saveLayout();
+    showHint('ドラッグを終了しました。');
+  };
+
+  button.addEventListener('pointercancel', cancelDrag);
+  button.addEventListener('lostpointercapture', cancelDrag);
+
+  button.addEventListener('click', () => {
+    if (!dragMoved) {
+      selectInstance(instance);
+      button.focus();
+      showHint(`${titleFromId(asset.id)} を選択しました。矢印キーで移動できます。`);
+    }
+    dragMoved = false;
+  });
+
+  button.addEventListener('keydown', (event) => {
+    const deltas = {
+      ArrowLeft: [-1, 0],
+      ArrowRight: [1, 0],
+      ArrowUp: [0, -1],
+      ArrowDown: [0, 1],
+    };
+    const delta = deltas[event.key];
+    if (!delta) return;
+    event.preventDefault();
+    const step = event.shiftKey ? 5 : 1;
+    instance.col = Math.max(0, Math.min(WORLD.cols - 1, instance.col + delta[0] * step));
+    instance.row = Math.max(0, Math.min(WORLD.rows - 1, instance.row + delta[1] * step));
+    applyObjectPosition(button, instance, asset);
+    selectInstance(instance);
+    saveLayout();
+    button.focus();
+    showHint(`${titleFromId(asset.id)} を ${instance.col}, ${instance.row} へ移動しました。`);
   });
 
   return button;
@@ -212,7 +267,11 @@ function renderInspector() {
 
 function placeSelected(event) {
   if (!selectedAssetId || event.target.closest('.placed-object')) return;
-  const point = gridPoint(event);
+  placeAssetAt(gridPoint(event));
+}
+
+function placeAssetAt(point) {
+  if (!selectedAssetId) return;
   const instance = { uid: uidFor(selectedAssetId), assetId: selectedAssetId, ...point, rotation: 0, state: 'default' };
   layout.objects.push(instance);
   selectedUid = instance.uid;
@@ -250,6 +309,12 @@ stage.addEventListener('pointermove', (event) => {
 stage.addEventListener('click', (event) => {
   if (!dragMoved) placeSelected(event);
   dragMoved = false;
+});
+
+stage.addEventListener('keydown', (event) => {
+  if (!selectedAssetId || !['Enter', ' '].includes(event.key)) return;
+  event.preventDefault();
+  placeAssetAt({ col: Math.floor(WORLD.cols / 2), row: Math.floor(WORLD.rows / 2) });
 });
 
 assetSearch.addEventListener('input', renderCatalog);
