@@ -1,0 +1,15 @@
+{
+  "name": "verdant-agent-lab",
+  "version": "0.1.0",
+  "private": false,
+  "description": "An original modular HTML pixel office and asset builder",
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --directory .",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}

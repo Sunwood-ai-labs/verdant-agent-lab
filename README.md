@@ -9,6 +9,8 @@
 - デスクトップ視差、モバイル拡大・ドラッグ移動
 - 10個のエリア別パーツ
 - 30個の原画由来オブジェクト切り出し
+- 36個の透明な独立スプライトと3つのversioned manifest
+- オブジェクト選択・配置・ドラッグ・削除・永続化・JSON出力ビルダー
 - キーボード操作、フォーカス表示、動き低減設定
 
 ## Preview
@@ -19,6 +21,9 @@ python3 -m http.server 4173 --directory .
 
 Then open <http://127.0.0.1:4173>.
 
+- Scene: <http://127.0.0.1:4173/index.html>
+- Builder: <http://127.0.0.1:4173/builder.html>
+
 ## Project structure
 
 - `assets/scene-clean.png` — 人物・マスコット・人型ロボットを除去した主背景
@@ -27,6 +32,8 @@ Then open <http://127.0.0.1:4173>.
 - `index.html` — シーンと探索UI
 - `styles.css` — レスポンシブ配置、照明、ガラス反射、環境演出
 - `script.js` — 視差、探索、選択、拡大、パン
+- `builder.html` / `builder.js` — 36パーツを配置できるオリジナルビルダー
+- `assets/layouts/starter.v1.json` — versionedスターターレイアウト
 
 ## Inspiration and originality
 

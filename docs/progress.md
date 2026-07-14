@@ -34,10 +34,14 @@ Status: in progress
 
 ## Checkpoint 3 — original builder runtime
 
-Status: planned
+Status: first usable version complete
 
-- [ ] render scene objects from layout JSON
-- [ ] select, move, and persist furniture
-- [ ] snap monitors, keyboards, mugs, lamps, and plants to desk surfaces
+- [x] render scene objects from layout JSON
+- [x] select, move, delete, and persist furniture
+- [x] load 36 objects from three independent manifests
+- [x] export the current layout as JSON
+- [x] keep characters disabled and absent
+- [x] add Playwright coverage for load/place/persist/drag/reference/delete
+- [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default
 - [ ] add original branding and visual-non-similarity QA

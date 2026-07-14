@@ -4,7 +4,6 @@ const zones = document.querySelector('.zones');
 const zoneToggle = document.querySelector('#zoneToggle');
 const zoomToggle = document.querySelector('#zoomToggle');
 const hint = document.querySelector('#hint');
-const art = document.querySelector('.scene__art');
 const zoneButtons = [...document.querySelectorAll('.zone')];
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');

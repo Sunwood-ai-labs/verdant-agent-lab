@@ -1,4 +1,7 @@
 .DS_Store
+node_modules/
+test-results/
+playwright-report/
 assets/reference-original.jpg
 research/pixel-agents/sources/
 proof/*.png
@@ -6,3 +9,4 @@ proof/*.png
 !proof/desktop-explore.png
 !proof/mobile-clean.png
 !proof/mobile-zoom-corner.png
+!proof/builder.png

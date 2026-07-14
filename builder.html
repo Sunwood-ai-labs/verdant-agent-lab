@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#10190e" />
+    <meta name="description" content="Verdant Agent Lab のオリジナル配置ビルダー" />
+    <title>Verdant Builder — Modular Pixel Lab</title>
+    <link rel="stylesheet" href="builder.css" />
+  </head>
+  <body>
+    <main class="builder">
+      <header class="topbar">
+        <a class="pixel-button pixel-button--back" href="index.html">← LAB</a>
+        <div class="brand">
+          <span class="brand__seed" aria-hidden="true">◆</span>
+          <div>
+            <strong>VERDANT BUILDER</strong>
+            <small>MODULAR LAB / NO CHARACTERS</small>
+          </div>
+        </div>
+        <nav class="topbar__actions" aria-label="レイアウト操作">
+          <button class="pixel-button" id="referenceToggle" type="button" aria-pressed="false">REFERENCE</button>
+          <button class="pixel-button" id="resetButton" type="button">RESET</button>
+          <button class="pixel-button pixel-button--accent" id="exportButton" type="button">EXPORT JSON</button>
+        </nav>
+      </header>
+
+      <aside class="catalog" aria-label="アセットカタログ">
+        <div class="catalog__heading">
+          <p>ASSET CATALOG</p>
+          <span id="assetCount">0 OBJECTS</span>
+        </div>
+        <label class="catalog__search">
+          <span class="sr-only">アセットを検索</span>
+          <input id="assetSearch" type="search" placeholder="SEARCH OBJECTS" autocomplete="off" />
+        </label>
+        <div class="catalog__filters" id="categoryFilters" aria-label="カテゴリ絞り込み"></div>
+        <div class="catalog__grid" id="catalogGrid" aria-live="polite"></div>
+      </aside>
+
+      <section class="workspace" aria-label="配置キャンバス">
+        <div class="workspace__meta">
+          <span><i class="status-dot"></i> LAYOUT ONLINE</span>
+          <span id="placementCount">0 PLACED</span>
+          <span>40 × 30 TILES</span>
+        </div>
+
+        <div class="stage-shell">
+          <div class="stage" id="stage" tabindex="0" aria-label="家具を配置する40列30行のピクセルラボ">
+            <img class="stage__reference" src="assets/scene-clean.png" alt="" aria-hidden="true" />
+            <div class="stage__objects" id="placedObjects"></div>
+            <div class="stage__cursor" id="tileCursor" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="workspace__hint" id="builderHint" aria-live="polite">
+          左のパーツを選び、床をクリックして配置。配置済みパーツはドラッグできます。
+        </div>
+      </section>
+
+      <aside class="inspector" aria-label="選択オブジェクトの情報">
+        <p class="inspector__eyebrow">OBJECT INSPECTOR</p>
+        <div id="inspectorEmpty" class="inspector__empty">SELECT AN OBJECT<br />TO INSPECT</div>
+        <div id="inspectorPanel" class="inspector__panel" hidden>
+          <img id="inspectorSprite" alt="" />
+          <h2 id="inspectorName"></h2>
+          <dl>
+            <div><dt>UID</dt><dd id="inspectorUid"></dd></div>
+            <div><dt>TYPE</dt><dd id="inspectorType"></dd></div>
+            <div><dt>GRID</dt><dd id="inspectorGrid"></dd></div>
+            <div><dt>Z BIAS</dt><dd id="inspectorZ"></dd></div>
+          </dl>
+          <button class="pixel-button pixel-button--danger" id="deleteButton" type="button">DELETE OBJECT</button>
+        </div>
+        <div class="inspector__note">
+          <strong>INDEPENDENT PARTS</strong>
+          <p>机・椅子・モニター・マグ・植物は別UID。巨大な一枚絵には戻しません。</p>
+        </div>
+      </aside>
+    </main>
+    <script src="builder.js" type="module"></script>
+  </body>
+</html>

@@ -21,6 +21,7 @@ body {
 }
 
 button { font: inherit; }
+a { color: inherit; }
 
 .viewport {
   position: relative;
@@ -249,7 +250,10 @@ button { font: inherit; }
   font-size: clamp(11px, .82vw, 13px);
   font-weight: 700;
   letter-spacing: .1em;
+  text-decoration: none;
 }
+
+.controls__link { justify-content: center; }
 
 .controls__button:hover,
 .controls__button[aria-pressed="true"] { border-color: #d6dc88; background: rgba(42, 61, 25, .92); }
