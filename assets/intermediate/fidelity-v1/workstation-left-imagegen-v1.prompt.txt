@@ -1,0 +1,1 @@
+Rebuild assets/object-crops/workstation-left.png as one isolated north-facing pixel-art sprite. Preserve one chair, the wide wooden desk, drawers, three screens in their original positions and angles, keyboard/mouse, papers, books, mug/bottle, small devices, and two right-rear plants. Remove floor and rear planter. Solid #FF00FF background only.

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "method": "office-similarity-v1",
+  "generatedAt": "2026-07-14T21:24:04.388910+00:00",
+  "label": "modular-assets-rebuilt-v1",
+  "normalization": {
+    "width": 1280,
+    "height": 960,
+    "sameViewRequired": true,
+    "referenceOverlayForbidden": true
+  },
+  "weights": {
+    "maskedGrayscaleSsim": 0.7,
+    "edgeF1": 0.2,
+    "labHistogram": 0.1
+  },
+  "thresholds": {
+    "maskedSsimPercent": 60,
+    "edgeF1Percent": 45
+  },
+  "scores": {
+    "rawSsimPercent": 58.67,
+    "maskedSsimPercent": 59.39,
+    "edgeF1Percent": 83.27,
+    "labHistogramPercent": 96.83,
+    "compositePercent": 67.91
+  },
+  "pass": false,
+  "inputs": {
+    "target": {
+      "name": "reference-original.jpg",
+      "sha256": "3eaeeb787a3e9d10f2612c7f20f2d963e38bae3870d1b03d03e3b57290868c5d"
+    },
+    "candidate": {
+      "name": "modular-office-v1.png",
+      "sha256": "55c8ce383ff89d19069f1910f5522ad50fb51486a2313b84a7314d3a80f593a7"
+    },
+    "mask": {
+      "name": "reference-character-mask.v1.json",
+      "version": 1,
+      "sha256": "011d99c07982834e94fcca47e36f86ad367a9ecd8793a1b32d7fc8b6b9dd4610"
+    },
+    "ledger": {
+      "name": "reference-instance-ledger.v1.json",
+      "version": 1,
+      "sha256": "8d20566fa09f679686d0a9ca1044967bbefde3d9c2b4a25664fa3e268f834a3e"
+    }
+  },
+  "zones": [
+    {
+      "id": "solar-wing",
+      "semantic": "vertical solar-panel-and-output-bank",
+      "orientation": "front-left",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 72.82
+    },
+    {
+      "id": "reception",
+      "semantic": "shallow curved reception counter with desk props",
+      "orientation": "south-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 39.86
+    },
+    {
+      "id": "north-lounge",
+      "semantic": "green sectional sofa, rug platform, and round table",
+      "orientation": "inward-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 36.51
+    },
+    {
+      "id": "cafe",
+      "semantic": "wall cafe counter, shelves, machines, and vending unit",
+      "orientation": "south-facing wall fixture",
+      "ledgerStatus": "proxy",
+      "ssimPercent": 56.56
+    },
+    {
+      "id": "studio-west",
+      "semantic": "irregular desk cluster, shelving, whiteboard, and chair",
+      "orientation": "mixed",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 42.66
+    },
+    {
+      "id": "meeting-room",
+      "semantic": "glass enclosure, vertical table, chairs, display, and plants",
+      "orientation": "mixed",
+      "ledgerStatus": "missing",
+      "ssimPercent": 44.95
+    },
+    {
+      "id": "ai-lab",
+      "semantic": "enclosed lab bench, equipment, shelves, whiteboard, and platform",
+      "orientation": "mixed",
+      "ledgerStatus": "missing",
+      "ssimPercent": 43.2
+    },
+    {
+      "id": "greenhouse",
+      "semantic": "pitched glass greenhouse with roof trusses, door, and interior foliage",
+      "orientation": "south-east",
+      "ledgerStatus": "missing",
+      "ssimPercent": 61.59
+    },
+    {
+      "id": "south-work-west",
+      "semantic": "wide workstation with monitor cluster, cabinets, chair, and props",
+      "orientation": "north-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 23.0
+    },
+    {
+      "id": "south-work-east",
+      "semantic": "wide workstation with monitor cluster, cabinets, chair, and props",
+      "orientation": "north-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 33.23
+    },
+    {
+      "id": "south-lounge",
+      "semantic": "inset green lounge with plants and air-quality board",
+      "orientation": "inward-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 43.2
+    },
+    {
+      "id": "utility-bins",
+      "semantic": "three colored recycling bins",
+      "orientation": "front-facing",
+      "ledgerStatus": "mismatch",
+      "ssimPercent": 65.08
+    },
+    {
+      "id": "garden-and-architecture",
+      "semantic": "walls, doors, planters, stairs, signage, exterior foliage",
+      "orientation": "site topology",
+      "ledgerStatus": "missing",
+      "ssimPercent": 59.39
+    }
+  ]
+}

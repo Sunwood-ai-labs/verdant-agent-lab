@@ -209,3 +209,11 @@ known-bad fixture is itself a failed gate.
 
 For every manifest, each `sprite` path must resolve to a real file. Every split
 sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
+# 2026-07-15 — directional asset rebuild v3
+
+- Proof: `proof/modular-office-v1.png` (1280x960, reference overlay off)
+- Score report: `proof/similarity/modular-office-assets-v3.json`
+- Masked SSIM: 57.21% — FAIL against 60% target
+- Edge F1: 83.35%
+- Fidelity validator: FAIL, 13 records remain open (7 candidates, 6 missing/mismatch)
+- Visual check: greenhouse and both south workstations now match source-facing direction and object counts; meeting table was rescaled and moved to column 27; reception was rescaled to 11x5 tiles.

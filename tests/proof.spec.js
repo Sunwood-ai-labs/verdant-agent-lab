@@ -14,7 +14,7 @@ test('captures the complete desktop interaction proof set', async ({ page }, tes
   await page.goto('/builder.html');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  await expect(page.locator('#assetCount')).toHaveText('36 / 36 OBJECTS');
+  await expect(page.locator('#assetCount')).toHaveText('42 / 42 OBJECTS');
 
   const mug = page.locator('[data-asset-id="coffee-mug"]');
   await mug.click();
@@ -66,8 +66,8 @@ test('captures the 390px mobile catalog, stage, and inspector flow', async ({ pa
   await page.goto('/builder.html');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  await expect(page.locator('#assetCount')).toHaveText('36 / 36 OBJECTS');
-  await page.locator('[data-uid="sofa-a1"]').focus();
+  await expect(page.locator('#assetCount')).toHaveText('42 / 42 OBJECTS');
+  await page.locator('[data-uid="north-lounge-a1"]').focus();
   await page.keyboard.press('Enter');
   await expect(page.locator('#inspectorPanel')).toBeVisible();
   await expect(page.locator('#inspectorEmpty')).toBeHidden();

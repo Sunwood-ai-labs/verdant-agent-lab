@@ -1,0 +1,1 @@
+Rebuild assets/object-crops/cafe-counter.png as one isolated south-facing wall cafe fixture. Preserve four base cabinets, three white machines, green CAFE sign, left glass unit, right black display, top plants, and attached right vending unit. Remove the room. Solid #FF00FF background only.

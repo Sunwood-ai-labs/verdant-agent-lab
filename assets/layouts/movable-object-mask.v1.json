@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "canvas": { "width": 1280, "height": 960 },
+  "policy": "Replace movable-object interiors with the Image Gen empty-foundation candidate while preserving original fixed architecture elsewhere.",
+  "regions": [
+    { "id": "reception", "bbox": [500, 135, 790, 275] },
+    { "id": "north-lounge", "bbox": [835, 135, 1015, 265] },
+    { "id": "studio-west", "bbox": [205, 275, 555, 485] },
+    { "id": "meeting-room", "bbox": [685, 275, 995, 505] },
+    { "id": "ai-lab-interior", "bbox": [900, 300, 1135, 505] },
+    { "id": "south-work-west", "bbox": [335, 545, 605, 685] },
+    { "id": "south-work-east", "bbox": [615, 545, 855, 685] },
+    { "id": "south-lounge", "bbox": [900, 615, 1165, 775] },
+    { "id": "utility-bins", "bbox": [930, 765, 1115, 875] }
+  ]
+}

@@ -1,0 +1,1 @@
+Rebuild assets/object-crops/lounge-sofa-top.png as one isolated inward-facing lounge assembly. Preserve the U-shaped olive sectional, polygonal dark-green rug/platform, centered round wooden table, center plant, and small tabletop items. Remove the room. Solid #FF00FF background only.

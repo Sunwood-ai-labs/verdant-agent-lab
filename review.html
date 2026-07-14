@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Similarity Review — Verdant Agent Lab</title>
+  <link rel="stylesheet" href="review.css" />
+  <style>.mode-side .overlay-original,.mode-diff .overlay-original{display:none}.mode-overlay .overlay-original{display:block}</style>
+</head>
+<body>
+  <header class="review-header">
+    <a href="builder.html">← BUILDER</a>
+    <div><p>VERDANT / FIDELITY DESK</p><h1>Similarity Review</h1></div>
+    <span class="status">STRUCTURAL PROTOTYPE — NOT VERIFIED</span>
+  </header>
+  <main>
+    <section class="score-card" aria-labelledby="scoreTitle">
+      <div><p id="scoreTitle">MASKED SSIM / TARGET 60%</p><strong id="score">—</strong></div>
+      <div class="meter" aria-hidden="true"><i id="meterFill"></i><b></b></div>
+      <dl><div><dt>EDGE F1</dt><dd id="edge">—</dd></div><div><dt>COMPOSITE</dt><dd id="composite">—</dd></div><div><dt>METHOD</dt><dd>office-similarity-v1</dd></div></dl>
+    </section>
+    <nav class="modes" aria-label="比較モード">
+      <button class="active" data-mode="side">SIDE BY SIDE</button>
+      <button data-mode="overlay">OVERLAY</button>
+      <button data-mode="diff">ABS DIFF</button>
+    </nav>
+    <section class="lighttable mode-side" id="lighttable">
+      <figure class="pane pane-original"><figcaption>RAW ORIGINAL / PRIVATE INPUT</figcaption><img src="assets/reference-original.jpg" alt="人物を含む元のオフィス画像" /></figure>
+      <figure class="pane pane-modular"><figcaption>MODULAR RECONSTRUCTION / NO REFERENCE OVERLAY</figcaption><div class="stack"><img src="proof/modular-office-v1.png" alt="モジュラー再構成" /><img class="overlay-original" src="assets/reference-original.jpg" alt="" /></div></figure>
+      <figure class="pane pane-diff"><figcaption>ABS DIFF / MASKED REVIEW</figcaption><img src="proof/similarity/modular-office-assets-v3-diff.png" alt="差分ヒートマップ" /></figure>
+    </section>
+    <section class="overlay-control">
+      <label for="opacity">ORIGINAL OPACITY <output id="opacityValue">50%</output></label>
+      <input id="opacity" type="range" min="0" max="100" value="50" />
+      <div><button data-opacity="0">0</button><button data-opacity="50">50</button><button data-opacity="100">100</button></div>
+      <p>オーバーレイは差分確認専用。採点画像には使用していません。</p>
+    </section>
+    <section class="zones"><div><p>OBJECT &amp; ORIENTATION LEDGER</p><h2>数字の奥にある未解決箇所</h2></div><div class="table-wrap"><table><thead><tr><th>ZONE</th><th>SSIM</th><th>CONTENT</th><th>ORIENTATION</th></tr></thead><tbody id="zoneRows"></tbody></table></div></section>
+  </main>
+  <script type="module" src="review.js"></script>
+</body>
+</html>

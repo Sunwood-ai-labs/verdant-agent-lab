@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "canvas": { "width": 1280, "height": 960 },
+  "policy": "Exclude people, mascot, and humanoid robot only. Preserve all environment pixels.",
+  "regions": [
+    { "id": "person-west", "bbox": [258, 366, 335, 505] },
+    { "id": "person-north", "bbox": [618, 175, 684, 289] },
+    { "id": "person-meeting", "bbox": [750, 347, 815, 466] },
+    { "id": "person-south-west", "bbox": [456, 585, 525, 710] },
+    { "id": "person-south-east", "bbox": [700, 579, 773, 711] },
+    { "id": "humanoid-robot", "bbox": [1016, 436, 1098, 565] },
+    { "id": "mascot", "bbox": [1123, 700, 1192, 793] }
+  ]
+}

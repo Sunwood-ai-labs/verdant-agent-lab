@@ -1,0 +1,1 @@
+Rebuild assets/parts/greenhouse.png as one isolated south-east/front-facing pixel-art greenhouse. Preserve the pitched glass roof, central ridge, diagonal metal trusses, transparent foliage-filled panels, warm lamps, centered lightning-bolt door, right control panel, and two front plants. Remove all surrounding architecture and garden. Solid #FF00FF background only.

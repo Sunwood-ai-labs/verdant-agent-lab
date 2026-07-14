@@ -6,10 +6,64 @@
   "source": "project-original-imagegen",
   "items": [
     {
+      "id": "north-lounge-inward-facing",
+      "category": "lounge",
+      "sprite": "../generated/furniture/north-lounge-inward-facing.png",
+      "footprint": { "w": 6, "h": 4 },
+      "zBias": 3,
+      "orientation": "inward-facing",
+      "contentCount": { "sectional": 1, "rug": 1, "table": 1, "plant": 1 }
+    },
+    {
+      "id": "cafe-wall-south-facing",
+      "category": "cafe",
+      "sprite": "../generated/furniture/cafe-wall-south-facing.png",
+      "footprint": { "w": 6, "h": 5 },
+      "zBias": 3,
+      "orientation": "south-facing",
+      "contentCount": { "cabinet": 4, "coffeeMachine": 3, "vendingUnit": 1, "sign": 1 }
+    },
+    {
+      "id": "meeting-table-vertical-three-chair",
+      "category": "meeting",
+      "sprite": "../generated/furniture/meeting-table-vertical-three-chair.png",
+      "footprint": { "w": 5, "h": 5 },
+      "zBias": 4,
+      "orientation": "north-south",
+      "contentCount": { "table": 1, "chair": 3, "plant": 1, "control": 1 }
+    },
+    {
+      "id": "greenhouse-southeast-facing",
+      "category": "architecture",
+      "sprite": "../generated/furniture/greenhouse-southeast-facing.png",
+      "footprint": { "w": 8, "h": 9 },
+      "zBias": 2,
+      "orientation": "south-east",
+      "contentCount": { "structure": 1, "door": 1, "lamps": 3, "controlPanel": 1 }
+    },
+    {
+      "id": "workstation-west-north-facing",
+      "category": "workstation",
+      "sprite": "../generated/furniture/workstation-west-north-facing.png",
+      "footprint": { "w": 9, "h": 5 },
+      "zBias": 4,
+      "orientation": "north-facing",
+      "contentCount": { "desk": 1, "chair": 1, "screens": 3 }
+    },
+    {
+      "id": "workstation-east-north-facing",
+      "category": "workstation",
+      "sprite": "../generated/furniture/workstation-east-north-facing.png",
+      "footprint": { "w": 8, "h": 5 },
+      "zBias": 4,
+      "orientation": "north-facing",
+      "contentCount": { "desk": 1, "chair": 2, "screens": 3 }
+    },
+    {
       "id": "curved-reception-desk",
       "category": "desk",
       "sprite": "../generated/furniture/curved-reception-desk.png",
-      "footprint": { "w": 8, "h": 3 },
+      "footprint": { "w": 11, "h": 5 },
       "surfaceAnchors": [
         { "id": "left", "x": 0.24, "y": 0.38 },
         { "id": "center", "x": 0.5, "y": 0.34 },

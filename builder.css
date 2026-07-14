@@ -140,11 +140,10 @@ button, input { font: inherit; }
   overflow: hidden;
   border: 1px solid #677847;
   border-radius: 3px;
-  background:
-    linear-gradient(rgba(115, 76, 40, .08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(115, 76, 40, .08) 1px, transparent 1px),
-    repeating-linear-gradient(0deg, #b9824d 0 3%, #ad7544 3% 6%);
-  background-size: 2.5% 3.333%, 2.5% 3.333%, auto;
+  background-color: #b9824d;
+  background-image: url("assets/generated/foundation/office-foundation-source-guided-v2.png");
+  background-position: center;
+  background-size: 100% 100%;
   box-shadow: 0 18px 45px rgba(0,0,0,.5), inset 0 0 55px rgba(49,36,19,.45);
   touch-action: none;
 }

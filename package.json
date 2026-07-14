@@ -7,11 +7,12 @@
   "scripts": {
     "serve": "python3 -m http.server 4173 --directory .",
     "score:layout": "node scripts/score-layout.mjs",
+    "score:similarity": "python3 scripts/score-office-similarity.py",
     "validate:reference-fidelity": "node scripts/validate-reference-fidelity.mjs",
     "audit:asset-provenance": "node scripts/audit-asset-provenance.mjs",
     "validate:sprites": "python3 scripts/validate_sprite_purity.py",
     "test": "playwright test",
-    "test:update-proofs": "UPDATE_PROOFS=1 playwright test tests/proof.spec.js",
+    "test:update-proofs": "UPDATE_PROOFS=1 playwright test tests/proof.spec.js tests/similarity.spec.js",
     "test:headed": "playwright test --headed"
   },
   "devDependencies": {

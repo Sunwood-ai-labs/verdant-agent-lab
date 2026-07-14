@@ -69,3 +69,10 @@ validate:reference-fidelity` must fail until each is visually verified.
 - [x] add a visual snapshot for the REFERENCE compositing state
 - [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default
+# Directional asset rebuild checkpoint — 2026-07-15
+
+- Retracted the source-guided 60.37% result as a completion claim; it does not prove independent asset fidelity.
+- Rebuilt seven high-impact regions with one Image Gen sprite per source crop: reception, north lounge, cafe, meeting table, greenhouse, west workstation, and east workstation.
+- Each generated source, prompt, chroma intermediate, and alpha output is preserved under `assets/intermediate/fidelity-v1/` and `assets/generated/furniture/`.
+- The current reference-overlay-off screenshot scores 57.21% masked SSIM and remains `STRUCTURAL PROTOTYPE — NOT VERIFIED`.
+- Remaining open regions: solar equipment, west studio, AI lab, south lounge, recycling bins, and independently authored architecture layers. Candidate regions still require final visual verification.

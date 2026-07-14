@@ -1,0 +1,1 @@
+Rebuild assets/object-crops/meeting-table.png as one isolated vertical north-south meeting-table assembly. Preserve the long narrow table, north tablet/control, center plant, and exactly three inward-facing rolling chairs at west, east, and south. Remove the room. Solid #FF00FF background only.
