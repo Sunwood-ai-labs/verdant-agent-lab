@@ -23,6 +23,12 @@ proof/*.png
 !proof/builder-reference-v4.png
 !proof/builder-focus-v4.png
 !proof/builder-mobile-full-v4.png
+!proof/builder-placing-v5.png
+!proof/builder-inspector-v5.png
+!proof/builder-dragged-v5.png
+!proof/builder-reference-v5.png
+!proof/builder-focus-v5.png
+!proof/builder-mobile-full-v5.png
 !proof/intermediate/
 !proof/intermediate/**/*.png
 !proof/verdant-layout-export-v1.json

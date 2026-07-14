@@ -146,13 +146,43 @@ The starter layout now contains 41 independent instances aligned to 14 major
 reference anchors. `npm run score:layout` reports all 14 passing and an overall
 score of **94.2 / 100** against the 75-point acceptance threshold.
 
-Primary refreshed evidence:
+Primary placement-alignment evidence:
 
 - `proof/builder-inspector-v4.png`
 - `proof/builder-reference-v4.png`
 - `proof/builder-focus-v4.png`
 - `proof/builder-mobile-full-v4.png`
 - `proof/verdant-layout-export-v2.json`
+
+## Reference compositor and semantic-purity repair
+
+Material review detected black rectangles only while the translucent reference
+layer and filtered transparent sprites were composited together. Reference
+mode now disables sprite `drop-shadow`; the normal scene retains it. A committed
+Playwright image snapshot at
+`tests/proof.spec.js-snapshots/builder-reference-stage-darwin.png` protects the
+complete reference-stage rendering, not only its CSS class and opacity.
+
+Devil review also rejected the original curved reception desk and composite
+shared worktable. Both were replaced with single-subject Image Gen sprites.
+Their chroma inputs, alpha masters, and prior runtime versions are preserved
+under `assets/intermediate/sprite-replacements/`. The v4 proof set was then
+regenerated and inspected again.
+
+The semantic replacement and compositor retry uses fresh `v5` proof filenames
+rather than overwriting the already-published `v4` checkpoint.
+
+Final semantic-purity evidence:
+
+- `proof/builder-inspector-v5.png`
+- `proof/builder-reference-v5.png`
+- `proof/builder-focus-v5.png`
+- `proof/builder-mobile-full-v5.png`
+- `proof/verdant-layout-export-v3.json`
+
+`npm run validate:sprites` currently reports one large connected component for
+each single-object replacement and zero pixels in all three forbidden fragment
+regions.
 
 For every manifest, each `sprite` path must resolve to a real file. Every split
 sprite must be 362×362 RGBA with both transparent and nontransparent pixels.

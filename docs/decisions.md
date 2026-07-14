@@ -88,3 +88,20 @@ alpha mask against the original transparent sprite.
 
 Reason: a tool call succeeding is not evidence that the resulting asset still
 satisfies transparency, size, fidelity, and independent-part constraints.
+
+## D-012 — reference mode trades decorative shadow for compositing safety
+
+Decision: disable CSS drop shadows on placed transparent sprites only while
+the translucent reference layer is active, and guard that state with an image
+snapshot.
+
+Reason: Chromium rendered some filtered sprite layers as black rectangles over
+the opacity-composited reference. Placement comparison is more important than
+decorative depth in that explicit mode.
+
+## D-013 — structural score never claims pixel similarity
+
+Decision: call 94.2 the "14-anchor structural placement score" everywhere.
+
+Reason: the scorer evaluates manifest semantics, centers, and footprints; it
+does not inspect sprite content or full-image perceptual similarity.

@@ -38,7 +38,8 @@ score = 100 × (0.45 × category + 0.35 × position + 0.20 × footprint IoU)
 - every major anchor must score at least 75 and remain within two cells
 - the overall mean must be at least 75
 
-Current starter result: **94.2 / 100**, with all 14 required anchors passing.
+Current starter result: **94.2 / 100 structural placement score**, with all 14
+required anchors passing. This is not a full-image perceptual similarity score.
 
 ## Known gaps
 

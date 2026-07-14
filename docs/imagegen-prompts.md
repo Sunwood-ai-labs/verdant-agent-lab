@@ -71,3 +71,34 @@ clock; warm hanging pendant lamp
 - Repeat the character/text/logo prohibition for every sheet.
 - Keep text out of reusable sprites; add UI labels in HTML.
 - Preserve source and alpha masters so later masking improvements remain possible.
+
+## Single-object replacement — curved reception desk
+
+```text
+Create one original reusable pixel-art game asset on a perfectly flat solid
+#FF00FF chroma-key background: a single curved wooden reception desk, top-down
+3/4 orthographic view, warm oak panels, subtle brass trim, broad semicircular
+counter, empty clean desktop. Exactly one centered fully visible object. No
+chair, person, character, plant, laptop, phone, mug, stationery, wall, floor,
+text, logo, shadow outside the object, border, or checkerboard.
+```
+
+## Single-object replacement — shared worktable
+
+```text
+Create one original reusable pixel-art game asset on a perfectly flat solid
+#FF00FF chroma-key background: a single long rectangular shared wooden
+worktable, top-down 3/4 orthographic view, warm oak surface, sturdy simple legs,
+empty clean tabletop, designed for independently placed chairs and props.
+Exactly one centered fully visible object. No chair, bench, plant, planter,
+monitor, laptop, keyboard, mug, book, stationery, person, character, floor,
+wall, text, logo, or checkerboard.
+```
+
+## Rejected cleanup attempt
+
+The espresso-machine semantic edit requested preservation of the original
+transparent 362×362 sprite while removing only the far-right fragment. The
+result changed scale and baked a checkerboard into the raster. It remains under
+`assets/intermediate/sprite-cleanup/` as negative evidence and was replaced by
+the deterministic alpha-mask repair.

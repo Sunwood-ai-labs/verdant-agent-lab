@@ -98,6 +98,31 @@ of removed nontransparent pixels. The current jobs cover `espresso-machine`,
 `shared-worktable`, and `tall-indoor-plant`. Always inspect the resulting PNGs
 at original resolution after running it.
 
+## Semantic single-object replacement
+
+A Devil's Advocate pass found that the original reception cell contained a
+desk fragment and a separate large chair, while the original shared-worktable
+cell bundled chairs, plants, and desk props. These could not be repaired by a
+rectangular mask without losing the subject.
+
+Both were regenerated as one-object chroma-key sources and preserved under
+`assets/intermediate/sprite-replacements/`, together with the prior runtime
+sprites and alpha masters. The runtime now uses:
+
+- an empty curved reception desk with no chair or desk props
+- an empty shared worktable with no chairs, plants, monitors, or small props
+
+This keeps chairs and desk props independently placeable in the layout.
+
+Run the audited semantic-purity heuristic with:
+
+```bash
+npm run validate:sprites
+```
+
+It requires one large connected subject for the two replacements and zero
+nontransparent pixels in the three known cross-cell contamination regions.
+
 ## Exact scene crop pipeline
 
 Exact crops are taken from `scene-clean.png`, not from the original reference.

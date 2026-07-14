@@ -19,12 +19,12 @@ test('captures the complete desktop interaction proof set', async ({ page }, tes
   const mug = page.locator('[data-asset-id="coffee-mug"]');
   await mug.click();
   await page.locator('#stage').hover({ position: { x: 620, y: 410 } });
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-placing-v4.png') });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-placing-v5.png') });
 
   await page.locator('#stage').click({ position: { x: 620, y: 410 } });
   await expect(page.locator('#inspectorName')).toHaveText('coffee mug');
   await expect(page.locator('#inspectorEmpty')).toBeHidden();
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-inspector-v4.png') });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-inspector-v5.png') });
 
   const chair = page.locator('[data-uid="chair-a1"]');
   const stageBox = await page.locator('#stage').boundingBox();
@@ -34,12 +34,16 @@ test('captures the complete desktop interaction proof set', async ({ page }, tes
   await page.mouse.move(stageBox.x + stageBox.width * 0.72, stageBox.y + stageBox.height * 0.72, { steps: 8 });
   await page.mouse.up();
   await expect(page.locator('#inspectorGrid')).not.toHaveText('14, 15');
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-dragged-v4.png') });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-dragged-v5.png') });
 
   await page.locator('#referenceToggle').click();
   await expect(page.locator('#stage')).toHaveClass(/is-reference/);
   await expect(page.locator('.stage__reference')).toHaveCSS('opacity', '0.42');
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-reference-v4.png') });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-reference-v5.png') });
+  await expect(page.locator('#stage')).toHaveScreenshot('builder-reference-stage.png', {
+    animations: 'disabled',
+    maxDiffPixels: 80
+  });
 
   await page.locator('#referenceToggle').click();
   await expect(page.locator('.stage__reference')).toHaveCSS('opacity', '0');
@@ -48,12 +52,12 @@ test('captures the complete desktop interaction proof set', async ({ page }, tes
   await page.keyboard.press('Tab');
   await expect(mug).toBeFocused();
   await expect(mug).toHaveCSS('outline-style', 'solid');
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-focus-v4.png') });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-focus-v5.png') });
 
   const downloadPromise = page.waitForEvent('download');
   await page.locator('#exportButton').click();
   const download = await downloadPromise;
-  await download.saveAs(artifactPath(testInfo, 'verdant-layout-export-v2.json'));
+  await download.saveAs(artifactPath(testInfo, 'verdant-layout-export-v3.json'));
   await expect(page.locator('#builderHint')).toHaveText('レイアウトJSONを書き出しました。');
 });
 
@@ -67,5 +71,5 @@ test('captures the 390px mobile catalog, stage, and inspector flow', async ({ pa
   await page.keyboard.press('Enter');
   await expect(page.locator('#inspectorPanel')).toBeVisible();
   await expect(page.locator('#inspectorEmpty')).toBeHidden();
-  await page.screenshot({ path: artifactPath(testInfo, 'builder-mobile-full-v4.png'), fullPage: true });
+  await page.screenshot({ path: artifactPath(testInfo, 'builder-mobile-full-v5.png'), fullPage: true });
 });

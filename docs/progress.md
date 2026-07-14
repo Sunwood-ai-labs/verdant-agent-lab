@@ -49,5 +49,8 @@ Status: first usable version complete
 - [x] realign 41 instances to normalized photo anchors
 - [x] add a reproducible 94.2/100 structural-placement similarity gate
 - [x] remove neighboring-cell fragments from three generated sprites
+- [x] replace the mixed reception cell with a desk-only sprite
+- [x] replace the composite shared-worktable cell with a table-only sprite
+- [x] add a visual snapshot for the REFERENCE compositing state
 - [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default
