@@ -17,6 +17,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `de15072` | Reference-anchor reconstruction | 41-instance photo-aligned layout, 94.2 structural-placement gate, cleaned sprites, v4 proofs |
 | `7de05f1` | Semantic furniture separation | desk-only reception, table-only worktable, safe reference compositor, visual snapshot, v5 proofs |
 | `2b149f3` | Negative-control regression gate | proves the sprite validator rejects both preserved known-bad furniture fixtures |
+| `bf466b4` | Fidelity-claim correction | canonical characterless render, object-level failing ledger, rotation/aspect rendering, v6 comparison proof |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
