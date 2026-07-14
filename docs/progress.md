@@ -24,10 +24,12 @@ Evidence:
 
 Status: in progress
 
-- [ ] generate original chroma-key furniture sprite sheets
-- [ ] remove chroma key and validate alpha
-- [ ] split sheets into addressable sprites
-- [ ] add versioned asset manifests with independent IDs
+- [x] generate the first 12-object furniture chroma-key sheet
+- [x] remove its chroma key and validate alpha
+- [x] split the furniture sheet into 12 addressable sprites
+- [x] add the first versioned furniture manifest with independent IDs
+- [ ] generate technology and small-prop sheets
+- [ ] split and manifest technology and small props
 - [ ] add surface anchors, collision footprints, and z-bias metadata
 
 ## Checkpoint 3 — original builder runtime

@@ -5,8 +5,15 @@
 - `scene-clean.png`: flattened 4:3 environment base
 - `parts/`: 10 room/zone crops used by EXPLORE previews
 - `object-crops/`: 30 exact scene-derived crops for furniture and prop inventory
-- `generated/`: original image-generated sprite sheets and alpha versions (next checkpoint)
-- `manifests/`: versioned asset metadata and placement anchors (next checkpoint)
+- `generated/`: original image-generated sprite sheets, alpha versions, and split sprites
+- `manifests/`: versioned asset metadata, footprints, seat anchors, and surface anchors
+
+## Generated furniture pack v1
+
+`generated/furniture/` contains 12 transparent sprites. The corresponding
+`manifests/furniture.v1.json` keeps each desk, seat, plant, storage unit, and
+glass segment independently addressable. The chroma source and alpha master
+sheet are retained beside the split assets as reproducible intermediate data.
 
 ## Object crop inventory
 
