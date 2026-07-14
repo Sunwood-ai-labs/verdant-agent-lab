@@ -10,6 +10,8 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `0f8d015` | Independent desk props | chroma/alpha masters, 12 sprites, props manifest |
 | `a2201f3` | Reproducible asset pipeline | prompts, workflow, alpha/crop details, provenance ledger |
 | `e8b067c` | Architecture and QA lessons | runtime design, decisions, failure log, publication ledger |
+| `21ca3b8` | Publication checkpoint ledger | synchronized public commit history |
+| `9472823` | Modular pixel lab editor | 36-object catalog, placement, drag, persistence, export, tests |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
