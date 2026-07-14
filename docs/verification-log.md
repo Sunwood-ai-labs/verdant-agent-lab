@@ -125,5 +125,34 @@ npm test
 Latest result: 6 Playwright tests passed, including the desktop/mobile proof
 capture suite.
 
+## Second-pass QA failures and repair
+
+Strict QA rejected the first builder proof set for five concrete reasons:
+
+1. author CSS overrode the inspector's native `[hidden]` state
+2. the reference screenshot was captured before its 180ms fade completed
+3. programmatic focus did not prove `:focus-visible`
+4. three split sprites retained fragments from neighboring sheet cells
+5. normal tests rewrote tracked proof files through random UIDs/timing
+
+The retry added scoped hidden-state CSS, computed-opacity waits, a keyboard
+focus round-trip, deterministic fragment masks with preserved before/candidate
+files, and opt-in proof publication. The refreshed evidence uses `v4`
+filenames. Mobile hints are now outside the stage rather than covering it.
+
+## Reference-placement gate
+
+The starter layout now contains 41 independent instances aligned to 14 major
+reference anchors. `npm run score:layout` reports all 14 passing and an overall
+score of **94.2 / 100** against the 75-point acceptance threshold.
+
+Primary refreshed evidence:
+
+- `proof/builder-inspector-v4.png`
+- `proof/builder-reference-v4.png`
+- `proof/builder-focus-v4.png`
+- `proof/builder-mobile-full-v4.png`
+- `proof/verdant-layout-export-v2.json`
+
 For every manifest, each `sprite` path must resolve to a real file. Every split
 sprite must be 362×362 RGBA with both transparent and nontransparent pixels.

@@ -78,6 +78,26 @@ Required gates:
 - one object per cell
 - no characters, mascots, labels, or watermark
 
+## Cross-cell contamination repair
+
+The second QA pass found neighboring-cell fragments in three otherwise valid
+sprites. The original split files are preserved under
+`assets/intermediate/sprite-cleanup/`. A semantic Image Gen edit was attempted
+for the espresso machine, but the returned checkerboard was baked into the
+raster and the scale changed, so that candidate is retained as rejected
+evidence and is not used at runtime.
+
+The accepted repair is the deterministic alpha-mask script:
+
+```bash
+python3 scripts/clean_sprite_fragments.py
+```
+
+It clears only audited rectangles outside each subject and prints the number
+of removed nontransparent pixels. The current jobs cover `espresso-machine`,
+`shared-worktable`, and `tall-indoor-plant`. Always inspect the resulting PNGs
+at original resolution after running it.
+
 ## Exact scene crop pipeline
 
 Exact crops are taken from `scene-clean.png`, not from the original reference.

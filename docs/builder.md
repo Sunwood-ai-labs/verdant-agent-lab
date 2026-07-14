@@ -6,7 +6,8 @@ are still changing.
 
 ## Current features
 
-- loads 36 objects from three versioned manifests
+- loads 36 reusable assets from three versioned manifests
+- starts from 41 independently addressable instances aligned to reference anchors
 - category chips and text search
 - click an asset, then click the 40×30 world to place it
 - drag any placed object between snapped grid cells
@@ -52,6 +53,8 @@ scene projection later without changing manifests or saved layouts.
 
 `tests/proof.spec.js` captures the placement, inspector, drag, reference,
 focus, exported JSON, and 390px-wide mobile states as durable proof artifacts.
+Normal tests use ignored per-run output; `npm run test:update-proofs` is the
+only command that intentionally refreshes public proof files.
 
 Run:
 

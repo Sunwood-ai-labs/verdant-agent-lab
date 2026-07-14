@@ -46,5 +46,8 @@ Status: first usable version complete
 - [x] capture desktop placement/inspector/drag/reference/focus proof states
 - [x] capture a complete 390px mobile catalog/stage/inspector proof
 - [x] add original VERDANT BUILDER branding and visual-non-similarity QA
+- [x] realign 41 instances to normalized photo anchors
+- [x] add a reproducible 94.2/100 structural-placement similarity gate
+- [x] remove neighboring-cell fragments from three generated sprites
 - [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default

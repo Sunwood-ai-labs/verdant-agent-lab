@@ -8,17 +8,18 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('loads every manifest and places an independent prop', async ({ page }) => {
-  await expect(page.locator('#placementCount')).toHaveText('8 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText('41 PLACED');
 
   await page.locator('[data-asset-id="coffee-mug"]').click();
   await page.locator('#stage').click({ position: { x: 600, y: 420 } });
 
-  await expect(page.locator('#placementCount')).toHaveText('9 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText('42 PLACED');
   await expect(page.locator('#inspectorName')).toHaveText('coffee mug');
   await expect(page.locator('#inspectorPanel')).toBeVisible();
+  await expect(page.locator('#inspectorEmpty')).toBeHidden();
 
   await page.reload();
-  await expect(page.locator('#placementCount')).toHaveText('9 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText('42 PLACED');
 });
 
 test('drags a placed chair to a new grid cell', async ({ page }) => {
@@ -32,7 +33,7 @@ test('drags a placed chair to a new grid cell', async ({ page }) => {
   await page.mouse.move(stageBox.x + stageBox.width * 0.72, stageBox.y + stageBox.height * 0.72, { steps: 8 });
   await page.mouse.up();
 
-  await expect(page.locator('#inspectorGrid')).not.toHaveText('11, 14');
+  await expect(page.locator('#inspectorGrid')).not.toHaveText('14, 15');
   await expect(chair).toHaveClass(/is-selected/);
 });
 
@@ -40,9 +41,11 @@ test('toggles the reference layer and deletes a selected object', async ({ page 
   await page.locator('#referenceToggle').click();
   await expect(page.locator('#stage')).toHaveClass(/is-reference/);
 
-  await page.locator('[data-uid="sofa-a1"]').click();
+  await page.locator('[data-uid="sofa-a1"]').focus();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#inspectorEmpty')).toBeHidden();
   await page.locator('#deleteButton').click();
-  await expect(page.locator('#placementCount')).toHaveText('7 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText('40 PLACED');
   await expect(page.locator('[data-uid="sofa-a1"]')).toHaveCount(0);
 });
 
@@ -59,11 +62,11 @@ test('reports pressed state and supports keyboard placement and movement', async
 
   await page.locator('#stage').focus();
   await page.keyboard.press('Enter');
-  await expect(page.locator('#placementCount')).toHaveText('9 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText('42 PLACED');
 
   const chair = page.locator('[data-uid="chair-a1"]');
   await chair.focus();
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('#inspectorGrid')).toHaveText('12, 14');
-  await expect(chair).toHaveAttribute('aria-label', /列12、行14/);
+  await expect(page.locator('#inspectorGrid')).toHaveText('15, 15');
+  await expect(chair).toHaveAttribute('aria-label', /列15、行15/);
 });

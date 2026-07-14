@@ -116,7 +116,7 @@ function renderCatalog() {
       renderCatalog();
       renderInspector();
       requestAnimationFrame(() => catalogGrid.querySelector(`[data-asset-id="${asset.id}"]`)?.focus());
-      showHint(selectedAssetId ? `${titleFromId(asset.id)} を選択。床をクリックして配置。` : '配置ツールを解除しました。');
+      showHint(selectedAssetId ? `${titleFromId(asset.id)} を選択。床をクリック、またはTabで床へ移動しEnter/Spaceで中央へ配置。` : '配置ツールを解除しました。');
     });
     return button;
   }));

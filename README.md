@@ -12,6 +12,8 @@
 - 36個の透明な独立スプライトと3つのversioned manifest
 - オブジェクト選択・配置・ドラッグ・削除・永続化・JSON出力ビルダー
 - キーボード操作、フォーカス表示、動き低減設定
+- 写真を40×30へ正規化した41オブジェクトの参照準拠レイアウト
+- カテゴリ・位置・占有範囲による配置類似度スコア（現在94.2/100）
 
 ## Preview
 
@@ -34,6 +36,8 @@ Then open <http://127.0.0.1:4173>.
 - `script.js` — 視差、探索、選択、拡大、パン
 - `builder.html` / `builder.js` — 36パーツを配置できるオリジナルビルダー
 - `assets/layouts/starter.v1.json` — versionedスターターレイアウト
+- `assets/layouts/reference-anchors.v1.json` — 写真から抽出した主要配置アンカー
+- `scripts/score-layout.mjs` — 配置の構造類似度ゲート
 
 ## Inspiration and originality
 

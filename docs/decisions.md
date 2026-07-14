@@ -62,3 +62,29 @@ REFERENCE toggle.
 
 Reason: the builder must read as an original product, while the reference
 remains available as a practical placement guide when requested.
+
+## D-009 — placement similarity is structural, not pixel-copy SSIM
+
+Decision: normalize the reference to 40×30 and score semantic category, center
+position, and footprint overlap against explicit anchors.
+
+Reason: full-image SSIM would reward copying the source pixels and punish the
+original modular sprites. Structural scoring moves furniture toward the photo
+without weakening the originality boundary.
+
+## D-010 — proof refresh is opt-in
+
+Decision: normal Playwright runs write into ignored test output; only
+`npm run test:update-proofs` writes fresh versioned public evidence.
+
+Reason: random instance UIDs and animation timing previously dirtied tracked
+proof files during an otherwise read-only verification run.
+
+## D-011 — reject visually unsafe Image Gen cleanup output
+
+Decision: preserve but do not ship the espresso cleanup candidate that baked a
+checkerboard into the pixels and changed scale. Use an audited deterministic
+alpha mask against the original transparent sprite.
+
+Reason: a tool call succeeding is not evidence that the resulting asset still
+satisfies transparency, size, fidelity, and independent-part constraints.

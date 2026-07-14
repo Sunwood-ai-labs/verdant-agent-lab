@@ -115,3 +115,33 @@ The repository is public. Commit and push each cohesive layer independently:
 - runtime catalog/editor work
 
 The worktree should return to clean after every pushed checkpoint.
+
+## 10. Align composition with normalized reference anchors
+
+Map the 1280×960 reference to a 40×30 world, making each grid cell correspond
+to 32 reference pixels. Store the target centers and bounding boxes in
+`assets/layouts/reference-anchors.v1.json`; do not hide them in CSS offsets.
+
+The default reconstruction is evaluated with:
+
+```bash
+npm run score:layout
+```
+
+The score weights semantic category at 45%, center position at 35%, and
+footprint overlap at 20%. Required anchors must score at least 75 and be within
+two cells of the target. Pixel SSIM is deliberately not used because it would
+penalize original sprite design rather than structural placement.
+
+## 11. Separate normal tests from proof publication
+
+`npm test` writes screenshots and downloads only to Playwright's ignored
+per-run output, keeping a clean worktree clean. Publish fresh proof filenames
+only through:
+
+```bash
+npm run test:update-proofs
+```
+
+This separation prevents random object UIDs and transition timing from silently
+rewriting committed evidence.

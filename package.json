@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "serve": "python3 -m http.server 4173 --directory .",
+    "score:layout": "node scripts/score-layout.mjs",
     "test": "playwright test",
+    "test:update-proofs": "UPDATE_PROOFS=1 playwright test tests/proof.spec.js",
     "test:headed": "playwright test --headed"
   },
   "devDependencies": {
