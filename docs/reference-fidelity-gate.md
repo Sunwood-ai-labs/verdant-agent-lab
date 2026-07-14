@@ -44,3 +44,11 @@ reproduction.
 
 The next implementation step is to replace these with source-derived or
 direction-specific modular assets, beginning with the P0 ledger rows.
+
+## Asset provenance correction
+
+The builder currently consumes 36 generated sprites, not source crops. The 30
+files under `assets/object-crops/` are opaque rectangular cuts from the
+Image-Gen-cleaned derivative `scene-clean.png`; they are not raw-original crops
+or isolated runtime assets. `assets/manifests/source-crops.v1.json` records
+this explicitly, and `npm run audit:asset-provenance` checks it.

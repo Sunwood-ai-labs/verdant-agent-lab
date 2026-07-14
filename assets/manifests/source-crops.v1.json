@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "packId": "reference-derivative-crops",
+  "runtimeUse": "not-connected",
+  "provenance": {
+    "source": "assets/scene-clean.png",
+    "classification": "imagegen-cleaned derivative of the supplied reference; not a raw original-image crop",
+    "isolation": "opaque rectangular crops that can include adjacent pixels"
+  },
+  "items": [
+    { "id": "air-quality-board", "sprite": "../object-crops/air-quality-board.png", "isolation": "composite-crop" },
+    { "id": "bookshelf", "sprite": "../object-crops/bookshelf.png", "isolation": "composite-crop" },
+    { "id": "cafe-counter", "sprite": "../object-crops/cafe-counter.png", "isolation": "composite-crop" },
+    { "id": "canopy-tree", "sprite": "../object-crops/canopy-tree.png", "isolation": "composite-crop" },
+    { "id": "coffee-machines", "sprite": "../object-crops/coffee-machines.png", "isolation": "composite-crop" },
+    { "id": "curved-reception-desk", "sprite": "../object-crops/curved-reception-desk.png", "isolation": "composite-crop" },
+    { "id": "entrance-mat", "sprite": "../object-crops/entrance-mat.png", "isolation": "composite-crop" },
+    { "id": "exit-door", "sprite": "../object-crops/exit-door.png", "isolation": "composite-crop" },
+    { "id": "flower-planter-left", "sprite": "../object-crops/flower-planter-left.png", "isolation": "composite-crop" },
+    { "id": "flower-planter-right", "sprite": "../object-crops/flower-planter-right.png", "isolation": "composite-crop" },
+    { "id": "greenhouse-door", "sprite": "../object-crops/greenhouse-door.png", "isolation": "composite-crop" },
+    { "id": "ideas-whiteboard", "sprite": "../object-crops/ideas-whiteboard.png", "isolation": "composite-crop" },
+    { "id": "lab-bench", "sprite": "../object-crops/lab-bench.png", "isolation": "composite-crop" },
+    { "id": "lab-console", "sprite": "../object-crops/lab-console.png", "isolation": "composite-crop" },
+    { "id": "lab-platform", "sprite": "../object-crops/lab-platform.png", "isolation": "composite-crop" },
+    { "id": "lounge-sofa-top", "sprite": "../object-crops/lounge-sofa-top.png", "isolation": "composite-crop" },
+    { "id": "meeting-display", "sprite": "../object-crops/meeting-display.png", "isolation": "composite-crop" },
+    { "id": "meeting-table", "sprite": "../object-crops/meeting-table.png", "isolation": "composite-crop" },
+    { "id": "potted-plant", "sprite": "../object-crops/potted-plant.png", "isolation": "composite-crop" },
+    { "id": "quiet-lounge-sofa", "sprite": "../object-crops/quiet-lounge-sofa.png", "isolation": "composite-crop" },
+    { "id": "recycling-bins", "sprite": "../object-crops/recycling-bins.png", "isolation": "composite-crop" },
+    { "id": "rolling-chair", "sprite": "../object-crops/rolling-chair.png", "isolation": "composite-crop" },
+    { "id": "round-coffee-table", "sprite": "../object-crops/round-coffee-table.png", "isolation": "composite-crop" },
+    { "id": "server-dashboard", "sprite": "../object-crops/server-dashboard.png", "isolation": "composite-crop" },
+    { "id": "server-racks", "sprite": "../object-crops/server-racks.png", "isolation": "composite-crop" },
+    { "id": "solar-panel", "sprite": "../object-crops/solar-panel.png", "isolation": "composite-crop" },
+    { "id": "studio-desk", "sprite": "../object-crops/studio-desk.png", "isolation": "composite-crop" },
+    { "id": "tall-planter", "sprite": "../object-crops/tall-planter.png", "isolation": "composite-crop" },
+    { "id": "workstation-left", "sprite": "../object-crops/workstation-left.png", "isolation": "composite-crop" },
+    { "id": "workstation-right", "sprite": "../object-crops/workstation-right.png", "isolation": "composite-crop" }
+  ]
+}

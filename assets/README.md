@@ -4,7 +4,8 @@
 
 - `scene-clean.png`: flattened 4:3 environment base
 - `parts/`: 10 room/zone crops used by EXPLORE previews
-- `object-crops/`: 30 exact scene-derived crops for furniture and prop inventory
+- `object-crops/`: 30 opaque rectangular crops from the Image-Gen-cleaned
+  derivative, for reference inventory only (not runtime assets)
 - `generated/`: original image-generated sprite sheets, alpha versions, and split sprites
 - `manifests/`: versioned asset metadata, footprints, seat anchors, and surface anchors
 
@@ -45,4 +46,7 @@ Cafe and information props:
 
 - `cafe-counter`, `coffee-machines`, `ideas-whiteboard`, `recycling-bins`, `tall-planter`
 
-These crops preserve exact source appearance but include rectangular surroundings. Generated alpha sprites are kept separate so exact evidence and reusable game assets are not confused.
+These crops preserve nearby derivative-scene appearance but include rectangular
+surroundings. They are not raw-original crops, transparent isolated sprites, or
+builder runtime assets. Generated alpha sprites are a separate family and must
+not be described as source-image decompositions.

@@ -128,8 +128,10 @@ that the gate rejects the exact regressions it was introduced to prevent.
 ## Exact scene crop pipeline
 
 Exact crops are taken from `scene-clean.png`, not from the original reference.
+`scene-clean.png` is an Image-Gen-cleaned derivative that removes characters.
 They intentionally retain nearby floor or wall pixels and are stored separately
-from transparent sprites.
+from transparent sprites. They are therefore **not** isolated source-image
+assets and are **not** connected to the current builder runtime.
 
 ```bash
 sips --cropToHeightWidth <height> <width> \
@@ -141,3 +143,7 @@ sips --cropToHeightWidth <height> <width> \
 The current inventory has 30 exact object crops, 10 region crops, and 36
 transparent generated sprites: 76 addressable assets before counting master
 sheets and proof images.
+
+Run `npm run audit:asset-provenance` before describing any runtime asset as
+source-derived. The current expected result is 36 generated runtime assets and
+zero source-crop runtime assets.
