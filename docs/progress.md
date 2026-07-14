@@ -29,8 +29,8 @@ Status: in progress
 - [x] split the furniture sheet into 12 addressable sprites
 - [x] add the first versioned furniture manifest with independent IDs
 - [x] generate, alpha-key, split, and manifest 12 technology sprites
-- [ ] generate, alpha-key, split, and manifest 12 small-prop sprites
-- [ ] add surface anchors, collision footprints, and z-bias metadata
+- [x] generate, alpha-key, split, and manifest 12 small-prop sprites
+- [x] add surface anchors, collision footprints, and z-bias metadata
 
 ## Checkpoint 3 — original builder runtime
 

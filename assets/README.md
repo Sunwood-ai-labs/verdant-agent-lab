@@ -19,6 +19,10 @@ sheet are retained beside the split assets as reproducible intermediate data.
 lighting, lab, cafe, and utility sprites. `manifests/technology.v1.json` records
 surface mounting, state variants, footprints, anchors, and z-order hints.
 
+`generated/props/` contains 12 desk-scale objects. Each mug, bottle, notebook,
+book stack, tablet, phone, pen cup, paper pile, plant, clock, and lamp is a
+separate transparent PNG and a separate entry in `manifests/props.v1.json`.
+
 ## Object crop inventory
 
 Architecture and environment:

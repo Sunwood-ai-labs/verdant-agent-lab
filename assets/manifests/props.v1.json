@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "packId": "verdant-props",
+  "title": "Verdant Desk Props",
+  "tileSize": 32,
+  "source": "project-original-imagegen",
+  "items": [
+    {
+      "id": "coffee-mug",
+      "category": "drinkware",
+      "sprite": "../generated/props/coffee-mug.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "stateVariants": ["full", "empty"],
+      "zBias": 8
+    },
+    {
+      "id": "water-bottle",
+      "category": "drinkware",
+      "sprite": "../generated/props/water-bottle.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "open-notebook",
+      "category": "stationery",
+      "sprite": "../generated/props/open-notebook.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "book-stack",
+      "category": "stationery",
+      "sprite": "../generated/props/book-stack.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "tablet",
+      "category": "device",
+      "sprite": "../generated/props/tablet.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "stateVariants": ["off", "active"],
+      "zBias": 8
+    },
+    {
+      "id": "desk-phone",
+      "category": "device",
+      "sprite": "../generated/props/desk-phone.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "stateVariants": ["idle", "ringing"],
+      "zBias": 8
+    },
+    {
+      "id": "pen-cup",
+      "category": "stationery",
+      "sprite": "../generated/props/pen-cup.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "paper-notes",
+      "category": "stationery",
+      "sprite": "../generated/props/paper-notes.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "succulent",
+      "category": "plant",
+      "sprite": "../generated/props/succulent.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "desk-plant",
+      "category": "plant",
+      "sprite": "../generated/props/desk-plant.png",
+      "mount": "surface",
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 8
+    },
+    {
+      "id": "wall-clock",
+      "category": "decor",
+      "sprite": "../generated/props/wall-clock.png",
+      "wallMount": true,
+      "footprint": { "w": 1, "h": 1 },
+      "zBias": 1
+    },
+    {
+      "id": "pendant-lamp",
+      "category": "lighting",
+      "sprite": "../generated/props/pendant-lamp.png",
+      "ceilingMount": true,
+      "footprint": { "w": 1, "h": 1 },
+      "stateVariants": ["off", "on"],
+      "zBias": 10
+    }
+  ]
+}
