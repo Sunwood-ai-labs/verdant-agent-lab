@@ -15,6 +15,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `549c829` | Builder publication checkpoint | public-state ledger and verified repository metadata |
 | `6e8cf8a` | Hardened interaction and proof suite | keyboard parity, focus/state semantics, mobile layout, seven proof artifacts |
 | `de15072` | Reference-anchor reconstruction | 41-instance photo-aligned layout, 94.2 structural-placement gate, cleaned sprites, v4 proofs |
+| `7de05f1` | Semantic furniture separation | desk-only reception, table-only worktable, safe reference compositor, visual snapshot, v5 proofs |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
