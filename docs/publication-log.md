@@ -9,6 +9,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `151c618` | Technology sprite pack | chroma/alpha masters, 12 sprites, technology manifest |
 | `0f8d015` | Independent desk props | chroma/alpha masters, 12 sprites, props manifest |
 | `a2201f3` | Reproducible asset pipeline | prompts, workflow, alpha/crop details, provenance ledger |
+| `e8b067c` | Architecture and QA lessons | runtime design, decisions, failure log, publication ledger |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
