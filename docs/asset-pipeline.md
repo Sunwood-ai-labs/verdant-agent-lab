@@ -121,7 +121,9 @@ npm run validate:sprites
 ```
 
 It requires one large connected subject for the two replacements and zero
-nontransparent pixels in the three known cross-cell contamination regions.
+nontransparent pixels in the three known contamination regions. The preserved
+old reception and composite worktable are mandatory negative controls, proving
+that the gate rejects the exact regressions it was introduced to prevent.
 
 ## Exact scene crop pipeline
 

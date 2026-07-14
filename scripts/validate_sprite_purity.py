@@ -14,9 +14,14 @@ SINGLE_SUBJECTS = [
 ]
 FORBIDDEN_REGIONS = {
     "assets/generated/technology/espresso-machine.png": (280, 0, 362, 362),
-    "assets/generated/furniture/shared-worktable.png": (0, 0, 12, 362),
+    "assets/generated/furniture/shared-worktable.png": (0, 280, 362, 362),
     "assets/generated/furniture/tall-indoor-plant.png": (280, 0, 362, 362),
 }
+NEGATIVE_COMPONENT_CONTROL = "assets/intermediate/sprite-replacements/curved-reception-desk-before.png"
+NEGATIVE_REGION_CONTROL = (
+    "assets/intermediate/sprite-replacements/shared-worktable-composite-before.png",
+    (0, 280, 362, 362),
+)
 
 
 def large_components(path: Path, threshold: int = 100, minimum_area: int = 500) -> list[int]:
@@ -61,5 +66,14 @@ if __name__ == "__main__":
         count = nontransparent_in_region(ROOT / relative, box)
         print(f"{relative}: forbidden_region_pixels={count}")
         failed |= count != 0
+
+    negative_components = large_components(ROOT / NEGATIVE_COMPONENT_CONTROL)
+    print(f"negative-control {NEGATIVE_COMPONENT_CONTROL}: large_components={negative_components}")
+    failed |= len(negative_components) == 1
+
+    negative_path, negative_box = NEGATIVE_REGION_CONTROL
+    negative_pixels = nontransparent_in_region(ROOT / negative_path, negative_box)
+    print(f"negative-control {negative_path}: forbidden_region_pixels={negative_pixels}")
+    failed |= negative_pixels == 0
 
     raise SystemExit(1 if failed else 0)

@@ -166,8 +166,8 @@ complete reference-stage rendering, not only its CSS class and opacity.
 Devil review also rejected the original curved reception desk and composite
 shared worktable. Both were replaced with single-subject Image Gen sprites.
 Their chroma inputs, alpha masters, and prior runtime versions are preserved
-under `assets/intermediate/sprite-replacements/`. The v4 proof set was then
-regenerated and inspected again.
+under `assets/intermediate/sprite-replacements/`. A fresh v5 proof set was then
+generated and inspected.
 
 The semantic replacement and compositor retry uses fresh `v5` proof filenames
 rather than overwriting the already-published `v4` checkpoint.
@@ -182,7 +182,10 @@ Final semantic-purity evidence:
 
 `npm run validate:sprites` currently reports one large connected component for
 each single-object replacement and zero pixels in all three forbidden fragment
-regions.
+regions. It also executes the two preserved bad sprites as negative controls:
+the old reception asset must have multiple large components, and the old
+worktable must contain pixels below row 280. A gate that cannot reject its
+known-bad fixture is itself a failed gate.
 
 For every manifest, each `sprite` path must resolve to a real file. Every split
 sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
