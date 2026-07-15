@@ -9,6 +9,7 @@
     "score:layout": "node scripts/score-layout.mjs",
     "score:similarity": "python3 scripts/score-office-similarity.py",
     "audit:sprite-bounds": "python3 scripts/audit-sprite-bounds.py",
+    "trim:runtime-sprites": "python3 scripts/trim-runtime-sprites.py",
     "validate:reference-fidelity": "node scripts/validate-reference-fidelity.mjs",
     "audit:asset-provenance": "node scripts/audit-asset-provenance.mjs",
     "validate:sprites": "python3 scripts/validate_sprite_purity.py",

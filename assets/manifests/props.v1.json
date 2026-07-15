@@ -8,52 +8,163 @@
     {
       "id": "coffee-mug",
       "category": "drinkware",
-      "sprite": "../generated/props/coffee-mug.png",
+      "sprite": "../generated/trimmed/coffee-mug-trimmed-v1.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "stateVariants": ["full", "empty"],
-      "zBias": 8
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "stateVariants": [
+        "full",
+        "empty"
+      ],
+      "zBias": 8,
+      "trimmedFrom": "../generated/props/coffee-mug.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          134,
+          134,
+          305,
+          308
+        ],
+        "sourceMargins": [
+          134,
+          134,
+          57,
+          54
+        ]
+      }
     },
     {
       "id": "water-bottle",
       "category": "drinkware",
-      "sprite": "../generated/props/water-bottle.png",
+      "sprite": "../generated/trimmed/water-bottle-trimmed-v1.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "zBias": 8
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "zBias": 8,
+      "trimmedFrom": "../generated/props/water-bottle.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          123,
+          96,
+          238,
+          329
+        ],
+        "sourceMargins": [
+          123,
+          96,
+          124,
+          33
+        ]
+      }
     },
     {
       "id": "open-notebook",
       "category": "stationery",
       "sprite": "../generated/props/open-notebook.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
       "zBias": 8
     },
     {
       "id": "book-stack",
       "category": "stationery",
-      "sprite": "../generated/props/book-stack.png",
+      "sprite": "../generated/trimmed/book-stack-trimmed-v1.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "zBias": 8
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "zBias": 8,
+      "trimmedFrom": "../generated/props/book-stack.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          6,
+          127,
+          254,
+          338
+        ],
+        "sourceMargins": [
+          6,
+          127,
+          108,
+          24
+        ]
+      }
     },
     {
       "id": "tablet",
       "category": "device",
-      "sprite": "../generated/props/tablet.png",
+      "sprite": "../generated/trimmed/tablet-trimmed-v1.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "stateVariants": ["off", "active"],
-      "zBias": 8
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "stateVariants": [
+        "off",
+        "active"
+      ],
+      "zBias": 8,
+      "trimmedFrom": "../generated/props/tablet.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          90,
+          87,
+          315,
+          274
+        ],
+        "sourceMargins": [
+          90,
+          87,
+          47,
+          88
+        ]
+      }
     },
     {
       "id": "desk-phone",
       "category": "device",
       "sprite": "../generated/props/desk-phone.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "stateVariants": ["idle", "ringing"],
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "stateVariants": [
+        "idle",
+        "ringing"
+      ],
       "zBias": 8
     },
     {
@@ -61,7 +172,10 @@
       "category": "stationery",
       "sprite": "../generated/props/pen-cup.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
       "zBias": 8
     },
     {
@@ -69,40 +183,100 @@
       "category": "stationery",
       "sprite": "../generated/props/paper-notes.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
       "zBias": 8
     },
     {
       "id": "succulent",
       "category": "plant",
-      "sprite": "../generated/props/succulent.png",
+      "sprite": "../generated/trimmed/succulent-trimmed-v1.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
-      "zBias": 8
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "zBias": 8,
+      "trimmedFrom": "../generated/props/succulent.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          118,
+          49,
+          269,
+          235
+        ],
+        "sourceMargins": [
+          118,
+          49,
+          93,
+          127
+        ]
+      }
     },
     {
       "id": "desk-plant",
       "category": "plant",
       "sprite": "../generated/props/desk-plant.png",
       "mount": "surface",
-      "footprint": { "w": 1, "h": 1 },
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
       "zBias": 8
     },
     {
       "id": "wall-clock",
       "category": "decor",
-      "sprite": "../generated/props/wall-clock.png",
+      "sprite": "../generated/trimmed/wall-clock-trimmed-v1.png",
       "wallMount": true,
-      "footprint": { "w": 1, "h": 1 },
-      "zBias": 1
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "zBias": 1,
+      "trimmedFrom": "../generated/props/wall-clock.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          34,
+          28,
+          224,
+          240
+        ],
+        "sourceMargins": [
+          34,
+          28,
+          138,
+          122
+        ]
+      }
     },
     {
       "id": "pendant-lamp",
       "category": "lighting",
       "sprite": "../generated/props/pendant-lamp.png",
       "ceilingMount": true,
-      "footprint": { "w": 1, "h": 1 },
-      "stateVariants": ["off", "on"],
+      "footprint": {
+        "w": 1,
+        "h": 1
+      },
+      "stateVariants": [
+        "off",
+        "on"
+      ],
       "zBias": 10
     }
   ]

@@ -7,6 +7,7 @@
     {
       "id": "south-lounge-inward-facing",
       "sprite": "../generated/furniture/south-lounge-decomposed-v5.png",
+      "trimmedFrom": null,
       "size": [
         280,
         230
@@ -31,6 +32,7 @@
     {
       "id": "studio-west-mixed-facing",
       "sprite": "../generated/furniture/studio-west-decomposed-v2.png",
+      "trimmedFrom": null,
       "size": [
         245,
         290
@@ -55,16 +57,17 @@
     },
     {
       "id": "north-lounge-inward-facing",
-      "sprite": "../generated/furniture/north-lounge-decomposed-v3.png",
+      "sprite": "../generated/trimmed/north-lounge-inward-facing-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/north-lounge-decomposed-v3.png",
       "size": [
-        470,
-        285
+        205,
+        140
       ],
       "alphaBBox": [
-        18,
-        149,
-        207,
-        273
+        8,
+        8,
+        197,
+        132
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -77,16 +80,17 @@
     },
     {
       "id": "cafe-wall-south-facing",
-      "sprite": "../generated/furniture/cafe-decomposed-v3.png",
+      "sprite": "../generated/trimmed/cafe-wall-south-facing-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/cafe-decomposed-v3.png",
       "size": [
-        470,
-        285
+        403,
+        239
       ],
       "alphaBBox": [
-        65,
-        19,
-        452,
-        242
+        8,
+        8,
+        395,
+        231
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -100,6 +104,7 @@
     {
       "id": "meeting-table-vertical-three-chair",
       "sprite": "../generated/furniture/meeting-room-decomposed-v2.png",
+      "trimmedFrom": null,
       "size": [
         212,
         144
@@ -127,6 +132,7 @@
     {
       "id": "greenhouse-southeast-facing",
       "sprite": "../generated/furniture/greenhouse-decomposed-v3.png",
+      "trimmedFrom": null,
       "size": [
         300,
         340
@@ -150,16 +156,17 @@
     },
     {
       "id": "workstation-west-north-facing",
-      "sprite": "../generated/furniture/workstation-west-decomposed-v4.png",
+      "sprite": "../generated/trimmed/workstation-west-north-facing-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/workstation-west-decomposed-v4.png",
       "size": [
-        570,
-        255
+        240,
+        240
       ],
       "alphaBBox": [
-        50,
-        9,
-        274,
-        233
+        8,
+        8,
+        232,
+        232
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -172,16 +179,17 @@
     },
     {
       "id": "workstation-east-north-facing",
-      "sprite": "../generated/furniture/workstation-east-decomposed-v4.png",
+      "sprite": "../generated/trimmed/workstation-east-north-facing-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/workstation-east-decomposed-v4.png",
       "size": [
-        570,
-        255
+        242,
+        240
       ],
       "alphaBBox": [
-        331,
-        9,
-        557,
-        233
+        8,
+        8,
+        234,
+        232
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -195,6 +203,7 @@
     {
       "id": "curved-reception-desk",
       "sprite": "../generated/furniture/reception-decomposed-v3.png",
+      "trimmedFrom": null,
       "size": [
         560,
         300
@@ -218,16 +227,17 @@
     },
     {
       "id": "shared-worktable",
-      "sprite": "../generated/furniture/shared-worktable.png",
+      "sprite": "../generated/trimmed/shared-worktable-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/shared-worktable.png",
       "size": [
-        362,
-        362
+        350,
+        172
       ],
       "alphaBBox": [
-        14,
-        102,
-        348,
-        258
+        8,
+        8,
+        342,
+        164
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -241,6 +251,7 @@
     {
       "id": "single-desk",
       "sprite": "../generated/furniture/single-desk.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -264,16 +275,17 @@
     },
     {
       "id": "olive-sofa",
-      "sprite": "../generated/furniture/olive-sofa.png",
+      "sprite": "../generated/trimmed/olive-sofa-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/olive-sofa.png",
       "size": [
-        362,
-        362
+        252,
+        189
       ],
       "alphaBBox": [
-        54,
-        140,
-        290,
-        313
+        8,
+        8,
+        244,
+        181
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -286,16 +298,17 @@
     },
     {
       "id": "olive-armchair",
-      "sprite": "../generated/furniture/olive-armchair.png",
+      "sprite": "../generated/trimmed/olive-armchair-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/olive-armchair.png",
       "size": [
-        362,
-        362
+        165,
+        207
       ],
       "alphaBBox": [
-        150,
-        82,
-        299,
-        273
+        8,
+        8,
+        157,
+        199
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -309,6 +322,7 @@
     {
       "id": "round-coffee-table",
       "sprite": "../generated/furniture/round-coffee-table.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -332,16 +346,17 @@
     },
     {
       "id": "rolling-office-chair",
-      "sprite": "../generated/furniture/rolling-office-chair.png",
+      "sprite": "../generated/trimmed/rolling-office-chair-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/rolling-office-chair.png",
       "size": [
-        362,
-        362
+        152,
+        222
       ],
       "alphaBBox": [
-        88,
-        83,
-        224,
-        289
+        8,
+        8,
+        144,
+        214
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -355,6 +370,7 @@
     {
       "id": "plant-bookshelf",
       "sprite": "../generated/furniture/plant-bookshelf.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -378,16 +394,17 @@
     },
     {
       "id": "flower-planter",
-      "sprite": "../generated/furniture/flower-planter.png",
+      "sprite": "../generated/trimmed/flower-planter-trimmed-v1.png",
+      "trimmedFrom": "../generated/furniture/flower-planter.png",
       "size": [
-        362,
-        362
+        273,
+        164
       ],
       "alphaBBox": [
-        88,
-        64,
-        345,
-        212
+        8,
+        8,
+        265,
+        156
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -401,6 +418,7 @@
     {
       "id": "tall-indoor-plant",
       "sprite": "../generated/furniture/tall-indoor-plant.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -425,6 +443,7 @@
     {
       "id": "glass-wall-segment",
       "sprite": "../generated/furniture/glass-wall-segment.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -449,6 +468,7 @@
     {
       "id": "greenhouse-door-segment",
       "sprite": "../generated/furniture/greenhouse-door-segment.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -473,6 +493,7 @@
     {
       "id": "air-quality-board-reference",
       "sprite": "../generated/sheet3x6-v1/air-quality-board.png",
+      "trimmedFrom": null,
       "size": [
         181,
         295
@@ -498,6 +519,7 @@
     {
       "id": "meeting-display-reference",
       "sprite": "../generated/technology/meeting-display-decomposed-v2.png",
+      "trimmedFrom": null,
       "size": [
         208,
         134
@@ -525,6 +547,7 @@
     {
       "id": "ai-lab-mixed-facing",
       "sprite": "../generated/technology/ai-lab-decomposed-v6.png",
+      "trimmedFrom": null,
       "size": [
         300,
         366
@@ -547,6 +570,7 @@
     {
       "id": "solar-wing-front-facing",
       "sprite": "../generated/technology/solar-wing-decomposed-v5.png",
+      "trimmedFrom": null,
       "size": [
         220,
         500
@@ -571,16 +595,17 @@
     },
     {
       "id": "solar-array",
-      "sprite": "../generated/technology/solar-array.png",
+      "sprite": "../generated/trimmed/solar-array-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/solar-array.png",
       "size": [
-        362,
-        362
+        265,
+        222
       ],
       "alphaBBox": [
-        84,
-        123,
-        333,
-        329
+        8,
+        8,
+        257,
+        214
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -593,16 +618,17 @@
     },
     {
       "id": "server-rack",
-      "sprite": "../generated/technology/server-rack.png",
+      "sprite": "../generated/trimmed/server-rack-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/server-rack.png",
       "size": [
-        362,
-        362
+        202,
+        278
       ],
       "alphaBBox": [
-        94,
-        83,
-        280,
-        345
+        8,
+        8,
+        194,
+        270
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -616,6 +642,7 @@
     {
       "id": "single-monitor",
       "sprite": "../generated/technology/single-monitor.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -640,6 +667,7 @@
     {
       "id": "dual-monitor",
       "sprite": "../generated/technology/dual-monitor.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -663,16 +691,17 @@
     },
     {
       "id": "laptop",
-      "sprite": "../generated/technology/laptop.png",
+      "sprite": "../generated/trimmed/laptop-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/laptop.png",
       "size": [
-        362,
-        362
+        227,
+        209
       ],
       "alphaBBox": [
-        96,
-        80,
-        307,
-        273
+        8,
+        8,
+        219,
+        201
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -685,16 +714,17 @@
     },
     {
       "id": "keyboard-mouse",
-      "sprite": "../generated/technology/keyboard-mouse.png",
+      "sprite": "../generated/trimmed/keyboard-mouse-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/keyboard-mouse.png",
       "size": [
-        362,
-        362
+        271,
+        98
       ],
       "alphaBBox": [
-        51,
-        152,
-        306,
-        234
+        8,
+        8,
+        263,
+        90
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -708,6 +738,7 @@
     {
       "id": "brass-desk-lamp",
       "sprite": "../generated/technology/brass-desk-lamp.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -731,16 +762,17 @@
     },
     {
       "id": "environment-display",
-      "sprite": "../generated/technology/environment-display.png",
+      "sprite": "../generated/trimmed/environment-display-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/environment-display.png",
       "size": [
-        362,
-        362
+        172,
+        258
       ],
       "alphaBBox": [
-        31,
-        47,
-        187,
-        289
+        8,
+        8,
+        164,
+        250
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -753,16 +785,17 @@
     },
     {
       "id": "lab-console",
-      "sprite": "../generated/technology/lab-console.png",
+      "sprite": "../generated/trimmed/lab-console-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/lab-console.png",
       "size": [
-        362,
-        362
+        280,
+        234
       ],
       "alphaBBox": [
-        69,
-        17,
-        333,
-        235
+        8,
+        8,
+        272,
+        226
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -775,16 +808,17 @@
     },
     {
       "id": "robotics-platform",
-      "sprite": "../generated/technology/robotics-platform.png",
+      "sprite": "../generated/trimmed/robotics-platform-trimmed-v1.png",
+      "trimmedFrom": "../generated/technology/robotics-platform.png",
       "size": [
-        362,
-        362
+        248,
+        207
       ],
       "alphaBBox": [
-        50,
-        37,
-        282,
-        228
+        8,
+        8,
+        240,
+        199
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -798,6 +832,7 @@
     {
       "id": "espresso-machine",
       "sprite": "../generated/technology/espresso-machine.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -822,6 +857,7 @@
     {
       "id": "recycling-bin-set",
       "sprite": "../generated/technology/recycling-bin-set-decomposed-v1.png",
+      "trimmedFrom": null,
       "size": [
         220,
         125
@@ -848,16 +884,17 @@
     },
     {
       "id": "coffee-mug",
-      "sprite": "../generated/props/coffee-mug.png",
+      "sprite": "../generated/trimmed/coffee-mug-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/coffee-mug.png",
       "size": [
-        362,
-        362
+        187,
+        190
       ],
       "alphaBBox": [
-        134,
-        134,
-        305,
-        308
+        8,
+        8,
+        179,
+        182
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -870,16 +907,17 @@
     },
     {
       "id": "water-bottle",
-      "sprite": "../generated/props/water-bottle.png",
+      "sprite": "../generated/trimmed/water-bottle-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/water-bottle.png",
       "size": [
-        362,
-        362
+        131,
+        249
       ],
       "alphaBBox": [
+        8,
+        8,
         123,
-        96,
-        238,
-        329
+        241
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -893,6 +931,7 @@
     {
       "id": "open-notebook",
       "sprite": "../generated/props/open-notebook.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -916,16 +955,17 @@
     },
     {
       "id": "book-stack",
-      "sprite": "../generated/props/book-stack.png",
+      "sprite": "../generated/trimmed/book-stack-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/book-stack.png",
       "size": [
-        362,
-        362
+        262,
+        227
       ],
       "alphaBBox": [
         6,
-        127,
+        8,
         254,
-        338
+        219
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -938,16 +978,17 @@
     },
     {
       "id": "tablet",
-      "sprite": "../generated/props/tablet.png",
+      "sprite": "../generated/trimmed/tablet-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/tablet.png",
       "size": [
-        362,
-        362
+        241,
+        203
       ],
       "alphaBBox": [
-        90,
-        87,
-        315,
-        274
+        8,
+        8,
+        233,
+        195
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -961,6 +1002,7 @@
     {
       "id": "desk-phone",
       "sprite": "../generated/props/desk-phone.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -985,6 +1027,7 @@
     {
       "id": "pen-cup",
       "sprite": "../generated/props/pen-cup.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -1009,6 +1052,7 @@
     {
       "id": "paper-notes",
       "sprite": "../generated/props/paper-notes.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -1033,16 +1077,17 @@
     },
     {
       "id": "succulent",
-      "sprite": "../generated/props/succulent.png",
+      "sprite": "../generated/trimmed/succulent-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/succulent.png",
       "size": [
-        362,
-        362
+        167,
+        202
       ],
       "alphaBBox": [
-        118,
-        49,
-        269,
-        235
+        8,
+        8,
+        159,
+        194
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -1056,6 +1101,7 @@
     {
       "id": "desk-plant",
       "sprite": "../generated/props/desk-plant.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362
@@ -1079,16 +1125,17 @@
     },
     {
       "id": "wall-clock",
-      "sprite": "../generated/props/wall-clock.png",
+      "sprite": "../generated/trimmed/wall-clock-trimmed-v1.png",
+      "trimmedFrom": "../generated/props/wall-clock.png",
       "size": [
-        362,
-        362
+        206,
+        228
       ],
       "alphaBBox": [
-        34,
-        28,
-        224,
-        240
+        8,
+        8,
+        198,
+        220
       ],
       "touchesCanvasEdge": false,
       "edges": {
@@ -1102,6 +1149,7 @@
     {
       "id": "pendant-lamp",
       "sprite": "../generated/props/pendant-lamp.png",
+      "trimmedFrom": null,
       "size": [
         362,
         362

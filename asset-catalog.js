@@ -30,7 +30,7 @@ function draw() {
     node.querySelector('.kind').textContent = item.kind.toUpperCase();
     node.querySelector('.placed').textContent = item.placed ? 'PLACED NOW' : 'CATALOG ONLY';
     const risk = node.querySelector('.bounds');
-    risk.textContent = item.bounds?.touchesCanvasEdge ? `EDGE-CUT RISK: ${item.bounds.hitEdges.join(', ')}` : 'FULL ALPHA BOUNDS';
+    risk.textContent = item.bounds?.touchesCanvasEdge ? `EDGE-CUT RISK: ${item.bounds.hitEdges.join(', ')}` : item.bounds?.trimmedFrom ? 'TIGHT-TRIMMED / 8PX PAD' : 'FULL ALPHA BOUNDS';
     risk.classList.toggle('risk', Boolean(item.bounds?.touchesCanvasEdge));
     node.querySelector('h2').textContent = humanize(item.id);
     node.querySelector('.orientation').textContent = humanize(item.orientation);

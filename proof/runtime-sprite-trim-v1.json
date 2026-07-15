@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "paddingPx": 8,
+  "trimmedCount": 22,
+  "assets": [
+    {
+      "id": "north-lounge-inward-facing",
+      "from": "../generated/furniture/north-lounge-decomposed-v3.png",
+      "to": "../generated/trimmed/north-lounge-inward-facing-trimmed-v1.png",
+      "sourceMargins": [
+        18,
+        149,
+        263,
+        12
+      ]
+    },
+    {
+      "id": "cafe-wall-south-facing",
+      "from": "../generated/furniture/cafe-decomposed-v3.png",
+      "to": "../generated/trimmed/cafe-wall-south-facing-trimmed-v1.png",
+      "sourceMargins": [
+        65,
+        19,
+        18,
+        43
+      ]
+    },
+    {
+      "id": "workstation-west-north-facing",
+      "from": "../generated/furniture/workstation-west-decomposed-v4.png",
+      "to": "../generated/trimmed/workstation-west-north-facing-trimmed-v1.png",
+      "sourceMargins": [
+        50,
+        9,
+        296,
+        22
+      ]
+    },
+    {
+      "id": "workstation-east-north-facing",
+      "from": "../generated/furniture/workstation-east-decomposed-v4.png",
+      "to": "../generated/trimmed/workstation-east-north-facing-trimmed-v1.png",
+      "sourceMargins": [
+        331,
+        9,
+        13,
+        22
+      ]
+    },
+    {
+      "id": "shared-worktable",
+      "from": "../generated/furniture/shared-worktable.png",
+      "to": "../generated/trimmed/shared-worktable-trimmed-v1.png",
+      "sourceMargins": [
+        14,
+        102,
+        14,
+        104
+      ]
+    },
+    {
+      "id": "olive-sofa",
+      "from": "../generated/furniture/olive-sofa.png",
+      "to": "../generated/trimmed/olive-sofa-trimmed-v1.png",
+      "sourceMargins": [
+        54,
+        140,
+        72,
+        49
+      ]
+    },
+    {
+      "id": "olive-armchair",
+      "from": "../generated/furniture/olive-armchair.png",
+      "to": "../generated/trimmed/olive-armchair-trimmed-v1.png",
+      "sourceMargins": [
+        150,
+        82,
+        63,
+        89
+      ]
+    },
+    {
+      "id": "rolling-office-chair",
+      "from": "../generated/furniture/rolling-office-chair.png",
+      "to": "../generated/trimmed/rolling-office-chair-trimmed-v1.png",
+      "sourceMargins": [
+        88,
+        83,
+        138,
+        73
+      ]
+    },
+    {
+      "id": "flower-planter",
+      "from": "../generated/furniture/flower-planter.png",
+      "to": "../generated/trimmed/flower-planter-trimmed-v1.png",
+      "sourceMargins": [
+        88,
+        64,
+        17,
+        150
+      ]
+    },
+    {
+      "id": "solar-array",
+      "from": "../generated/technology/solar-array.png",
+      "to": "../generated/trimmed/solar-array-trimmed-v1.png",
+      "sourceMargins": [
+        84,
+        123,
+        29,
+        33
+      ]
+    },
+    {
+      "id": "server-rack",
+      "from": "../generated/technology/server-rack.png",
+      "to": "../generated/trimmed/server-rack-trimmed-v1.png",
+      "sourceMargins": [
+        94,
+        83,
+        82,
+        17
+      ]
+    },
+    {
+      "id": "laptop",
+      "from": "../generated/technology/laptop.png",
+      "to": "../generated/trimmed/laptop-trimmed-v1.png",
+      "sourceMargins": [
+        96,
+        80,
+        55,
+        89
+      ]
+    },
+    {
+      "id": "keyboard-mouse",
+      "from": "../generated/technology/keyboard-mouse.png",
+      "to": "../generated/trimmed/keyboard-mouse-trimmed-v1.png",
+      "sourceMargins": [
+        51,
+        152,
+        56,
+        128
+      ]
+    },
+    {
+      "id": "environment-display",
+      "from": "../generated/technology/environment-display.png",
+      "to": "../generated/trimmed/environment-display-trimmed-v1.png",
+      "sourceMargins": [
+        31,
+        47,
+        175,
+        73
+      ]
+    },
+    {
+      "id": "lab-console",
+      "from": "../generated/technology/lab-console.png",
+      "to": "../generated/trimmed/lab-console-trimmed-v1.png",
+      "sourceMargins": [
+        69,
+        17,
+        29,
+        127
+      ]
+    },
+    {
+      "id": "robotics-platform",
+      "from": "../generated/technology/robotics-platform.png",
+      "to": "../generated/trimmed/robotics-platform-trimmed-v1.png",
+      "sourceMargins": [
+        50,
+        37,
+        80,
+        134
+      ]
+    },
+    {
+      "id": "coffee-mug",
+      "from": "../generated/props/coffee-mug.png",
+      "to": "../generated/trimmed/coffee-mug-trimmed-v1.png",
+      "sourceMargins": [
+        134,
+        134,
+        57,
+        54
+      ]
+    },
+    {
+      "id": "water-bottle",
+      "from": "../generated/props/water-bottle.png",
+      "to": "../generated/trimmed/water-bottle-trimmed-v1.png",
+      "sourceMargins": [
+        123,
+        96,
+        124,
+        33
+      ]
+    },
+    {
+      "id": "book-stack",
+      "from": "../generated/props/book-stack.png",
+      "to": "../generated/trimmed/book-stack-trimmed-v1.png",
+      "sourceMargins": [
+        6,
+        127,
+        108,
+        24
+      ]
+    },
+    {
+      "id": "tablet",
+      "from": "../generated/props/tablet.png",
+      "to": "../generated/trimmed/tablet-trimmed-v1.png",
+      "sourceMargins": [
+        90,
+        87,
+        47,
+        88
+      ]
+    },
+    {
+      "id": "succulent",
+      "from": "../generated/props/succulent.png",
+      "to": "../generated/trimmed/succulent-trimmed-v1.png",
+      "sourceMargins": [
+        118,
+        49,
+        93,
+        127
+      ]
+    },
+    {
+      "id": "wall-clock",
+      "from": "../generated/props/wall-clock.png",
+      "to": "../generated/trimmed/wall-clock-trimmed-v1.png",
+      "sourceMargins": [
+        34,
+        28,
+        138,
+        122
+      ]
+    }
+  ]
+}

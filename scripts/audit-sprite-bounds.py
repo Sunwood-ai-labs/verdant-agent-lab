@@ -37,6 +37,7 @@ def main():
             results.append({
                 "id": item["id"],
                 "sprite": item["sprite"],
+                "trimmedFrom": item.get("trimmedFrom"),
                 "size": list(alpha.size),
                 "alphaBBox": list(alpha.getbbox() or (0, 0, 0, 0)),
                 "touchesCanvasEdge": bool(hit_edges),

@@ -9,188 +9,564 @@
       "id": "south-lounge-inward-facing",
       "category": "lounge",
       "sprite": "../generated/furniture/south-lounge-decomposed-v5.png",
-      "footprint": { "w": 8.281, "h": 5 },
+      "footprint": {
+        "w": 8.281,
+        "h": 5
+      },
       "zBias": 3,
       "orientation": "inward-facing",
-      "contentCount": { "decomposedParts": 12, "sectional": 2, "platform": 1, "plantFixtures": 6, "papers": 3 },
+      "contentCount": {
+        "decomposedParts": 12,
+        "sectional": 2,
+        "platform": 1,
+        "plantFixtures": 6,
+        "papers": 3
+      },
       "decompositionManifest": "../layouts/quiet-lounge-parts-3x6.v5.json"
     },
     {
       "id": "studio-west-mixed-facing",
       "category": "workstation",
       "sprite": "../generated/furniture/studio-west-decomposed-v2.png",
-      "footprint": { "w": 10.938, "h": 6.563 },
+      "footprint": {
+        "w": 10.938,
+        "h": 6.563
+      },
       "zBias": 4,
       "orientation": "mixed",
-      "contentCount": { "decomposedParts": 18, "deskStructure": 1, "chair": 1, "screens": 4, "plantShelf": 2, "storage": 2, "looseProps": 7 },
+      "contentCount": {
+        "decomposedParts": 18,
+        "deskStructure": 1,
+        "chair": 1,
+        "screens": 4,
+        "plantShelf": 2,
+        "storage": 2,
+        "looseProps": 7
+      },
       "decompositionManifest": "../layouts/studio-west-parts-3x6.v2.json"
     },
     {
       "id": "north-lounge-inward-facing",
       "category": "lounge",
-      "sprite": "../generated/furniture/north-lounge-decomposed-v3.png",
-      "footprint": { "w": 5.625, "h": 4.063 },
+      "sprite": "../generated/trimmed/north-lounge-inward-facing-trimmed-v1.png",
+      "footprint": {
+        "w": 5.625,
+        "h": 4.063
+      },
       "zBias": 3,
       "orientation": "inward-facing",
-      "contentCount": { "decomposedParts": 6, "sectional": 1, "rug": 1, "table": 1, "plant": 1, "tableProps": 2 },
-      "decompositionManifest": "../layouts/garden-cafe-parts-3x6.v3.json"
+      "contentCount": {
+        "decomposedParts": 6,
+        "sectional": 1,
+        "rug": 1,
+        "table": 1,
+        "plant": 1,
+        "tableProps": 2
+      },
+      "decompositionManifest": "../layouts/garden-cafe-parts-3x6.v3.json",
+      "trimmedFrom": "../generated/furniture/north-lounge-decomposed-v3.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          470,
+          285
+        ],
+        "alphaBBox": [
+          18,
+          149,
+          207,
+          273
+        ],
+        "sourceMargins": [
+          18,
+          149,
+          263,
+          12
+        ]
+      }
     },
     {
       "id": "cafe-wall-south-facing",
       "category": "cafe",
-      "sprite": "../generated/furniture/cafe-decomposed-v3.png",
-      "footprint": { "w": 5.469, "h": 5 },
+      "sprite": "../generated/trimmed/cafe-wall-south-facing-trimmed-v1.png",
+      "footprint": {
+        "w": 5.469,
+        "h": 5
+      },
       "zBias": 3,
       "orientation": "south-facing",
-      "contentCount": { "decomposedParts": 10, "cabinet": 1, "coffeeMachine": 3, "vendingUnit": 2, "sign": 1, "plantLedge": 1, "greeneryWindow": 1, "display": 1 },
-      "decompositionManifest": "../layouts/garden-cafe-parts-3x6.v3.json"
+      "contentCount": {
+        "decomposedParts": 10,
+        "cabinet": 1,
+        "coffeeMachine": 3,
+        "vendingUnit": 2,
+        "sign": 1,
+        "plantLedge": 1,
+        "greeneryWindow": 1,
+        "display": 1
+      },
+      "decompositionManifest": "../layouts/garden-cafe-parts-3x6.v3.json",
+      "trimmedFrom": "../generated/furniture/cafe-decomposed-v3.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          470,
+          285
+        ],
+        "alphaBBox": [
+          65,
+          19,
+          452,
+          242
+        ],
+        "sourceMargins": [
+          65,
+          19,
+          18,
+          43
+        ]
+      }
     },
     {
       "id": "meeting-table-vertical-three-chair",
       "category": "meeting",
       "sprite": "../generated/furniture/meeting-room-decomposed-v2.png",
-      "footprint": { "w": 6, "h": 6 },
+      "footprint": {
+        "w": 6,
+        "h": 6
+      },
       "zBias": 4,
       "orientation": "north-south",
-      "contentCount": { "decomposedParts": 9, "table": 1, "chair": 3, "plant": 4, "control": 1 },
+      "contentCount": {
+        "decomposedParts": 9,
+        "table": 1,
+        "chair": 3,
+        "plant": 4,
+        "control": 1
+      },
       "decompositionManifest": "../layouts/meeting-room-parts-3x6.v2.json"
     },
     {
       "id": "greenhouse-southeast-facing",
       "category": "architecture",
       "sprite": "../generated/furniture/greenhouse-decomposed-v3.png",
-      "footprint": { "w": 7.813, "h": 9.219 },
+      "footprint": {
+        "w": 7.813,
+        "h": 9.219
+      },
       "zBias": 2,
       "orientation": "south-east",
-      "contentCount": { "decomposedParts": 18, "glassPanels": 7, "frames": 5, "door": 1, "handle": 1, "lamps": 2, "controlPanel": 1, "plant": 1 },
+      "contentCount": {
+        "decomposedParts": 18,
+        "glassPanels": 7,
+        "frames": 5,
+        "door": 1,
+        "handle": 1,
+        "lamps": 2,
+        "controlPanel": 1,
+        "plant": 1
+      },
       "decompositionManifest": "../layouts/greenhouse-parts-3x6.v3.json"
     },
     {
       "id": "workstation-west-north-facing",
       "category": "workstation",
-      "sprite": "../generated/furniture/workstation-west-decomposed-v4.png",
-      "footprint": { "w": 8.438, "h": 4.375 },
+      "sprite": "../generated/trimmed/workstation-west-north-facing-trimmed-v1.png",
+      "footprint": {
+        "w": 8.438,
+        "h": 4.375
+      },
       "zBias": 4,
       "orientation": "north-facing",
-      "contentCount": { "decomposedParts": 18, "desk": 1, "chair": 1, "screens": 3, "plantShelf": 1, "plants": 2, "storage": 3, "props": 7 },
-      "decompositionManifest": "../layouts/workstation-west-parts-3x6.v1.json"
+      "contentCount": {
+        "decomposedParts": 18,
+        "desk": 1,
+        "chair": 1,
+        "screens": 3,
+        "plantShelf": 1,
+        "plants": 2,
+        "storage": 3,
+        "props": 7
+      },
+      "decompositionManifest": "../layouts/workstation-west-parts-3x6.v1.json",
+      "trimmedFrom": "../generated/furniture/workstation-west-decomposed-v4.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          570,
+          255
+        ],
+        "alphaBBox": [
+          50,
+          9,
+          274,
+          233
+        ],
+        "sourceMargins": [
+          50,
+          9,
+          296,
+          22
+        ]
+      }
     },
     {
       "id": "workstation-east-north-facing",
       "category": "workstation",
-      "sprite": "../generated/furniture/workstation-east-decomposed-v4.png",
-      "footprint": { "w": 7.5, "h": 4.375 },
+      "sprite": "../generated/trimmed/workstation-east-north-facing-trimmed-v1.png",
+      "footprint": {
+        "w": 7.5,
+        "h": 4.375
+      },
       "zBias": 4,
       "orientation": "north-facing",
-      "contentCount": { "decomposedParts": 17, "desk": 1, "chair": 2, "screens": 3, "plantShelf": 1, "plant": 1, "storage": 3, "props": 6 },
-      "decompositionManifest": "../layouts/workstation-east-parts-3x6.v1.json"
+      "contentCount": {
+        "decomposedParts": 17,
+        "desk": 1,
+        "chair": 2,
+        "screens": 3,
+        "plantShelf": 1,
+        "plant": 1,
+        "storage": 3,
+        "props": 6
+      },
+      "decompositionManifest": "../layouts/workstation-east-parts-3x6.v1.json",
+      "trimmedFrom": "../generated/furniture/workstation-east-decomposed-v4.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          570,
+          255
+        ],
+        "alphaBBox": [
+          331,
+          9,
+          557,
+          233
+        ],
+        "sourceMargins": [
+          331,
+          9,
+          13,
+          22
+        ]
+      }
     },
     {
       "id": "curved-reception-desk",
       "category": "desk",
       "sprite": "../generated/furniture/reception-decomposed-v3.png",
-      "footprint": { "w": 9.063, "h": 4.375 },
+      "footprint": {
+        "w": 9.063,
+        "h": 4.375
+      },
       "surfaceAnchors": [
-        { "id": "left", "x": 0.24, "y": 0.38 },
-        { "id": "center", "x": 0.5, "y": 0.34 },
-        { "id": "right", "x": 0.76, "y": 0.38 }
+        {
+          "id": "left",
+          "x": 0.24,
+          "y": 0.38
+        },
+        {
+          "id": "center",
+          "x": 0.5,
+          "y": 0.34
+        },
+        {
+          "id": "right",
+          "x": 0.76,
+          "y": 0.38
+        }
       ],
       "zBias": 2,
-      "contentCount": { "decomposedParts": 8, "counterStructure": 1, "monitor": 1, "tablets": 2, "plants": 3, "papers": 1 },
+      "contentCount": {
+        "decomposedParts": 8,
+        "counterStructure": 1,
+        "monitor": 1,
+        "tablets": 2,
+        "plants": 3,
+        "papers": 1
+      },
       "decompositionManifest": "../layouts/reception-parts-3x6.v3.json"
     },
     {
       "id": "shared-worktable",
       "category": "desk",
-      "sprite": "../generated/furniture/shared-worktable.png",
-      "footprint": { "w": 5, "h": 3 },
+      "sprite": "../generated/trimmed/shared-worktable-trimmed-v1.png",
+      "footprint": {
+        "w": 5,
+        "h": 3
+      },
       "surfaceAnchors": [
-        { "id": "north-left", "x": 0.36, "y": 0.3 },
-        { "id": "north-right", "x": 0.64, "y": 0.3 },
-        { "id": "south-left", "x": 0.36, "y": 0.52 },
-        { "id": "south-right", "x": 0.64, "y": 0.52 }
+        {
+          "id": "north-left",
+          "x": 0.36,
+          "y": 0.3
+        },
+        {
+          "id": "north-right",
+          "x": 0.64,
+          "y": 0.3
+        },
+        {
+          "id": "south-left",
+          "x": 0.36,
+          "y": 0.52
+        },
+        {
+          "id": "south-right",
+          "x": 0.64,
+          "y": 0.52
+        }
       ],
-      "zBias": 2
+      "zBias": 2,
+      "trimmedFrom": "../generated/furniture/shared-worktable.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          14,
+          102,
+          348,
+          258
+        ],
+        "sourceMargins": [
+          14,
+          102,
+          14,
+          104
+        ]
+      }
     },
     {
       "id": "single-desk",
       "category": "desk",
       "sprite": "../generated/furniture/single-desk.png",
-      "footprint": { "w": 4, "h": 3 },
+      "footprint": {
+        "w": 4,
+        "h": 3
+      },
       "surfaceAnchors": [
-        { "id": "display", "x": 0.58, "y": 0.36 },
-        { "id": "prop", "x": 0.32, "y": 0.43 }
+        {
+          "id": "display",
+          "x": 0.58,
+          "y": 0.36
+        },
+        {
+          "id": "prop",
+          "x": 0.32,
+          "y": 0.43
+        }
       ],
       "zBias": 2
     },
     {
       "id": "olive-sofa",
       "category": "seat",
-      "sprite": "../generated/furniture/olive-sofa.png",
-      "footprint": { "w": 5, "h": 2 },
+      "sprite": "../generated/trimmed/olive-sofa-trimmed-v1.png",
+      "footprint": {
+        "w": 5,
+        "h": 2
+      },
       "seatAnchors": [
-        { "id": "left", "x": 0.38, "y": 0.56, "facing": "south" },
-        { "id": "right", "x": 0.62, "y": 0.56, "facing": "south" }
+        {
+          "id": "left",
+          "x": 0.38,
+          "y": 0.56,
+          "facing": "south"
+        },
+        {
+          "id": "right",
+          "x": 0.62,
+          "y": 0.56,
+          "facing": "south"
+        }
       ],
-      "zBias": 1
+      "zBias": 1,
+      "trimmedFrom": "../generated/furniture/olive-sofa.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          54,
+          140,
+          290,
+          313
+        ],
+        "sourceMargins": [
+          54,
+          140,
+          72,
+          49
+        ]
+      }
     },
     {
       "id": "olive-armchair",
       "category": "seat",
-      "sprite": "../generated/furniture/olive-armchair.png",
-      "footprint": { "w": 2, "h": 2 },
+      "sprite": "../generated/trimmed/olive-armchair-trimmed-v1.png",
+      "footprint": {
+        "w": 2,
+        "h": 2
+      },
       "seatAnchors": [
-        { "id": "seat", "x": 0.5, "y": 0.56, "facing": "south" }
+        {
+          "id": "seat",
+          "x": 0.5,
+          "y": 0.56,
+          "facing": "south"
+        }
       ],
-      "zBias": 1
+      "zBias": 1,
+      "trimmedFrom": "../generated/furniture/olive-armchair.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          150,
+          82,
+          299,
+          273
+        ],
+        "sourceMargins": [
+          150,
+          82,
+          63,
+          89
+        ]
+      }
     },
     {
       "id": "round-coffee-table",
       "category": "table",
       "sprite": "../generated/furniture/round-coffee-table.png",
-      "footprint": { "w": 3, "h": 2 },
+      "footprint": {
+        "w": 3,
+        "h": 2
+      },
       "surfaceAnchors": [
-        { "id": "center", "x": 0.5, "y": 0.45 }
+        {
+          "id": "center",
+          "x": 0.5,
+          "y": 0.45
+        }
       ],
       "zBias": 2
     },
     {
       "id": "rolling-office-chair",
       "category": "seat",
-      "sprite": "../generated/furniture/rolling-office-chair.png",
-      "footprint": { "w": 2, "h": 2 },
+      "sprite": "../generated/trimmed/rolling-office-chair-trimmed-v1.png",
+      "footprint": {
+        "w": 2,
+        "h": 2
+      },
       "seatAnchors": [
-        { "id": "seat", "x": 0.5, "y": 0.5, "facing": "north" }
+        {
+          "id": "seat",
+          "x": 0.5,
+          "y": 0.5,
+          "facing": "north"
+        }
       ],
-      "zBias": 3
+      "zBias": 3,
+      "trimmedFrom": "../generated/furniture/rolling-office-chair.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          88,
+          83,
+          224,
+          289
+        ],
+        "sourceMargins": [
+          88,
+          83,
+          138,
+          73
+        ]
+      }
     },
     {
       "id": "plant-bookshelf",
       "category": "storage",
       "sprite": "../generated/furniture/plant-bookshelf.png",
-      "footprint": { "w": 4, "h": 2 },
+      "footprint": {
+        "w": 4,
+        "h": 2
+      },
       "wallMount": true,
       "zBias": 1
     },
     {
       "id": "flower-planter",
       "category": "plant",
-      "sprite": "../generated/furniture/flower-planter.png",
-      "footprint": { "w": 4, "h": 1 },
-      "zBias": 2
+      "sprite": "../generated/trimmed/flower-planter-trimmed-v1.png",
+      "footprint": {
+        "w": 4,
+        "h": 1
+      },
+      "zBias": 2,
+      "trimmedFrom": "../generated/furniture/flower-planter.png",
+      "trim": {
+        "version": 1,
+        "paddingPx": 8,
+        "sourceSize": [
+          362,
+          362
+        ],
+        "alphaBBox": [
+          88,
+          64,
+          345,
+          212
+        ],
+        "sourceMargins": [
+          88,
+          64,
+          17,
+          150
+        ]
+      }
     },
     {
       "id": "tall-indoor-plant",
       "category": "plant",
       "sprite": "../generated/furniture/tall-indoor-plant.png",
-      "footprint": { "w": 2, "h": 2 },
+      "footprint": {
+        "w": 2,
+        "h": 2
+      },
       "zBias": 3
     },
     {
       "id": "glass-wall-segment",
       "category": "architecture",
       "sprite": "../generated/furniture/glass-wall-segment.png",
-      "footprint": { "w": 5, "h": 1 },
+      "footprint": {
+        "w": 5,
+        "h": 1
+      },
       "wallMount": true,
       "zBias": 0
     },
@@ -198,7 +574,10 @@
       "id": "greenhouse-door-segment",
       "category": "architecture",
       "sprite": "../generated/furniture/greenhouse-door-segment.png",
-      "footprint": { "w": 4, "h": 1 },
+      "footprint": {
+        "w": 4,
+        "h": 1
+      },
       "wallMount": true,
       "zBias": 0
     }
