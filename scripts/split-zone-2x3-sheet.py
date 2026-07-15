@@ -73,15 +73,15 @@ def grid_boundaries(alpha: Image.Image, divisions: int, axis: str) -> list[int]:
     return chosen + [length]
 
 
-def split_sheet(image: Image.Image, cells: list[dict], output: Path, threshold: int = 36) -> tuple[Image.Image, list[dict]]:
-    if len(cells) != 6:
-        raise ValueError("a 2x3 sheet requires exactly six cell definitions")
+def split_sheet(image: Image.Image, cells: list[dict], output: Path, columns: int = 2, rows: int = 3, threshold: int = 36) -> tuple[Image.Image, list[dict]]:
+    if columns * rows != 6 or len(cells) != 6:
+        raise ValueError("a 2x3/3x2 sheet requires exactly six cell definitions")
     output.mkdir(parents=True, exist_ok=True)
     alpha = make_alpha(image, border_key(image), threshold)
-    xs, ys = grid_boundaries(alpha, 2, "x"), grid_boundaries(alpha, 3, "y")
+    xs, ys = grid_boundaries(alpha, columns, "x"), grid_boundaries(alpha, rows, "y")
     report = []
     for index, cell in enumerate(cells):
-        column, row = index % 2, index // 2
+        column, row = index % columns, index // columns
         rectangle = (xs[column], ys[row], xs[column + 1], ys[row + 1])
         cell_image = alpha.crop(rectangle)
         bbox = alpha_bbox(cell_image)
@@ -118,7 +118,8 @@ def main() -> None:
     parser.add_argument("--threshold", type=int, default=36)
     args = parser.parse_args()
     spec = json.loads(Path(args.spec).read_text())
-    alpha, cells = split_sheet(Image.open(args.input), spec["cells"], Path(args.out), args.threshold)
+    grid = spec["grid"]
+    alpha, cells = split_sheet(Image.open(args.input), spec["cells"], Path(args.out), grid["columns"], grid["rows"], args.threshold)
     alpha_path = Path(args.alpha_out)
     alpha_path.parent.mkdir(parents=True, exist_ok=True)
     alpha.save(alpha_path)

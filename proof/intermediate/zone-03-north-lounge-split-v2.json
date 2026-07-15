@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-03-north-lounge/north-lounge-2x3-v2-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-03-north-lounge/north-lounge-2x3-v2-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    238,
+    24,
+    237
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "olive-rug-platform",
+      "sourceCellBbox": [
+        0,
+        0,
+        478,
+        532
+      ],
+      "alphaBboxInCell": [
+        76,
+        204,
+        382,
+        407
+      ],
+      "alphaBboxInSheet": [
+        76,
+        204,
+        382,
+        407
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 55182,
+      "output": "assets/generated/zones/north-lounge-v2/01-olive-rug-platform.png"
+    },
+    {
+      "cell": 2,
+      "id": "olive-l-sofa-main",
+      "sourceCellBbox": [
+        478,
+        0,
+        1050,
+        532
+      ],
+      "alphaBboxInCell": [
+        97,
+        202,
+        471,
+        389
+      ],
+      "alphaBboxInSheet": [
+        575,
+        202,
+        949,
+        389
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 65682,
+      "output": "assets/generated/zones/north-lounge-v2/02-olive-l-sofa-main.png"
+    },
+    {
+      "cell": 3,
+      "id": "olive-right-sofa-return",
+      "sourceCellBbox": [
+        1050,
+        0,
+        1536,
+        532
+      ],
+      "alphaBboxInCell": [
+        172,
+        198,
+        382,
+        423
+      ],
+      "alphaBboxInSheet": [
+        1222,
+        198,
+        1432,
+        423
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 32659,
+      "output": "assets/generated/zones/north-lounge-v2/03-olive-right-sofa-return.png"
+    },
+    {
+      "cell": 4,
+      "id": "round-wood-coffee-table",
+      "sourceCellBbox": [
+        0,
+        532,
+        478,
+        1024
+      ],
+      "alphaBboxInCell": [
+        88,
+        109,
+        358,
+        298
+      ],
+      "alphaBboxInSheet": [
+        88,
+        641,
+        358,
+        830
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 43587,
+      "output": "assets/generated/zones/north-lounge-v2/04-round-wood-coffee-table.png"
+    },
+    {
+      "cell": 5,
+      "id": "tabletop-plant",
+      "sourceCellBbox": [
+        478,
+        532,
+        1050,
+        1024
+      ],
+      "alphaBboxInCell": [
+        215,
+        121,
+        353,
+        306
+      ],
+      "alphaBboxInSheet": [
+        693,
+        653,
+        831,
+        838
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 17278,
+      "output": "assets/generated/zones/north-lounge-v2/05-tabletop-plant.png"
+    },
+    {
+      "cell": 6,
+      "id": "tabletop-prop-set",
+      "sourceCellBbox": [
+        1050,
+        532,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        101,
+        140,
+        348,
+        298
+      ],
+      "alphaBboxInSheet": [
+        1151,
+        672,
+        1398,
+        830
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 22203,
+      "output": "assets/generated/zones/north-lounge-v2/06-tabletop-prop-set.png"
+    }
+  ]
+}

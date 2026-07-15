@@ -30,6 +30,19 @@ class SplitZone2x3SheetTests(unittest.TestCase):
             self.assertTrue(all(Path(entry["output"]).exists() for entry in report))
             self.assertTrue(all(entry["opaquePixels"] == 4 for entry in report))
 
+    def test_splits_three_columns_and_two_rows_in_row_major_order(self):
+        source = Image.new("RGB", (19, 20), "#ff00ff")
+        draw = ImageDraw.Draw(source)
+        cells = [{"id": f"asset-{index}"} for index in range(1, 7)]
+        xs, ys = MODULE.proportional_boundaries(19, 3), MODULE.proportional_boundaries(20, 2)
+        for index in range(6):
+            column, row = index % 3, index // 3
+            draw.rectangle((xs[column] + 1, ys[row] + 1, xs[column] + 2, ys[row] + 2), fill=(index + 1, 30, 40))
+        with tempfile.TemporaryDirectory() as directory:
+            _, report = MODULE.split_sheet(source, cells, Path(directory), columns=3, rows=2)
+            self.assertEqual([entry["id"] for entry in report], [f"asset-{index}" for index in range(1, 7)])
+            self.assertTrue(all(entry["opaquePixels"] == 4 for entry in report))
+
 
 if __name__ == "__main__":
     unittest.main()

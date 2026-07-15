@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "north-lounge",
+  "referenceBbox": [826, 128, 1001, 272],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "no generated text",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "olive-rug-platform", "orientation": "top-facing", "reusable": false },
+    { "cell": 2, "id": "olive-l-sofa-main", "orientation": "inward-facing", "reusable": false },
+    { "cell": 3, "id": "olive-right-sofa-return", "orientation": "inward-facing", "reusable": false },
+    { "cell": 4, "id": "round-wood-coffee-table", "orientation": "top-facing", "reusable": false },
+    { "cell": 5, "id": "tabletop-plant", "orientation": "top-facing", "reusable": true },
+    { "cell": 6, "id": "tabletop-prop-set", "orientation": "top-facing", "reusable": true }
+  ]
+}
