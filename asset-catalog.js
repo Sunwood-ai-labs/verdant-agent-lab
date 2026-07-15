@@ -16,13 +16,18 @@ const parts = (item) => item.contentCount?.decomposedParts ? `${item.contentCoun
 const catalog = document.querySelector('#catalog');
 const template = document.querySelector('#card-template');
 const filter = document.querySelector('#filter');
+const pageSize = 24;
+const requestedPage = Math.max(1, Number(new URLSearchParams(location.search).get('page')) || 1);
 document.querySelector('#total').textContent = assets.length;
 document.querySelector('#active').textContent = assets.filter((item) => item.placed).length;
 document.querySelector('#decomposed').textContent = assets.filter((item) => item.decompositionManifest).length;
 function draw() {
   const type = filter.value;
   const shown = assets.filter((item) => type === 'all' || (type === 'active' && item.placed) || (type === 'decomposed' && item.decompositionManifest) || item.kind === type);
-  const cards = shown.map((item) => {
+  const pageCount = Math.max(1, Math.ceil(shown.length / pageSize));
+  const currentPage = Math.min(requestedPage, pageCount);
+  const pageAssets = shown.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+  const cards = pageAssets.map((item) => {
     const node = template.content.cloneNode(true);
     const image = node.querySelector('img');
     image.src = `assets/${item.sprite.replace('../', '')}`;
@@ -39,7 +44,14 @@ function draw() {
     return node;
   });
   catalog.replaceChildren(...cards);
-  document.querySelector('#resultCount').textContent = `${shown.length} / ${assets.length} assets shown`;
+  document.querySelector('#resultCount').textContent = `${pageAssets.length} shown · ${shown.length} filtered / ${assets.length} runtime`;
+  const previous = document.querySelector('#previousPage');
+  const next = document.querySelector('#nextPage');
+  previous.href = `?page=${Math.max(1, currentPage - 1)}`;
+  next.href = `?page=${Math.min(pageCount, currentPage + 1)}`;
+  previous.setAttribute('aria-disabled', String(currentPage === 1));
+  next.setAttribute('aria-disabled', String(currentPage === pageCount));
+  document.querySelector('#pageLabel').textContent = `PAGE ${currentPage} / ${pageCount}`;
 }
 filter.addEventListener('change', draw);
 draw();
