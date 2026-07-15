@@ -35,21 +35,21 @@ the 48-entry manifest. Therefore the existing split bank must be reviewed
 against the source and promoted, with its own manifest records and placements,
 before it can count as independently runtime-addressable coverage.
 
-## Required source assets absent or not independently runtime-addressable
+## Required source assets not independently runtime-addressable or source-verified
 
 | Priority | Reference requirement | Current state |
 |---|---|---|
 | P0 | Site shell: floor tiles, paving, exterior walls/columns/fences, front stairs, entrance doors, exit sign, perimeter trees/hedges/flowerbeds | Baked into one architecture image; not independent |
-| P0 | Main branding and wayfinding: Sunwood wall sign, CAFE sign, AI LAB sign, reception direction board, IDEAS board | Missing or baked into zone composites |
-| P0 | Solar wing: panel frame + six modules, output display, battery/server bank, controller, vine/planter pieces | One parent composite; individual source parts not runtime-addressable |
-| P0 | Reception: curved counter, front planter, monitor, tablets, phone, papers, desk plants, easel | One parent composite; small props not independently placed |
-| P0 | Glass meeting enclosure: frame segments, three door/window panels, pendant, display, table, direction-specific chairs, plants | One parent composite; enclosure and contents not separated |
-| P0 | Greenhouse: roof glass panes, ridge and cross beams, wall panes, door, handle, control panel, lamps, interior shelving/foliage | Parent composite; no independent runtime parts |
-| P1 | Cafe: shelf, greenery window, plant ledge, counter, three coffee machines, refrigerator, vending unit, display, books/pots | Parent composite; generic espresso machine is not a source match |
-| P1 | Studio and two distinct workstations: desk frames, drawers, monitors, direction-specific chairs, shelves, whiteboard, keyboards, papers, mugs, plants | Parent composites or generic candidates; counts/facing not source-verified |
-| P1 | AI lab: bookcase, whiteboard, benches, analyser cart, platform, devices, shelf displays, plants | Parent composite; child cells unused at runtime |
-| P1 | North and south lounges: platform/rug, sectional sofa pieces, tables, board, benches, trees, flowering planters, tabletop props | Parent composites and generic sofa/table candidates; source layout not individually rebuilt |
-| P2 | Site-wide lighting, hanging vines, pots, long planters, garden borders, shelf contents, small paper/device variants | Missing or baked; generic replacements do not establish source coverage |
+| P0 | Main branding and wayfinding: Sunwood wall sign, CAFE sign, AI LAB sign, reception direction board, IDEAS board | Not catalogued as individual runtime assets; split candidates require source-match review |
+| P0 | Solar wing: panel frame + six modules, output display, battery/server bank, controller, vine/planter pieces | Split child bank exists; builder loads one parent composite instead |
+| P0 | Reception: curved counter, front planter, monitor, tablets, phone, papers, desk plants, easel | Split child bank exists; small props are not independently placed |
+| P0 | Glass meeting enclosure: frame segments, three door/window panels, pendant, display, table, direction-specific chairs, plants | Split child bank exists; builder uses a parent composite |
+| P0 | Greenhouse: roof glass panes, ridge and cross beams, wall panes, door, handle, control panel, lamps, interior shelving/foliage | Split child bank exists; no child is directly runtime-addressable |
+| P1 | Cafe: shelf, greenery window, plant ledge, counter, three coffee machines, refrigerator, vending unit, display, books/pots | Split child bank exists; generic candidates still require source-match review |
+| P1 | Studio and two distinct workstations: desk frames, drawers, monitors, direction-specific chairs, shelves, whiteboard, keyboards, papers, mugs, plants | Split child bank exists; counts/facing are not source-verified and children are not wired |
+| P1 | AI lab: bookcase, whiteboard, benches, analyser cart, platform, devices, shelf displays, plants | Split child bank exists; builder loads a parent composite |
+| P1 | North and south lounges: platform/rug, sectional sofa pieces, tables, board, benches, trees, flowering planters, tabletop props | Split child bank exists; source layout is not individually rebuilt |
+| P2 | Site-wide lighting, hanging vines, pots, long planters, garden borders, shelf contents, small paper/device variants | Some candidates exist; others remain baked or need source-match review |
 
 ## Correct next implementation boundary
 
