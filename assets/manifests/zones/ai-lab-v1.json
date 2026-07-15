@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "zoneId": "ai-lab",
+  "sheetId": "zone-07-ai-lab-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      892,
+      274,
+      1144,
+      628
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-07-ai-lab/ai-lab-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-07-ai-lab/ai-lab-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-07-ai-lab-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-07-ai-lab-split-v1.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "ai-lab-lab-bookcase-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/01-lab-bookcase.png",
+      "cellIndex": 1,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        134,
+        52,
+        400,
+        456
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "ai-lab-lab-whiteboard-blank-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/02-lab-whiteboard-blank.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        87,
+        118,
+        467,
+        427
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-lab-whiteboard-content-required"
+    },
+    {
+      "id": "ai-lab-upper-electronics-bench-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/03-upper-electronics-bench.png",
+      "cellIndex": 3,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        60,
+        98,
+        458,
+        425
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "ai-lab-microscope-robot-platform-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/04-microscope-robot-platform.png",
+      "cellIndex": 4,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        101,
+        67,
+        412,
+        375
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "ai-lab-lower-electronics-bench-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/05-lower-electronics-bench.png",
+      "cellIndex": 5,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        78,
+        124,
+        477,
+        350
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "ai-lab-lab-sign-plant-v1",
+      "sprite": "../../generated/zones/ai-lab-v1/06-lab-sign-plant.png",
+      "cellIndex": 6,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        58,
+        124,
+        449,
+        346
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-AI-LAB-text-required"
+    }
+  ]
+}

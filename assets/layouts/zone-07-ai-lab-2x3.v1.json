@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "ai-lab",
+  "referenceBbox": [892, 274, 1144, 628],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "AI LAB sign and whiteboard content are deterministic overlays later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "lab-bookcase", "orientation": "front-facing", "reusable": true },
+    { "cell": 2, "id": "lab-whiteboard-blank", "orientation": "front-facing", "reusable": true },
+    { "cell": 3, "id": "upper-electronics-bench", "orientation": "top-facing", "reusable": false },
+    { "cell": 4, "id": "microscope-robot-platform", "orientation": "top-facing", "reusable": false },
+    { "cell": 5, "id": "lower-electronics-bench", "orientation": "top-facing", "reusable": false },
+    { "cell": 6, "id": "lab-sign-plant", "orientation": "front-facing", "reusable": false }
+  ]
+}

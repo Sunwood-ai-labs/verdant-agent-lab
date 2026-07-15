@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-07-ai-lab/ai-lab-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-07-ai-lab/ai-lab-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    238,
+    23,
+    235
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "lab-bookcase",
+      "sourceCellBbox": [
+        0,
+        0,
+        488,
+        523
+      ],
+      "alphaBboxInCell": [
+        134,
+        52,
+        400,
+        456
+      ],
+      "alphaBboxInSheet": [
+        134,
+        52,
+        400,
+        456
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 102652,
+      "output": "assets/generated/zones/ai-lab-v1/01-lab-bookcase.png"
+    },
+    {
+      "cell": 2,
+      "id": "lab-whiteboard-blank",
+      "sourceCellBbox": [
+        488,
+        0,
+        1014,
+        523
+      ],
+      "alphaBboxInCell": [
+        87,
+        118,
+        467,
+        427
+      ],
+      "alphaBboxInSheet": [
+        575,
+        118,
+        955,
+        427
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 85464,
+      "output": "assets/generated/zones/ai-lab-v1/02-lab-whiteboard-blank.png"
+    },
+    {
+      "cell": 3,
+      "id": "upper-electronics-bench",
+      "sourceCellBbox": [
+        1014,
+        0,
+        1536,
+        523
+      ],
+      "alphaBboxInCell": [
+        60,
+        98,
+        458,
+        425
+      ],
+      "alphaBboxInSheet": [
+        1074,
+        98,
+        1472,
+        425
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 101225,
+      "output": "assets/generated/zones/ai-lab-v1/03-upper-electronics-bench.png"
+    },
+    {
+      "cell": 4,
+      "id": "microscope-robot-platform",
+      "sourceCellBbox": [
+        0,
+        523,
+        490,
+        1024
+      ],
+      "alphaBboxInCell": [
+        101,
+        67,
+        412,
+        375
+      ],
+      "alphaBboxInSheet": [
+        101,
+        590,
+        412,
+        898
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 79007,
+      "output": "assets/generated/zones/ai-lab-v1/04-microscope-robot-platform.png"
+    },
+    {
+      "cell": 5,
+      "id": "lower-electronics-bench",
+      "sourceCellBbox": [
+        490,
+        523,
+        1024,
+        1024
+      ],
+      "alphaBboxInCell": [
+        78,
+        124,
+        477,
+        350
+      ],
+      "alphaBboxInSheet": [
+        568,
+        647,
+        967,
+        873
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 78623,
+      "output": "assets/generated/zones/ai-lab-v1/05-lower-electronics-bench.png"
+    },
+    {
+      "cell": 6,
+      "id": "lab-sign-plant",
+      "sourceCellBbox": [
+        1024,
+        523,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        58,
+        124,
+        449,
+        346
+      ],
+      "alphaBboxInSheet": [
+        1082,
+        647,
+        1473,
+        869
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 52317,
+      "output": "assets/generated/zones/ai-lab-v1/06-lab-sign-plant.png"
+    }
+  ]
+}
