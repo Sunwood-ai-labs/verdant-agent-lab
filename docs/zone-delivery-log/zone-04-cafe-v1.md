@@ -11,4 +11,11 @@ wiring are open.
 
 ## AYANO delivery
 
-Pending zone commit/push and live receipt.
+Delivered after asset commit `6e05664` to `アヤノの部屋 / #sunwood-lab-recreation`
+(`1526794078744744077`).
+
+- Message id: `1526961927983464642`
+- Attachments: `cafe-2x3-v1-chroma.png` (1,680,462 bytes) and
+  `cafe-source-to-children-proof-v1.png` (640,235 bytes)
+- Embed status: candidate; CAFE text, source-instance verification, and runtime
+  placement remain open.
