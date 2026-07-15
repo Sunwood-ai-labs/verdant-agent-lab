@@ -78,10 +78,12 @@ def split_sheet(image: Image.Image, cells: list[dict], output: Path, columns: in
         raise ValueError("a 2x3/3x2 sheet requires exactly six cell definitions")
     output.mkdir(parents=True, exist_ok=True)
     alpha = make_alpha(image, border_key(image), threshold)
-    xs, ys = grid_boundaries(alpha, columns, "x"), grid_boundaries(alpha, rows, "y")
+    ys = grid_boundaries(alpha, rows, "y")
     report = []
     for index, cell in enumerate(cells):
         column, row = index % columns, index // columns
+        row_image = alpha.crop((0, ys[row], alpha.width, ys[row + 1]))
+        xs = grid_boundaries(row_image, columns, "x")
         rectangle = (xs[column], ys[row], xs[column + 1], ys[row + 1])
         cell_image = alpha.crop(rectangle)
         bbox = alpha_bbox(cell_image)

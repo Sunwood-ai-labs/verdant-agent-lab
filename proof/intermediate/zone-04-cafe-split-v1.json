@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-04-cafe/cafe-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-04-cafe/cafe-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    241,
+    23,
+    238
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "lower-cafe-counter-cabinet",
+      "sourceCellBbox": [
+        0,
+        0,
+        647,
+        480
+      ],
+      "alphaBboxInCell": [
+        108,
+        168,
+        583,
+        406
+      ],
+      "alphaBboxInSheet": [
+        108,
+        168,
+        583,
+        406
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 105357,
+      "output": "assets/generated/zones/cafe-v1/01-lower-cafe-counter-cabinet.png"
+    },
+    {
+      "cell": 2,
+      "id": "greenery-window-pot-fixture",
+      "sourceCellBbox": [
+        647,
+        0,
+        1170,
+        480
+      ],
+      "alphaBboxInCell": [
+        64,
+        131,
+        450,
+        414
+      ],
+      "alphaBboxInSheet": [
+        711,
+        131,
+        1097,
+        414
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 99108,
+      "output": "assets/generated/zones/cafe-v1/02-greenery-window-pot-fixture.png"
+    },
+    {
+      "cell": 3,
+      "id": "left-glass-front-refrigerator",
+      "sourceCellBbox": [
+        1170,
+        0,
+        1536,
+        480
+      ],
+      "alphaBboxInCell": [
+        73,
+        114,
+        214,
+        452
+      ],
+      "alphaBboxInSheet": [
+        1243,
+        114,
+        1384,
+        452
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 46926,
+      "output": "assets/generated/zones/cafe-v1/03-left-glass-front-refrigerator.png"
+    },
+    {
+      "cell": 4,
+      "id": "right-vending-refrigerator",
+      "sourceCellBbox": [
+        0,
+        480,
+        414,
+        1024
+      ],
+      "alphaBboxInCell": [
+        178,
+        28,
+        335,
+        411
+      ],
+      "alphaBboxInSheet": [
+        178,
+        508,
+        335,
+        891
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 59223,
+      "output": "assets/generated/zones/cafe-v1/04-right-vending-refrigerator.png"
+    },
+    {
+      "cell": 5,
+      "id": "triple-espresso-machine-group",
+      "sourceCellBbox": [
+        414,
+        480,
+        1004,
+        1024
+      ],
+      "alphaBboxInCell": [
+        80,
+        97,
+        532,
+        368
+      ],
+      "alphaBboxInSheet": [
+        494,
+        577,
+        946,
+        848
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 96771,
+      "output": "assets/generated/zones/cafe-v1/05-triple-espresso-machine-group.png"
+    },
+    {
+      "cell": 6,
+      "id": "cafe-sign-panel-blank",
+      "sourceCellBbox": [
+        1004,
+        480,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        58,
+        168,
+        406,
+        329
+      ],
+      "alphaBboxInSheet": [
+        1062,
+        648,
+        1410,
+        809
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 55876,
+      "output": "assets/generated/zones/cafe-v1/06-cafe-sign-panel-blank.png"
+    }
+  ]
+}

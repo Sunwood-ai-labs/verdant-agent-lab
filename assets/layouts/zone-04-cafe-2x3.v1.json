@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "cafe",
+  "referenceBbox": [1023, 36, 1213, 245],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "blank-generated-panel; deterministic CAFE overlay later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "lower-cafe-counter-cabinet", "orientation": "front-facing", "reusable": false },
+    { "cell": 2, "id": "greenery-window-pot-fixture", "orientation": "front-facing", "reusable": false },
+    { "cell": 3, "id": "left-glass-front-refrigerator", "orientation": "front-facing", "reusable": false },
+    { "cell": 4, "id": "right-vending-refrigerator", "orientation": "front-facing", "reusable": false },
+    { "cell": 5, "id": "triple-espresso-machine-group", "orientation": "front-facing", "reusable": false },
+    { "cell": 6, "id": "cafe-sign-panel-blank", "orientation": "front-facing", "reusable": false }
+  ]
+}

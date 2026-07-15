@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "zoneId": "cafe",
+  "sheetId": "zone-04-cafe-2x3-v1",
+  "sourceReference": { "role": "private-guidance-only", "zoneBbox": [1023, 36, 1213, 245] },
+  "sharedProvenance": { "generator": "built-in-imagegen", "chromaMaster": "../../intermediate/zone-04-cafe/cafe-2x3-v1-chroma.png", "alphaMaster": "../../intermediate/zone-04-cafe/cafe-2x3-v1-alpha.png", "prompt": "../../prompts/zone-04-cafe-2x3-v1.md" },
+  "assets": [
+    { "id": "cafe-counter-cabinet-v1", "sprite": "../../generated/zones/cafe-v1/01-lower-cafe-counter-cabinet.png", "cellIndex": 1, "orientation": "front-facing", "alphaBounds": [108,168,583,406], "status": "candidate-needs-source-review" },
+    { "id": "cafe-greenery-window-v1", "sprite": "../../generated/zones/cafe-v1/02-greenery-window-pot-fixture.png", "cellIndex": 2, "orientation": "front-facing", "alphaBounds": [64,131,450,414], "status": "candidate-needs-source-review" },
+    { "id": "cafe-left-glass-fridge-v1", "sprite": "../../generated/zones/cafe-v1/03-left-glass-front-refrigerator.png", "cellIndex": 3, "orientation": "front-facing", "alphaBounds": [73,114,214,452], "status": "candidate-needs-source-review" },
+    { "id": "cafe-vending-fridge-v1", "sprite": "../../generated/zones/cafe-v1/04-right-vending-refrigerator.png", "cellIndex": 4, "orientation": "front-facing", "alphaBounds": [178,28,335,411], "status": "candidate-needs-source-review" },
+    { "id": "cafe-triple-espresso-v1", "sprite": "../../generated/zones/cafe-v1/05-triple-espresso-machine-group.png", "cellIndex": 5, "orientation": "front-facing", "alphaBounds": [80,97,532,368], "status": "candidate-needs-source-review" },
+    { "id": "cafe-sign-blank-v1", "sprite": "../../generated/zones/cafe-v1/06-cafe-sign-panel-blank.png", "cellIndex": 6, "orientation": "front-facing", "alphaBounds": [58,168,406,329], "overlay": "deterministic-CAFE-text-required", "status": "candidate-needs-source-review" }
+  ]
+}
