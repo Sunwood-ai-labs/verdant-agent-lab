@@ -8,6 +8,7 @@
     "serve": "python3 -m http.server 4173 --directory .",
     "score:layout": "node scripts/score-layout.mjs",
     "score:similarity": "python3 scripts/score-office-similarity.py",
+    "audit:sprite-bounds": "python3 scripts/audit-sprite-bounds.py",
     "validate:reference-fidelity": "node scripts/validate-reference-fidelity.mjs",
     "audit:asset-provenance": "node scripts/audit-asset-provenance.mjs",
     "validate:sprites": "python3 scripts/validate_sprite_purity.py",

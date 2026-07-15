@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": 1,
+  "policy": "An edge touch is a visible-crop risk, not a pass. It requires source inspection before an asset can be called cleanly isolated.",
+  "runtimeAssetCount": 48,
+  "edgeTouchCount": 25,
+  "assets": [
+    {
+      "id": "south-lounge-inward-facing",
+      "sprite": "../generated/furniture/south-lounge-decomposed-v5.png",
+      "size": [
+        280,
+        230
+      ],
+      "alphaBBox": [
+        9,
+        0,
+        258,
+        193
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    },
+    {
+      "id": "studio-west-mixed-facing",
+      "sprite": "../generated/furniture/studio-west-decomposed-v2.png",
+      "size": [
+        245,
+        290
+      ],
+      "alphaBBox": [
+        15,
+        0,
+        245,
+        274
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": true,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top",
+        "right"
+      ]
+    },
+    {
+      "id": "north-lounge-inward-facing",
+      "sprite": "../generated/furniture/north-lounge-decomposed-v3.png",
+      "size": [
+        470,
+        285
+      ],
+      "alphaBBox": [
+        18,
+        149,
+        207,
+        273
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "cafe-wall-south-facing",
+      "sprite": "../generated/furniture/cafe-decomposed-v3.png",
+      "size": [
+        470,
+        285
+      ],
+      "alphaBBox": [
+        65,
+        19,
+        452,
+        242
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "meeting-table-vertical-three-chair",
+      "sprite": "../generated/furniture/meeting-room-decomposed-v2.png",
+      "size": [
+        212,
+        144
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        212,
+        144
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": true,
+        "bottom": true,
+        "left": true
+      },
+      "hitEdges": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    },
+    {
+      "id": "greenhouse-southeast-facing",
+      "sprite": "../generated/furniture/greenhouse-decomposed-v3.png",
+      "size": [
+        300,
+        340
+      ],
+      "alphaBBox": [
+        10,
+        10,
+        290,
+        340
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "workstation-west-north-facing",
+      "sprite": "../generated/furniture/workstation-west-decomposed-v4.png",
+      "size": [
+        570,
+        255
+      ],
+      "alphaBBox": [
+        50,
+        9,
+        274,
+        233
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "workstation-east-north-facing",
+      "sprite": "../generated/furniture/workstation-east-decomposed-v4.png",
+      "size": [
+        570,
+        255
+      ],
+      "alphaBBox": [
+        331,
+        9,
+        557,
+        233
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "curved-reception-desk",
+      "sprite": "../generated/furniture/reception-decomposed-v3.png",
+      "size": [
+        560,
+        300
+      ],
+      "alphaBBox": [
+        147,
+        137,
+        532,
+        300
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "shared-worktable",
+      "sprite": "../generated/furniture/shared-worktable.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        14,
+        102,
+        348,
+        258
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "single-desk",
+      "sprite": "../generated/furniture/single-desk.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        0,
+        112,
+        310,
+        316
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": true
+      },
+      "hitEdges": [
+        "left"
+      ]
+    },
+    {
+      "id": "olive-sofa",
+      "sprite": "../generated/furniture/olive-sofa.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        54,
+        140,
+        290,
+        313
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "olive-armchair",
+      "sprite": "../generated/furniture/olive-armchair.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        150,
+        82,
+        299,
+        273
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "round-coffee-table",
+      "sprite": "../generated/furniture/round-coffee-table.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        98,
+        97,
+        321,
+        362
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "rolling-office-chair",
+      "sprite": "../generated/furniture/rolling-office-chair.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        88,
+        83,
+        224,
+        289
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "plant-bookshelf",
+      "sprite": "../generated/furniture/plant-bookshelf.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        36,
+        41,
+        250,
+        362
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "flower-planter",
+      "sprite": "../generated/furniture/flower-planter.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        88,
+        64,
+        345,
+        212
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "tall-indoor-plant",
+      "sprite": "../generated/furniture/tall-indoor-plant.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        96,
+        0,
+        228,
+        235
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    },
+    {
+      "id": "glass-wall-segment",
+      "sprite": "../generated/furniture/glass-wall-segment.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        0,
+        34,
+        280,
+        243
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": true
+      },
+      "hitEdges": [
+        "left"
+      ]
+    },
+    {
+      "id": "greenhouse-door-segment",
+      "sprite": "../generated/furniture/greenhouse-door-segment.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        22,
+        0,
+        260,
+        243
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    },
+    {
+      "id": "air-quality-board-reference",
+      "sprite": "../generated/sheet3x6-v1/air-quality-board.png",
+      "size": [
+        181,
+        295
+      ],
+      "alphaBBox": [
+        6,
+        0,
+        175,
+        295
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "top",
+        "bottom"
+      ]
+    },
+    {
+      "id": "meeting-display-reference",
+      "sprite": "../generated/technology/meeting-display-decomposed-v2.png",
+      "size": [
+        208,
+        134
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        208,
+        134
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": true,
+        "bottom": true,
+        "left": true
+      },
+      "hitEdges": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    },
+    {
+      "id": "ai-lab-mixed-facing",
+      "sprite": "../generated/technology/ai-lab-decomposed-v6.png",
+      "size": [
+        300,
+        366
+      ],
+      "alphaBBox": [
+        16,
+        20,
+        294,
+        360
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "solar-wing-front-facing",
+      "sprite": "../generated/technology/solar-wing-decomposed-v5.png",
+      "size": [
+        220,
+        500
+      ],
+      "alphaBBox": [
+        0,
+        33,
+        220,
+        499
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": true,
+        "bottom": false,
+        "left": true
+      },
+      "hitEdges": [
+        "right",
+        "left"
+      ]
+    },
+    {
+      "id": "solar-array",
+      "sprite": "../generated/technology/solar-array.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        84,
+        123,
+        333,
+        329
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "server-rack",
+      "sprite": "../generated/technology/server-rack.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        94,
+        83,
+        280,
+        345
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "single-monitor",
+      "sprite": "../generated/technology/single-monitor.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        39,
+        123,
+        362,
+        324
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": true,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "right"
+      ]
+    },
+    {
+      "id": "dual-monitor",
+      "sprite": "../generated/technology/dual-monitor.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        0,
+        146,
+        281,
+        321
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": true
+      },
+      "hitEdges": [
+        "left"
+      ]
+    },
+    {
+      "id": "laptop",
+      "sprite": "../generated/technology/laptop.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        96,
+        80,
+        307,
+        273
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "keyboard-mouse",
+      "sprite": "../generated/technology/keyboard-mouse.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        51,
+        152,
+        306,
+        234
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "brass-desk-lamp",
+      "sprite": "../generated/technology/brass-desk-lamp.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        79,
+        62,
+        239,
+        362
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "environment-display",
+      "sprite": "../generated/technology/environment-display.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        31,
+        47,
+        187,
+        289
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "lab-console",
+      "sprite": "../generated/technology/lab-console.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        69,
+        17,
+        333,
+        235
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "robotics-platform",
+      "sprite": "../generated/technology/robotics-platform.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        50,
+        37,
+        282,
+        228
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "espresso-machine",
+      "sprite": "../generated/technology/espresso-machine.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        37,
+        0,
+        249,
+        252
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    },
+    {
+      "id": "recycling-bin-set",
+      "sprite": "../generated/technology/recycling-bin-set-decomposed-v1.png",
+      "size": [
+        220,
+        125
+      ],
+      "alphaBBox": [
+        0,
+        0,
+        220,
+        125
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": true,
+        "bottom": true,
+        "left": true
+      },
+      "hitEdges": [
+        "top",
+        "right",
+        "bottom",
+        "left"
+      ]
+    },
+    {
+      "id": "coffee-mug",
+      "sprite": "../generated/props/coffee-mug.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        134,
+        134,
+        305,
+        308
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "water-bottle",
+      "sprite": "../generated/props/water-bottle.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        123,
+        96,
+        238,
+        329
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "open-notebook",
+      "sprite": "../generated/props/open-notebook.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        0,
+        137,
+        266,
+        325
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": true
+      },
+      "hitEdges": [
+        "left"
+      ]
+    },
+    {
+      "id": "book-stack",
+      "sprite": "../generated/props/book-stack.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        6,
+        127,
+        254,
+        338
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "tablet",
+      "sprite": "../generated/props/tablet.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        90,
+        87,
+        315,
+        274
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "desk-phone",
+      "sprite": "../generated/props/desk-phone.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        39,
+        73,
+        280,
+        362
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": false
+      },
+      "hitEdges": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "pen-cup",
+      "sprite": "../generated/props/pen-cup.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        44,
+        65,
+        362,
+        292
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": true,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "right"
+      ]
+    },
+    {
+      "id": "paper-notes",
+      "sprite": "../generated/props/paper-notes.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        0,
+        92,
+        254,
+        362
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": true,
+        "left": true
+      },
+      "hitEdges": [
+        "bottom",
+        "left"
+      ]
+    },
+    {
+      "id": "succulent",
+      "sprite": "../generated/props/succulent.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        118,
+        49,
+        269,
+        235
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "desk-plant",
+      "sprite": "../generated/props/desk-plant.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        72,
+        0,
+        254,
+        252
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    },
+    {
+      "id": "wall-clock",
+      "sprite": "../generated/props/wall-clock.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        34,
+        28,
+        224,
+        240
+      ],
+      "touchesCanvasEdge": false,
+      "edges": {
+        "top": false,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": []
+    },
+    {
+      "id": "pendant-lamp",
+      "sprite": "../generated/props/pendant-lamp.png",
+      "size": [
+        362,
+        362
+      ],
+      "alphaBBox": [
+        23,
+        0,
+        204,
+        230
+      ],
+      "touchesCanvasEdge": true,
+      "edges": {
+        "top": true,
+        "right": false,
+        "bottom": false,
+        "left": false
+      },
+      "hitEdges": [
+        "top"
+      ]
+    }
+  ]
+}
