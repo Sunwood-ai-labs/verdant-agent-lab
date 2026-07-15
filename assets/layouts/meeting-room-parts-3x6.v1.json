@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "source": "../parts/meeting-room.png",
+  "sourceSize": [
+    255,
+    270
+  ],
+  "status": "extracted-needs-independent-qa",
+  "granularityRule": "one cell equals one runtime-addressable object or continuous architecture segment visible in the source crop",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "vertical wooden meeting table",
+      "sourceBbox": [
+        107,
+        73,
+        202,
+        192
+      ],
+      "orientation": "long axis north-south",
+      "output": "generated/decomposed/meeting-room-v1/01-vertical-wooden-meeting-table.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "top black rolling chair",
+      "sourceBbox": [
+        126,
+        52,
+        177,
+        112
+      ],
+      "orientation": "faces south",
+      "output": "generated/decomposed/meeting-room-v1/02-top-black-rolling-chair.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "left black rolling chair",
+      "sourceBbox": [
+        60,
+        94,
+        108,
+        176
+      ],
+      "orientation": "faces east inward",
+      "output": "generated/decomposed/meeting-room-v1/03-left-black-rolling-chair.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "right black rolling chair",
+      "sourceBbox": [
+        193,
+        98,
+        240,
+        181
+      ],
+      "orientation": "faces west inward",
+      "output": "generated/decomposed/meeting-room-v1/04-right-black-rolling-chair.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "large blue wall display",
+      "sourceBbox": [
+        119,
+        30,
+        202,
+        94
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/meeting-room-v1/05-large-blue-wall-display.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "left large potted plant",
+      "sourceBbox": [
+        29,
+        50,
+        81,
+        135
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/meeting-room-v1/06-left-large-potted-plant.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "small center-left potted plant",
+      "sourceBbox": [
+        76,
+        57,
+        114,
+        105
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/meeting-room-v1/07-small-center-left-potted-plant.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "right large potted plant",
+      "sourceBbox": [
+        198,
+        48,
+        241,
+        113
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/meeting-room-v1/08-right-large-potted-plant.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "small round table plant",
+      "sourceBbox": [
+        140,
+        122,
+        176,
+        161
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/meeting-room-v1/09-small-round-table-plant.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "small framed table picture device",
+      "sourceBbox": [
+        144,
+        96,
+        170,
+        124
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/meeting-room-v1/10-small-framed-table-picture-device.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "single pendant bulb",
+      "sourceBbox": [
+        86,
+        25,
+        102,
+        57
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/meeting-room-v1/11-single-pendant-bulb.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "top curved glass wall segment",
+      "sourceBbox": [
+        17,
+        10,
+        243,
+        43
+      ],
+      "orientation": "horizontal with north-west curve",
+      "output": "generated/decomposed/meeting-room-v1/12-top-curved-glass-wall-segment.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "left vertical glass wall segment",
+      "sourceBbox": [
+        16,
+        27,
+        39,
+        207
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/meeting-room-v1/13-left-vertical-glass-wall-segment.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "right vertical glass wall segment",
+      "sourceBbox": [
+        231,
+        26,
+        248,
+        211
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/meeting-room-v1/14-right-vertical-glass-wall-segment.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "lower-left dark glass window panel",
+      "sourceBbox": [
+        18,
+        188,
+        122,
+        264
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/meeting-room-v1/15-lower-left-dark-glass-window-panel.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "lower-center double glass door",
+      "sourceBbox": [
+        111,
+        188,
+        180,
+        265
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/meeting-room-v1/16-lower-center-double-glass-door.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "lower-right lit glass window panel",
+      "sourceBbox": [
+        170,
+        187,
+        243,
+        264
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/meeting-room-v1/17-lower-right-lit-glass-window-panel.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "central wooden floor platform",
+      "sourceBbox": [
+        39,
+        42,
+        231,
+        190
+      ],
+      "orientation": "top-down",
+      "output": "generated/decomposed/meeting-room-v1/18-central-wooden-floor-platform.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/meeting-room-parts-3x6-imagegen-v1-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ]
+}

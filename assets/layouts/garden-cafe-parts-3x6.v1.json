@@ -1,0 +1,442 @@
+{
+  "version": 1,
+  "source": "../parts/garden-cafe.png",
+  "sourceSize": [
+    470,
+    285
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object visible in the source crop",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "cafe lower wooden counter cabinet",
+      "sourceBbox": [
+        255,
+        135,
+        399,
+        244
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/garden-cafe-v1/01-cafe-lower-wooden-counter-cabinet.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        255,
+        135,
+        399,
+        244
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "large upper greenery window fixture",
+      "sourceBbox": [
+        246,
+        19,
+        443,
+        137
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/02-large-upper-greenery-window-fixture.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        246,
+        19,
+        443,
+        137
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "top wooden plant ledge with five pots",
+      "sourceBbox": [
+        253,
+        91,
+        430,
+        146
+      ],
+      "orientation": "horizontal; front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/03-top-wooden-plant-ledge-with-five-pots.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        253,
+        91,
+        430,
+        146
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "green CAFE sign panel",
+      "sourceBbox": [
+        292,
+        126,
+        355,
+        158
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/04-green-cafe-sign-panel.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ],
+      "recomposedBbox": [
+        292,
+        126,
+        355,
+        158
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "left narrow glass-front refrigerator",
+      "sourceBbox": [
+        260,
+        145,
+        292,
+        235
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/05-left-narrow-glass-front-refrigerator.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ],
+      "recomposedBbox": [
+        260,
+        145,
+        292,
+        235
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "right tall gray vending refrigerator",
+      "sourceBbox": [
+        395,
+        128,
+        452,
+        246
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/06-right-tall-gray-vending-refrigerator.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ],
+      "recomposedBbox": [
+        395,
+        128,
+        452,
+        246
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "left silver coffee machine",
+      "sourceBbox": [
+        294,
+        159,
+        314,
+        204
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/garden-cafe-v1/07-left-silver-coffee-machine.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ],
+      "recomposedBbox": [
+        294,
+        159,
+        314,
+        204
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "center silver coffee machine",
+      "sourceBbox": [
+        315,
+        159,
+        336,
+        204
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/garden-cafe-v1/08-center-silver-coffee-machine.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ],
+      "recomposedBbox": [
+        315,
+        159,
+        336,
+        204
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "right silver coffee machine",
+      "sourceBbox": [
+        337,
+        159,
+        358,
+        204
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/garden-cafe-v1/09-right-silver-coffee-machine.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ],
+      "recomposedBbox": [
+        337,
+        159,
+        358,
+        204
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "black vertical cafe display",
+      "sourceBbox": [
+        357,
+        146,
+        391,
+        205
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/garden-cafe-v1/10-black-vertical-cafe-display.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ],
+      "recomposedBbox": [
+        357,
+        146,
+        391,
+        205
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "long left bookshelf with books and top pots",
+      "sourceBbox": [
+        39,
+        66,
+        225,
+        137
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/garden-cafe-v1/11-long-left-bookshelf-with-books-and-top-pots.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "tall narrow plant at bookshelf right",
+      "sourceBbox": [
+        221,
+        84,
+        256,
+        158
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/garden-cafe-v1/12-tall-narrow-plant-at-bookshelf-right.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "green sectional sofa",
+      "sourceBbox": [
+        25,
+        141,
+        203,
+        257
+      ],
+      "orientation": "inward-facing",
+      "output": "generated/decomposed/garden-cafe-v1/13-green-sectional-sofa.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ],
+      "recomposedBbox": [
+        25,
+        141,
+        203,
+        257
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "polygonal green rug platform",
+      "sourceBbox": [
+        18,
+        139,
+        207,
+        284
+      ],
+      "orientation": "top-down",
+      "output": "generated/decomposed/garden-cafe-v1/14-polygonal-green-rug-platform.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ],
+      "recomposedBbox": [
+        18,
+        139,
+        207,
+        284
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "round wooden coffee table",
+      "sourceBbox": [
+        61,
+        181,
+        163,
+        260
+      ],
+      "orientation": "top-down",
+      "output": "generated/decomposed/garden-cafe-v1/15-round-wooden-coffee-table.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ],
+      "recomposedBbox": [
+        61,
+        181,
+        163,
+        260
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "small potted table plant",
+      "sourceBbox": [
+        95,
+        194,
+        130,
+        234
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/garden-cafe-v1/16-small-potted-table-plant.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ],
+      "recomposedBbox": [
+        95,
+        194,
+        130,
+        234
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "small left table prop",
+      "sourceBbox": [
+        74,
+        201,
+        93,
+        225
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/garden-cafe-v1/17-small-left-table-prop.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ],
+      "recomposedBbox": [
+        74,
+        201,
+        93,
+        225
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "small right table prop",
+      "sourceBbox": [
+        136,
+        200,
+        155,
+        225
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/garden-cafe-v1/18-small-right-table-prop.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ],
+      "recomposedBbox": [
+        136,
+        200,
+        155,
+        225
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/garden-cafe-parts-3x6-imagegen-v1-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/furniture/north-lounge-decomposed-v1.png"
+}

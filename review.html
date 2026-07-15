@@ -5,29 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Similarity Review — Verdant Agent Lab</title>
   <link rel="stylesheet" href="review.css" />
-  <style>.mode-side .overlay-original,.mode-diff .overlay-original{display:none}.mode-overlay .overlay-original{display:block}</style>
+  <style>.mode-side .overlay-original,.mode-diff .overlay-original{display:none}.mode-overlay .overlay-original{display:block}.mode-side{grid-template-columns:repeat(3,1fr)}.mode-overlay .pane-canonical,.mode-diff .pane-canonical{display:none}.review-header p,.score-card p,.score-card dt,.pane figcaption,table,.status{font-size:12px}@media(max-width:760px){.mode-side{grid-template-columns:1fr}}</style>
 </head>
 <body>
   <header class="review-header">
     <a href="builder.html">← BUILDER</a>
     <div><p>VERDANT / FIDELITY DESK</p><h1>Similarity Review</h1></div>
-    <span class="status">STRUCTURAL PROTOTYPE — NOT VERIFIED</span>
+    <span class="status" id="status">DIRECT SSIM REVIEW · LOADING</span>
   </header>
   <main>
     <section class="score-card" aria-labelledby="scoreTitle">
-      <div><p id="scoreTitle">MASKED SSIM / TARGET 60%</p><strong id="score">—</strong></div>
+      <div><p id="scoreTitle">DIRECT MASKED SSIM / TARGET 60%</p><strong id="score">—</strong></div>
       <div class="meter" aria-hidden="true"><i id="meterFill"></i><b></b></div>
-      <dl><div><dt>EDGE F1</dt><dd id="edge">—</dd></div><div><dt>COMPOSITE</dt><dd id="composite">—</dd></div><div><dt>METHOD</dt><dd>office-similarity-v1</dd></div></dl>
+      <dl><div><dt>MASKED SSIM</dt><dd id="ssim">—</dd></div><div><dt>EDGE F1 / DIAGNOSTIC</dt><dd id="edge">—</dd></div><div><dt>PIXEL COMPOSITE / DIAGNOSTIC</dt><dd id="composite">—</dd></div><div><dt>METHOD</dt><dd>office-similarity-v2-direct-ssim</dd></div></dl>
     </section>
     <nav class="modes" aria-label="比較モード">
-      <button class="active" data-mode="side">SIDE BY SIDE</button>
-      <button data-mode="overlay">OVERLAY</button>
-      <button data-mode="diff">ABS DIFF</button>
+      <button class="active" data-mode="side" aria-pressed="true">SIDE BY SIDE</button>
+      <button data-mode="overlay" aria-pressed="false">OVERLAY</button>
+      <button data-mode="diff" aria-pressed="false">ABS DIFF</button>
     </nav>
     <section class="lighttable mode-side" id="lighttable">
       <figure class="pane pane-original"><figcaption>RAW ORIGINAL / PRIVATE INPUT</figcaption><img src="assets/reference-original.jpg" alt="人物を含む元のオフィス画像" /></figure>
+      <figure class="pane pane-canonical"><figcaption>CHARACTERLESS CANONICAL / REVIEW BASELINE</figcaption><img src="assets/scene-clean.png" alt="人物を除去した基準画像" /></figure>
       <figure class="pane pane-modular"><figcaption>MODULAR RECONSTRUCTION / NO REFERENCE OVERLAY</figcaption><div class="stack"><img src="proof/modular-office-v1.png" alt="モジュラー再構成" /><img class="overlay-original" src="assets/reference-original.jpg" alt="" /></div></figure>
-      <figure class="pane pane-diff"><figcaption>ABS DIFF / MASKED REVIEW</figcaption><img src="proof/similarity/modular-office-assets-v3-diff.png" alt="差分ヒートマップ" /></figure>
+      <figure class="pane pane-diff"><figcaption>ABS DIFF / MASKED REVIEW</figcaption><img src="proof/similarity/modular-office-direct-ssim-v2-diff.png" alt="差分ヒートマップ" /></figure>
     </section>
     <section class="overlay-control">
       <label for="opacity">ORIGINAL OPACITY <output id="opacityValue">50%</output></label>

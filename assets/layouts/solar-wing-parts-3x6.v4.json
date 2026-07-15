@@ -1,0 +1,454 @@
+{
+  "version": 4,
+  "source": "../parts/solar-wing.png",
+  "sourceSize": [
+    220,
+    500
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object or continuous fixture visible in the source crop",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "empty metal solar panel frame",
+      "sourceBbox": [
+        35,
+        42,
+        171,
+        205
+      ],
+      "orientation": "front-facing vertical",
+      "output": "generated/decomposed/solar-wing-v4/01-empty-metal-solar-panel-frame.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        35,
+        42,
+        171,
+        205
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "top-left blue solar module",
+      "sourceBbox": [
+        49,
+        50,
+        101,
+        96
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/02-top-left-blue-solar-module.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        49,
+        50,
+        101,
+        96
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "top-right blue solar module",
+      "sourceBbox": [
+        101,
+        50,
+        153,
+        96
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/03-top-right-blue-solar-module.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        101,
+        50,
+        153,
+        96
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "middle-left blue solar module",
+      "sourceBbox": [
+        49,
+        96,
+        101,
+        142
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/04-middle-left-blue-solar-module.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ],
+      "recomposedBbox": [
+        49,
+        96,
+        101,
+        142
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "middle-right blue solar module",
+      "sourceBbox": [
+        101,
+        96,
+        153,
+        142
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/05-middle-right-blue-solar-module.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ],
+      "recomposedBbox": [
+        101,
+        96,
+        153,
+        142
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "bottom-left blue solar module",
+      "sourceBbox": [
+        49,
+        142,
+        101,
+        188
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/06-bottom-left-blue-solar-module.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ],
+      "recomposedBbox": [
+        49,
+        142,
+        101,
+        188
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "bottom-right blue solar module",
+      "sourceBbox": [
+        101,
+        142,
+        153,
+        188
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/07-bottom-right-blue-solar-module.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ],
+      "recomposedBbox": [
+        101,
+        142,
+        153,
+        188
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "solar output battery dashboard",
+      "sourceBbox": [
+        42,
+        239,
+        171,
+        358
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/08-solar-output-battery-dashboard.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ],
+      "recomposedBbox": [
+        42,
+        239,
+        171,
+        358
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "left black server cabinet",
+      "sourceBbox": [
+        34,
+        372,
+        79,
+        468
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/09-left-black-server-cabinet.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ],
+      "recomposedBbox": [
+        34,
+        372,
+        79,
+        468
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "center black server cabinet",
+      "sourceBbox": [
+        78,
+        372,
+        125,
+        468
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/10-center-black-server-cabinet.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ],
+      "recomposedBbox": [
+        78,
+        372,
+        125,
+        468
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "right black server cabinet",
+      "sourceBbox": [
+        123,
+        372,
+        172,
+        468
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/11-right-black-server-cabinet.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ],
+      "recomposedBbox": [
+        123,
+        372,
+        172,
+        468
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "long lower controller base strip",
+      "sourceBbox": [
+        33,
+        456,
+        177,
+        493
+      ],
+      "orientation": "horizontal front-facing",
+      "output": "generated/decomposed/solar-wing-v4/12-long-lower-controller-base-strip.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ],
+      "recomposedBbox": [
+        33,
+        456,
+        177,
+        493
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "upper stone wall frame",
+      "sourceBbox": [
+        20,
+        33,
+        184,
+        216
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/13-upper-stone-wall-frame.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ],
+      "recomposedBbox": [
+        20,
+        33,
+        184,
+        216
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "middle stone wall frame",
+      "sourceBbox": [
+        18,
+        207,
+        203,
+        370
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/14-middle-stone-wall-frame.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ],
+      "recomposedBbox": [
+        18,
+        207,
+        203,
+        370
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "lower stone platform frame",
+      "sourceBbox": [
+        18,
+        360,
+        205,
+        499
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/15-lower-stone-platform-frame.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ],
+      "recomposedBbox": [
+        18,
+        360,
+        205,
+        499
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "left climbing vine strip",
+      "sourceBbox": [
+        0,
+        274,
+        49,
+        499
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/solar-wing-v4/16-left-climbing-vine-strip.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ],
+      "recomposedBbox": [
+        0,
+        274,
+        49,
+        499
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "right climbing vine strip",
+      "sourceBbox": [
+        173,
+        230,
+        220,
+        499
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/solar-wing-v4/17-right-climbing-vine-strip.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ],
+      "recomposedBbox": [
+        173,
+        230,
+        220,
+        499
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "small green base control device",
+      "sourceBbox": [
+        92,
+        466,
+        119,
+        493
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/solar-wing-v4/18-small-green-base-control-device.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ],
+      "recomposedBbox": [
+        92,
+        466,
+        119,
+        493
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/solar-wing-parts-3x6-imagegen-v4-normalized-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/technology/solar-wing-decomposed-v4.png"
+}

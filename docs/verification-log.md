@@ -1,5 +1,16 @@
 # Verification and failure log
 
+## Direct screenshot-similarity correction — 2026-07-15
+
+- Retracted: a previous `PASS` used 69.96% from a weighted edge/palette score
+  while direct masked SSIM was 43.86% with the character-only exclusion mask.
+- The requested screenshot comparison now has one authoritative threshold:
+  same-view, 1280x960, character-masked grayscale SSIM >= 60%.
+- Current result: **43.86% direct masked SSIM — FAIL / not verified**.
+- The ledger is incomplete: source-derived 3x6 parts are candidates only until
+  each rendered source crop, content, scale, and facing match in the final HTML
+  screenshot.
+
 ## Fidelity-claim correction — 2026-07-15
 
 The user correctly rejected the previous completion claim. The visible builder
@@ -217,3 +228,22 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Edge F1: 83.35%
 - Fidelity validator: FAIL, 13 records remain open (7 candidates, 6 missing/mismatch)
 - Visual check: greenhouse and both south workstations now match source-facing direction and object counts; meeting table was rescaled and moved to column 27; reception was rescaled to 11x5 tiles.
+# Superseded historical checkpoint — final directional decomposition v1
+
+- Reference-overlay-off proof: `proof/modular-office-v1.png`
+- Final report: `proof/similarity/modular-office-final-v1.json`
+- Retracted: the 72.05% weighted layout/content value cannot pass the requested
+  direct screenshot-similarity target; direct SSIM is now the sole gate.
+- The old mask excluded movable objects and is invalid for asset-fidelity scoring.
+- Edge F1: 79.95%; Lab histogram similarity: 96.28%; pixel composite: 57.63%
+- Fidelity ledger: 13/13 verified; `validate-reference-fidelity.mjs` passes
+- Every equipment/furniture zone is replaced by an Image Gen empty-architecture patch before its independently generated directional sprite is composed. The fixed garden/wall layer remains a reference-derived extraction and is labeled as such.
+# Superseded historical checkpoint — crop-first 3x6 final v2
+
+- Sheet cell count: 18/18 extracted.
+- Source sheet manifest: `assets/layouts/reference-sheet-3x6.v1.json`.
+- Reference-overlay-off proof: `proof/modular-office-v1.png`.
+- Similarity report: `proof/similarity/modular-office-sheet3x6-final-v2.json`.
+- Retracted: weighted layout/content values are diagnostic-only and cannot pass
+  the direct screenshot target; the former mask also excluded movable objects.
+- Corrected a 1280x960-to-1448x1086 mask scaling bug in `build-source-guided-foundation.py`; post-fix visual inspection confirms duplicate source objects were removed.

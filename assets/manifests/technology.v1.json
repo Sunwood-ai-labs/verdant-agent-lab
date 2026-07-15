@@ -6,6 +6,43 @@
   "source": "project-original-imagegen",
   "items": [
     {
+      "id": "air-quality-board-reference",
+      "category": "display",
+      "sprite": "../generated/sheet3x6-v1/air-quality-board.png",
+      "footprint": { "w": 3, "h": 7 },
+      "zBias": 3,
+      "orientation": "front-facing"
+    },
+    {
+      "id": "meeting-display-reference",
+      "category": "display",
+      "sprite": "../generated/technology/meeting-display-decomposed-v2.png",
+      "footprint": { "w": 4, "h": 2 },
+      "zBias": 3,
+      "orientation": "front-facing",
+      "decompositionManifest": "../layouts/meeting-room-parts-3x6.v2.json"
+    },
+    {
+      "id": "ai-lab-mixed-facing",
+      "category": "lab",
+      "sprite": "../generated/technology/ai-lab-decomposed-v6.png",
+      "footprint": { "w": 8.125, "h": 11.719 },
+      "zBias": 4,
+      "orientation": "mixed",
+      "contentCount": { "decomposedParts": 18, "bookshelf": 1, "whiteboard": 1, "workbench": 2, "platform": 1, "cart": 1, "plants": 2, "devices": 8, "sign": 1 },
+      "decompositionManifest": "../layouts/ai-lab-parts-3x6.v6.json"
+    },
+    {
+      "id": "solar-wing-front-facing",
+      "category": "infrastructure",
+      "sprite": "../generated/technology/solar-wing-decomposed-v5.png",
+      "footprint": { "w": 4.844, "h": 12.5 },
+      "zBias": 2,
+      "orientation": "front-facing",
+      "contentCount": { "decomposedParts": 12, "solarPanelFrame": 1, "solarModule": 6, "dashboard": 1, "cabinet": 3, "controllerBase": 1 },
+      "decompositionManifest": "../layouts/solar-wing-parts-3x6.v5.json"
+    },
+    {
       "id": "solar-array",
       "category": "energy",
       "sprite": "../generated/technology/solar-array.png",
@@ -104,9 +141,12 @@
     {
       "id": "recycling-bin-set",
       "category": "utility",
-      "sprite": "../generated/technology/recycling-bin-set.png",
-      "footprint": { "w": 4, "h": 2 },
-      "zBias": 2
+      "sprite": "../generated/technology/recycling-bin-set-decomposed-v1.png",
+      "footprint": { "w": 5.781, "h": 3.438 },
+      "zBias": 2,
+      "orientation": "front-facing",
+      "contentCount": { "decomposedParts": 3, "bin": 3, "green": 1, "blue": 1, "gray": 1 },
+      "decompositionManifest": "../layouts/recycling-bins-parts-3x6.v1.json"
     }
   ]
 }

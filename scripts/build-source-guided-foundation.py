@@ -24,9 +24,14 @@ def main():
     height, width = source.shape[:2]
     candidate = cv2.resize(candidate, (width, height), interpolation=cv2.INTER_LANCZOS4)
     spec = json.loads(Path(args.mask).read_text())
+    canvas = spec.get("canvas", {"width": width, "height": height})
+    scale_x = width / canvas["width"]
+    scale_y = height / canvas["height"]
     alpha = np.zeros((height, width), dtype=np.float32)
     for region in spec["regions"]:
         x1, y1, x2, y2 = region["bbox"]
+        x1, x2 = round(x1 * scale_x), round(x2 * scale_x)
+        y1, y2 = round(y1 * scale_y), round(y2 * scale_y)
         alpha[y1:y2, x1:x2] = 1.0
     alpha = cv2.GaussianBlur(alpha, (0, 0), 5.0)
     alpha = np.clip(alpha[..., None], 0.0, 1.0)

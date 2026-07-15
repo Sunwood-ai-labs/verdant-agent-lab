@@ -1,0 +1,1 @@
+Rebuild assets/parts/solar-wing.png as one isolated vertical front-facing equipment assembly: 2x3 blue solar panel, SOLAR OUTPUT/BATTERY dashboard, and exactly three black cabinets. Preserve relative vertical alignment. Solid #FF00FF background only.

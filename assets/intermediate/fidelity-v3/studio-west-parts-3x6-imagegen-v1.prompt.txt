@@ -1,0 +1,6 @@
+Image 1 is the clean work-studio crop. Image 2 is the same source with numbered bounding boxes.
+Generate exactly 3 columns x 6 rows; cell N contains only source object N. Preserve the exact source orientation and pixel-art perspective. Remove unrelated overlapping pixels.
+
+1 desk structure; 2 rear planted shelf; 3 right tall planter shelf; 4 chair; 5 upper-left monitor; 6 diagonal black monitor; 7 lower-left screen; 8 center screen; 9 right gray device; 10 blue notebook; 11 gold-brown notebook/device; 12 potted plant; 13 white-blue paper; 14 white-gray paper; 15 tiny lamp/bottle copied without reinterpretation; 16 drawer cabinet; 17 open cabinet; 18 tiny gray framed device.
+
+Canvas dimensions divisible by 3 and 6. Equal cells, generous padding, no crossings. Flat uniform #FF00FF only; no grid, labels, floor, shadows, scenery, invention, alternate rotation, composite scene, text, or watermark.

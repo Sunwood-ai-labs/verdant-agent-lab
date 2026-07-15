@@ -1,0 +1,3 @@
+Use case: precise-object-edit
+Reference: assets/object-crops/recycling-bins.png
+Create exactly 3 columns x 6 rows. First row contains one complete independent green, blue, and gray recycling bin. Rows 2-6 are empty. Preserve front-facing orientation. Uniform #FF00FF. No wall, floor, overlap, or extra bin.

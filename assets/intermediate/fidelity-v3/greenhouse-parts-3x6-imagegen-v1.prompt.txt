@@ -1,0 +1,3 @@
+Use case: precise-object-edit
+Reference: assets/parts/greenhouse.png
+Create exactly 3 columns x 6 rows with one independent greenhouse part per cell: upper roof panels and ridge; middle roof panels and crossbeam; three lower glass banks; three vertical frames; door, handle, control; two lamps and one plant cluster. Preserve source orientation. Uniform #FF00FF. No composite greenhouse or cell overlap.

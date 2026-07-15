@@ -1,0 +1,1 @@
+Rebuild assets/parts/ai-lab.png as one isolated mixed-orientation AI lab assembly with bookshelf, whiteboard, instrument workbench, cart, papers table, oval platform, right plants, lower AI LAB door/sign, lower electronics bench, microscope device, screens, tools, and tall plant. Exclude humanoid robot. Solid #FF00FF background only.

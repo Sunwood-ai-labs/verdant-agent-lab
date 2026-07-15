@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "source": "../parts/work-studio.png",
+  "sourceSize": [
+    245,
+    290
+  ],
+  "status": "extracted-needs-independent-qa",
+  "granularityRule": "one cell equals one runtime-addressable object visible in the source crop; attached pixels belonging to that object stay together, unrelated furniture or props do not",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "continuous irregular wooden desk structure only",
+      "sourceBbox": [
+        6,
+        41,
+        199,
+        239
+      ],
+      "orientation": "source top-down; long edge vertical",
+      "output": "generated/decomposed/studio-west-v1/01-continuous-irregular-wooden-desk-structure-only.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "rear low shelf with its existing small plants",
+      "sourceBbox": [
+        31,
+        0,
+        180,
+        58
+      ],
+      "orientation": "horizontal; front faces south",
+      "output": "generated/decomposed/studio-west-v1/02-rear-low-shelf-with-its-existing-small-plants.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "right tall planter shelf with foliage",
+      "sourceBbox": [
+        195,
+        101,
+        245,
+        255
+      ],
+      "orientation": "vertical; front faces west",
+      "output": "generated/decomposed/studio-west-v1/03-right-tall-planter-shelf-with-foliage.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "black rolling chair",
+      "sourceBbox": [
+        46,
+        190,
+        101,
+        255
+      ],
+      "orientation": "chair faces north",
+      "output": "generated/decomposed/studio-west-v1/04-black-rolling-chair.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "upper-left large green monitor",
+      "sourceBbox": [
+        18,
+        53,
+        75,
+        107
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/studio-west-v1/05-upper-left-large-green-monitor.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "right black diagonal monitor",
+      "sourceBbox": [
+        112,
+        112,
+        171,
+        168
+      ],
+      "orientation": "screen faces north-east; back visible",
+      "output": "generated/decomposed/studio-west-v1/06-right-black-diagonal-monitor.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "lower-left green screen",
+      "sourceBbox": [
+        15,
+        134,
+        61,
+        181
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/studio-west-v1/07-lower-left-green-screen.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "center green screen",
+      "sourceBbox": [
+        72,
+        108,
+        112,
+        147
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/studio-west-v1/08-center-green-screen.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "right vertical gray device",
+      "sourceBbox": [
+        164,
+        151,
+        193,
+        195
+      ],
+      "orientation": "upright; top faces north",
+      "output": "generated/decomposed/studio-west-v1/09-right-vertical-gray-device.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "blue notebook on upper desk",
+      "sourceBbox": [
+        78,
+        60,
+        116,
+        99
+      ],
+      "orientation": "vertical page; top faces north",
+      "output": "generated/decomposed/studio-west-v1/10-blue-notebook-on-upper-desk.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "gold-brown notebook or device on upper-right desk",
+      "sourceBbox": [
+        143,
+        58,
+        176,
+        102
+      ],
+      "orientation": "vertical; top faces north",
+      "output": "generated/decomposed/studio-west-v1/11-gold-brown-notebook-or-device-on-upper-right-desk.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "central potted plant",
+      "sourceBbox": [
+        54,
+        126,
+        101,
+        185
+      ],
+      "orientation": "upright planter",
+      "output": "generated/decomposed/studio-west-v1/12-central-potted-plant.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "small white-blue paper below center",
+      "sourceBbox": [
+        94,
+        146,
+        128,
+        180
+      ],
+      "orientation": "diagonal page matching source",
+      "output": "generated/decomposed/studio-west-v1/13-small-white-blue-paper-below-center.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "small white-gray paper at lower-right",
+      "sourceBbox": [
+        138,
+        175,
+        170,
+        210
+      ],
+      "orientation": "diagonal page matching source",
+      "output": "generated/decomposed/studio-west-v1/14-small-white-gray-paper-at-lower-right.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "small narrow lamp or bottle at upper center",
+      "sourceBbox": [
+        122,
+        38,
+        143,
+        69
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/studio-west-v1/15-small-narrow-lamp-or-bottle-at-upper-center.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "bottom center drawer cabinet",
+      "sourceBbox": [
+        111,
+        216,
+        163,
+        274
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/studio-west-v1/16-bottom-center-drawer-cabinet.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "bottom-right open storage cabinet",
+      "sourceBbox": [
+        158,
+        214,
+        199,
+        274
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/studio-west-v1/17-bottom-right-open-storage-cabinet.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "tiny gray framed device at lower-left",
+      "sourceBbox": [
+        18,
+        174,
+        43,
+        201
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/studio-west-v1/18-tiny-gray-framed-device-at-lower-left.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/studio-west-parts-3x6-imagegen-v1-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ]
+}

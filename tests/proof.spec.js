@@ -14,19 +14,21 @@ test('captures the complete desktop interaction proof set', async ({ page }, tes
   await page.goto('/builder.html');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  await expect(page.locator('#assetCount')).toHaveText('42 / 42 OBJECTS');
+  await expect(page.locator('#assetCount')).toHaveText('48 / 48 OBJECTS');
 
   const mug = page.locator('[data-asset-id="coffee-mug"]');
   await mug.click();
-  await page.locator('#stage').hover({ position: { x: 620, y: 410 } });
+  const placementStageBox = await page.locator('#stage').boundingBox();
+  const emptyPlacement = { x: placementStageBox.width * 0.5, y: placementStageBox.height * 0.96 };
+  await page.locator('#stage').hover({ position: emptyPlacement });
   await page.screenshot({ path: artifactPath(testInfo, 'builder-placing-v6.png') });
 
-  await page.locator('#stage').click({ position: { x: 620, y: 410 } });
+  await page.locator('#stage').click({ position: emptyPlacement });
   await expect(page.locator('#inspectorName')).toHaveText('coffee mug');
   await expect(page.locator('#inspectorEmpty')).toBeHidden();
   await page.screenshot({ path: artifactPath(testInfo, 'builder-inspector-v6.png') });
 
-  const chair = page.locator('[data-uid="chair-a1"]');
+  const chair = page.locator('[data-uid="studio-west-a1"]');
   const stageBox = await page.locator('#stage').boundingBox();
   const chairBox = await chair.boundingBox();
   await page.mouse.move(chairBox.x + chairBox.width / 2, chairBox.y + chairBox.height / 2);
@@ -66,7 +68,7 @@ test('captures the 390px mobile catalog, stage, and inspector flow', async ({ pa
   await page.goto('/builder.html');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  await expect(page.locator('#assetCount')).toHaveText('42 / 42 OBJECTS');
+  await expect(page.locator('#assetCount')).toHaveText('48 / 48 OBJECTS');
   await page.locator('[data-uid="north-lounge-a1"]').focus();
   await page.keyboard.press('Enter');
   await expect(page.locator('#inspectorPanel')).toBeVisible();

@@ -1,0 +1,418 @@
+{
+  "version": 5,
+  "source": "../parts/quiet-lounge.png",
+  "sourceSize": [
+    280,
+    230
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object or declared fixture visible in the source crop",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "green lounge rug platform",
+      "sourceBbox": [
+        74,
+        67,
+        199,
+        188
+      ],
+      "orientation": "top-down",
+      "output": "generated/decomposed/quiet-lounge-v5/01-green-lounge-rug-platform.png",
+      "sheetBbox": [
+        0,
+        0,
+        313,
+        278
+      ],
+      "recomposedBbox": [
+        74,
+        67,
+        199,
+        188
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "main green sectional sofa",
+      "sourceBbox": [
+        79,
+        63,
+        191,
+        170
+      ],
+      "orientation": "inward-facing",
+      "output": "generated/decomposed/quiet-lounge-v5/02-main-green-sectional-sofa.png",
+      "sheetBbox": [
+        313,
+        0,
+        626,
+        278
+      ],
+      "recomposedBbox": [
+        79,
+        63,
+        191,
+        170
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "narrow right sofa return",
+      "sourceBbox": [
+        164,
+        86,
+        204,
+        171
+      ],
+      "orientation": "faces west inward",
+      "output": "generated/decomposed/quiet-lounge-v5/03-narrow-right-sofa-return.png",
+      "sheetBbox": [
+        626,
+        0,
+        939,
+        278
+      ],
+      "recomposedBbox": [
+        164,
+        86,
+        204,
+        171
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "left wooden side table bench",
+      "sourceBbox": [
+        14,
+        82,
+        84,
+        190
+      ],
+      "orientation": "front faces east",
+      "output": "generated/decomposed/quiet-lounge-v5/04-left-wooden-side-table-bench.png",
+      "sheetBbox": [
+        0,
+        278,
+        313,
+        556
+      ],
+      "recomposedBbox": [
+        14,
+        82,
+        84,
+        190
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "left tall leafy potted plant",
+      "sourceBbox": [
+        16,
+        60,
+        72,
+        139
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/quiet-lounge-v5/05-left-tall-leafy-potted-plant.png",
+      "sheetBbox": [
+        313,
+        278,
+        626,
+        556
+      ],
+      "recomposedBbox": [
+        16,
+        60,
+        72,
+        139
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "left white blue flowering cluster",
+      "sourceBbox": [
+        9,
+        112,
+        76,
+        184
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/quiet-lounge-v5/06-left-white-blue-flowering-cluster.png",
+      "sheetBbox": [
+        626,
+        278,
+        939,
+        556
+      ],
+      "recomposedBbox": [
+        9,
+        112,
+        76,
+        184
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "right tall tree planter",
+      "sourceBbox": [
+        184,
+        0,
+        258,
+        192
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/quiet-lounge-v5/07-right-tall-tree-planter.png",
+      "sheetBbox": [
+        0,
+        556,
+        313,
+        834
+      ],
+      "recomposedBbox": [
+        184,
+        0,
+        258,
+        192
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "right lower flowering planter bench",
+      "sourceBbox": [
+        181,
+        136,
+        253,
+        193
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/quiet-lounge-v5/08-right-lower-flowering-planter-bench.png",
+      "sheetBbox": [
+        313,
+        556,
+        626,
+        834
+      ],
+      "recomposedBbox": [
+        181,
+        136,
+        253,
+        193
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "small upper-left potted plant",
+      "sourceBbox": [
+        48,
+        53,
+        79,
+        99
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/quiet-lounge-v5/09-small-upper-left-potted-plant.png",
+      "sheetBbox": [
+        626,
+        556,
+        939,
+        834
+      ],
+      "recomposedBbox": [
+        48,
+        53,
+        79,
+        99
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "left paper card",
+      "sourceBbox": [
+        80,
+        119,
+        104,
+        146
+      ],
+      "orientation": "slight diagonal",
+      "output": "generated/decomposed/quiet-lounge-v5/10-left-paper-card.png",
+      "sheetBbox": [
+        0,
+        834,
+        313,
+        1112
+      ],
+      "recomposedBbox": [
+        80,
+        119,
+        104,
+        146
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "center green gray paper card",
+      "sourceBbox": [
+        95,
+        152,
+        125,
+        174
+      ],
+      "orientation": "slight diagonal",
+      "output": "generated/decomposed/quiet-lounge-v5/11-center-green-gray-paper-card.png",
+      "sheetBbox": [
+        313,
+        834,
+        626,
+        1112
+      ],
+      "recomposedBbox": [
+        95,
+        152,
+        125,
+        174
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "right white paper card",
+      "sourceBbox": [
+        153,
+        145,
+        181,
+        172
+      ],
+      "orientation": "slight diagonal",
+      "output": "generated/decomposed/quiet-lounge-v5/12-right-white-paper-card.png",
+      "sheetBbox": [
+        626,
+        834,
+        939,
+        1112
+      ],
+      "recomposedBbox": [
+        153,
+        145,
+        181,
+        172
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "upper partial wooden workstation",
+      "sourceBbox": [
+        100,
+        0,
+        199,
+        36
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/quiet-lounge-v5/13-upper-partial-wooden-workstation.png",
+      "sheetBbox": [
+        0,
+        1112,
+        313,
+        1390
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "small upper-right dark device",
+      "sourceBbox": [
+        213,
+        0,
+        243,
+        32
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/quiet-lounge-v5/14-small-upper-right-dark-device.png",
+      "sheetBbox": [
+        313,
+        1112,
+        626,
+        1390
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "upper wall ledge segment",
+      "sourceBbox": [
+        0,
+        0,
+        280,
+        42
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/quiet-lounge-v5/15-upper-wall-ledge-segment.png",
+      "sheetBbox": [
+        626,
+        1112,
+        939,
+        1390
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "lower horizontal wall curb",
+      "sourceBbox": [
+        0,
+        188,
+        280,
+        230
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/quiet-lounge-v5/16-lower-horizontal-wall-curb.png",
+      "sheetBbox": [
+        0,
+        1390,
+        313,
+        1668
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "small bottom-left potted plant",
+      "sourceBbox": [
+        14,
+        202,
+        48,
+        230
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/quiet-lounge-v5/17-small-bottom-left-potted-plant.png",
+      "sheetBbox": [
+        313,
+        1390,
+        626,
+        1668
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "small narrow right wooden planter stand",
+      "sourceBbox": [
+        214,
+        152,
+        253,
+        205
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/quiet-lounge-v5/18-small-narrow-right-wooden-planter-stand.png",
+      "sheetBbox": [
+        626,
+        1390,
+        939,
+        1668
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/quiet-lounge-parts-3x6-imagegen-v5-normalized-alpha.png",
+  "cellSize": [
+    313,
+    278
+  ],
+  "recomposition": "generated/furniture/south-lounge-decomposed-v5.png"
+}

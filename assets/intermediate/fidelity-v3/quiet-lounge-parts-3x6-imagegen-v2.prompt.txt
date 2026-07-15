@@ -1,0 +1,4 @@
+Use case: precise-object-edit
+Asset type: 2D game runtime prop decomposition sheet
+Authoritative reference: assets/parts/quiet-lounge.png
+Rule: exactly 3 columns x 6 rows; one cell equals one independent source part; preserve source orientation; sofa body and right return must not overlap; papers retain separate source angles; uniform #FF00FF background.

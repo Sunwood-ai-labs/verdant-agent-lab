@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "canvas": { "width": 1280, "height": 960 },
+  "policy": "Only people, mascot artwork, and humanoid robots omitted at the user's request are excluded. Furniture, equipment, rooms, architecture, greenery, and every other environmental pixel remain scored.",
+  "regions": [
+    { "id": "mascot-sign", "bbox": [548, 72, 608, 151] },
+    { "id": "reception-person", "bbox": [586, 151, 620, 212] },
+    { "id": "north-lounge-person-left", "bbox": [865, 132, 904, 192] },
+    { "id": "north-lounge-person-right", "bbox": [932, 141, 974, 198] },
+    { "id": "cafe-person", "bbox": [1067, 174, 1105, 248] },
+    { "id": "studio-person-left", "bbox": [273, 315, 310, 395] },
+    { "id": "studio-person-right", "bbox": [407, 310, 440, 390] },
+    { "id": "meeting-person-left", "bbox": [744, 337, 780, 414] },
+    { "id": "meeting-person-right", "bbox": [827, 336, 864, 414] },
+    { "id": "aisle-person", "bbox": [584, 354, 620, 415] },
+    { "id": "ai-lab-person", "bbox": [1008, 340, 1042, 416] },
+    { "id": "ai-lab-humanoid-robot", "bbox": [1050, 323, 1104, 426] },
+    { "id": "workstation-person-left", "bbox": [408, 585, 447, 661] },
+    { "id": "workstation-person-right", "bbox": [695, 581, 738, 662] },
+    { "id": "south-lounge-person", "bbox": [980, 620, 1023, 691] }
+  ]
+}

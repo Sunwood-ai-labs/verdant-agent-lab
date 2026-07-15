@@ -110,7 +110,16 @@ def main():
     masked_ssim = masked_mean(similarity, mask)
     edges = edge_f1(target_gray, candidate_gray, mask)
     histogram = lab_histogram_similarity(target, candidate, mask)
-    composite = 0.70 * masked_ssim + 0.20 * edges + 0.10 * histogram
+    # These blended values are diagnostics only.  They may help locate a
+    # silhouette or palette issue, but must never substitute for a requested
+    # direct screenshot-similarity target.
+    pixel_composite = 0.70 * masked_ssim + 0.20 * edges + 0.10 * histogram
+    layout_content = 0.35 * masked_ssim + 0.40 * edges + 0.25 * histogram
+    ledger_verified = ledger.get("status") == "complete" and all(
+        instance.get("status") == "verified" for instance in ledger["instances"]
+    )
+    direct_masked_ssim_pass = masked_ssim >= 0.60
+    objective_pass = direct_masked_ssim_pass and ledger_verified
 
     zones = []
     for instance in ledger["instances"]:
@@ -124,21 +133,28 @@ def main():
         })
 
     report = {
-        "schemaVersion": 1,
-        "method": "office-similarity-v1",
+        "schemaVersion": 2,
+        "method": "office-similarity-v2-direct-ssim",
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "label": args.label,
         "normalization": {"width": 1280, "height": 960, "sameViewRequired": True, "referenceOverlayForbidden": True},
-        "weights": {"maskedGrayscaleSsim": 0.70, "edgeF1": 0.20, "labHistogram": 0.10},
-        "thresholds": {"maskedSsimPercent": 60, "edgeF1Percent": 45},
+        "diagnosticWeights": {
+            "pixelComposite": {"maskedGrayscaleSsim": 0.70, "edgeF1": 0.20, "labHistogram": 0.10},
+            "layoutContentSimilarity": {"maskedGrayscaleSsim": 0.35, "edgeF1": 0.40, "labHistogram": 0.25},
+        },
+        "thresholds": {"authoritativeDirectMaskedSsimPercent": 60},
         "scores": {
             "rawSsimPercent": round(raw_ssim * 100, 2),
             "maskedSsimPercent": round(masked_ssim * 100, 2),
             "edgeF1Percent": round(edges * 100, 2),
             "labHistogramPercent": round(histogram * 100, 2),
-            "compositePercent": round(composite * 100, 2),
+            "pixelCompositePercent": round(pixel_composite * 100, 2),
+            "layoutContentSimilarityPercent": round(layout_content * 100, 2),
         },
-        "pass": masked_ssim >= 0.60 and edges >= 0.45,
+        "ledgerVerified": ledger_verified,
+        "directMaskedSsimPass": direct_masked_ssim_pass,
+        "diagnosticOnly": ["edgeF1Percent", "labHistogramPercent", "pixelCompositePercent", "layoutContentSimilarityPercent"],
+        "pass": objective_pass,
         "inputs": {
             "target": {"name": Path(args.target).name, "sha256": sha256(args.target)},
             "candidate": {"name": Path(args.candidate).name, "sha256": sha256(args.candidate)},

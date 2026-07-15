@@ -1,0 +1,1 @@
+Rebuild assets/object-crops/recycling-bins.png as one isolated front-facing set of exactly three bins: green, blue, dark gray, each with recycling icon, on the shared curb/base. Solid #FF00FF background only.

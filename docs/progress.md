@@ -1,5 +1,17 @@
 # Build progress
 
+## 2026-07-15 — direct similarity correction
+
+- The prior 69.96% PASS is retracted: it was a weighted edge/palette diagnostic,
+  not direct screenshot similarity.
+- The movable-object mask was also rejected because it hid the very assets being
+  evaluated. Current direct SSIM must use the character-only mask; the fresh
+  result is recorded with its input hash in the v2 report.
+- All thirteen ledger zones are open again after independent same-view review;
+  generated 3x6 cells are implementation candidates, not visual sign-off.
+- Current evidence is `proof/modular-office-v1.png` and the regenerated
+  `proof/similarity/modular-office-direct-ssim-v2.json`.
+
 ## Checkpoint 1 — base recreation
 
 Status: characterless base complete; HTML visual reconstruction incomplete
@@ -76,3 +88,18 @@ validate:reference-fidelity` must fail until each is visually verified.
 - Each generated source, prompt, chroma intermediate, and alpha output is preserved under `assets/intermediate/fidelity-v1/` and `assets/generated/furniture/`.
 - The current reference-overlay-off screenshot scores 57.21% masked SSIM and remains `STRUCTURAL PROTOTYPE — NOT VERIFIED`.
 - Remaining open regions: solar equipment, west studio, AI lab, south lounge, recycling bins, and independently authored architecture layers. Candidate regions still require final visual verification.
+# Superseded historical checkpoint — directional decomposition
+
+- Retracted: generated 3x6 cells are isolated candidates, not verified source
+  content/facing matches in the final render.
+- Twelve equipment/furniture zones use independent Image Gen sprites; fixed garden/wall topology is a dedicated extracted architecture layer with Image Gen empty-zone fills.
+- Retracted: the 72.05% weighted value is diagnostic-only, not the requested
+  screenshot-similarity result.
+# Superseded historical checkpoint — crop-first 3x6 sheet
+
+- Replaced the mixed single-asset generation route with the user-requested 3-column x 6-row Image Gen sheet route.
+- Deterministic source sheet: `assets/intermediate/fidelity-v2/reference-crops-3x6-v1.png`.
+- Image Gen sheet: `assets/intermediate/fidelity-v2/spritesheet-3x6-imagegen-v1-chroma.png` plus alpha version and 18 extracted cells under `assets/generated/sheet3x6-v1/`.
+- All 18 cells preserve their source crop's row-major identity and facing; the builder now consumes the extracted sheet cells.
+- Retracted: the earlier mask excluded movable-object regions and therefore
+  cannot be used for object-fidelity scoring.

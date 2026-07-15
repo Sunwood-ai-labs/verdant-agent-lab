@@ -4,26 +4,32 @@ test.beforeEach(async ({ page }) => {
   await page.goto('/builder.html');
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  await expect(page.locator('#assetCount')).toHaveText('42 / 42 OBJECTS');
+  await expect(page.locator('#assetCount')).toHaveText('48 / 48 OBJECTS');
+});
+
+const starterCount = async (page) => page.evaluate(async () => {
+  const layout = await fetch('/assets/layouts/starter.v1.json').then((response) => response.json());
+  return layout.objects.length;
 });
 
 test('loads every manifest and places an independent prop', async ({ page }) => {
-  await expect(page.locator('#placementCount')).toHaveText('21 PLACED');
+  const initialCount = await starterCount(page);
+  await expect(page.locator('#placementCount')).toHaveText(`${initialCount} PLACED`);
 
   await page.locator('[data-asset-id="coffee-mug"]').click();
   await page.locator('#stage').click({ position: { x: 600, y: 420 } });
 
-  await expect(page.locator('#placementCount')).toHaveText('22 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText(`${initialCount + 1} PLACED`);
   await expect(page.locator('#inspectorName')).toHaveText('coffee mug');
   await expect(page.locator('#inspectorPanel')).toBeVisible();
   await expect(page.locator('#inspectorEmpty')).toBeHidden();
 
   await page.reload();
-  await expect(page.locator('#placementCount')).toHaveText('22 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText(`${initialCount + 1} PLACED`);
 });
 
-test('drags a placed chair to a new grid cell', async ({ page }) => {
-  const chair = page.locator('[data-uid="chair-a1"]');
+test('drags a placed directional sprite to a new grid cell', async ({ page }) => {
+  const chair = page.locator('[data-uid="studio-west-a1"]');
   const stage = page.locator('#stage');
   const chairBox = await chair.boundingBox();
   const stageBox = await stage.boundingBox();
@@ -33,11 +39,12 @@ test('drags a placed chair to a new grid cell', async ({ page }) => {
   await page.mouse.move(stageBox.x + stageBox.width * 0.72, stageBox.y + stageBox.height * 0.72, { steps: 8 });
   await page.mouse.up();
 
-  await expect(page.locator('#inspectorGrid')).not.toHaveText('14, 15');
+  await expect(page.locator('#inspectorGrid')).not.toHaveText('12, 12');
   await expect(chair).toHaveClass(/is-selected/);
 });
 
 test('toggles the reference layer and deletes a selected object', async ({ page }) => {
+  const initialCount = await starterCount(page);
   await page.locator('#referenceToggle').click();
   await expect(page.locator('#stage')).toHaveClass(/is-reference/);
 
@@ -45,11 +52,12 @@ test('toggles the reference layer and deletes a selected object', async ({ page 
   await page.keyboard.press('Enter');
   await expect(page.locator('#inspectorEmpty')).toBeHidden();
   await page.locator('#deleteButton').click();
-  await expect(page.locator('#placementCount')).toHaveText('20 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText(`${initialCount - 1} PLACED`);
   await expect(page.locator('[data-uid="north-lounge-a1"]')).toHaveCount(0);
 });
 
 test('reports pressed state and supports keyboard placement and movement', async ({ page }) => {
+  const initialCount = await starterCount(page);
   const plantFilter = page.locator('[data-category="plant"]');
   await plantFilter.click();
   await expect(plantFilter).toHaveAttribute('aria-pressed', 'true');
@@ -62,11 +70,11 @@ test('reports pressed state and supports keyboard placement and movement', async
 
   await page.locator('#stage').focus();
   await page.keyboard.press('Enter');
-  await expect(page.locator('#placementCount')).toHaveText('22 PLACED');
+  await expect(page.locator('#placementCount')).toHaveText(`${initialCount + 1} PLACED`);
 
-  const chair = page.locator('[data-uid="chair-a1"]');
+  const chair = page.locator('[data-uid="studio-west-a1"]');
   await chair.focus();
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('#inspectorGrid')).toHaveText('15, 15');
-  await expect(chair).toHaveAttribute('aria-label', /列15、行15/);
+  await expect(page.locator('#inspectorGrid')).toHaveText('12.875, 11.875');
+  await expect(chair).toHaveAttribute('aria-label', /列12.875、行11.875/);
 });

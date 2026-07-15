@@ -25,9 +25,12 @@ evidence.
 4. The renderer uses the layout `rotation` and footprint aspect ratio, or the
    instance owns a direction-specific sprite where rotation would be visually
    wrong.
-5. Canonical side-by-side, overlay/blink, absolute-diff, zone-diff, and
+5. The requested 60% screenshot-similarity threshold is the masked grayscale
+   SSIM itself, not a weighted score. Edge, palette, and blended scores are
+   diagnostic-only and cannot make an SSIM failure pass.
+6. Canonical side-by-side, overlay/blink, absolute-diff, zone-diff, and
    per-instance crop evidence are versioned and reviewed.
-6. A validator exits nonzero for missing, proxy, unverified, orientation-fail,
+7. A validator exits nonzero for missing, proxy, unverified, orientation-fail,
    or count-mismatch ledger records.
 
 Until all six gates pass, label the work **structural prototype**, not complete

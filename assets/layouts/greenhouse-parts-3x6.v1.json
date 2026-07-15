@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "source": "../parts/greenhouse.png",
+  "sourceSize": [
+    300,
+    340
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one independent greenhouse part",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "left upper roof glass panel",
+      "sourceBbox": [
+        15,
+        20,
+        150,
+        110
+      ],
+      "orientation": "slopes down left",
+      "output": "generated/decomposed/greenhouse-v1/01-left-upper-roof-glass-panel.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        15,
+        20,
+        150,
+        110
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "right upper roof glass panel",
+      "sourceBbox": [
+        150,
+        20,
+        285,
+        110
+      ],
+      "orientation": "slopes down right",
+      "output": "generated/decomposed/greenhouse-v1/02-right-upper-roof-glass-panel.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        150,
+        20,
+        285,
+        110
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "center roof ridge beam",
+      "sourceBbox": [
+        145,
+        10,
+        155,
+        170
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/greenhouse-v1/03-center-roof-ridge-beam.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        145,
+        10,
+        155,
+        170
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "left middle roof glass panel",
+      "sourceBbox": [
+        20,
+        90,
+        150,
+        175
+      ],
+      "orientation": "slopes down left",
+      "output": "generated/decomposed/greenhouse-v1/04-left-middle-roof-glass-panel.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ],
+      "recomposedBbox": [
+        20,
+        90,
+        150,
+        175
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "right middle roof glass panel",
+      "sourceBbox": [
+        150,
+        90,
+        280,
+        175
+      ],
+      "orientation": "slopes down right",
+      "output": "generated/decomposed/greenhouse-v1/05-right-middle-roof-glass-panel.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ],
+      "recomposedBbox": [
+        150,
+        90,
+        280,
+        175
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "horizontal roof crossbeam",
+      "sourceBbox": [
+        15,
+        100,
+        285,
+        115
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/greenhouse-v1/06-horizontal-roof-crossbeam.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ],
+      "recomposedBbox": [
+        15,
+        100,
+        285,
+        115
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "left lower glass wall bank",
+      "sourceBbox": [
+        15,
+        150,
+        100,
+        300
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/greenhouse-v1/07-left-lower-glass-wall-bank.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ],
+      "recomposedBbox": [
+        15,
+        150,
+        100,
+        300
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "center lower glass wall bank",
+      "sourceBbox": [
+        100,
+        150,
+        200,
+        300
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/greenhouse-v1/08-center-lower-glass-wall-bank.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ],
+      "recomposedBbox": [
+        100,
+        150,
+        200,
+        300
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "right lower glass wall bank",
+      "sourceBbox": [
+        200,
+        150,
+        285,
+        300
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/greenhouse-v1/09-right-lower-glass-wall-bank.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ],
+      "recomposedBbox": [
+        200,
+        150,
+        285,
+        300
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "left vertical greenhouse frame",
+      "sourceBbox": [
+        10,
+        30,
+        25,
+        320
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/greenhouse-v1/10-left-vertical-greenhouse-frame.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ],
+      "recomposedBbox": [
+        10,
+        30,
+        25,
+        320
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "center vertical greenhouse frame",
+      "sourceBbox": [
+        145,
+        15,
+        155,
+        320
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/greenhouse-v1/11-center-vertical-greenhouse-frame.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ],
+      "recomposedBbox": [
+        145,
+        15,
+        155,
+        320
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "right vertical greenhouse frame",
+      "sourceBbox": [
+        275,
+        30,
+        290,
+        320
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/greenhouse-v1/12-right-vertical-greenhouse-frame.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ],
+      "recomposedBbox": [
+        275,
+        30,
+        290,
+        320
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "wooden greenhouse door",
+      "sourceBbox": [
+        90,
+        220,
+        180,
+        340
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/greenhouse-v1/13-wooden-greenhouse-door.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ],
+      "recomposedBbox": [
+        90,
+        220,
+        180,
+        340
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "door handle bolt",
+      "sourceBbox": [
+        160,
+        240,
+        180,
+        290
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/greenhouse-v1/14-door-handle-bolt.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ],
+      "recomposedBbox": [
+        160,
+        240,
+        180,
+        290
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "blue wall control panel",
+      "sourceBbox": [
+        195,
+        225,
+        235,
+        275
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/greenhouse-v1/15-blue-wall-control-panel.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ],
+      "recomposedBbox": [
+        195,
+        225,
+        235,
+        275
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "left hanging lamp",
+      "sourceBbox": [
+        90,
+        140,
+        110,
+        190
+      ],
+      "orientation": "hanging",
+      "output": "generated/decomposed/greenhouse-v1/16-left-hanging-lamp.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ],
+      "recomposedBbox": [
+        90,
+        140,
+        110,
+        190
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "right hanging lamp",
+      "sourceBbox": [
+        180,
+        140,
+        200,
+        190
+      ],
+      "orientation": "hanging",
+      "output": "generated/decomposed/greenhouse-v1/17-right-hanging-lamp.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ],
+      "recomposedBbox": [
+        180,
+        140,
+        200,
+        190
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "interior potted plant cluster",
+      "sourceBbox": [
+        20,
+        140,
+        90,
+        320
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/greenhouse-v1/18-interior-potted-plant-cluster.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ],
+      "recomposedBbox": [
+        20,
+        140,
+        90,
+        320
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/greenhouse-parts-3x6-imagegen-v1-normalized-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/furniture/greenhouse-decomposed-v1.png"
+}

@@ -1,0 +1,1 @@
+Create only the right-side climbing vine foliage strip from the solar wing reference. Preserve vertical source orientation. Exclude support pole, stone, metal, cabinet, controller, wall, and panels. Uniform #FF00FF.

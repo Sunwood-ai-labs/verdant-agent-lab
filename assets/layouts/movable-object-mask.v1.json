@@ -3,14 +3,18 @@
   "canvas": { "width": 1280, "height": 960 },
   "policy": "Replace movable-object interiors with the Image Gen empty-foundation candidate while preserving original fixed architecture elsewhere.",
   "regions": [
+    { "id": "solar-wing", "bbox": [40, 45, 210, 460] },
     { "id": "reception", "bbox": [500, 135, 790, 275] },
     { "id": "north-lounge", "bbox": [835, 135, 1015, 265] },
+    { "id": "cafe", "bbox": [1010, 100, 1210, 275] },
     { "id": "studio-west", "bbox": [205, 275, 555, 485] },
     { "id": "meeting-room", "bbox": [685, 275, 995, 505] },
-    { "id": "ai-lab-interior", "bbox": [900, 300, 1135, 505] },
+    { "id": "ai-lab-interior", "bbox": [900, 280, 1160, 655] },
+    { "id": "greenhouse", "bbox": [30, 460, 290, 765] },
     { "id": "south-work-west", "bbox": [335, 545, 605, 685] },
     { "id": "south-work-east", "bbox": [615, 545, 855, 685] },
     { "id": "south-lounge", "bbox": [900, 615, 1165, 775] },
-    { "id": "utility-bins", "bbox": [930, 765, 1115, 875] }
+    { "id": "air-quality-board", "bbox": [1130, 450, 1280, 735] },
+    { "id": "utility-bins", "bbox": [920, 750, 1160, 910] }
   ]
 }

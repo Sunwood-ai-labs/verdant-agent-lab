@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "columns": 3,
+  "rows": 6,
+  "cellSize": 384,
+  "cells": [
+    { "index": 0, "id": "solar-wing", "source": "../parts/solar-wing.png", "orientation": "front-facing" },
+    { "index": 1, "id": "reception", "source": "../object-crops/curved-reception-desk.png", "orientation": "south-facing" },
+    { "index": 2, "id": "north-lounge", "source": "../object-crops/lounge-sofa-top.png", "orientation": "inward-facing" },
+    { "index": 3, "id": "cafe", "source": "../object-crops/cafe-counter.png", "orientation": "south-facing" },
+    { "index": 4, "id": "studio-west", "source": "../parts/work-studio.png", "orientation": "mixed" },
+    { "index": 5, "id": "meeting-table", "source": "../object-crops/meeting-table.png", "orientation": "north-south" },
+    { "index": 6, "id": "ai-lab", "source": "../parts/ai-lab.png", "orientation": "mixed" },
+    { "index": 7, "id": "greenhouse", "source": "../parts/greenhouse.png", "orientation": "south-east" },
+    { "index": 8, "id": "workstation-west", "source": "../object-crops/workstation-left.png", "orientation": "north-facing" },
+    { "index": 9, "id": "workstation-east", "source": "../object-crops/workstation-right.png", "orientation": "north-facing" },
+    { "index": 10, "id": "south-lounge", "source": "../parts/quiet-lounge.png", "orientation": "inward-facing" },
+    { "index": 11, "id": "recycling-bins", "source": "../object-crops/recycling-bins.png", "orientation": "front-facing" },
+    { "index": 12, "id": "air-quality-board", "source": "../object-crops/air-quality-board.png", "orientation": "front-facing" },
+    { "index": 13, "id": "ideas-whiteboard", "source": "../object-crops/ideas-whiteboard.png", "orientation": "front-facing" },
+    { "index": 14, "id": "meeting-display", "source": "../object-crops/meeting-display.png", "orientation": "front-facing" },
+    { "index": 15, "id": "lab-bench", "source": "../object-crops/lab-bench.png", "orientation": "mixed" },
+    { "index": 16, "id": "server-dashboard", "source": "../object-crops/server-dashboard.png", "orientation": "front-facing" },
+    { "index": 17, "id": "server-racks", "source": "../object-crops/server-racks.png", "orientation": "front-facing" }
+  ]
+}

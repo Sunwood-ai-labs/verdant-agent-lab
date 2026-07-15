@@ -1,0 +1,2 @@
+Reference: assets/parts/workstations.png, left workstation only.
+Generate a portrait 3x6 sprite sheet on #FF00FF. One cell equals one standalone physical object or one inseparable fixture. Preserve source pixel-art direction, color, material, and proportion. Split the desk, planter shelf, chair, each display, each plant, each loose prop, and each cabinet. Keep padding around every part and leave no cross-cell pixels.

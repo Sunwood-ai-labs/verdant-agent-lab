@@ -1,0 +1,480 @@
+{
+  "version": 1,
+  "source": "../parts/workstations.png",
+  "sourceSize": [
+    570,
+    255
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one standalone physical object or inseparable fixture",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "runtimeSubsets": [
+    {
+      "id": "south-work-west",
+      "cells": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "output": "generated/furniture/workstation-west-decomposed-v4.png"
+    }
+  ],
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "west bare wooden desk structure",
+      "sourceBbox": [
+        38,
+        77,
+        282,
+        209
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstation-west-v4/01-west-bare-wooden-desk-structure.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        78,
+        77,
+        241,
+        209
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "west rear flower planter shelf",
+      "sourceBbox": [
+        14,
+        9,
+        278,
+        91
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstation-west-v4/02-west-rear-flower-planter-shelf.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        99,
+        9,
+        193,
+        91
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "west rolling chair",
+      "sourceBbox": [
+        105,
+        156,
+        153,
+        233
+      ],
+      "orientation": "faces north",
+      "output": "generated/decomposed/workstation-west-v4/03-west-rolling-chair.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        105,
+        156,
+        152,
+        233
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "west left green monitor",
+      "sourceBbox": [
+        91,
+        68,
+        158,
+        123
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstation-west-v4/04-west-left-green-monitor.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ],
+      "recomposedBbox": [
+        91,
+        68,
+        158,
+        122
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "west diagonal black monitor",
+      "sourceBbox": [
+        151,
+        73,
+        208,
+        135
+      ],
+      "orientation": "screen faces north-east",
+      "output": "generated/decomposed/workstation-west-v4/05-west-diagonal-black-monitor.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ],
+      "recomposedBbox": [
+        155,
+        73,
+        203,
+        135
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "west blue tablet display",
+      "sourceBbox": [
+        99,
+        119,
+        150,
+        154
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstation-west-v4/06-west-blue-tablet-display.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ],
+      "recomposedBbox": [
+        99,
+        121,
+        150,
+        152
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "west left white potted plant",
+      "sourceBbox": [
+        204,
+        77,
+        238,
+        135
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/workstation-west-v4/07-west-left-white-potted-plant.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ],
+      "recomposedBbox": [
+        204,
+        84,
+        238,
+        127
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "west right white potted plant",
+      "sourceBbox": [
+        238,
+        77,
+        274,
+        135
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/workstation-west-v4/08-west-right-white-potted-plant.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ],
+      "recomposedBbox": [
+        238,
+        81,
+        274,
+        131
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "west dark stylus holder",
+      "sourceBbox": [
+        158,
+        119,
+        180,
+        158
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/workstation-west-v4/09-west-dark-stylus-holder.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ],
+      "recomposedBbox": [
+        162,
+        119,
+        176,
+        158
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "west pen cup",
+      "sourceBbox": [
+        72,
+        112,
+        92,
+        153
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/workstation-west-v4/10-west-pen-cup.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ],
+      "recomposedBbox": [
+        72,
+        112,
+        92,
+        153
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "west coffee mug",
+      "sourceBbox": [
+        183,
+        113,
+        207,
+        138
+      ],
+      "orientation": "handle right",
+      "output": "generated/decomposed/workstation-west-v4/11-west-coffee-mug.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ],
+      "recomposedBbox": [
+        185,
+        113,
+        205,
+        138
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "west mouse",
+      "sourceBbox": [
+        73,
+        143,
+        91,
+        159
+      ],
+      "orientation": "diagonal",
+      "output": "generated/decomposed/workstation-west-v4/12-west-mouse.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ],
+      "recomposedBbox": [
+        73,
+        143,
+        91,
+        159
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "west closed book stack",
+      "sourceBbox": [
+        204,
+        114,
+        232,
+        147
+      ],
+      "orientation": "diagonal",
+      "output": "generated/decomposed/workstation-west-v4/13-west-closed-book-stack.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ],
+      "recomposedBbox": [
+        204,
+        120,
+        232,
+        141
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "west open notebook",
+      "sourceBbox": [
+        228,
+        110,
+        268,
+        151
+      ],
+      "orientation": "open toward south",
+      "output": "generated/decomposed/workstation-west-v4/14-west-open-notebook.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ],
+      "recomposedBbox": [
+        228,
+        117,
+        268,
+        144
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "west paper stack",
+      "sourceBbox": [
+        50,
+        110,
+        72,
+        141
+      ],
+      "orientation": "diagonal",
+      "output": "generated/decomposed/workstation-west-v4/15-west-paper-stack.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ],
+      "recomposedBbox": [
+        50,
+        116,
+        72,
+        135
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "west left drawer cabinet",
+      "sourceBbox": [
+        161,
+        166,
+        194,
+        219
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstation-west-v4/16-west-left-drawer-cabinet.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ],
+      "recomposedBbox": [
+        161,
+        171,
+        194,
+        214
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "west center drawer cabinet",
+      "sourceBbox": [
+        194,
+        166,
+        228,
+        219
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstation-west-v4/17-west-center-drawer-cabinet.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ],
+      "recomposedBbox": [
+        194,
+        173,
+        228,
+        212
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "west right drawer cabinet",
+      "sourceBbox": [
+        228,
+        166,
+        262,
+        219
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstation-west-v4/18-west-right-drawer-cabinet.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ],
+      "recomposedBbox": [
+        228,
+        172,
+        262,
+        212
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/workstation-west-parts-3x6-imagegen-v1-normalized-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/furniture/workstation-west-decomposed-v4.png"
+}

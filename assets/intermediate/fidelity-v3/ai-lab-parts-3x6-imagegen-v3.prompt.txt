@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: 2D game runtime prop decomposition sheet
+Authoritative reference: assets/parts/ai-lab.png
+Rule: exactly 3 columns x 6 rows; one cell equals one independent source part; preserve source orientation; shelves and benches must be empty; uniform #FF00FF background.
+Cell order: empty bookshelf; potted plant; whiteboard; single vine planter; bare upper bench; monitor; microscope; control console; round instrument; testing platform; wheeled analyzer; drawer cart; bare lower bench; left green device; middle green device; right yellow-green device; potted tree; AI LAB sign.

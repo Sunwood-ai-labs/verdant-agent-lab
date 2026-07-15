@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "source": "../object-crops/recycling-bins.png",
+  "sourceSize": [
+    220,
+    125
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one complete independent recycling bin; unused cells remain empty",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "green recycling bin",
+      "sourceBbox": [
+        0,
+        5,
+        73,
+        125
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/recycling-bins-v1/01-green-recycling-bin.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        0,
+        5,
+        73,
+        125
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "blue recycling bin",
+      "sourceBbox": [
+        73,
+        0,
+        147,
+        125
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/recycling-bins-v1/02-blue-recycling-bin.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        73,
+        0,
+        147,
+        125
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "gray recycling bin",
+      "sourceBbox": [
+        147,
+        5,
+        220,
+        125
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/recycling-bins-v1/03-gray-recycling-bin.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        147,
+        5,
+        220,
+        125
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/recycling-bins-parts-3x6-imagegen-v1-normalized-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/technology/recycling-bin-set-decomposed-v1.png"
+}

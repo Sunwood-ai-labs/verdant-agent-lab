@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "source": "../parts/workstations.png",
+  "sourceSize": [
+    570,
+    255
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object or declared fixed group visible in the source crop",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "west long wooden desk structure",
+      "sourceBbox": [
+        38,
+        77,
+        282,
+        209
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstations-v2/01-west-long-wooden-desk-structure.png",
+      "sheetBbox": [
+        0,
+        0,
+        418,
+        209
+      ],
+      "recomposedBbox": [
+        38,
+        77,
+        282,
+        209
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "west rear flower planter shelf",
+      "sourceBbox": [
+        14,
+        9,
+        278,
+        91
+      ],
+      "orientation": "horizontal; front faces south",
+      "output": "generated/decomposed/workstations-v2/02-west-rear-flower-planter-shelf.png",
+      "sheetBbox": [
+        418,
+        0,
+        836,
+        209
+      ],
+      "recomposedBbox": [
+        14,
+        9,
+        278,
+        91
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "west black rolling chair",
+      "sourceBbox": [
+        105,
+        156,
+        153,
+        233
+      ],
+      "orientation": "faces north",
+      "output": "generated/decomposed/workstations-v2/03-west-black-rolling-chair.png",
+      "sheetBbox": [
+        836,
+        0,
+        1254,
+        209
+      ],
+      "recomposedBbox": [
+        105,
+        156,
+        153,
+        233
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "west left green monitor cluster",
+      "sourceBbox": [
+        91,
+        68,
+        158,
+        123
+      ],
+      "orientation": "screens face south",
+      "output": "generated/decomposed/workstations-v2/04-west-left-green-monitor-cluster.png",
+      "sheetBbox": [
+        0,
+        209,
+        418,
+        418
+      ],
+      "recomposedBbox": [
+        91,
+        68,
+        158,
+        123
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "west right diagonal black monitor",
+      "sourceBbox": [
+        151,
+        73,
+        208,
+        135
+      ],
+      "orientation": "back visible; screen faces north-east",
+      "output": "generated/decomposed/workstations-v2/05-west-right-diagonal-black-monitor.png",
+      "sheetBbox": [
+        418,
+        209,
+        836,
+        418
+      ],
+      "recomposedBbox": [
+        151,
+        73,
+        208,
+        135
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "west blue lower tablet screen",
+      "sourceBbox": [
+        99,
+        119,
+        150,
+        154
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstations-v2/06-west-blue-lower-tablet-screen.png",
+      "sheetBbox": [
+        836,
+        209,
+        1254,
+        418
+      ],
+      "recomposedBbox": [
+        99,
+        119,
+        150,
+        154
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "west pair of white potted plants",
+      "sourceBbox": [
+        204,
+        77,
+        274,
+        135
+      ],
+      "orientation": "upright pair",
+      "output": "generated/decomposed/workstations-v2/07-west-pair-of-white-potted-plants.png",
+      "sheetBbox": [
+        0,
+        418,
+        418,
+        627
+      ],
+      "recomposedBbox": [
+        204,
+        77,
+        274,
+        135
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "west under-desk storage units",
+      "sourceBbox": [
+        162,
+        166,
+        262,
+        219
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstations-v2/08-west-under-desk-storage-units.png",
+      "sheetBbox": [
+        418,
+        418,
+        836,
+        627
+      ],
+      "recomposedBbox": [
+        162,
+        166,
+        262,
+        219
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "west desk papers books and small props",
+      "sourceBbox": [
+        165,
+        113,
+        260,
+        159
+      ],
+      "orientation": "source top-down arrangement",
+      "output": "generated/decomposed/workstations-v2/09-west-desk-papers-books-and-small-props.png",
+      "sheetBbox": [
+        836,
+        418,
+        1254,
+        627
+      ],
+      "recomposedBbox": [
+        165,
+        113,
+        260,
+        159
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "east long wooden desk structure",
+      "sourceBbox": [
+        337,
+        73,
+        563,
+        210
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstations-v2/10-east-long-wooden-desk-structure.png",
+      "sheetBbox": [
+        0,
+        627,
+        418,
+        836
+      ],
+      "recomposedBbox": [
+        337,
+        73,
+        563,
+        210
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "east rear flower planter shelf",
+      "sourceBbox": [
+        345,
+        17,
+        553,
+        87
+      ],
+      "orientation": "horizontal; front faces south",
+      "output": "generated/decomposed/workstations-v2/11-east-rear-flower-planter-shelf.png",
+      "sheetBbox": [
+        418,
+        627,
+        836,
+        836
+      ],
+      "recomposedBbox": [
+        345,
+        17,
+        553,
+        87
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "east left black rolling chair",
+      "sourceBbox": [
+        375,
+        157,
+        423,
+        233
+      ],
+      "orientation": "faces north",
+      "output": "generated/decomposed/workstations-v2/12-east-left-black-rolling-chair.png",
+      "sheetBbox": [
+        836,
+        627,
+        1254,
+        836
+      ],
+      "recomposedBbox": [
+        375,
+        157,
+        423,
+        233
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "east right black rolling chair",
+      "sourceBbox": [
+        475,
+        158,
+        525,
+        233
+      ],
+      "orientation": "faces north",
+      "output": "generated/decomposed/workstations-v2/13-east-right-black-rolling-chair.png",
+      "sheetBbox": [
+        0,
+        836,
+        418,
+        1045
+      ],
+      "recomposedBbox": [
+        475,
+        158,
+        525,
+        233
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "east left green monitor",
+      "sourceBbox": [
+        378,
+        79,
+        431,
+        126
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstations-v2/14-east-left-green-monitor.png",
+      "sheetBbox": [
+        418,
+        836,
+        836,
+        1045
+      ],
+      "recomposedBbox": [
+        378,
+        79,
+        431,
+        126
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "east center black silver screen",
+      "sourceBbox": [
+        429,
+        100,
+        477,
+        143
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstations-v2/15-east-center-black-silver-screen.png",
+      "sheetBbox": [
+        836,
+        836,
+        1254,
+        1045
+      ],
+      "recomposedBbox": [
+        429,
+        100,
+        477,
+        143
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "east right green monitor",
+      "sourceBbox": [
+        476,
+        76,
+        529,
+        126
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/workstations-v2/16-east-right-green-monitor.png",
+      "sheetBbox": [
+        0,
+        1045,
+        418,
+        1254
+      ],
+      "recomposedBbox": [
+        476,
+        76,
+        529,
+        126
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "east small right potted plant",
+      "sourceBbox": [
+        526,
+        105,
+        557,
+        154
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/workstations-v2/17-east-small-right-potted-plant.png",
+      "sheetBbox": [
+        418,
+        1045,
+        836,
+        1254
+      ],
+      "recomposedBbox": [
+        526,
+        105,
+        557,
+        154
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "east under-desk storage units",
+      "sourceBbox": [
+        426,
+        165,
+        545,
+        220
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/workstations-v2/18-east-under-desk-storage-units.png",
+      "sheetBbox": [
+        836,
+        1045,
+        1254,
+        1254
+      ],
+      "recomposedBbox": [
+        426,
+        165,
+        545,
+        220
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/workstations-parts-3x6-imagegen-v2-alpha.png",
+  "cellSize": [
+    418,
+    209
+  ],
+  "recomposition": "generated/furniture/workstation-east-decomposed-v2.png"
+}

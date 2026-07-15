@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "source": "../parts/reception.png",
+  "sourceSize": [
+    560,
+    300
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object visible in the source crop",
+  "runtimeSubsets": [
+    { "id": "reception-counter", "cells": [1, 2, 3, 4, 5, 6, 7, 8, 9], "output": "generated/furniture/reception-decomposed-v3.png" }
+  ],
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "curved U-shaped wooden reception counter structure",
+      "sourceBbox": [
+        265,
+        137,
+        558,
+        290
+      ],
+      "orientation": "curve opens north; front faces south",
+      "output": "generated/decomposed/reception-v3/01-curved-u-shaped-wooden-reception-counter-structure.png",
+      "sheetBbox": [
+        0,
+        0,
+        295,
+        295
+      ],
+      "recomposedBbox": [
+        290,
+        137,
+        532,
+        290
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "long low front planter with foliage",
+      "sourceBbox": [
+        340,
+        248,
+        492,
+        300
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/reception-v3/02-long-low-front-planter-with-foliage.png",
+      "sheetBbox": [
+        295,
+        0,
+        590,
+        295
+      ],
+      "recomposedBbox": [
+        372,
+        248,
+        460,
+        300
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "freestanding wooden easel sign",
+      "sourceBbox": [
+        147,
+        143,
+        210,
+        238
+      ],
+      "orientation": "front faces south-east",
+      "output": "generated/decomposed/reception-v3/03-freestanding-wooden-easel-sign.png",
+      "sheetBbox": [
+        590,
+        0,
+        885,
+        295
+      ],
+      "recomposedBbox": [
+        147,
+        170,
+        210,
+        211
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "black diagonal monitor",
+      "sourceBbox": [
+        426,
+        177,
+        483,
+        235
+      ],
+      "orientation": "back visible; screen faces north-east",
+      "output": "generated/decomposed/reception-v3/04-black-diagonal-monitor.png",
+      "sheetBbox": [
+        0,
+        295,
+        295,
+        590
+      ],
+      "recomposedBbox": [
+        427,
+        177,
+        482,
+        235
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "left silver tablet on counter",
+      "sourceBbox": [
+        292,
+        178,
+        329,
+        220
+      ],
+      "orientation": "diagonal; top faces north-west",
+      "output": "generated/decomposed/reception-v3/05-left-silver-tablet-on-counter.png",
+      "sheetBbox": [
+        295,
+        295,
+        590,
+        590
+      ],
+      "recomposedBbox": [
+        294,
+        178,
+        326,
+        220
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "right silver tablet on counter",
+      "sourceBbox": [
+        491,
+        171,
+        532,
+        219
+      ],
+      "orientation": "diagonal; top faces north-east",
+      "output": "generated/decomposed/reception-v3/06-right-silver-tablet-on-counter.png",
+      "sheetBbox": [
+        590,
+        295,
+        885,
+        590
+      ],
+      "recomposedBbox": [
+        491,
+        171,
+        532,
+        218
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "small green potted plant on counter",
+      "sourceBbox": [
+        327,
+        193,
+        354,
+        229
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/07-small-green-potted-plant-on-counter.png",
+      "sheetBbox": [
+        0,
+        590,
+        295,
+        885
+      ],
+      "recomposedBbox": [
+        334,
+        193,
+        347,
+        229
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "tiny cactus or bottle on counter",
+      "sourceBbox": [
+        354,
+        187,
+        378,
+        228
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/08-tiny-cactus-or-bottle-on-counter.png",
+      "sheetBbox": [
+        295,
+        590,
+        590,
+        885
+      ],
+      "recomposedBbox": [
+        354,
+        187,
+        377,
+        228
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "papers or notebook stack on counter",
+      "sourceBbox": [
+        376,
+        198,
+        411,
+        230
+      ],
+      "orientation": "slight diagonal",
+      "output": "generated/decomposed/reception-v3/09-papers-or-notebook-stack-on-counter.png",
+      "sheetBbox": [
+        590,
+        590,
+        885,
+        885
+      ],
+      "recomposedBbox": [
+        376,
+        199,
+        411,
+        228
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "left tall indoor tree in dark planter",
+      "sourceBbox": [
+        130,
+        47,
+        207,
+        190
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/10-left-tall-indoor-tree-in-dark-planter.png",
+      "sheetBbox": [
+        0,
+        885,
+        295,
+        1180
+      ],
+      "recomposedBbox": [
+        133,
+        47,
+        204,
+        190
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "right indoor tree planter near counter",
+      "sourceBbox": [
+        220,
+        94,
+        286,
+        190
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/11-right-indoor-tree-planter-near-counter.png",
+      "sheetBbox": [
+        295,
+        885,
+        590,
+        1180
+      ],
+      "recomposedBbox": [
+        232,
+        94,
+        273,
+        190
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "small white cylindrical planter by door",
+      "sourceBbox": [
+        18,
+        111,
+        51,
+        181
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/12-small-white-cylindrical-planter-by-door.png",
+      "sheetBbox": [
+        590,
+        885,
+        885,
+        1180
+      ],
+      "recomposedBbox": [
+        18,
+        114,
+        51,
+        177
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "wood double door fixture",
+      "sourceBbox": [
+        48,
+        89,
+        133,
+        170
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/reception-v3/13-wood-double-door-fixture.png",
+      "sheetBbox": [
+        0,
+        1180,
+        295,
+        1475
+      ],
+      "recomposedBbox": [
+        48,
+        91,
+        133,
+        167
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "green exit arrow sign",
+      "sourceBbox": [
+        68,
+        65,
+        111,
+        91
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/reception-v3/14-green-exit-arrow-sign.png",
+      "sheetBbox": [
+        295,
+        1180,
+        590,
+        1475
+      ],
+      "recomposedBbox": [
+        68,
+        67,
+        111,
+        89
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "Sunwood ai labs wall sign",
+      "sourceBbox": [
+        393,
+        82,
+        505,
+        143
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/reception-v3/15-sunwood-ai-labs-wall-sign.png",
+      "sheetBbox": [
+        590,
+        1180,
+        885,
+        1475
+      ],
+      "recomposedBbox": [
+        393,
+        87,
+        505,
+        138
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "top hanging vine strip",
+      "sourceBbox": [
+        238,
+        14,
+        560,
+        68
+      ],
+      "orientation": "horizontal",
+      "output": "generated/decomposed/reception-v3/16-top-hanging-vine-strip.png",
+      "sheetBbox": [
+        0,
+        1475,
+        295,
+        1770
+      ],
+      "recomposedBbox": [
+        327,
+        14,
+        471,
+        68
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "small brown wooden planter stand left of counter",
+      "sourceBbox": [
+        222,
+        142,
+        259,
+        194
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/reception-v3/17-small-brown-wooden-planter-stand-left-of-counter.png",
+      "sheetBbox": [
+        295,
+        1475,
+        590,
+        1770
+      ],
+      "recomposedBbox": [
+        354,
+        52,
+        371,
+        58
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "small right framed wall device",
+      "sourceBbox": [
+        521,
+        168,
+        547,
+        195
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/reception-v3/18-small-right-framed-wall-device.png",
+      "sheetBbox": [
+        590,
+        1475,
+        885,
+        1770
+      ],
+      "recomposedBbox": [
+        521,
+        168,
+        547,
+        194
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/reception-parts-3x6-imagegen-v3-normalized-alpha.png",
+  "cellSize": [
+    295,
+    295
+  ],
+  "recomposition": "generated/furniture/reception-decomposed-v3.png"
+}

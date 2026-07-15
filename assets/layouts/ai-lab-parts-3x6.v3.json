@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "source": "../parts/ai-lab.png",
+  "sourceSize": [
+    295,
+    360
+  ],
+  "status": "recomposed-needs-reference-score",
+  "granularityRule": "one cell equals one runtime-addressable object or declared fixture visible in the source crop; humanoid robot excluded",
+  "grid": {
+    "columns": 3,
+    "rows": 6
+  },
+  "cells": [
+    {
+      "cell": 1,
+      "semantic": "upper-left bookshelf with books and top plants",
+      "sourceBbox": [
+        18,
+        26,
+        99,
+        171
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/01-upper-left-bookshelf-with-books-and-top-plants.png",
+      "sheetBbox": [
+        0,
+        0,
+        341,
+        256
+      ],
+      "recomposedBbox": [
+        18,
+        26,
+        99,
+        171
+      ]
+    },
+    {
+      "cell": 2,
+      "semantic": "large upper whiteboard",
+      "sourceBbox": [
+        95,
+        35,
+        215,
+        132
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/ai-lab-v3/02-large-upper-whiteboard.png",
+      "sheetBbox": [
+        341,
+        0,
+        682,
+        256
+      ],
+      "recomposedBbox": [
+        95,
+        35,
+        215,
+        132
+      ]
+    },
+    {
+      "cell": 3,
+      "semantic": "upper-right wall vine planter",
+      "sourceBbox": [
+        232,
+        24,
+        292,
+        175
+      ],
+      "orientation": "vertical",
+      "output": "generated/decomposed/ai-lab-v3/03-upper-right-wall-vine-planter.png",
+      "sheetBbox": [
+        682,
+        0,
+        1023,
+        256
+      ],
+      "recomposedBbox": [
+        232,
+        24,
+        292,
+        175
+      ]
+    },
+    {
+      "cell": 4,
+      "semantic": "bare upper wooden lab workbench",
+      "sourceBbox": [
+        91,
+        113,
+        177,
+        198
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/04-bare-upper-wooden-lab-workbench.png",
+      "sheetBbox": [
+        0,
+        256,
+        341,
+        512
+      ],
+      "recomposedBbox": [
+        91,
+        113,
+        177,
+        198
+      ]
+    },
+    {
+      "cell": 5,
+      "semantic": "upper green monitor",
+      "sourceBbox": [
+        99,
+        99,
+        136,
+        136
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/05-upper-green-monitor.png",
+      "sheetBbox": [
+        341,
+        256,
+        682,
+        512
+      ],
+      "recomposedBbox": [
+        99,
+        99,
+        136,
+        136
+      ]
+    },
+    {
+      "cell": 6,
+      "semantic": "upper lab instrument group",
+      "sourceBbox": [
+        105,
+        119,
+        173,
+        166
+      ],
+      "orientation": "source top-down arrangement",
+      "output": "generated/decomposed/ai-lab-v3/06-upper-lab-instrument-group.png",
+      "sheetBbox": [
+        682,
+        256,
+        1023,
+        512
+      ],
+      "recomposedBbox": [
+        105,
+        119,
+        173,
+        166
+      ]
+    },
+    {
+      "cell": 7,
+      "semantic": "large round gray testing platform",
+      "sourceBbox": [
+        176,
+        126,
+        249,
+        207
+      ],
+      "orientation": "top-down",
+      "output": "generated/decomposed/ai-lab-v3/07-large-round-gray-testing-platform.png",
+      "sheetBbox": [
+        0,
+        512,
+        341,
+        768
+      ],
+      "recomposedBbox": [
+        176,
+        126,
+        249,
+        207
+      ]
+    },
+    {
+      "cell": 8,
+      "semantic": "small wheeled equipment cart",
+      "sourceBbox": [
+        27,
+        170,
+        80,
+        228
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/08-small-wheeled-equipment-cart.png",
+      "sheetBbox": [
+        341,
+        512,
+        682,
+        768
+      ],
+      "recomposedBbox": [
+        27,
+        170,
+        80,
+        228
+      ]
+    },
+    {
+      "cell": 9,
+      "semantic": "center narrow drawer worktable",
+      "sourceBbox": [
+        94,
+        164,
+        161,
+        232
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/09-center-narrow-drawer-worktable.png",
+      "sheetBbox": [
+        682,
+        512,
+        1023,
+        768
+      ],
+      "recomposedBbox": [
+        94,
+        164,
+        161,
+        232
+      ]
+    },
+    {
+      "cell": 10,
+      "semantic": "bare lower wooden electronics workbench",
+      "sourceBbox": [
+        105,
+        273,
+        234,
+        359
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/10-bare-lower-wooden-electronics-workbench.png",
+      "sheetBbox": [
+        0,
+        768,
+        341,
+        1024
+      ],
+      "recomposedBbox": [
+        105,
+        273,
+        234,
+        359
+      ]
+    },
+    {
+      "cell": 11,
+      "semantic": "shelf with three green wall devices",
+      "sourceBbox": [
+        116,
+        233,
+        215,
+        285
+      ],
+      "orientation": "front-facing horizontal",
+      "output": "generated/decomposed/ai-lab-v3/11-shelf-with-three-green-wall-devices.png",
+      "sheetBbox": [
+        341,
+        768,
+        682,
+        1024
+      ],
+      "recomposedBbox": [
+        116,
+        233,
+        215,
+        285
+      ]
+    },
+    {
+      "cell": 12,
+      "semantic": "large lower-right indoor tree",
+      "sourceBbox": [
+        210,
+        225,
+        294,
+        360
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/ai-lab-v3/12-large-lower-right-indoor-tree.png",
+      "sheetBbox": [
+        682,
+        768,
+        1023,
+        1024
+      ],
+      "recomposedBbox": [
+        210,
+        225,
+        294,
+        360
+      ]
+    },
+    {
+      "cell": 13,
+      "semantic": "lower blue screen tablet",
+      "sourceBbox": [
+        108,
+        289,
+        155,
+        325
+      ],
+      "orientation": "screen faces south",
+      "output": "generated/decomposed/ai-lab-v3/13-lower-blue-screen-tablet.png",
+      "sheetBbox": [
+        0,
+        1024,
+        341,
+        1280
+      ],
+      "recomposedBbox": [
+        108,
+        289,
+        155,
+        325
+      ]
+    },
+    {
+      "cell": 14,
+      "semantic": "central silver microscope instrument",
+      "sourceBbox": [
+        147,
+        279,
+        193,
+        341
+      ],
+      "orientation": "front faces south",
+      "output": "generated/decomposed/ai-lab-v3/14-central-silver-microscope-instrument.png",
+      "sheetBbox": [
+        341,
+        1024,
+        682,
+        1280
+      ],
+      "recomposedBbox": [
+        147,
+        279,
+        193,
+        341
+      ]
+    },
+    {
+      "cell": 15,
+      "semantic": "small lower black screen device",
+      "sourceBbox": [
+        105,
+        256,
+        143,
+        289
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/ai-lab-v3/15-small-lower-black-screen-device.png",
+      "sheetBbox": [
+        682,
+        1024,
+        1023,
+        1280
+      ],
+      "recomposedBbox": [
+        105,
+        256,
+        143,
+        289
+      ]
+    },
+    {
+      "cell": 16,
+      "semantic": "small green lower-left bottle device",
+      "sourceBbox": [
+        107,
+        326,
+        132,
+        354
+      ],
+      "orientation": "upright",
+      "output": "generated/decomposed/ai-lab-v3/16-small-green-lower-left-bottle-device.png",
+      "sheetBbox": [
+        0,
+        1280,
+        341,
+        1536
+      ],
+      "recomposedBbox": [
+        107,
+        326,
+        132,
+        354
+      ]
+    },
+    {
+      "cell": 17,
+      "semantic": "small papers books device group",
+      "sourceBbox": [
+        181,
+        286,
+        230,
+        345
+      ],
+      "orientation": "source top-down arrangement",
+      "output": "generated/decomposed/ai-lab-v3/17-small-papers-books-device-group.png",
+      "sheetBbox": [
+        341,
+        1280,
+        682,
+        1536
+      ],
+      "recomposedBbox": [
+        181,
+        286,
+        230,
+        345
+      ]
+    },
+    {
+      "cell": 18,
+      "semantic": "green AI LAB sign panel",
+      "sourceBbox": [
+        16,
+        230,
+        105,
+        273
+      ],
+      "orientation": "front-facing",
+      "output": "generated/decomposed/ai-lab-v3/18-green-ai-lab-sign-panel.png",
+      "sheetBbox": [
+        682,
+        1280,
+        1023,
+        1536
+      ],
+      "recomposedBbox": [
+        16,
+        230,
+        105,
+        273
+      ]
+    }
+  ],
+  "sheet": "intermediate/fidelity-v3/ai-lab-parts-3x6-imagegen-v2-normalized-alpha.png",
+  "cellSize": [
+    341,
+    256
+  ],
+  "recomposition": "generated/technology/ai-lab-decomposed-v3.png"
+}

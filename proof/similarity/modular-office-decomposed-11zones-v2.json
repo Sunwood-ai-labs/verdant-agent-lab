@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "method": "office-similarity-v1",
+  "generatedAt": "2026-07-15T01:29:21.984172+00:00",
+  "label": "modular-office-decomposed-11zones-v2",
+  "normalization": {
+    "width": 1280,
+    "height": 960,
+    "sameViewRequired": true,
+    "referenceOverlayForbidden": true
+  },
+  "weights": {
+    "pixelComposite": {
+      "maskedGrayscaleSsim": 0.7,
+      "edgeF1": 0.2,
+      "labHistogram": 0.1
+    },
+    "layoutContentSimilarity": {
+      "maskedGrayscaleSsim": 0.35,
+      "edgeF1": 0.4,
+      "labHistogram": 0.25
+    }
+  },
+  "thresholds": {
+    "layoutContentSimilarityPercent": 60,
+    "maskedSsimPercentStrict": 60,
+    "edgeF1Percent": 45
+  },
+  "scores": {
+    "rawSsimPercent": 40.64,
+    "maskedSsimPercent": 41.65,
+    "edgeF1Percent": 77.38,
+    "labHistogramPercent": 97.51,
+    "pixelCompositePercent": 54.38,
+    "layoutContentSimilarityPercent": 69.91
+  },
+  "ledgerVerified": false,
+  "strictPixelPass": false,
+  "pass": false,
+  "inputs": {
+    "target": {
+      "name": "reference-original.jpg",
+      "sha256": "3eaeeb787a3e9d10f2612c7f20f2d963e38bae3870d1b03d03e3b57290868c5d"
+    },
+    "candidate": {
+      "name": "modular-office-v1.png",
+      "sha256": "0b0440a9b015ceb0db4623a6b719ce03060eeda214389f674e4a09dd523c592b"
+    },
+    "mask": {
+      "name": "reference-character-mask.v1.json",
+      "version": 1,
+      "sha256": "011d99c07982834e94fcca47e36f86ad367a9ecd8793a1b32d7fc8b6b9dd4610"
+    },
+    "ledger": {
+      "name": "reference-instance-ledger.v1.json",
+      "version": 1,
+      "sha256": "48dee76b66f4b398f4ab529b6305f1c3a2435291b14095bd008a8d63f1cc4560"
+    }
+  },
+  "zones": [
+    {
+      "id": "solar-wing",
+      "semantic": "vertical solar-panel-and-output-bank",
+      "orientation": "front-facing",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 8.02
+    },
+    {
+      "id": "reception",
+      "semantic": "shallow curved reception counter with desk props",
+      "orientation": "south-facing",
+      "ledgerStatus": "needs-independent-qa",
+      "ssimPercent": 26.56
+    },
+    {
+      "id": "north-lounge",
+      "semantic": "green sectional sofa, rug platform, and round table",
+      "orientation": "inward-facing",
+      "ledgerStatus": "needs-independent-qa",
+      "ssimPercent": 8.49
+    },
+    {
+      "id": "cafe",
+      "semantic": "wall cafe counter, shelves, machines, and vending unit",
+      "orientation": "south-facing wall fixture",
+      "ledgerStatus": "needs-independent-qa",
+      "ssimPercent": 5.79
+    },
+    {
+      "id": "studio-west",
+      "semantic": "irregular desk cluster, shelving, whiteboard, and chair",
+      "orientation": "mixed",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 14.26
+    },
+    {
+      "id": "meeting-room",
+      "semantic": "glass enclosure, vertical table, chairs, display, and plants",
+      "orientation": "mixed",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 19.37
+    },
+    {
+      "id": "ai-lab",
+      "semantic": "enclosed lab bench, equipment, shelves, whiteboard, and platform",
+      "orientation": "mixed",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 17.04
+    },
+    {
+      "id": "greenhouse",
+      "semantic": "pitched glass greenhouse with roof trusses, door, and interior foliage",
+      "orientation": "south-east",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 7.0
+    },
+    {
+      "id": "south-work-west",
+      "semantic": "wide workstation with monitor cluster, cabinets, chair, and props",
+      "orientation": "north-facing",
+      "ledgerStatus": "needs-independent-qa",
+      "ssimPercent": 11.85
+    },
+    {
+      "id": "south-work-east",
+      "semantic": "wide workstation with monitor cluster, cabinets, chair, and props",
+      "orientation": "north-facing",
+      "ledgerStatus": "needs-independent-qa",
+      "ssimPercent": 9.31
+    },
+    {
+      "id": "south-lounge",
+      "semantic": "inset green lounge with plants and air-quality board",
+      "orientation": "inward-facing",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 12.17
+    },
+    {
+      "id": "utility-bins",
+      "semantic": "three colored recycling bins",
+      "orientation": "front-facing",
+      "ledgerStatus": "needs-part-decomposition",
+      "ssimPercent": 17.25
+    },
+    {
+      "id": "garden-and-architecture",
+      "semantic": "walls, doors, planters, stairs, signage, exterior foliage",
+      "orientation": "site topology",
+      "ledgerStatus": "verified",
+      "ssimPercent": 41.65
+    }
+  ]
+}

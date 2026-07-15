@@ -1,0 +1,5 @@
+Use case: precise-object-edit
+Asset type: 2D game runtime prop decomposition sheet
+Authoritative reference: assets/parts/solar-wing.png
+Rule: exactly 3 columns x 6 rows; one cell equals one independent source part; preserve source orientation; no composite crop or duplicate controller; uniform #FF00FF background.
+Cell order: empty frame; six individual near-square 52:46 solar modules; dashboard; three individual cabinets; bare controller strip; three bare stone frames; left vine; right vine; one green control device.
