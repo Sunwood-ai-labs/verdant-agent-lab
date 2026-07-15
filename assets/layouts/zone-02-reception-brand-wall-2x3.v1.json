@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "reception-and-brand-wall",
+  "referenceBbox": [470, 19, 812, 278],
+  "grid": { "columns": 2, "rows": 3, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "blank-generated-panels; deterministic HTML/Canvas overlays later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "curved-reception-counter", "orientation": "south-facing", "reusable": false },
+    { "cell": 2, "id": "front-foliage-planter", "orientation": "south-facing", "reusable": false },
+    { "cell": 3, "id": "left-tree-planter", "orientation": "front-facing", "reusable": true },
+    { "cell": 4, "id": "right-tree-planter", "orientation": "front-facing", "reusable": true },
+    { "cell": 5, "id": "entrance-door-exit-panel-blank", "orientation": "front-facing", "reusable": false },
+    { "cell": 6, "id": "brand-wall-vine-lamps-blank", "orientation": "front-facing", "reusable": false }
+  ]
+}

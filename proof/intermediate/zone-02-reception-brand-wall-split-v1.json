@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-02-reception-brand-wall/reception-brand-wall-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-02-reception-brand-wall/reception-brand-wall-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 2,
+    "rows": 3,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    242,
+    22,
+    239
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "curved-reception-counter",
+      "sourceCellBbox": [
+        0,
+        0,
+        752,
+        292
+      ],
+      "alphaBboxInCell": [
+        183,
+        65,
+        706,
+        276
+      ],
+      "alphaBboxInSheet": [
+        183,
+        65,
+        706,
+        276
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 74710,
+      "output": "assets/generated/zones/reception-brand-wall-v1/01-curved-reception-counter.png"
+    },
+    {
+      "cell": 2,
+      "id": "front-foliage-planter",
+      "sourceCellBbox": [
+        752,
+        0,
+        1536,
+        292
+      ],
+      "alphaBboxInCell": [
+        83,
+        78,
+        575,
+        230
+      ],
+      "alphaBboxInSheet": [
+        835,
+        78,
+        1327,
+        230
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 63816,
+      "output": "assets/generated/zones/reception-brand-wall-v1/02-front-foliage-planter.png"
+    },
+    {
+      "cell": 3,
+      "id": "left-tree-planter",
+      "sourceCellBbox": [
+        0,
+        292,
+        752,
+        614
+      ],
+      "alphaBboxInCell": [
+        342,
+        17,
+        538,
+        303
+      ],
+      "alphaBboxInSheet": [
+        342,
+        309,
+        538,
+        595
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 32826,
+      "output": "assets/generated/zones/reception-brand-wall-v1/03-left-tree-planter.png"
+    },
+    {
+      "cell": 4,
+      "id": "right-tree-planter",
+      "sourceCellBbox": [
+        752,
+        292,
+        1536,
+        614
+      ],
+      "alphaBboxInCell": [
+        239,
+        17,
+        423,
+        303
+      ],
+      "alphaBboxInSheet": [
+        991,
+        309,
+        1175,
+        595
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 31813,
+      "output": "assets/generated/zones/reception-brand-wall-v1/04-right-tree-planter.png"
+    },
+    {
+      "cell": 5,
+      "id": "entrance-door-exit-panel-blank",
+      "sourceCellBbox": [
+        0,
+        614,
+        752,
+        1024
+      ],
+      "alphaBboxInCell": [
+        316,
+        18,
+        560,
+        321
+      ],
+      "alphaBboxInSheet": [
+        316,
+        632,
+        560,
+        935
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 69894,
+      "output": "assets/generated/zones/reception-brand-wall-v1/05-entrance-door-exit-panel-blank.png"
+    },
+    {
+      "cell": 6,
+      "id": "brand-wall-vine-lamps-blank",
+      "sourceCellBbox": [
+        752,
+        614,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        45,
+        24,
+        608,
+        318
+      ],
+      "alphaBboxInSheet": [
+        797,
+        638,
+        1360,
+        932
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 159242,
+      "output": "assets/generated/zones/reception-brand-wall-v1/06-brand-wall-vine-lamps-blank.png"
+    }
+  ]
+}
