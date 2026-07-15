@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "south-work-west",
+  "referenceBbox": [334, 512, 608, 688],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "screens are blank; deterministic overlays later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "west-work-desk", "orientation": "top-facing", "reusable": true },
+    { "cell": 2, "id": "rear-planter-shelf", "orientation": "front-facing", "reusable": true },
+    { "cell": 3, "id": "triple-monitor-group", "orientation": "top-facing", "reusable": true },
+    { "cell": 4, "id": "rolling-chair", "orientation": "north-facing", "reusable": true },
+    { "cell": 5, "id": "desk-pots", "orientation": "top-facing", "reusable": true },
+    { "cell": 6, "id": "drawer-device-cluster", "orientation": "top-facing", "reusable": true }
+  ]
+}

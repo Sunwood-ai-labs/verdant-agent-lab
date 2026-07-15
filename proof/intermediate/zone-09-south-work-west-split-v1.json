@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-09-south-work-west/south-work-west-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-09-south-work-west/south-work-west-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    239,
+    20,
+    212
+  ],
+  "threshold": 200,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "west-work-desk",
+      "sourceCellBbox": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 88247,
+      "output": "assets/generated/zones/south-work-west-v1/01-west-work-desk.png"
+    },
+    {
+      "cell": 2,
+      "id": "rear-planter-shelf",
+      "sourceCellBbox": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        512,
+        0,
+        1024,
+        512
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 83706,
+      "output": "assets/generated/zones/south-work-west-v1/02-rear-planter-shelf.png"
+    },
+    {
+      "cell": 3,
+      "id": "triple-monitor-group",
+      "sourceCellBbox": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        1024,
+        0,
+        1536,
+        512
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 53821,
+      "output": "assets/generated/zones/south-work-west-v1/03-triple-monitor-group.png"
+    },
+    {
+      "cell": 4,
+      "id": "rolling-chair",
+      "sourceCellBbox": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        0,
+        512,
+        512,
+        1024
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 59175,
+      "output": "assets/generated/zones/south-work-west-v1/04-rolling-chair.png"
+    },
+    {
+      "cell": 5,
+      "id": "desk-pots",
+      "sourceCellBbox": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        512,
+        512,
+        1024,
+        1024
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 42001,
+      "output": "assets/generated/zones/south-work-west-v1/05-desk-pots.png"
+    },
+    {
+      "cell": 6,
+      "id": "drawer-device-cluster",
+      "sourceCellBbox": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "alphaBboxInSheet": [
+        1024,
+        512,
+        1536,
+        1024
+      ],
+      "edgeFlags": {
+        "left": true,
+        "top": true,
+        "right": true,
+        "bottom": true
+      },
+      "opaquePixels": 89812,
+      "output": "assets/generated/zones/south-work-west-v1/06-drawer-device-cluster.png"
+    }
+  ]
+}

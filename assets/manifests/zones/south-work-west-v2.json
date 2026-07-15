@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "zoneId": "south-work-west",
+  "sheetId": "zone-09-south-work-west-2x3-v2",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      334,
+      512,
+      608,
+      688
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-09-south-work-west/south-work-west-2x3-v2-chroma.png",
+    "alphaMaster": "../../intermediate/zone-09-south-work-west/south-work-west-2x3-v2-alpha.png",
+    "prompt": "../../prompts/zone-09-south-work-west-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-09-south-work-west-split-v2.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "south-work-west-west-work-desk-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/01-west-work-desk.png",
+      "cellIndex": 1,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        63,
+        92,
+        486,
+        471
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-west-rear-planter-shelf-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/02-rear-planter-shelf.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        62,
+        127,
+        407,
+        481
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-west-triple-monitor-group-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/03-triple-monitor-group.png",
+      "cellIndex": 3,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        43,
+        203,
+        492,
+        404
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-screen-content-required"
+    },
+    {
+      "id": "south-work-west-rolling-chair-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/04-rolling-chair.png",
+      "cellIndex": 4,
+      "orientation": "north-facing",
+      "alphaBounds": [
+        158,
+        32,
+        381,
+        424
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-west-desk-pots-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/05-desk-pots.png",
+      "cellIndex": 5,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        94,
+        131,
+        495,
+        383
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-west-drawer-device-cluster-v2",
+      "sprite": "../../generated/zones/south-work-west-v2/06-drawer-device-cluster.png",
+      "cellIndex": 6,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        62,
+        72,
+        375,
+        439
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}
