@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "zoneId": "south-lounge",
+  "sheetId": "zone-11-south-lounge-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      881,
+      620,
+      1142,
+      772
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-11-south-lounge/south-lounge-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-11-south-lounge/south-lounge-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-11-south-lounge-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-11-south-lounge-split-v1.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "south-lounge-lounge-rug-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/01-lounge-rug.png",
+      "cellIndex": 1,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        33,
+        137,
+        542,
+        436
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-lounge-olive-l-sofa-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/02-olive-l-sofa.png",
+      "cellIndex": 2,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        25,
+        88,
+        560,
+        415
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-lounge-lounge-armchair-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/03-lounge-armchair.png",
+      "cellIndex": 3,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        43,
+        154,
+        302,
+        437
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-lounge-left-planting-bench-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/04-left-planting-bench.png",
+      "cellIndex": 4,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        61,
+        86,
+        505,
+        450
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-lounge-right-tall-planting-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/05-right-tall-planting.png",
+      "cellIndex": 5,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        80,
+        33,
+        399,
+        464
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-lounge-low-coffee-table-v1",
+      "sprite": "../../generated/zones/south-lounge-v1/06-low-coffee-table.png",
+      "cellIndex": 6,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        59,
+        151,
+        409,
+        445
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}

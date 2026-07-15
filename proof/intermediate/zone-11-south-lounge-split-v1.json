@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-11-south-lounge/south-lounge-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-11-south-lounge/south-lounge-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    240,
+    21,
+    214
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "lounge-rug",
+      "sourceCellBbox": [
+        0,
+        0,
+        566,
+        470
+      ],
+      "alphaBboxInCell": [
+        33,
+        137,
+        542,
+        436
+      ],
+      "alphaBboxInSheet": [
+        33,
+        137,
+        542,
+        436
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 75132,
+      "output": "assets/generated/zones/south-lounge-v1/01-lounge-rug.png"
+    },
+    {
+      "cell": 2,
+      "id": "olive-l-sofa",
+      "sourceCellBbox": [
+        566,
+        0,
+        1169,
+        470
+      ],
+      "alphaBboxInCell": [
+        25,
+        88,
+        560,
+        415
+      ],
+      "alphaBboxInSheet": [
+        591,
+        88,
+        1126,
+        415
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 107046,
+      "output": "assets/generated/zones/south-lounge-v1/02-olive-l-sofa.png"
+    },
+    {
+      "cell": 3,
+      "id": "lounge-armchair",
+      "sourceCellBbox": [
+        1169,
+        0,
+        1536,
+        470
+      ],
+      "alphaBboxInCell": [
+        43,
+        154,
+        302,
+        437
+      ],
+      "alphaBboxInSheet": [
+        1212,
+        154,
+        1471,
+        437
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 50610,
+      "output": "assets/generated/zones/south-lounge-v1/03-lounge-armchair.png"
+    },
+    {
+      "cell": 4,
+      "id": "left-planting-bench",
+      "sourceCellBbox": [
+        0,
+        470,
+        585,
+        1024
+      ],
+      "alphaBboxInCell": [
+        61,
+        86,
+        505,
+        450
+      ],
+      "alphaBboxInSheet": [
+        61,
+        556,
+        505,
+        920
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 81249,
+      "output": "assets/generated/zones/south-lounge-v1/04-left-planting-bench.png"
+    },
+    {
+      "cell": 5,
+      "id": "right-tall-planting",
+      "sourceCellBbox": [
+        585,
+        470,
+        1044,
+        1024
+      ],
+      "alphaBboxInCell": [
+        80,
+        33,
+        399,
+        464
+      ],
+      "alphaBboxInSheet": [
+        665,
+        503,
+        984,
+        934
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 89630,
+      "output": "assets/generated/zones/south-lounge-v1/05-right-tall-planting.png"
+    },
+    {
+      "cell": 6,
+      "id": "low-coffee-table",
+      "sourceCellBbox": [
+        1044,
+        470,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        59,
+        151,
+        409,
+        445
+      ],
+      "alphaBboxInSheet": [
+        1103,
+        621,
+        1453,
+        915
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 74014,
+      "output": "assets/generated/zones/south-lounge-v1/06-low-coffee-table.png"
+    }
+  ]
+}
