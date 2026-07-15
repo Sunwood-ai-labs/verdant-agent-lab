@@ -15,6 +15,11 @@ runtime placement are open; this is not a direct crop of the reference image.
 
 ## AYANO delivery
 
-Pending asset commit and push. The delivery must attach the v2 chroma master
-and the private source-to-children comparison proof to `アヤノの部屋 /
+Delivered after asset commit `7e24e9e` to `アヤノの部屋 /
 #sunwood-lab-recreation` (`1526794078744744077`).
+
+- Message id: `1526964053547679799`
+- Attachments: `zone-05-studio-west-2x3-v2-chroma.png` (1,633,975 bytes) and
+  `zone-05-studio-west-source-to-children-proof-v2.png` (433,533 bytes)
+- Embed status: candidate only; source-instance review and runtime placement
+  remain open.
