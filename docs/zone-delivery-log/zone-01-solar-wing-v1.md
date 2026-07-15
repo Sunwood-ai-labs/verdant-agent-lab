@@ -24,9 +24,16 @@ Absolute path: `/Users/admin/Prj/sunwood-lab-recreation/docs/zone-delivery-log/z
 
 ## AYANO delivery
 
-Pending zone commit and push. The delivery must attach the chroma master and
-private split comparison proof, name the commit SHA, and report the returned
-Discord message id below.
+Delivered after the asset commit `bd836ec23022eb237a51b996feb89d05e947c84c`.
+The embed explicitly labels this set as a candidate, includes the 2×2 versus
+2×3 panel mismatch, and attaches both the generated master and private
+source-to-child comparison proof.
 
-- Channel: pending live verification
-- Message id: pending
+- Guild: `アヤノの部屋` (`1515231898908098633`)
+- Channel: `#sunwood-lab-recreation` (`1526794078744744077`), verified live
+- Message id: `1526957577785839689`
+- Attachments: `solar-wing-2x3-v1-chroma.png` (1,476,431 bytes) and
+  `solar-wing-source-to-children-proof-v1.png` (506,359 bytes)
+- Delivery method: Discord API multipart request with
+  `User-Agent: codex-discord-ayano-bot-skill/1.0`; `payload_json` requires
+  curl `--form-string` to remain valid JSON.

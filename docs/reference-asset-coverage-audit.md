@@ -40,6 +40,15 @@ the 48-entry manifest. Therefore the existing split bank must be reviewed
 against the source and promoted, with its own manifest records and placements,
 before it can count as independently runtime-addressable coverage.
 
+## New 2×3 zone-sheet candidates
+
+Zone 01 solar wing now has a new six-child generated candidate set under
+`assets/generated/zones/solar-wing-v1/`, with source-crop mapping and split
+proof. It is not runtime-wired and is not source-verified: its panel face has a
+2×2 subdivision while the reference has 2×3, and its dashboard deliberately
+awaits deterministic text. This is recorded as a candidate, not as resolved
+coverage.
+
 ## Required source assets not independently runtime-addressable or source-verified
 
 | Priority | Reference requirement | Current state |
