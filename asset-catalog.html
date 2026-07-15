@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asset Field Board — Verdant Agent Lab</title>
+  <link rel="stylesheet" href="asset-catalog.css" />
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <a class="back" href="builder.html">← BUILDER</a>
+      <p>VERDANT AGENT LAB / INSPECTION SURFACE</p>
+      <h1>Asset Field Board</h1>
+      <p class="lede">現在のHTMLランタイムが読むアセット一覧。生成派生と、元画像切抜を区別して表示します。</p>
+    </div>
+    <aside class="truth-card" aria-label="来歴の注意">
+      <b>PROVENANCE</b>
+      <strong>GENERATED DERIVATIVES</strong>
+      <span>これは原画像を個別に切り出した一覧ではありません。</span>
+    </aside>
+  </header>
+  <main>
+    <section class="summary" aria-label="アセット集計">
+      <div><b id="total">—</b><span>runtime assets</span></div>
+      <div><b id="active">—</b><span>placed in starter</span></div>
+      <div><b id="decomposed">—</b><span>decomposed composites</span></div>
+      <div><b>0</b><span>raw-source crops in runtime</span></div>
+    </section>
+    <section class="controls" aria-label="フィルター">
+      <label>FILTER <select id="filter"><option value="all">ALL RUNTIME</option><option value="active">PLACED NOW</option><option value="decomposed">DECOMPOSED</option><option value="furniture">FURNITURE</option><option value="technology">TECHNOLOGY</option><option value="props">PROPS</option></select></label>
+      <p id="resultCount">loading assets…</p>
+    </section>
+    <section id="catalog" class="catalog" aria-live="polite"></section>
+  </main>
+  <template id="card-template">
+    <article class="asset-card">
+      <div class="thumb"><img alt="" /></div>
+      <div class="card-body">
+        <div class="card-top"><span class="kind"></span><span class="placed"></span></div>
+        <h2></h2>
+        <dl><div><dt>向き</dt><dd class="orientation"></dd></div><div><dt>構成</dt><dd class="parts"></dd></div><div><dt>来歴</dt><dd>生成派生</dd></div></dl>
+        <code></code>
+      </div>
+    </article>
+  </template>
+  <script type="module" src="asset-catalog.js"></script>
+</body>
+</html>
