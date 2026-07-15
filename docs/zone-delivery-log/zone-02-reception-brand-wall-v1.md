@@ -18,4 +18,11 @@ instance review/runtime wiring are still open.
 
 ## AYANO delivery
 
-Pending zone commit/push and live delivery receipt.
+Delivered after asset commit `32dd9b9` to `アヤノの部屋 / #sunwood-lab-recreation`
+(`1526794078744744077`), live-verified before the first zone delivery.
+
+- Message id: `1526958552667787344`
+- Attachments: `reception-brand-wall-2x3-v1-chroma.png` (1,643,198 bytes) and
+  `reception-brand-wall-source-to-children-proof-v1.png` (590,178 bytes)
+- Embed status: candidate; deterministic text/branding and source-instance
+  verification remain open.
