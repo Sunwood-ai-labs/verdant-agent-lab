@@ -24,6 +24,11 @@ surface mounting, state variants, footprints, anchors, and z-order hints.
 book stack, tablet, phone, pen cup, paper pile, plant, clock, and lamp is a
 separate transparent PNG and a separate entry in `manifests/props.v1.json`.
 
+These family counts describe the current runtime library, **not** a complete
+inventory of the supplied office reference. The source-required coverage audit
+and its missing-component worklist are in
+[`../docs/reference-asset-coverage-audit.md`](../docs/reference-asset-coverage-audit.md).
+
 ## Object crop inventory
 
 Architecture and environment:

@@ -32,8 +32,11 @@ evidence.
    per-instance crop evidence are versioned and reviewed.
 7. A validator exits nonzero for missing, proxy, unverified, orientation-fail,
    or count-mismatch ledger records.
+8. The source-required asset inventory is complete. A runtime manifest library,
+   a zone composite, or a baked architecture background cannot stand in for
+   independently addressable source assets.
 
-Until all six gates pass, label the work **structural prototype**, not complete
+Until all gates pass, label the work **structural prototype**, not complete
 reproduction.
 
 ## Confirmed current mismatches

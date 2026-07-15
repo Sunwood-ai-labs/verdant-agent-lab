@@ -2,6 +2,10 @@
 
 ## Public runtime assets
 
+The counts below are provenance/file counts. They are not evidence that every
+object required by the supplied reference is independently available at
+runtime; see [`reference-asset-coverage-audit.md`](reference-asset-coverage-audit.md).
+
 | Asset family | Count | Provenance | Public status |
 |---|---:|---|---|
 | Clean scene | 1 | Image Gen edit of user-provided reference | Included |

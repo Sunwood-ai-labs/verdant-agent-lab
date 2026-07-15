@@ -8,7 +8,7 @@ test('shows the first page of runtime assets without a vertically clipped proof'
   await expect(page.locator('#total')).toHaveText('48');
   await expect(page.locator('.asset-card')).toHaveCount(24);
   await expect(page.locator('#pageLabel')).toHaveText('PAGE 1 / 2');
-  await expect(page.getByText('GENERATED DERIVATIVES')).toBeVisible();
+  await expect(page.getByText('NOT SOURCE-COMPLETE')).toBeVisible();
   await expect(page.getByText(/EDGE-CUT RISK/)).toHaveCount(14);
   await page.evaluate(() => window.scrollTo(0, 0));
   await page.screenshot({ path: updateProofs ? 'proof/runtime-asset-catalog-page-1-v3.png' : testInfo.outputPath('runtime-asset-catalog-page-1.png'), fullPage: true });
