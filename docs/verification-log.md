@@ -228,6 +228,22 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Edge F1: 83.35%
 - Fidelity validator: FAIL, 13 records remain open (7 candidates, 6 missing/mismatch)
 - Visual check: greenhouse and both south workstations now match source-facing direction and object counts; meeting table was rescaled and moved to column 27; reception was rescaled to 11x5 tiles.
+
+# 2026-07-15 — Zone 04 Cafe sheet v2
+
+- Authoritative comparison input: `assets/reference-original.jpg` bbox
+  `[1023, 36, 1213, 245]`.
+- V1 disposition: rejected; wrong curved counter, refrigerator semantics,
+  oversized grinder machines, scale/camera drift, and magenta edge fringe.
+- V2 source sheet: `assets/intermediate/zone-04-cafe/cafe-2x3-v2-chroma.png`.
+- Targeted correction: top-middle fixture reduced to exactly six pots;
+  bottom-middle group changed to three hopper-free white/silver dispensers.
+- V2 alpha master: `assets/intermediate/zone-04-cafe/cafe-2x3-v2-alpha.png`.
+- Split report: `proof/intermediate/zone-04-cafe-split-v2.json`.
+- Result: 6/6 children, 0 edge flags, 0 near-key opaque pixels, partial-alpha
+  edges preserved, and splitter unit tests 4/4 pass.
+- Scope boundary: asset candidate comparison/regeneration complete; runtime
+  placement and deterministic `CAFE` overlay remain open.
 # Superseded historical checkpoint — final directional decomposition v1
 
 - Reference-overlay-off proof: `proof/modular-office-v1.png`

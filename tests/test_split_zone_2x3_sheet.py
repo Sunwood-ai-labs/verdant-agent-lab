@@ -54,6 +54,21 @@ class SplitZone2x3SheetTests(unittest.TestCase):
             _, report = MODULE.split_sheet(source, cells, Path(directory), columns=3, rows=2)
             self.assertTrue(all(not any(entry["edgeFlags"].values()) for entry in report))
 
+    def test_preserves_existing_soft_alpha_for_gutter_detection(self):
+        source = Image.new("RGBA", (30, 20), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(source)
+        cells = [{"id": f"asset-{index}"} for index in range(1, 7)]
+        for rectangle in [
+            (1, 1, 7, 8), (10, 1, 18, 8), (24, 1, 28, 8),
+            (1, 12, 5, 18), (8, 12, 14, 18), (20, 12, 28, 18),
+        ]:
+            draw.rectangle(rectangle, fill=(0, 0, 0, 220))
+        source.putpixel((1, 1), (16, 16, 16, 64))
+        with tempfile.TemporaryDirectory() as directory:
+            alpha, report = MODULE.split_sheet(source, cells, Path(directory), columns=3, rows=2)
+            self.assertEqual(alpha.getpixel((1, 1)), (16, 16, 16, 64))
+            self.assertTrue(all(not any(entry["edgeFlags"].values()) for entry in report))
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "zoneId": "cafe",
+  "sheetId": "zone-04-cafe-2x3-v2",
+  "sourceReference": { "role": "private-guidance-only", "zoneBbox": [1023, 36, 1213, 245] },
+  "sharedProvenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-04-cafe/cafe-2x3-v2-chroma.png",
+    "alphaMaster": "../../intermediate/zone-04-cafe/cafe-2x3-v2-alpha.png",
+    "prompt": "../../prompts/zone-04-cafe-2x3-v2.md"
+  },
+  "assets": [
+    { "id": "cafe-counter-cabinet-v2", "sprite": "../../generated/zones/cafe-v2/01-lower-cafe-counter-cabinet.png", "cellIndex": 1, "orientation": "three-quarter-top-down", "alphaBounds": [155, 226, 495, 427], "status": "source-reviewed-improved-candidate" },
+    { "id": "cafe-greenery-window-v2", "sprite": "../../generated/zones/cafe-v2/02-greenery-window-pot-fixture.png", "cellIndex": 2, "orientation": "three-quarter-top-down", "alphaBounds": [56, 193, 485, 418], "status": "source-reviewed-improved-candidate" },
+    { "id": "cafe-left-slim-shelf-v2", "sprite": "../../generated/zones/cafe-v2/03-left-slim-shelf-fridge.png", "cellIndex": 3, "orientation": "three-quarter-top-down", "alphaBounds": [75, 161, 177, 440], "status": "source-reviewed-improved-candidate" },
+    { "id": "cafe-right-vending-fridge-v2", "sprite": "../../generated/zones/cafe-v2/04-right-blue-panel-vending-fridge.png", "cellIndex": 4, "orientation": "three-quarter-top-down", "alphaBounds": [199, 50, 358, 338], "status": "source-reviewed-improved-candidate" },
+    { "id": "cafe-coffee-dispenser-group-v2", "sprite": "../../generated/zones/cafe-v2/05-triple-compact-coffee-dispenser-group.png", "cellIndex": 5, "orientation": "three-quarter-top-down", "alphaBounds": [109, 214, 385, 313], "status": "source-reviewed-improved-candidate" },
+    { "id": "cafe-sign-strip-blank-v2", "sprite": "../../generated/zones/cafe-v2/06-cafe-sign-strip-blank.png", "cellIndex": 6, "orientation": "front-facing", "alphaBounds": [99, 199, 429, 291], "overlay": "deterministic-CAFE-text-required", "status": "source-reviewed-improved-candidate" }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-04-cafe/cafe-2x3-v2-alpha.png",
+  "alphaMaster": "assets/intermediate/zone-04-cafe/cafe-2x3-v2-alpha-final.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    0,
+    0,
+    0
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "lower-cafe-counter-cabinet",
+      "sourceCellBbox": [
+        0,
+        0,
+        551,
+        490
+      ],
+      "alphaBboxInCell": [
+        155,
+        226,
+        495,
+        427
+      ],
+      "alphaBboxInSheet": [
+        155,
+        226,
+        495,
+        427
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 63476,
+      "output": "assets/generated/zones/cafe-v2/01-lower-cafe-counter-cabinet.png"
+    },
+    {
+      "cell": 2,
+      "id": "greenery-window-pot-fixture",
+      "sourceCellBbox": [
+        551,
+        0,
+        1111,
+        490
+      ],
+      "alphaBboxInCell": [
+        56,
+        193,
+        485,
+        418
+      ],
+      "alphaBboxInSheet": [
+        607,
+        193,
+        1036,
+        418
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 96381,
+      "output": "assets/generated/zones/cafe-v2/02-greenery-window-pot-fixture.png"
+    },
+    {
+      "cell": 3,
+      "id": "left-slim-shelf-fridge",
+      "sourceCellBbox": [
+        1111,
+        0,
+        1536,
+        490
+      ],
+      "alphaBboxInCell": [
+        75,
+        161,
+        177,
+        440
+      ],
+      "alphaBboxInSheet": [
+        1186,
+        161,
+        1288,
+        440
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 27792,
+      "output": "assets/generated/zones/cafe-v2/03-left-slim-shelf-fridge.png"
+    },
+    {
+      "cell": 4,
+      "id": "right-blue-panel-vending-fridge",
+      "sourceCellBbox": [
+        0,
+        490,
+        467,
+        1024
+      ],
+      "alphaBboxInCell": [
+        199,
+        50,
+        358,
+        338
+      ],
+      "alphaBboxInSheet": [
+        199,
+        540,
+        358,
+        828
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 44080,
+      "output": "assets/generated/zones/cafe-v2/04-right-blue-panel-vending-fridge.png"
+    },
+    {
+      "cell": 5,
+      "id": "triple-compact-coffee-dispenser-group",
+      "sourceCellBbox": [
+        467,
+        490,
+        951,
+        1024
+      ],
+      "alphaBboxInCell": [
+        109,
+        214,
+        385,
+        313
+      ],
+      "alphaBboxInSheet": [
+        576,
+        704,
+        852,
+        803
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 16755,
+      "output": "assets/generated/zones/cafe-v2/05-triple-compact-coffee-dispenser-group.png"
+    },
+    {
+      "cell": 6,
+      "id": "cafe-sign-strip-blank",
+      "sourceCellBbox": [
+        951,
+        490,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        99,
+        199,
+        429,
+        291
+      ],
+      "alphaBboxInSheet": [
+        1050,
+        689,
+        1380,
+        781
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 30154,
+      "output": "assets/generated/zones/cafe-v2/06-cafe-sign-strip-blank.png"
+    }
+  ]
+}

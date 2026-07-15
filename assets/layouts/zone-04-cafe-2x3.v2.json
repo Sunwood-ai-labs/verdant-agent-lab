@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "zoneId": "cafe",
+  "referenceBbox": [1023, 36, 1213, 245],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "blank-generated-panel; deterministic CAFE overlay later",
+  "characterPolicy": "prohibited",
+  "sourceSheetRevision": "v2 restores source camera, compact silhouettes, relative scale, and soft despilled alpha",
+  "cells": [
+    { "cell": 1, "id": "lower-cafe-counter-cabinet", "orientation": "three-quarter-top-down", "reusable": false },
+    { "cell": 2, "id": "greenery-window-pot-fixture", "orientation": "three-quarter-top-down", "reusable": false },
+    { "cell": 3, "id": "left-slim-shelf-fridge", "orientation": "three-quarter-top-down", "reusable": false },
+    { "cell": 4, "id": "right-blue-panel-vending-fridge", "orientation": "three-quarter-top-down", "reusable": false },
+    { "cell": 5, "id": "triple-compact-coffee-dispenser-group", "orientation": "three-quarter-top-down", "reusable": false },
+    { "cell": 6, "id": "cafe-sign-strip-blank", "orientation": "front-facing", "reusable": false }
+  ]
+}

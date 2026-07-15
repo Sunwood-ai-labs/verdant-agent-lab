@@ -1,0 +1,16 @@
+Zone 04 Cafe v2 uses the complete prompt recorded at
+assets/prompts/zone-04-cafe-2x3-v2.md.
+
+Built-in Image Gen inputs:
+- reference crop: assets/reference-original.jpg bbox [1023, 36, 1213, 245]
+- rejected comparison candidate: assets/intermediate/zone-04-cafe/cafe-2x3-v1-chroma.png
+
+The output was generated as one landscape 3-column x 2-row #ff00ff chroma
+sheet, then converted with remove_chroma_key.py using border auto-key,
+soft-matte, thresholds 12/220, and despill before deterministic splitting.
+
+The first v2 pass is retained as `cafe-2x3-v2-initial-chroma.png` and
+`cafe-2x3-v2-initial-alpha.png`. A precise-object edit then changed only the
+top-middle fixture from seven to exactly six pots and removed the remaining
+brown bean chambers/hoppers from the three bottom-middle dispensers. The other
+four cells and the sheet geometry were invariants of the edit.

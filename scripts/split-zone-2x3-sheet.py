@@ -28,6 +28,12 @@ def border_key(image: Image.Image) -> tuple[int, int, int]:
 
 def make_alpha(image: Image.Image, key: tuple[int, int, int], threshold: int) -> Image.Image:
     rgba = image.convert("RGBA")
+    alpha_extrema = rgba.getchannel("A").getextrema()
+    if alpha_extrema and alpha_extrema[0] < 255:
+        # A caller may pass a soft-matted/despilled alpha master instead of a
+        # raw chroma sheet. Re-keying that image from transparent RGB values
+        # can erase legitimate dark pixels and corrupt gutter detection.
+        return rgba
     converted = []
     for red, green, blue, alpha in rgba.getdata():
         converted.append((red, green, blue, 0 if color_distance((red, green, blue), key) <= threshold else alpha))

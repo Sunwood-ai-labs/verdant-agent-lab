@@ -1,5 +1,17 @@
 # Build progress
 
+## 2026-07-15 — Zone 04 Cafe source comparison and v2 regeneration
+
+- Direct comparison against `assets/reference-original.jpg` bbox
+  `[1023, 36, 1213, 245]` rejected the v1 sheet for silhouette, camera,
+  relative-scale, and chroma-fringe mismatches.
+- Regenerated all six Cafe cells as one source-guided v2 sheet, then applied a
+  targeted edit for the six-pot count and hopper-free dispensers. V1 and the
+  pre-edit v2 are preserved as rejected/intermediate comparison history.
+- V2 has six clean splits, zero edge-touch flags, zero near-key opaque pixels,
+  and soft despilled alpha. Runtime placement and deterministic `CAFE` text
+  remain open.
+
 ## 2026-07-15 — direct similarity correction
 
 - The prior 69.96% PASS is retracted: it was a weighted edge/palette diagnostic,
