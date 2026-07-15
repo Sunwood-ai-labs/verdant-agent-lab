@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "zoneId": "studio-west",
+  "sheetId": "zone-05-studio-west-2x3-v2",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      194,
+      264,
+      563,
+      488
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-05-studio-west/studio-west-2x3-v2-chroma.png",
+    "alphaMaster": "../../intermediate/zone-05-studio-west/studio-west-2x3-v2-alpha.png",
+    "prompt": "../../prompts/zone-05-studio-west-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-05-studio-west-split-v2.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "studio-west-irregular-wood-worktable-v2",
+      "sprite": "../../generated/zones/studio-west-v2/01-irregular-wood-worktable.png",
+      "cellIndex": 1,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        71,
+        145,
+        476,
+        424
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "studio-west-rear-shelf-with-plants-v2",
+      "sprite": "../../generated/zones/studio-west-v2/02-rear-shelf-with-plants.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        71,
+        151,
+        411,
+        377
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "studio-west-right-planter-bookshelf-v2",
+      "sprite": "../../generated/zones/studio-west-v2/03-right-planter-bookshelf.png",
+      "cellIndex": 3,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        108,
+        61,
+        313,
+        453
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "studio-west-ideas-whiteboard-blank-v2",
+      "sprite": "../../generated/zones/studio-west-v2/04-ideas-whiteboard-blank.png",
+      "cellIndex": 4,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        126,
+        53,
+        392,
+        440
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-IDEAS/IMPACT-text-required"
+    },
+    {
+      "id": "studio-west-black-rolling-chair-v2",
+      "sprite": "../../generated/zones/studio-west-v2/05-black-rolling-chair.png",
+      "cellIndex": 5,
+      "orientation": "north-facing",
+      "alphaBounds": [
+        138,
+        118,
+        313,
+        404
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "studio-west-studio-monitor-device-group-v2",
+      "sprite": "../../generated/zones/studio-west-v2/06-studio-monitor-device-group.png",
+      "cellIndex": 6,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        125,
+        136,
+        499,
+        433
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}

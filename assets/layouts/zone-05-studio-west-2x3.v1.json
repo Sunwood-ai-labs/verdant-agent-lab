@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "studio-west",
+  "referenceBbox": [194, 264, 563, 488],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "blank whiteboard; deterministic IDEAS/IMPACT overlay later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "irregular-wood-worktable", "orientation": "top-facing", "reusable": false },
+    { "cell": 2, "id": "rear-shelf-with-plants", "orientation": "front-facing", "reusable": false },
+    { "cell": 3, "id": "right-planter-bookshelf", "orientation": "front-facing", "reusable": false },
+    { "cell": 4, "id": "ideas-whiteboard-blank", "orientation": "front-facing", "reusable": false },
+    { "cell": 5, "id": "black-rolling-chair", "orientation": "north-facing", "reusable": true },
+    { "cell": 6, "id": "studio-monitor-device-group", "orientation": "top-facing", "reusable": false }
+  ]
+}

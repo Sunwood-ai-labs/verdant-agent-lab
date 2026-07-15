@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-05-studio-west/studio-west-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-05-studio-west/studio-west-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    232,
+    23,
+    217
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "irregular-wood-worktable",
+      "sourceCellBbox": [
+        0,
+        0,
+        574,
+        580
+      ],
+      "alphaBboxInCell": [
+        67,
+        162,
+        574,
+        495
+      ],
+      "alphaBboxInSheet": [
+        67,
+        162,
+        574,
+        495
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": true,
+        "bottom": false
+      },
+      "opaquePixels": 99055,
+      "output": "assets/generated/zones/studio-west-v1/01-irregular-wood-worktable.png"
+    },
+    {
+      "cell": 2,
+      "id": "rear-shelf-with-plants",
+      "sourceCellBbox": [
+        574,
+        0,
+        1079,
+        580
+      ],
+      "alphaBboxInCell": [
+        1,
+        212,
+        445,
+        414
+      ],
+      "alphaBboxInSheet": [
+        575,
+        212,
+        1019,
+        414
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 52563,
+      "output": "assets/generated/zones/studio-west-v1/02-rear-shelf-with-plants.png"
+    },
+    {
+      "cell": 3,
+      "id": "right-planter-bookshelf",
+      "sourceCellBbox": [
+        1079,
+        0,
+        1536,
+        580
+      ],
+      "alphaBboxInCell": [
+        60,
+        88,
+        372,
+        520
+      ],
+      "alphaBboxInSheet": [
+        1139,
+        88,
+        1451,
+        520
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 96710,
+      "output": "assets/generated/zones/studio-west-v1/03-right-planter-bookshelf.png"
+    },
+    {
+      "cell": 4,
+      "id": "ideas-whiteboard-blank",
+      "sourceCellBbox": [
+        0,
+        580,
+        531,
+        1024
+      ],
+      "alphaBboxInCell": [
+        98,
+        61,
+        437,
+        311
+      ],
+      "alphaBboxInSheet": [
+        98,
+        641,
+        437,
+        891
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 83623,
+      "output": "assets/generated/zones/studio-west-v1/04-ideas-whiteboard-blank.png"
+    },
+    {
+      "cell": 5,
+      "id": "black-rolling-chair",
+      "sourceCellBbox": [
+        531,
+        580,
+        1104,
+        1024
+      ],
+      "alphaBboxInCell": [
+        94,
+        92,
+        573,
+        325
+      ],
+      "alphaBboxInSheet": [
+        625,
+        672,
+        1104,
+        905
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": true,
+        "bottom": false
+      },
+      "opaquePixels": 46638,
+      "output": "assets/generated/zones/studio-west-v1/05-black-rolling-chair.png"
+    },
+    {
+      "cell": 6,
+      "id": "studio-monitor-device-group",
+      "sourceCellBbox": [
+        1104,
+        580,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        1,
+        143,
+        371,
+        310
+      ],
+      "alphaBboxInSheet": [
+        1105,
+        723,
+        1475,
+        890
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 22408,
+      "output": "assets/generated/zones/studio-west-v1/06-studio-monitor-device-group.png"
+    }
+  ]
+}
