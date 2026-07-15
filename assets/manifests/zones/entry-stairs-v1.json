@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "zoneId": "entry-stairs",
+  "sheetId": "zone-12-entry-stairs-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      200,
+      700,
+      856,
+      896
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-12-entry-stairs/entry-stairs-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-12-entry-stairs/entry-stairs-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-12-entry-stairs-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-12-entry-stairs-split-v1.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "entry-stairs-wood-stairs-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/01-wood-stairs.png",
+      "cellIndex": 1,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        94,
+        111,
+        456,
+        469
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "entry-stairs-wayfinding-board-blank-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/02-wayfinding-board-blank.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        78,
+        86,
+        373,
+        477
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-sign-text-required"
+    },
+    {
+      "id": "entry-stairs-green-sign-blank-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/03-green-sign-blank.png",
+      "cellIndex": 3,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        74,
+        175,
+        445,
+        486
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-sign-text-required"
+    },
+    {
+      "id": "entry-stairs-left-entry-planter-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/04-left-entry-planter.png",
+      "cellIndex": 4,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        115,
+        39,
+        381,
+        380
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "entry-stairs-right-entry-planter-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/05-right-entry-planter.png",
+      "cellIndex": 5,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        104,
+        22,
+        375,
+        391
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "entry-stairs-hedge-stone-border-v1",
+      "sprite": "../../generated/zones/entry-stairs-v1/06-hedge-stone-border.png",
+      "cellIndex": 6,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        72,
+        91,
+        534,
+        402
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}

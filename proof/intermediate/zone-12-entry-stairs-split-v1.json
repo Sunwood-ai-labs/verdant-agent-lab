@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-12-entry-stairs/entry-stairs-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-12-entry-stairs/entry-stairs-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    241,
+    20,
+    199
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "wood-stairs",
+      "sourceCellBbox": [
+        0,
+        0,
+        534,
+        508
+      ],
+      "alphaBboxInCell": [
+        94,
+        111,
+        456,
+        469
+      ],
+      "alphaBboxInSheet": [
+        94,
+        111,
+        456,
+        469
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 79812,
+      "output": "assets/generated/zones/entry-stairs-v1/01-wood-stairs.png"
+    },
+    {
+      "cell": 2,
+      "id": "wayfinding-board-blank",
+      "sourceCellBbox": [
+        534,
+        0,
+        980,
+        508
+      ],
+      "alphaBboxInCell": [
+        78,
+        86,
+        373,
+        477
+      ],
+      "alphaBboxInSheet": [
+        612,
+        86,
+        907,
+        477
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 68333,
+      "output": "assets/generated/zones/entry-stairs-v1/02-wayfinding-board-blank.png"
+    },
+    {
+      "cell": 3,
+      "id": "green-sign-blank",
+      "sourceCellBbox": [
+        980,
+        0,
+        1536,
+        508
+      ],
+      "alphaBboxInCell": [
+        74,
+        175,
+        445,
+        486
+      ],
+      "alphaBboxInSheet": [
+        1054,
+        175,
+        1425,
+        486
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 72010,
+      "output": "assets/generated/zones/entry-stairs-v1/03-green-sign-blank.png"
+    },
+    {
+      "cell": 4,
+      "id": "left-entry-planter",
+      "sourceCellBbox": [
+        0,
+        508,
+        484,
+        1024
+      ],
+      "alphaBboxInCell": [
+        115,
+        39,
+        381,
+        380
+      ],
+      "alphaBboxInSheet": [
+        115,
+        547,
+        381,
+        888
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 58548,
+      "output": "assets/generated/zones/entry-stairs-v1/04-left-entry-planter.png"
+    },
+    {
+      "cell": 5,
+      "id": "right-entry-planter",
+      "sourceCellBbox": [
+        484,
+        508,
+        932,
+        1024
+      ],
+      "alphaBboxInCell": [
+        104,
+        22,
+        375,
+        391
+      ],
+      "alphaBboxInSheet": [
+        588,
+        530,
+        859,
+        899
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 58748,
+      "output": "assets/generated/zones/entry-stairs-v1/05-right-entry-planter.png"
+    },
+    {
+      "cell": 6,
+      "id": "hedge-stone-border",
+      "sourceCellBbox": [
+        932,
+        508,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        72,
+        91,
+        534,
+        402
+      ],
+      "alphaBboxInSheet": [
+        1004,
+        599,
+        1466,
+        910
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 86893,
+      "output": "assets/generated/zones/entry-stairs-v1/06-hedge-stone-border.png"
+    }
+  ]
+}
