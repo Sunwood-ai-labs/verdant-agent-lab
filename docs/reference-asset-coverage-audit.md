@@ -7,6 +7,11 @@ Absolute path: `/Users/admin/Prj/sunwood-lab-recreation/docs/reference-asset-cov
 The supplied 1280×960 reference is exactly the local
 `assets/reference-original.jpg` (SHA-256
 `3eaeeb787a3e9d10f2612c7f20f2d963e38bae3870d1b03d03e3b57290868c5d`).
+For private visual inspection, `scripts/render-reference-zone-contact-sheet.py`
+uses `assets/layouts/reference-source-zones.v1.json` to create direct crops
+from that reference. Its raster output is intentionally gitignored because it
+contains the user-supplied original image; it is evidence only, never a public
+runtime asset.
 The current **48-entry manifest library is not an inventory of every
 source-required asset** and must not be described that way.
 

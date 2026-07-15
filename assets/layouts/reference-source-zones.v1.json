@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "reference": "../reference-original.jpg",
+  "coordinateSpace": [1280, 960],
+  "provenance": "direct crops from the private user-supplied reference; not published runtime assets",
+  "zones": [
+    { "id": "solar-wing", "bbox": [42, 36, 218, 461] },
+    { "id": "reception-and-brand-wall", "bbox": [470, 19, 812, 278] },
+    { "id": "north-lounge", "bbox": [826, 128, 1001, 272] },
+    { "id": "cafe", "bbox": [1023, 36, 1213, 245] },
+    { "id": "studio-west", "bbox": [194, 264, 563, 488] },
+    { "id": "meeting-room", "bbox": [678, 274, 903, 510] },
+    { "id": "ai-lab", "bbox": [892, 274, 1144, 628] },
+    { "id": "greenhouse", "bbox": [30, 454, 311, 756] },
+    { "id": "south-workstation-west", "bbox": [334, 512, 608, 688] },
+    { "id": "south-workstation-east", "bbox": [615, 512, 881, 688] },
+    { "id": "south-lounge", "bbox": [881, 620, 1142, 772] },
+    { "id": "entry-stairs-and-wayfinding", "bbox": [200, 700, 856, 896] }
+  ]
+}

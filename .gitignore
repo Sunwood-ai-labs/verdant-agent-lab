@@ -38,4 +38,5 @@ proof/*.png
 !proof/canonical-characterless-v1.png
 !proof/intermediate/
 !proof/intermediate/**/*.png
+proof/intermediate/reference-original-*.png
 !proof/verdant-layout-export-v1.json
