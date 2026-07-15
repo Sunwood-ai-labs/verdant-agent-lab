@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "meeting-room",
+  "referenceBbox": [678, 274, 903, 510],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "screen blank; deterministic overlays later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "glass-wall-door-frame", "orientation": "front-facing", "reusable": false },
+    { "cell": 2, "id": "oak-meeting-table", "orientation": "top-facing", "reusable": true },
+    { "cell": 3, "id": "left-rolling-chair", "orientation": "north-east-facing", "reusable": true },
+    { "cell": 4, "id": "right-rolling-chair", "orientation": "north-west-facing", "reusable": true },
+    { "cell": 5, "id": "blank-wall-display", "orientation": "front-facing", "reusable": true },
+    { "cell": 6, "id": "plants-pendant-lights", "orientation": "front-facing", "reusable": false }
+  ]
+}

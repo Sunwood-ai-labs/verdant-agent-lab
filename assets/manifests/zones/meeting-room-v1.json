@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "zoneId": "meeting-room",
+  "sheetId": "zone-06-meeting-room-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      678,
+      274,
+      903,
+      510
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-06-meeting-room/meeting-room-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-06-meeting-room/meeting-room-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-06-meeting-room-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-06-meeting-room-split-v1.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "meeting-room-glass-wall-door-frame-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/01-glass-wall-door-frame.png",
+      "cellIndex": 1,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        90,
+        61,
+        448,
+        442
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "meeting-room-oak-meeting-table-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/02-oak-meeting-table.png",
+      "cellIndex": 2,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        84,
+        147,
+        405,
+        375
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "meeting-room-left-rolling-chair-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/03-left-rolling-chair.png",
+      "cellIndex": 3,
+      "orientation": "north-east-facing",
+      "alphaBounds": [
+        102,
+        80,
+        301,
+        432
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "meeting-room-right-rolling-chair-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/04-right-rolling-chair.png",
+      "cellIndex": 4,
+      "orientation": "north-west-facing",
+      "alphaBounds": [
+        154,
+        84,
+        379,
+        423
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "meeting-room-blank-wall-display-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/05-blank-wall-display.png",
+      "cellIndex": 5,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        120,
+        128,
+        431,
+        382
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-screen-content-required"
+    },
+    {
+      "id": "meeting-room-plants-pendant-lights-v1",
+      "sprite": "../../generated/zones/meeting-room-v1/06-plants-pendant-lights.png",
+      "cellIndex": 6,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        75,
+        56,
+        428,
+        432
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}

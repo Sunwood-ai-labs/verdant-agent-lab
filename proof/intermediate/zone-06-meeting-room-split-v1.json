@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-06-meeting-room/meeting-room-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-06-meeting-room/meeting-room-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    240,
+    22,
+    238
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "glass-wall-door-frame",
+      "sourceCellBbox": [
+        0,
+        0,
+        532,
+        498
+      ],
+      "alphaBboxInCell": [
+        90,
+        61,
+        448,
+        442
+      ],
+      "alphaBboxInSheet": [
+        90,
+        61,
+        448,
+        442
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 73012,
+      "output": "assets/generated/zones/meeting-room-v1/01-glass-wall-door-frame.png"
+    },
+    {
+      "cell": 2,
+      "id": "oak-meeting-table",
+      "sourceCellBbox": [
+        532,
+        0,
+        1040,
+        498
+      ],
+      "alphaBboxInCell": [
+        84,
+        147,
+        405,
+        375
+      ],
+      "alphaBboxInSheet": [
+        616,
+        147,
+        937,
+        375
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 67014,
+      "output": "assets/generated/zones/meeting-room-v1/02-oak-meeting-table.png"
+    },
+    {
+      "cell": 3,
+      "id": "left-rolling-chair",
+      "sourceCellBbox": [
+        1040,
+        0,
+        1536,
+        498
+      ],
+      "alphaBboxInCell": [
+        102,
+        80,
+        301,
+        432
+      ],
+      "alphaBboxInSheet": [
+        1142,
+        80,
+        1341,
+        432
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 39454,
+      "output": "assets/generated/zones/meeting-room-v1/03-left-rolling-chair.png"
+    },
+    {
+      "cell": 4,
+      "id": "right-rolling-chair",
+      "sourceCellBbox": [
+        0,
+        498,
+        499,
+        1024
+      ],
+      "alphaBboxInCell": [
+        154,
+        84,
+        379,
+        423
+      ],
+      "alphaBboxInSheet": [
+        154,
+        582,
+        379,
+        921
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 40667,
+      "output": "assets/generated/zones/meeting-room-v1/04-right-rolling-chair.png"
+    },
+    {
+      "cell": 5,
+      "id": "blank-wall-display",
+      "sourceCellBbox": [
+        499,
+        498,
+        1004,
+        1024
+      ],
+      "alphaBboxInCell": [
+        120,
+        128,
+        431,
+        382
+      ],
+      "alphaBboxInSheet": [
+        619,
+        626,
+        930,
+        880
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 63444,
+      "output": "assets/generated/zones/meeting-room-v1/05-blank-wall-display.png"
+    },
+    {
+      "cell": 6,
+      "id": "plants-pendant-lights",
+      "sourceCellBbox": [
+        1004,
+        498,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        75,
+        56,
+        428,
+        432
+      ],
+      "alphaBboxInSheet": [
+        1079,
+        554,
+        1432,
+        930
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 59843,
+      "output": "assets/generated/zones/meeting-room-v1/06-plants-pendant-lights.png"
+    }
+  ]
+}
