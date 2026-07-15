@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "zoneId": "south-work-east",
+  "sheetId": "zone-10-south-work-east-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      615,
+      512,
+      881,
+      688
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-10-south-work-east/south-work-east-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-10-south-work-east/south-work-east-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-10-south-work-east-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-10-south-work-east-split-v1.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "south-work-east-east-work-desk-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/01-east-work-desk.png",
+      "cellIndex": 1,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        62,
+        93,
+        504,
+        460
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-east-east-rear-planter-shelf-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/02-east-rear-planter-shelf.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        45,
+        113,
+        444,
+        444
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-east-dual-monitor-group-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/03-dual-monitor-group.png",
+      "cellIndex": 3,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        51,
+        128,
+        415,
+        431
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-screen-content-required"
+    },
+    {
+      "id": "south-work-east-left-rolling-chair-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/04-left-rolling-chair.png",
+      "cellIndex": 4,
+      "orientation": "north-east-facing",
+      "alphaBounds": [
+        145,
+        41,
+        353,
+        417
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-east-right-rolling-chair-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/05-right-rolling-chair.png",
+      "cellIndex": 5,
+      "orientation": "north-west-facing",
+      "alphaBounds": [
+        146,
+        41,
+        361,
+        424
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "south-work-east-east-drawer-pots-v1",
+      "sprite": "../../generated/zones/south-work-east-v1/06-east-drawer-pots.png",
+      "cellIndex": 6,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        108,
+        67,
+        478,
+        423
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-10-south-work-east/south-work-east-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-10-south-work-east/south-work-east-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    242,
+    22,
+    239
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "east-work-desk",
+      "sourceCellBbox": [
+        0,
+        0,
+        548,
+        501
+      ],
+      "alphaBboxInCell": [
+        62,
+        93,
+        504,
+        460
+      ],
+      "alphaBboxInSheet": [
+        62,
+        93,
+        504,
+        460
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 90400,
+      "output": "assets/generated/zones/south-work-east-v1/01-east-work-desk.png"
+    },
+    {
+      "cell": 2,
+      "id": "east-rear-planter-shelf",
+      "sourceCellBbox": [
+        548,
+        0,
+        1044,
+        501
+      ],
+      "alphaBboxInCell": [
+        45,
+        113,
+        444,
+        444
+      ],
+      "alphaBboxInSheet": [
+        593,
+        113,
+        992,
+        444
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 80748,
+      "output": "assets/generated/zones/south-work-east-v1/02-east-rear-planter-shelf.png"
+    },
+    {
+      "cell": 3,
+      "id": "dual-monitor-group",
+      "sourceCellBbox": [
+        1044,
+        0,
+        1536,
+        501
+      ],
+      "alphaBboxInCell": [
+        51,
+        128,
+        415,
+        431
+      ],
+      "alphaBboxInSheet": [
+        1095,
+        128,
+        1459,
+        431
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 62532,
+      "output": "assets/generated/zones/south-work-east-v1/03-dual-monitor-group.png"
+    },
+    {
+      "cell": 4,
+      "id": "left-rolling-chair",
+      "sourceCellBbox": [
+        0,
+        501,
+        500,
+        1024
+      ],
+      "alphaBboxInCell": [
+        145,
+        41,
+        353,
+        417
+      ],
+      "alphaBboxInSheet": [
+        145,
+        542,
+        353,
+        918
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 43782,
+      "output": "assets/generated/zones/south-work-east-v1/04-left-rolling-chair.png"
+    },
+    {
+      "cell": 5,
+      "id": "right-rolling-chair",
+      "sourceCellBbox": [
+        500,
+        501,
+        968,
+        1024
+      ],
+      "alphaBboxInCell": [
+        146,
+        41,
+        361,
+        424
+      ],
+      "alphaBboxInSheet": [
+        646,
+        542,
+        861,
+        925
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 44587,
+      "output": "assets/generated/zones/south-work-east-v1/05-right-rolling-chair.png"
+    },
+    {
+      "cell": 6,
+      "id": "east-drawer-pots",
+      "sourceCellBbox": [
+        968,
+        501,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        108,
+        67,
+        478,
+        423
+      ],
+      "alphaBboxInSheet": [
+        1076,
+        568,
+        1446,
+        924
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 83181,
+      "output": "assets/generated/zones/south-work-east-v1/06-east-drawer-pots.png"
+    }
+  ]
+}
