@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "zoneId": "greenhouse",
+  "sheetId": "zone-08-greenhouse-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      30,
+      454,
+      311,
+      756
+    ]
+  },
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-08-greenhouse/greenhouse-2x3-v1-chroma.png",
+    "alphaMaster": "../../intermediate/zone-08-greenhouse/greenhouse-2x3-v1-alpha.png",
+    "prompt": "../../prompts/zone-08-greenhouse-2x3-v1.md",
+    "splitReport": "../../../proof/intermediate/zone-08-greenhouse-split-v1.json",
+    "chromaThreshold": 200
+  },
+  "assets": [
+    {
+      "id": "greenhouse-glass-roof-frame-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/01-glass-roof-frame.png",
+      "cellIndex": 1,
+      "orientation": "top-facing",
+      "alphaBounds": [
+        77,
+        107,
+        502,
+        433
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "greenhouse-glass-front-wall-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/02-glass-front-wall.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        52,
+        54,
+        391,
+        450
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "greenhouse-greenhouse-door-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/03-greenhouse-door.png",
+      "cellIndex": 3,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        118,
+        98,
+        261,
+        444
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "greenhouse-plant-shelf-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/04-plant-shelf.png",
+      "cellIndex": 4,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        84,
+        44,
+        470,
+        486
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "greenhouse-hanging-grow-lamps-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/05-hanging-grow-lamps.png",
+      "cellIndex": 5,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        59,
+        85,
+        395,
+        397
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "greenhouse-planter-control-panel-v1",
+      "sprite": "../../generated/zones/greenhouse-v1/06-planter-control-panel.png",
+      "cellIndex": 6,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        69,
+        102,
+        484,
+        452
+      ],
+      "status": "candidate-needs-source-review",
+      "overlay": "deterministic-control-panel-indicators-required"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "greenhouse",
+  "referenceBbox": [30, 454, 311, 756],
+  "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "control panel is blank; deterministic indicators later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "glass-roof-frame", "orientation": "top-facing", "reusable": false },
+    { "cell": 2, "id": "glass-front-wall", "orientation": "front-facing", "reusable": false },
+    { "cell": 3, "id": "greenhouse-door", "orientation": "front-facing", "reusable": true },
+    { "cell": 4, "id": "plant-shelf", "orientation": "front-facing", "reusable": true },
+    { "cell": 5, "id": "hanging-grow-lamps", "orientation": "front-facing", "reusable": true },
+    { "cell": 6, "id": "planter-control-panel", "orientation": "front-facing", "reusable": false }
+  ]
+}

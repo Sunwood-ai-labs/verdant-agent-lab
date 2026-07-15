@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-08-greenhouse/greenhouse-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-08-greenhouse/greenhouse-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    234,
+    22,
+    226
+  ],
+  "threshold": 200,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "glass-roof-frame",
+      "sourceCellBbox": [
+        0,
+        0,
+        554,
+        494
+      ],
+      "alphaBboxInCell": [
+        77,
+        107,
+        502,
+        433
+      ],
+      "alphaBboxInSheet": [
+        77,
+        107,
+        502,
+        433
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 30382,
+      "output": "assets/generated/zones/greenhouse-v1/01-glass-roof-frame.png"
+    },
+    {
+      "cell": 2,
+      "id": "glass-front-wall",
+      "sourceCellBbox": [
+        554,
+        0,
+        1062,
+        494
+      ],
+      "alphaBboxInCell": [
+        52,
+        54,
+        391,
+        450
+      ],
+      "alphaBboxInSheet": [
+        606,
+        54,
+        945,
+        450
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 42118,
+      "output": "assets/generated/zones/greenhouse-v1/02-glass-front-wall.png"
+    },
+    {
+      "cell": 3,
+      "id": "greenhouse-door",
+      "sourceCellBbox": [
+        1062,
+        0,
+        1536,
+        494
+      ],
+      "alphaBboxInCell": [
+        118,
+        98,
+        261,
+        444
+      ],
+      "alphaBboxInSheet": [
+        1180,
+        98,
+        1323,
+        444
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 37329,
+      "output": "assets/generated/zones/greenhouse-v1/03-greenhouse-door.png"
+    },
+    {
+      "cell": 4,
+      "id": "plant-shelf",
+      "sourceCellBbox": [
+        0,
+        494,
+        529,
+        1024
+      ],
+      "alphaBboxInCell": [
+        84,
+        44,
+        470,
+        486
+      ],
+      "alphaBboxInSheet": [
+        84,
+        538,
+        470,
+        980
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 122065,
+      "output": "assets/generated/zones/greenhouse-v1/04-plant-shelf.png"
+    },
+    {
+      "cell": 5,
+      "id": "hanging-grow-lamps",
+      "sourceCellBbox": [
+        529,
+        494,
+        993,
+        1024
+      ],
+      "alphaBboxInCell": [
+        59,
+        85,
+        395,
+        397
+      ],
+      "alphaBboxInSheet": [
+        588,
+        579,
+        924,
+        891
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 27458,
+      "output": "assets/generated/zones/greenhouse-v1/05-hanging-grow-lamps.png"
+    },
+    {
+      "cell": 6,
+      "id": "planter-control-panel",
+      "sourceCellBbox": [
+        993,
+        494,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        69,
+        102,
+        484,
+        452
+      ],
+      "alphaBboxInSheet": [
+        1062,
+        596,
+        1477,
+        946
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 79276,
+      "output": "assets/generated/zones/greenhouse-v1/06-planter-control-panel.png"
+    }
+  ]
+}
