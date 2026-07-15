@@ -83,6 +83,17 @@ validate:reference-fidelity` must fail until each is visually verified.
 - [ ] keep characters optional and disabled by default
 # Directional asset rebuild checkpoint — 2026-07-15
 
+## Zone 01 — solar wing 2×3 candidate sheet
+
+- Generated a six-cell landscape chroma sheet with separate mounting frame,
+  panel face, blank dashboard, rack, control base, and vine/stone edge.
+- Deterministic gutter-aware splitting produced six alpha PNGs with zero
+  cell-boundary alpha flags; prompts, masters, split report, and manifest are
+  retained under `assets/intermediate/zone-01-solar-wing/`,
+  `assets/generated/zones/solar-wing-v1/`, and `assets/manifests/zones/`.
+- This remains a candidate: the generated panel face is 2×2 while the reference
+  array is 2×3, and the blank dashboard still needs deterministic text.
+
 - Retracted the source-guided 60.37% result as a completion claim; it does not prove independent asset fidelity.
 - Rebuilt seven high-impact regions with one Image Gen sprite per source crop: reception, north lounge, cafe, meeting table, greenhouse, west workstation, and east workstation.
 - Each generated source, prompt, chroma intermediate, and alpha output is preserved under `assets/intermediate/fidelity-v1/` and `assets/generated/furniture/`.

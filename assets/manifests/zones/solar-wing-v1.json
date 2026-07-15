@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "zoneId": "solar-wing",
+  "sheetId": "zone-01-solar-wing-2x3-v1",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [42, 36, 218, 461]
+  },
+  "assets": [
+    { "id": "solar-mounting-frame-v1", "sprite": "../../generated/zones/solar-wing-v1/01-mounting-frame.png", "cellIndex": 1, "sourceBbox": [55, 52, 178, 211], "orientation": "front-facing", "alphaBounds": [177, 66, 697, 352], "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" },
+    { "id": "solar-blue-module-v1", "sprite": "../../generated/zones/solar-wing-v1/02-blue-solar-module.png", "cellIndex": 2, "sourceBbox": [62, 63, 171, 183], "orientation": "front-facing", "alphaBounds": [190, 88, 460, 321], "reusable": true, "sourceCount": 6, "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" },
+    { "id": "solar-output-dashboard-blank-v1", "sprite": "../../generated/zones/solar-wing-v1/03-output-dashboard-blank.png", "cellIndex": 3, "sourceBbox": [62, 229, 174, 337], "orientation": "front-facing", "alphaBounds": [225, 41, 647, 298], "overlay": "deterministic-dashboard-text-required", "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" },
+    { "id": "solar-server-rack-v1", "sprite": "../../generated/zones/solar-wing-v1/04-black-server-rack.png", "cellIndex": 4, "sourceBbox": [46, 343, 177, 439], "orientation": "front-facing", "alphaBounds": [211, 20, 436, 303], "reusable": true, "sourceCount": 3, "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" },
+    { "id": "solar-controller-base-v1", "sprite": "../../generated/zones/solar-wing-v1/05-controller-base.png", "cellIndex": 5, "sourceBbox": [46, 416, 178, 454], "orientation": "front-facing", "alphaBounds": [205, 75, 668, 223], "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" },
+    { "id": "solar-vine-stone-edging-v1", "sprite": "../../generated/zones/solar-wing-v1/06-vine-stone-edging.png", "cellIndex": 6, "sourceBbox": [42, 36, 218, 461], "orientation": "front-facing", "alphaBounds": [98, 32, 553, 225], "reusable": true, "sourceCount": 2, "provenance": "imagegen-chroma-split", "status": "candidate-needs-source-review" }
+  ]
+}

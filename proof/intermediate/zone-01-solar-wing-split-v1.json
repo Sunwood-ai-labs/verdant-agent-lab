@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-01-solar-wing/solar-wing-2x3-v1-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-01-solar-wing/solar-wing-2x3-v1-alpha.png",
+  "grid": {
+    "columns": 2,
+    "rows": 3,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    240,
+    24,
+    239
+  ],
+  "threshold": 36,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "mounting-frame",
+      "sourceCellBbox": [
+        0,
+        0,
+        794,
+        372
+      ],
+      "alphaBboxInCell": [
+        177,
+        66,
+        697,
+        352
+      ],
+      "alphaBboxInSheet": [
+        177,
+        66,
+        697,
+        352
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 70850,
+      "output": "assets/generated/zones/solar-wing-v1/01-mounting-frame.png"
+    },
+    {
+      "cell": 2,
+      "id": "blue-solar-module",
+      "sourceCellBbox": [
+        794,
+        0,
+        1536,
+        372
+      ],
+      "alphaBboxInCell": [
+        190,
+        88,
+        460,
+        321
+      ],
+      "alphaBboxInSheet": [
+        984,
+        88,
+        1254,
+        321
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 62891,
+      "output": "assets/generated/zones/solar-wing-v1/02-blue-solar-module.png"
+    },
+    {
+      "cell": 3,
+      "id": "output-dashboard-blank",
+      "sourceCellBbox": [
+        0,
+        372,
+        794,
+        707
+      ],
+      "alphaBboxInCell": [
+        225,
+        41,
+        647,
+        298
+      ],
+      "alphaBboxInSheet": [
+        225,
+        413,
+        647,
+        670
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 108362,
+      "output": "assets/generated/zones/solar-wing-v1/03-output-dashboard-blank.png"
+    },
+    {
+      "cell": 4,
+      "id": "black-server-rack",
+      "sourceCellBbox": [
+        794,
+        372,
+        1536,
+        707
+      ],
+      "alphaBboxInCell": [
+        211,
+        20,
+        436,
+        303
+      ],
+      "alphaBboxInSheet": [
+        1005,
+        392,
+        1230,
+        675
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 63361,
+      "output": "assets/generated/zones/solar-wing-v1/04-black-server-rack.png"
+    },
+    {
+      "cell": 5,
+      "id": "controller-base",
+      "sourceCellBbox": [
+        0,
+        707,
+        794,
+        1024
+      ],
+      "alphaBboxInCell": [
+        205,
+        75,
+        668,
+        223
+      ],
+      "alphaBboxInSheet": [
+        205,
+        782,
+        668,
+        930
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 64209,
+      "output": "assets/generated/zones/solar-wing-v1/05-controller-base.png"
+    },
+    {
+      "cell": 6,
+      "id": "vine-stone-edging",
+      "sourceCellBbox": [
+        794,
+        707,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        98,
+        32,
+        553,
+        225
+      ],
+      "alphaBboxInSheet": [
+        892,
+        739,
+        1347,
+        932
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 76439,
+      "output": "assets/generated/zones/solar-wing-v1/06-vine-stone-edging.png"
+    }
+  ]
+}

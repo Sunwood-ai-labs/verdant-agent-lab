@@ -39,4 +39,5 @@ proof/*.png
 !proof/intermediate/
 !proof/intermediate/**/*.png
 proof/intermediate/reference-original-*.png
+proof/intermediate/*source-comparison*.png
 !proof/verdant-layout-export-v1.json

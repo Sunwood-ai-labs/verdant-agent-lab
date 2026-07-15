@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "zoneId": "solar-wing",
+  "referenceBbox": [42, 36, 218, 461],
+  "grid": { "columns": 2, "rows": 3, "readingOrder": "row-major" },
+  "background": "#ff00ff",
+  "sourceRole": "private-reference-guidance-only",
+  "textPolicy": "blank-generated-panels; deterministic HTML/Canvas overlays later",
+  "characterPolicy": "prohibited",
+  "cells": [
+    { "cell": 1, "id": "mounting-frame", "orientation": "front-facing", "reusable": false },
+    { "cell": 2, "id": "blue-solar-module", "orientation": "front-facing", "reusable": true, "sourceCount": 6 },
+    { "cell": 3, "id": "output-dashboard-blank", "orientation": "front-facing", "reusable": false },
+    { "cell": 4, "id": "black-server-rack", "orientation": "front-facing", "reusable": true, "sourceCount": 3 },
+    { "cell": 5, "id": "controller-base", "orientation": "front-facing", "reusable": false },
+    { "cell": 6, "id": "vine-stone-edging", "orientation": "front-facing", "reusable": true, "sourceCount": 2 }
+  ]
+}
