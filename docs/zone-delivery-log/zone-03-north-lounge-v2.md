@@ -15,4 +15,11 @@ reference verification or runtime placement yet.
 
 ## AYANO delivery
 
-Pending zone commit/push and live receipt.
+Delivered after asset commit `74289a5` to `アヤノの部屋 / #sunwood-lab-recreation`
+(`1526794078744744077`).
+
+- Message id: `1526960470458761320`
+- Attachments: `north-lounge-2x3-v2-chroma.png` (1,369,781 bytes) and
+  `north-lounge-source-to-children-proof-v2.png` (513,511 bytes)
+- Embed status: v2 candidate with zero cell-boundary alpha flags; source
+  verification and runtime placement remain open.
