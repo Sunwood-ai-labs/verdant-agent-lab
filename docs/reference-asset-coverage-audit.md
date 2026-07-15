@@ -20,6 +20,21 @@ source-required asset** and must not be described that way.
 - The 30 `object-crops/` files are non-runtime opaque cuts from `scene-clean`,
   not source-original isolated assets.
 
+## Existing split-image bank — present, but not wired into the builder
+
+There is a substantial bank of individually named split PNGs under
+`assets/generated/decomposed/`. It includes 18-cell sets for the solar wing,
+AI lab, reception, meeting room, greenhouse, cafe/north lounge, south lounge,
+studio, and workstations (plus a three-bin set). The matching
+`assets/layouts/*-parts-3x6*.json` files identify the intended child names and
+paths. These files are **not missing**.
+
+Their current problem is different: `builder.js` does not load child paths from
+`assets/generated/decomposed/`; it loads parent recomposed zone sprites from
+the 48-entry manifest. Therefore the existing split bank must be reviewed
+against the source and promoted, with its own manifest records and placements,
+before it can count as independently runtime-addressable coverage.
+
 ## Required source assets absent or not independently runtime-addressable
 
 | Priority | Reference requirement | Current state |
