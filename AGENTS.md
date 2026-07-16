@@ -3,14 +3,25 @@
 ## Reference-direction asset decomposition
 
 When decomposing the supplied reference office into reusable assets, preserve
-the source image's viewing direction for every asset. Do not convert a
-front-facing, elevation, or top-down source object into isometric/perspective
-art merely because that is a common pixel-art default.
+the source image's exact local viewing direction for every individual asset.
+The goal is to turn the complete reference image into independently placeable
+parts that reassemble into the same view. Do not normalize all parts to one
+shared direction such as `front-facing`, and do not convert them to a generic
+isometric/perspective view.
 
-- Record each source object's direction in its layout manifest before
-  generation or extraction.
+- Record each source object's own direction, visible face, rotation, and
+  silhouette in its layout manifest before generation or extraction. Directions
+  within one sheet may and often should differ.
 - Treat a generated sprite with a changed camera angle as `orientation-mismatch`
   even if its semantic label, colors, and alpha split are otherwise valid.
+- Treat a sheet that forces every asset to `front-facing`, `top-facing`, or any
+  other common angle as rejected unless the source independently shows every
+  listed object at that exact angle.
+- Use the supplied source image's visible pixels as the primary asset evidence.
+  Crop and mask each visible object in-place first. Image Gen may clean edges,
+  remove neighboring objects, or infer occluded portions, but it must preserve
+  the visible source-facing pixels, camera angle, scale relationship, and
+  silhouette. A semantically similar redraw is not a decomposed source asset.
 - The acceptance gate is a same-view comparison against the corresponding
   source-zone crop, not only clean alpha bounds or a successful split.
 - Keep prior mismatched assets as rejected intermediate provenance; do not use

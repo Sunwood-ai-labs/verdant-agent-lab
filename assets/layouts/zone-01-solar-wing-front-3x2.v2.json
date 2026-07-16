@@ -5,7 +5,8 @@
   "grid": { "columns": 3, "rows": 2, "readingOrder": "row-major" },
   "background": "#ff00ff",
   "sourceRole": "private-reference-guidance-only",
-  "directionPolicy": "exact front/elevation direction from source crop; isometric prohibited",
+  "directionPolicy": "rejected: incorrectly normalized all parts to front-facing instead of preserving each source part's local direction",
+  "status": "rejected-global-direction-normalization",
   "cells": [
     { "cell": 1, "id": "front-solar-panel", "orientation": "front-facing", "reusable": false },
     { "cell": 2, "id": "front-wood-panel-frame", "orientation": "front-facing", "reusable": false },

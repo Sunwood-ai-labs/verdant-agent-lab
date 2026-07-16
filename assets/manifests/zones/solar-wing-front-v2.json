@@ -11,7 +11,9 @@
       461
     ]
   },
-  "directionGate": "front-facing source elevation; isometric prohibited",
+  "directionGate": "failed: sheet globally normalized direction instead of proving each part against its source instance",
+  "status": "rejected-orientation-policy",
+  "runtimeEligible": false,
   "provenance": {
     "generator": "built-in-imagegen",
     "chromaMaster": "../../intermediate/zone-01-solar-wing-front/solar-wing-front-3x2-v2-chroma.png",
