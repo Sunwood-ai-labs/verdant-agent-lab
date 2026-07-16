@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-02-reception/page-03-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-02-reception/page-03-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    240,
+    22,
+    238
+  ],
+  "threshold": 200,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "wood-double-door",
+      "sourceCellBbox": [
+        0,
+        0,
+        606,
+        464
+      ],
+      "alphaBboxInCell": [
+        147,
+        89,
+        504,
+        397
+      ],
+      "alphaBboxInSheet": [
+        147,
+        89,
+        504,
+        397
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 58960,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/01-wood-double-door.png"
+    },
+    {
+      "cell": 2,
+      "id": "exit-sign-blank",
+      "sourceCellBbox": [
+        606,
+        0,
+        1100,
+        464
+      ],
+      "alphaBboxInCell": [
+        103,
+        165,
+        417,
+        300
+      ],
+      "alphaBboxInSheet": [
+        709,
+        165,
+        1023,
+        300
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 42063,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/02-exit-sign-blank.png"
+    },
+    {
+      "cell": 3,
+      "id": "sunwood-wall-lettering",
+      "sourceCellBbox": [
+        1100,
+        0,
+        1718,
+        464
+      ],
+      "alphaBboxInCell": [
+        78,
+        149,
+        537,
+        350
+      ],
+      "alphaBboxInSheet": [
+        1178,
+        149,
+        1637,
+        350
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 26768,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/03-sunwood-wall-lettering.png"
+    },
+    {
+      "cell": 4,
+      "id": "brand-wall-vine-lamps",
+      "sourceCellBbox": [
+        0,
+        464,
+        700,
+        916
+      ],
+      "alphaBboxInCell": [
+        31,
+        111,
+        621,
+        337
+      ],
+      "alphaBboxInSheet": [
+        31,
+        575,
+        621,
+        801
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 42651,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/04-brand-wall-vine-lamps.png"
+    },
+    {
+      "cell": 5,
+      "id": "small-wood-planter-stand",
+      "sourceCellBbox": [
+        700,
+        464,
+        1136,
+        916
+      ],
+      "alphaBboxInCell": [
+        80,
+        66,
+        251,
+        344
+      ],
+      "alphaBboxInSheet": [
+        780,
+        530,
+        951,
+        808
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 39975,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/05-small-wood-planter-stand.png"
+    },
+    {
+      "cell": 6,
+      "id": "right-framed-control-device",
+      "sourceCellBbox": [
+        1136,
+        464,
+        1718,
+        916
+      ],
+      "alphaBboxInCell": [
+        184,
+        128,
+        338,
+        302
+      ],
+      "alphaBboxInSheet": [
+        1320,
+        592,
+        1474,
+        766
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 21440,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-03/06-right-framed-control-device.png"
+    }
+  ]
+}

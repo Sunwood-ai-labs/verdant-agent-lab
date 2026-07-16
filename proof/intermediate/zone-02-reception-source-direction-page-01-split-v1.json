@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-02-reception/page-01-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-02-reception/page-01-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    255,
+    0,
+    255
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "curved-reception-counter",
+      "sourceCellBbox": [
+        0,
+        0,
+        564,
+        513
+      ],
+      "alphaBboxInCell": [
+        44,
+        129,
+        550,
+        375
+      ],
+      "alphaBboxInSheet": [
+        44,
+        129,
+        550,
+        375
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 80418,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/01-curved-reception-counter.png"
+    },
+    {
+      "cell": 2,
+      "id": "front-foliage-planter",
+      "sourceCellBbox": [
+        564,
+        0,
+        1078,
+        513
+      ],
+      "alphaBboxInCell": [
+        13,
+        15,
+        505,
+        505
+      ],
+      "alphaBboxInSheet": [
+        577,
+        15,
+        1069,
+        505
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 46378,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/02-front-foliage-planter.png"
+    },
+    {
+      "cell": 3,
+      "id": "wood-easel-sign-blank",
+      "sourceCellBbox": [
+        1078,
+        0,
+        1536,
+        513
+      ],
+      "alphaBboxInCell": [
+        8,
+        15,
+        442,
+        505
+      ],
+      "alphaBboxInSheet": [
+        1086,
+        15,
+        1520,
+        505
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 37892,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/03-wood-easel-sign-blank.png"
+    },
+    {
+      "cell": 4,
+      "id": "black-diagonal-monitor",
+      "sourceCellBbox": [
+        0,
+        513,
+        489,
+        1024
+      ],
+      "alphaBboxInCell": [
+        195,
+        91,
+        401,
+        334
+      ],
+      "alphaBboxInSheet": [
+        195,
+        604,
+        401,
+        847
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 35771,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/04-black-diagonal-monitor.png"
+    },
+    {
+      "cell": 5,
+      "id": "left-silver-tablet",
+      "sourceCellBbox": [
+        489,
+        513,
+        1000,
+        1024
+      ],
+      "alphaBboxInCell": [
+        88,
+        8,
+        425,
+        496
+      ],
+      "alphaBboxInSheet": [
+        577,
+        521,
+        914,
+        1009
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 24519,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/05-left-silver-tablet.png"
+    },
+    {
+      "cell": 6,
+      "id": "right-silver-tablet",
+      "sourceCellBbox": [
+        1000,
+        513,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        86,
+        8,
+        520,
+        496
+      ],
+      "alphaBboxInSheet": [
+        1086,
+        521,
+        1520,
+        1009
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 24100,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-01/06-right-silver-tablet.png"
+    }
+  ]
+}

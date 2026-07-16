@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-02-reception/page-02-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-02-reception/page-02-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    242,
+    22,
+    238
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "counter-small-potted-plant",
+      "sourceCellBbox": [
+        0,
+        0,
+        563,
+        370
+      ],
+      "alphaBboxInCell": [
+        211,
+        110,
+        380,
+        317
+      ],
+      "alphaBboxInSheet": [
+        211,
+        110,
+        380,
+        317
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 26276,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/01-counter-small-potted-plant.png"
+    },
+    {
+      "cell": 2,
+      "id": "counter-cactus-bottle",
+      "sourceCellBbox": [
+        563,
+        0,
+        1015,
+        370
+      ],
+      "alphaBboxInCell": [
+        183,
+        66,
+        302,
+        316
+      ],
+      "alphaBboxInSheet": [
+        746,
+        66,
+        865,
+        316
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 20564,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/02-counter-cactus-bottle.png"
+    },
+    {
+      "cell": 3,
+      "id": "counter-paper-stack",
+      "sourceCellBbox": [
+        1015,
+        0,
+        1619,
+        370
+      ],
+      "alphaBboxInCell": [
+        150,
+        120,
+        387,
+        322
+      ],
+      "alphaBboxInSheet": [
+        1165,
+        120,
+        1402,
+        322
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 31456,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/03-counter-paper-stack.png"
+    },
+    {
+      "cell": 4,
+      "id": "left-tall-tree-planter",
+      "sourceCellBbox": [
+        0,
+        370,
+        577,
+        971
+      ],
+      "alphaBboxInCell": [
+        190,
+        47,
+        435,
+        490
+      ],
+      "alphaBboxInSheet": [
+        190,
+        417,
+        435,
+        860
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 67773,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/04-left-tall-tree-planter.png"
+    },
+    {
+      "cell": 5,
+      "id": "right-square-tree-planter",
+      "sourceCellBbox": [
+        577,
+        370,
+        1032,
+        971
+      ],
+      "alphaBboxInCell": [
+        142,
+        54,
+        300,
+        484
+      ],
+      "alphaBboxInSheet": [
+        719,
+        424,
+        877,
+        854
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 45871,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/05-right-square-tree-planter.png"
+    },
+    {
+      "cell": 6,
+      "id": "door-white-cylinder-planter",
+      "sourceCellBbox": [
+        1032,
+        370,
+        1619,
+        971
+      ],
+      "alphaBboxInCell": [
+        156,
+        112,
+        344,
+        489
+      ],
+      "alphaBboxInSheet": [
+        1188,
+        482,
+        1376,
+        859
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 45897,
+      "output": "assets/generated/source-direction-v1/zone-02-reception/page-02/06-door-white-cylinder-planter.png"
+    }
+  ]
+}

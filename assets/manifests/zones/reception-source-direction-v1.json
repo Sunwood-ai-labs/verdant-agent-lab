@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "zoneId": "reception",
+  "status": "source-direction-candidate-needs-same-view-score",
+  "runtimeEligible": false,
+  "sourceReference": {"role":"camera-direction-and-content-authority","crop":"../../parts/reception.png"},
+  "partsLayout": "../../layouts/reception-source-direction-3x6.v1.json",
+  "partCount": 18,
+  "generation": {
+    "tool": "built-in-imagegen",
+    "prompt": "../../prompts/zone-02-reception-source-direction-v1.md",
+    "intermediateDirectory": "../../intermediate/source-direction-v1/zone-02-reception",
+    "whiteGutterNormalization": "../../../scripts/normalize-generated-grid.py",
+    "pageChromaThresholds": [72, 72, 200]
+  },
+  "horizontalPages": [
+    "../../generated/sheets/source-direction-v1/zone-02-reception/zone-02-reception-source-direction-v1-page-01.png",
+    "../../generated/sheets/source-direction-v1/zone-02-reception/zone-02-reception-source-direction-v1-page-02.png",
+    "../../generated/sheets/source-direction-v1/zone-02-reception/zone-02-reception-source-direction-v1-page-03.png"
+  ]
+}
