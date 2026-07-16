@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-03-north-lounge/page-01-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-03-north-lounge/page-01-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    242,
+    23,
+    240
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "olive-octagonal-rug",
+      "sourceCellBbox": [
+        0,
+        0,
+        593,
+        518
+      ],
+      "alphaBboxInCell": [
+        45,
+        139,
+        545,
+        517
+      ],
+      "alphaBboxInSheet": [
+        45,
+        139,
+        545,
+        517
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 167320,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/01-olive-octagonal-rug.png"
+    },
+    {
+      "cell": 2,
+      "id": "main-olive-sofa",
+      "sourceCellBbox": [
+        593,
+        0,
+        1198,
+        518
+      ],
+      "alphaBboxInCell": [
+        48,
+        151,
+        548,
+        456
+      ],
+      "alphaBboxInSheet": [
+        641,
+        151,
+        1141,
+        456
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 141294,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/02-main-olive-sofa.png"
+    },
+    {
+      "cell": 3,
+      "id": "right-olive-sofa-return",
+      "sourceCellBbox": [
+        1198,
+        0,
+        1536,
+        518
+      ],
+      "alphaBboxInCell": [
+        56,
+        170,
+        232,
+        491
+      ],
+      "alphaBboxInSheet": [
+        1254,
+        170,
+        1430,
+        491
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 48460,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/03-right-olive-sofa-return.png"
+    },
+    {
+      "cell": 4,
+      "id": "oval-wood-coffee-table",
+      "sourceCellBbox": [
+        0,
+        518,
+        616,
+        1024
+      ],
+      "alphaBboxInCell": [
+        137,
+        1,
+        507,
+        353
+      ],
+      "alphaBboxInSheet": [
+        137,
+        519,
+        507,
+        871
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 73917,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/04-oval-wood-coffee-table.png"
+    },
+    {
+      "cell": 5,
+      "id": "tabletop-potted-plant",
+      "sourceCellBbox": [
+        616,
+        518,
+        976,
+        1024
+      ],
+      "alphaBboxInCell": [
+        110,
+        155,
+        243,
+        341
+      ],
+      "alphaBboxInSheet": [
+        726,
+        673,
+        859,
+        859
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 17933,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/05-tabletop-potted-plant.png"
+    },
+    {
+      "cell": 6,
+      "id": "tabletop-paper-card-group",
+      "sourceCellBbox": [
+        976,
+        518,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        117,
+        240,
+        212,
+        342
+      ],
+      "alphaBboxInSheet": [
+        1093,
+        758,
+        1188,
+        860
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 8052,
+      "output": "assets/generated/source-direction-v1/zone-03-north-lounge/06-tabletop-paper-card-group.png"
+    }
+  ]
+}

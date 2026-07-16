@@ -1,0 +1,12 @@
+{
+  "version":1,"sourceBbox":[826,128,1001,272],"grid":{"columns":3,"rows":2,"readingOrder":"row-major"},
+  "directionRule":"each part keeps the source-visible projection; characters removed",
+  "cells":[
+    {"id":"olive-octagonal-rug","orientation":"source-top-down-octagon","output":"generated/source-direction-v1/zone-03-north-lounge/01-olive-octagonal-rug.png"},
+    {"id":"main-olive-sofa","orientation":"inward-facing-source-projection","output":"generated/source-direction-v1/zone-03-north-lounge/02-main-olive-sofa.png"},
+    {"id":"right-olive-sofa-return","orientation":"faces-west-inward","output":"generated/source-direction-v1/zone-03-north-lounge/03-right-olive-sofa-return.png"},
+    {"id":"oval-wood-coffee-table","orientation":"source-top-down-oval","output":"generated/source-direction-v1/zone-03-north-lounge/04-oval-wood-coffee-table.png"},
+    {"id":"tabletop-potted-plant","orientation":"upright-source-projection","output":"generated/source-direction-v1/zone-03-north-lounge/05-tabletop-potted-plant.png"},
+    {"id":"tabletop-paper-card-group","orientation":"source-top-down-prop-set","output":"generated/source-direction-v1/zone-03-north-lounge/06-tabletop-paper-card-group.png"}
+  ]
+}

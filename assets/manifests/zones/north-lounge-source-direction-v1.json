@@ -1,0 +1,6 @@
+{
+  "version":1,"zoneId":"north-lounge","status":"source-direction-candidate-needs-same-view-score","runtimeEligible":false,
+  "sourceReference":{"role":"camera-direction-and-content-authority","zoneBbox":[826,128,1001,272]},
+  "partsLayout":"../../layouts/zone-03-north-lounge-source-direction.v1.json","partCount":6,
+  "horizontalPages":["../../generated/sheets/source-direction-v1/zone-03-north-lounge/zone-03-north-lounge-source-direction-v1-page-01.png"]
+}
