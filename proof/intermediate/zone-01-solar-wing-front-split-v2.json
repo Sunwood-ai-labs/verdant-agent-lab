@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/zone-01-solar-wing-front/solar-wing-front-3x2-v2-chroma.png",
+  "alphaMaster": "assets/intermediate/zone-01-solar-wing-front/solar-wing-front-3x2-v2-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    253,
+    253,
+    253
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "front-solar-panel",
+      "sourceCellBbox": [
+        0,
+        0,
+        514,
+        512
+      ],
+      "alphaBboxInCell": [
+        16,
+        14,
+        506,
+        505
+      ],
+      "alphaBboxInSheet": [
+        16,
+        14,
+        506,
+        505
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 234347,
+      "output": "assets/generated/zones/solar-wing-front-v2/01-front-solar-panel.png"
+    },
+    {
+      "cell": 2,
+      "id": "front-wood-panel-frame",
+      "sourceCellBbox": [
+        514,
+        0,
+        1021,
+        512
+      ],
+      "alphaBboxInCell": [
+        7,
+        14,
+        500,
+        505
+      ],
+      "alphaBboxInSheet": [
+        521,
+        14,
+        1014,
+        505
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 242054,
+      "output": "assets/generated/zones/solar-wing-front-v2/02-front-wood-panel-frame.png"
+    },
+    {
+      "cell": 3,
+      "id": "front-status-monitor-blank",
+      "sourceCellBbox": [
+        1021,
+        0,
+        1536,
+        512
+      ],
+      "alphaBboxInCell": [
+        7,
+        14,
+        498,
+        505
+      ],
+      "alphaBboxInSheet": [
+        1028,
+        14,
+        1519,
+        505
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 241055,
+      "output": "assets/generated/zones/solar-wing-front-v2/03-front-status-monitor-blank.png"
+    },
+    {
+      "cell": 4,
+      "id": "front-server-bank",
+      "sourceCellBbox": [
+        0,
+        512,
+        514,
+        1024
+      ],
+      "alphaBboxInCell": [
+        16,
+        7,
+        506,
+        499
+      ],
+      "alphaBboxInSheet": [
+        16,
+        519,
+        506,
+        1011
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 241070,
+      "output": "assets/generated/zones/solar-wing-front-v2/04-front-server-bank.png"
+    },
+    {
+      "cell": 5,
+      "id": "front-narrow-server",
+      "sourceCellBbox": [
+        514,
+        512,
+        1021,
+        1024
+      ],
+      "alphaBboxInCell": [
+        7,
+        7,
+        500,
+        499
+      ],
+      "alphaBboxInSheet": [
+        521,
+        519,
+        1014,
+        1011
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 242532,
+      "output": "assets/generated/zones/solar-wing-front-v2/05-front-narrow-server.png"
+    },
+    {
+      "cell": 6,
+      "id": "front-indicator-plinth",
+      "sourceCellBbox": [
+        1021,
+        512,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        7,
+        7,
+        498,
+        499
+      ],
+      "alphaBboxInSheet": [
+        1028,
+        519,
+        1519,
+        1011
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 241572,
+      "output": "assets/generated/zones/solar-wing-front-v2/06-front-indicator-plinth.png"
+    }
+  ]
+}

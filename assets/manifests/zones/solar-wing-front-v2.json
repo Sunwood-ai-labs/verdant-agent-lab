@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "zoneId": "solar-wing",
+  "sheetId": "zone-01-solar-wing-front-3x2-v2",
+  "sourceReference": {
+    "role": "private-guidance-only",
+    "zoneBbox": [
+      42,
+      36,
+      218,
+      461
+    ]
+  },
+  "directionGate": "front-facing source elevation; isometric prohibited",
+  "provenance": {
+    "generator": "built-in-imagegen",
+    "chromaMaster": "../../intermediate/zone-01-solar-wing-front/solar-wing-front-3x2-v2-chroma.png",
+    "alphaMaster": "../../intermediate/zone-01-solar-wing-front/solar-wing-front-3x2-v2-alpha.png",
+    "prompt": "../../prompts/zone-01-solar-wing-front-3x2-v2.md",
+    "splitReport": "../../../proof/intermediate/zone-01-solar-wing-front-split-v2.json",
+    "chromaThreshold": 72
+  },
+  "assets": [
+    {
+      "id": "solar-wing-front-solar-panel-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/01-front-solar-panel.png",
+      "cellIndex": 1,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        16,
+        14,
+        506,
+        505
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "solar-wing-front-wood-panel-frame-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/02-front-wood-panel-frame.png",
+      "cellIndex": 2,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        7,
+        14,
+        500,
+        505
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "solar-wing-front-status-monitor-blank-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/03-front-status-monitor-blank.png",
+      "cellIndex": 3,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        7,
+        14,
+        498,
+        505
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "solar-wing-front-server-bank-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/04-front-server-bank.png",
+      "cellIndex": 4,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        16,
+        7,
+        506,
+        499
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "solar-wing-front-narrow-server-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/05-front-narrow-server.png",
+      "cellIndex": 5,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        7,
+        7,
+        500,
+        499
+      ],
+      "status": "candidate-needs-source-review"
+    },
+    {
+      "id": "solar-wing-front-indicator-plinth-v2",
+      "sprite": "../../generated/zones/solar-wing-front-v2/06-front-indicator-plinth.png",
+      "cellIndex": 6,
+      "orientation": "front-facing",
+      "alphaBounds": [
+        7,
+        7,
+        498,
+        499
+      ],
+      "status": "candidate-needs-source-review"
+    }
+  ]
+}
