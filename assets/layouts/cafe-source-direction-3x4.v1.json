@@ -1,0 +1,17 @@
+{
+  "version":1,"source":"parts/garden-cafe.png","status":"source-direction-candidate-needs-same-view-score","grid":{"columns":3,"rows":4},
+  "cells":[
+    {"cell":1,"semantic":"cafe lower counter","orientation":"front/top source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/01-cafe-lower-counter.png"},
+    {"cell":2,"semantic":"cafe greenery window","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/02-cafe-greenery-window.png"},
+    {"cell":3,"semantic":"cafe top pot ledge","orientation":"horizontal front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/03-cafe-top-pot-ledge.png"},
+    {"cell":4,"semantic":"cafe sign blank","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/04-cafe-sign-blank.png"},
+    {"cell":5,"semantic":"cafe left narrow fridge","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/05-cafe-left-narrow-fridge.png"},
+    {"cell":6,"semantic":"cafe right vending fridge","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-01/06-cafe-right-vending-fridge.png"},
+    {"cell":7,"semantic":"cafe left coffee machine","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/01-cafe-left-coffee-machine.png"},
+    {"cell":8,"semantic":"cafe center coffee machine","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/02-cafe-center-coffee-machine.png"},
+    {"cell":9,"semantic":"cafe right coffee machine","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/03-cafe-right-coffee-machine.png"},
+    {"cell":10,"semantic":"cafe black display blank","orientation":"front source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/04-cafe-black-display-blank.png"},
+    {"cell":11,"semantic":"cafe adjacent bookshelf","orientation":"horizontal front/top source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/05-cafe-adjacent-bookshelf.png"},
+    {"cell":12,"semantic":"cafe adjacent tall plant","orientation":"upright source projection","output":"generated/source-direction-v1/zone-04-cafe/page-02/06-cafe-adjacent-tall-plant.png"}
+  ]
+}

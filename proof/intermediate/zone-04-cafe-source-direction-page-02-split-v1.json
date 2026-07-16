@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-04-cafe/page-02-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-04-cafe/page-02-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    238,
+    22,
+    237
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "cafe-left-coffee-machine",
+      "sourceCellBbox": [
+        0,
+        0,
+        529,
+        530
+      ],
+      "alphaBboxInCell": [
+        229,
+        108,
+        368,
+        466
+      ],
+      "alphaBboxInSheet": [
+        229,
+        108,
+        368,
+        466
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 48570,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/01-cafe-left-coffee-machine.png"
+    },
+    {
+      "cell": 2,
+      "id": "cafe-center-coffee-machine",
+      "sourceCellBbox": [
+        529,
+        0,
+        996,
+        530
+      ],
+      "alphaBboxInCell": [
+        161,
+        124,
+        309,
+        463
+      ],
+      "alphaBboxInSheet": [
+        690,
+        124,
+        838,
+        463
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 45993,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/02-cafe-center-coffee-machine.png"
+    },
+    {
+      "cell": 3,
+      "id": "cafe-right-coffee-machine",
+      "sourceCellBbox": [
+        996,
+        0,
+        1536,
+        530
+      ],
+      "alphaBboxInCell": [
+        158,
+        127,
+        307,
+        466
+      ],
+      "alphaBboxInSheet": [
+        1154,
+        127,
+        1303,
+        466
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 45969,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/03-cafe-right-coffee-machine.png"
+    },
+    {
+      "cell": 4,
+      "id": "cafe-black-display-blank",
+      "sourceCellBbox": [
+        0,
+        530,
+        406,
+        1024
+      ],
+      "alphaBboxInCell": [
+        217,
+        87,
+        331,
+        358
+      ],
+      "alphaBboxInSheet": [
+        217,
+        617,
+        331,
+        888
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 27332,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/04-cafe-black-display-blank.png"
+    },
+    {
+      "cell": 5,
+      "id": "cafe-adjacent-bookshelf",
+      "sourceCellBbox": [
+        406,
+        530,
+        1168,
+        1024
+      ],
+      "alphaBboxInCell": [
+        74,
+        63,
+        701,
+        368
+      ],
+      "alphaBboxInSheet": [
+        480,
+        593,
+        1107,
+        898
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 149196,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/05-cafe-adjacent-bookshelf.png"
+    },
+    {
+      "cell": 6,
+      "id": "cafe-adjacent-tall-plant",
+      "sourceCellBbox": [
+        1168,
+        530,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        60,
+        78,
+        208,
+        362
+      ],
+      "alphaBboxInSheet": [
+        1228,
+        608,
+        1376,
+        892
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 23356,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-02/06-cafe-adjacent-tall-plant.png"
+    }
+  ]
+}

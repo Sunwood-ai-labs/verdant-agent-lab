@@ -1,0 +1,9 @@
+{
+  "version":1,"zoneId":"cafe","status":"source-direction-candidate-needs-same-view-score","runtimeEligible":false,
+  "sourceReference":{"role":"camera-direction-and-content-authority","crop":"../../parts/garden-cafe.png"},
+  "partsLayout":"../../layouts/cafe-source-direction-3x4.v1.json","partCount":12,
+  "horizontalPages":[
+    "../../generated/sheets/source-direction-v1/zone-04-cafe/zone-04-cafe-source-direction-v1-page-01.png",
+    "../../generated/sheets/source-direction-v1/zone-04-cafe/zone-04-cafe-source-direction-v1-page-02.png"
+  ]
+}

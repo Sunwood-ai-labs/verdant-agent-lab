@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "input": "assets/intermediate/source-direction-v1/zone-04-cafe/page-01-chroma.png",
+  "alphaMaster": "assets/intermediate/source-direction-v1/zone-04-cafe/page-01-alpha.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "readingOrder": "row-major"
+  },
+  "chromaKey": [
+    242,
+    22,
+    240
+  ],
+  "threshold": 72,
+  "cells": [
+    {
+      "cell": 1,
+      "id": "cafe-lower-counter",
+      "sourceCellBbox": [
+        0,
+        0,
+        478,
+        505
+      ],
+      "alphaBboxInCell": [
+        40,
+        281,
+        454,
+        451
+      ],
+      "alphaBboxInSheet": [
+        40,
+        281,
+        454,
+        451
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 68773,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/01-cafe-lower-counter.png"
+    },
+    {
+      "cell": 2,
+      "id": "cafe-greenery-window",
+      "sourceCellBbox": [
+        478,
+        0,
+        988,
+        505
+      ],
+      "alphaBboxInCell": [
+        24,
+        107,
+        485,
+        469
+      ],
+      "alphaBboxInSheet": [
+        502,
+        107,
+        963,
+        469
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 165647,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/02-cafe-greenery-window.png"
+    },
+    {
+      "cell": 3,
+      "id": "cafe-top-pot-ledge",
+      "sourceCellBbox": [
+        988,
+        0,
+        1536,
+        505
+      ],
+      "alphaBboxInCell": [
+        25,
+        268,
+        514,
+        398
+      ],
+      "alphaBboxInSheet": [
+        1013,
+        268,
+        1502,
+        398
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 51879,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/03-cafe-top-pot-ledge.png"
+    },
+    {
+      "cell": 4,
+      "id": "cafe-sign-blank",
+      "sourceCellBbox": [
+        0,
+        505,
+        540,
+        1024
+      ],
+      "alphaBboxInCell": [
+        112,
+        195,
+        410,
+        300
+      ],
+      "alphaBboxInSheet": [
+        112,
+        700,
+        410,
+        805
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 31061,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/04-cafe-sign-blank.png"
+    },
+    {
+      "cell": 5,
+      "id": "cafe-left-narrow-fridge",
+      "sourceCellBbox": [
+        540,
+        505,
+        959,
+        1024
+      ],
+      "alphaBboxInCell": [
+        129,
+        93,
+        238,
+        388
+      ],
+      "alphaBboxInSheet": [
+        669,
+        598,
+        778,
+        893
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 32013,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/05-cafe-left-narrow-fridge.png"
+    },
+    {
+      "cell": 6,
+      "id": "cafe-right-vending-fridge",
+      "sourceCellBbox": [
+        959,
+        505,
+        1536,
+        1024
+      ],
+      "alphaBboxInCell": [
+        181,
+        36,
+        353,
+        398
+      ],
+      "alphaBboxInSheet": [
+        1140,
+        541,
+        1312,
+        903
+      ],
+      "edgeFlags": {
+        "left": false,
+        "top": false,
+        "right": false,
+        "bottom": false
+      },
+      "opaquePixels": 60922,
+      "output": "assets/generated/source-direction-v1/zone-04-cafe/page-01/06-cafe-right-vending-fridge.png"
+    }
+  ]
+}
