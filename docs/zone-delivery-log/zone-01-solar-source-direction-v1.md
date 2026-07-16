@@ -13,4 +13,13 @@ remains false until same-view recomposition scoring is recorded.
 
 ## AYANO delivery
 
-Pending commit, push, and attachment receipt.
+Delivered after asset commit `693f75f` to `アヤノの部屋 /
+#sunwood-lab-recreation` (`1526794078744744077`).
+
+- Message id: `1527294234082934920`
+- `zone-01-solar-parts-page-01.png` — 255,227 bytes
+- `zone-01-solar-parts-page-02.png` — 203,976 bytes
+- `zone-01-solar-parts-page-03.png` — 106,173 bytes
+- `zone-01-source-crop.png` — 198,580 bytes
+- `zone-01-18-part-recomposition.png` — 169,993 bytes
+- Delivery status: source-direction candidate; same-view scoring remains open.
