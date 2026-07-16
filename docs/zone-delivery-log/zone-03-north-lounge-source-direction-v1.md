@@ -11,4 +11,10 @@ final horizontal page was rendered.
 
 ## AYANO delivery
 
-Pending asset commit and attachment receipt.
+Delivered after asset commit `f304558` to `アヤノの部屋 /
+#sunwood-lab-recreation` (`1526794078744744077`).
+
+- Message id: `1527306025814720515`
+- `zone-03-north-lounge-parts-page-01.png` — 282,105 bytes
+- `zone-03-north-lounge-source-crop.jpg` — 12,010 bytes
+- Delivery status: source-direction candidate; same-view scoring remains open.
