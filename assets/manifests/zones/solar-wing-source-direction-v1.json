@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "zoneId": "solar-wing",
+  "status": "source-direction-candidate-needs-same-view-score",
+  "runtimeEligible": false,
+  "sourceReference": {
+    "zoneBbox": [42, 36, 218, 461],
+    "role": "camera-direction-and-content-authority"
+  },
+  "partsLayout": "../../layouts/solar-wing-parts-3x6.v5.json",
+  "partsDirectory": "../../generated/decomposed/solar-wing-v5",
+  "partCount": 18,
+  "horizontalPages": [
+    "../../generated/sheets/source-direction-v1/zone-01-solar-wing/zone-01-solar-source-direction-v1-page-01.png",
+    "../../generated/sheets/source-direction-v1/zone-01-solar-wing/zone-01-solar-source-direction-v1-page-02.png",
+    "../../generated/sheets/source-direction-v1/zone-01-solar-wing/zone-01-solar-source-direction-v1-page-03.png"
+  ],
+  "directionRule": "each part keeps its own source-visible projection; no global angle normalization",
+  "recomposition": "../../generated/technology/solar-wing-decomposed-v5.png"
+}
