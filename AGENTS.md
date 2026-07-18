@@ -26,3 +26,21 @@ isometric/perspective view.
   source-zone crop, not only clean alpha bounds or a successful split.
 - Keep prior mismatched assets as rejected intermediate provenance; do not use
   them in new manifests or present them as placement-ready.
+
+## HTML room assembly placement gate
+
+When assembling decomposed or recomposed sprites into the HTML room, never fit
+an asset to the full source-zone crop rectangle. A zone crop describes the
+review area, not the sprite's visual footprint. Use the asset manifest's
+center/anchor and visual footprint (or a measured alpha-aware placement box)
+for position and scale. Preserve the sprite's declared direction with zero
+rotation and zero mirroring.
+
+- Keep rejected assembly screenshots and layouts as provenance, but remove
+  them from the active runtime.
+- Render a fresh clean 1280×960 screenshot after every placement revision.
+- Compare that screenshot directly with the supplied reference for overlaps,
+  scale, empty zones, and object order before calling the room coherent.
+- A passing DOM/image-load test is not visual QA. If the rendered room is
+  cluttered, stretched, overlapping, or visually disordered, the assembly is
+  rejected even when all assets loaded successfully.

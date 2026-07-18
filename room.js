@@ -1,4 +1,4 @@
-const LAYOUT_URL = 'assets/layouts/current-room-composite.v1.json';
+const LAYOUT_URL = 'assets/layouts/current-room-composite.v2.json';
 const stage = document.querySelector('#roomStage');
 const layersRoot = document.querySelector('#roomLayers');
 const layerToggle = document.querySelector('#layerToggle');

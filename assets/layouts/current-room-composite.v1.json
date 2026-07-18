@@ -1,7 +1,7 @@
 {
   "version": 1,
   "layoutId": "current-assets-room-composite-v1",
-  "status": "intermediate-composite-current-assets",
+  "status": "rejected-fit-to-source-zone-bboxes",
   "runtimeEligible": false,
   "world": {"width": 1280, "height": 960},
   "foundation": "assets/generated/foundation/office-architecture-empty-imagegen-v2.png",

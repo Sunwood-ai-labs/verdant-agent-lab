@@ -38,6 +38,8 @@ proof/*.png
 !proof/canonical-characterless-v1.png
 !proof/current-asset-room-v1.png
 !proof/current-asset-room-ui-v1.png
+!proof/current-asset-room-v2.png
+!proof/current-asset-room-ui-v2.png
 !proof/intermediate/
 !proof/intermediate/**/*.png
 proof/intermediate/reference-original-*.png
