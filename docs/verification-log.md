@@ -276,3 +276,15 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Full `npm test`: 12 passed, 1 failed on the pre-existing builder reference
   snapshot (`builder-reference-stage-v2.png`, 12,470 differing pixels). The
   unrelated snapshot was preserved rather than auto-updated.
+# 2026-07-18 — Current asset room v2 placement correction
+
+- Rejected v1 after user-visible review showed clutter and bad scale.
+- Root cause: sprites were stretched to source-zone review rectangles instead
+  of their own center anchors and visual footprints.
+- Added the placement gate to `AGENTS.md` and switched the active runtime to
+  `assets/layouts/current-room-composite.v2.json`.
+- Clean proof: `proof/current-asset-room-v2.png`; visually inspected at
+  1280×960 with cross-zone overlaps removed.
+- Direct masked grayscale SSIM improved from 29.27% to 42.02%; still fails the
+  60% fidelity gate.
+- `npx playwright test tests/current-room.spec.js`: 1 passed.

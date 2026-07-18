@@ -2,6 +2,11 @@
 
 Absolute path: `/Users/admin/Prj/sunwood-lab-recreation/docs/current-asset-room-v1.md`.
 
+Status: **rejected**. The first assembly incorrectly stretched recomposed
+sprites to entire source-zone review rectangles. That ignored each sprite's
+visual anchor and footprint, producing clutter, incorrect scale, and overlaps.
+It is preserved only as failure provenance; `room.html` no longer loads it.
+
 `room.html` is an intermediate, character-free room assembled from the current
 runtime candidate assets. It intentionally does not load the supplied reference
 image or `assets/scene-clean.png` as an overlay. The foundation is the existing
