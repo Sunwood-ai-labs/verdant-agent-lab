@@ -263,3 +263,16 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Retracted: weighted layout/content values are diagnostic-only and cannot pass
   the direct screenshot target; the former mask also excluded movable objects.
 - Corrected a 1280x960-to-1448x1086 mask scaling bug in `build-source-guided-foundation.py`; post-fix visual inspection confirms duplicate source objects were removed.
+# 2026-07-18 — Current asset room v1
+
+- Added `room.html` as a character-free HTML composition of the current asset
+  bank over the architecture-only foundation.
+- Clean proof: `proof/current-asset-room-v1.png` (1280×960).
+- UI proof: `proof/current-asset-room-ui-v1.png` (1440×1050).
+- Runtime guard: thirteen zone/equipment layers; no `reference-original.jpg`
+  or `scene-clean.png` image in the room DOM.
+- Direct masked grayscale SSIM: 29.27%, fail against the 60% gate.
+- `npx playwright test tests/current-room.spec.js`: 1 passed.
+- Full `npm test`: 12 passed, 1 failed on the pre-existing builder reference
+  snapshot (`builder-reference-stage-v2.png`, 12,470 differing pixels). The
+  unrelated snapshot was preserved rather than auto-updated.
