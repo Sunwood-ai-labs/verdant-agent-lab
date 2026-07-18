@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101a0d" />
+    <meta name="description" content="現時点の再利用可能アセットで構成した人物なしのVerdant Agent Lab" />
+    <title>Verdant Agent Lab — Current Asset Assembly</title>
+    <link rel="stylesheet" href="room.css" />
+  </head>
+  <body>
+    <main class="room-app">
+      <header class="room-bar">
+        <div>
+          <span class="eyebrow">CURRENT ASSET ASSEMBLY · V1</span>
+          <h1>Verdant Agent Lab</h1>
+        </div>
+        <div class="room-actions">
+          <span id="assetCount" class="asset-count">LOADING</span>
+          <button id="layerToggle" type="button" aria-pressed="false">ASSET LAYERS</button>
+          <a href="builder.html">OPEN BUILDER</a>
+        </div>
+      </header>
+
+      <section class="room-frame" aria-label="現時点のアセットで組み立てた人物なしの研究所">
+        <div class="room-stage" id="roomStage">
+          <img class="room-foundation" id="foundation" alt="庭と壁と床からなる研究所の空の建築レイヤー" />
+          <div class="room-layers" id="roomLayers"></div>
+          <div class="room-light" aria-hidden="true"></div>
+          <div class="room-grain" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <footer class="room-status">
+        <p><span class="status-dot"></span> CHARACTERS OFF</p>
+        <p>現状アセット統合版。same-view合格前の配置レビュー用です。</p>
+        <p id="selectionStatus" aria-live="polite">ゾーンを選択すると使用アセット情報を表示します。</p>
+      </footer>
+    </main>
+    <script type="module" src="room.js"></script>
+  </body>
+</html>

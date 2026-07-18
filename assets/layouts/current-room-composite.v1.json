@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "layoutId": "current-assets-room-composite-v1",
+  "status": "intermediate-composite-current-assets",
+  "runtimeEligible": false,
+  "world": {"width": 1280, "height": 960},
+  "foundation": "assets/generated/foundation/office-architecture-empty-imagegen-v2.png",
+  "characterPolicy": "characters, mascot, and humanoid robot excluded",
+  "layers": [
+    {"id":"solar-wing","label":"01 SOLAR","sprite":"assets/generated/technology/solar-wing-decomposed-v5.png","bbox":[42,36,218,461],"parts":18,"manifest":"assets/manifests/zones/solar-wing-source-direction-v1.json","state":"source-direction-candidate"},
+    {"id":"reception","label":"02 RECEPTION","sprite":"assets/generated/furniture/reception-decomposed-v3.png","bbox":[470,19,812,278],"parts":18,"manifest":"assets/manifests/zones/reception-source-direction-v1.json","state":"candidate-composite-proxy"},
+    {"id":"north-lounge","label":"03 NORTH LOUNGE","sprite":"assets/generated/trimmed/north-lounge-inward-facing-trimmed-v1.png","bbox":[826,128,1001,272],"parts":6,"manifest":"assets/manifests/zones/north-lounge-source-direction-v1.json","state":"candidate-composite-proxy"},
+    {"id":"cafe","label":"04 CAFE","sprite":"assets/generated/trimmed/cafe-wall-south-facing-trimmed-v1.png","bbox":[1023,36,1213,245],"parts":12,"manifest":"assets/manifests/zones/cafe-source-direction-v1.json","state":"candidate-composite-proxy"},
+    {"id":"studio-west","label":"05 STUDIO WEST","sprite":"assets/generated/furniture/studio-west-decomposed-v2.png","bbox":[194,264,563,488],"parts":18,"manifest":"assets/manifests/zones/studio-west-source-direction-v1.json","state":"source-direction-candidate"},
+    {"id":"meeting-room","label":"06 MEETING","sprite":"assets/generated/furniture/meeting-room-decomposed-v2.png","bbox":[678,274,903,510],"parts":18,"manifest":"assets/manifests/zones/meeting-room-v1.json","state":"candidate-needs-regeneration"},
+    {"id":"ai-lab","label":"07 AI LAB","sprite":"assets/generated/technology/ai-lab-decomposed-v6.png","bbox":[892,274,1144,628],"parts":18,"manifest":"assets/manifests/zones/ai-lab-v1.json","state":"candidate"},
+    {"id":"greenhouse","label":"08 GREENHOUSE","sprite":"assets/generated/furniture/greenhouse-decomposed-v3.png","bbox":[30,454,311,756],"parts":18,"manifest":"assets/manifests/zones/greenhouse-v1.json","state":"candidate"},
+    {"id":"south-work-west","label":"09 WORK WEST","sprite":"assets/generated/trimmed/workstation-west-north-facing-trimmed-v1.png","bbox":[334,512,608,688],"parts":18,"manifest":"assets/manifests/zones/south-work-west-v2.json","state":"candidate-needs-regeneration"},
+    {"id":"south-work-east","label":"10 WORK EAST","sprite":"assets/generated/trimmed/workstation-east-north-facing-trimmed-v1.png","bbox":[615,512,881,688],"parts":17,"manifest":"assets/manifests/zones/south-work-east-v1.json","state":"candidate"},
+    {"id":"south-lounge","label":"11 SOUTH LOUNGE","sprite":"assets/generated/furniture/south-lounge-decomposed-v5.png","bbox":[881,620,1142,772],"parts":18,"manifest":"assets/manifests/zones/south-lounge-v1.json","state":"candidate-needs-regeneration"},
+    {"id":"air-quality","label":"AIR QUALITY","sprite":"assets/generated/sheet3x6-v1/air-quality-board.png","bbox":[1150,470,1250,720],"parts":1,"state":"candidate"},
+    {"id":"recycling","label":"RECYCLING","sprite":"assets/generated/technology/recycling-bin-set-decomposed-v1.png","bbox":[930,765,1115,875],"parts":3,"state":"candidate"}
+  ]
+}

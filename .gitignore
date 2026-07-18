@@ -36,6 +36,8 @@ proof/*.png
 !proof/builder-focus-v6.png
 !proof/builder-mobile-full-v6.png
 !proof/canonical-characterless-v1.png
+!proof/current-asset-room-v1.png
+!proof/current-asset-room-ui-v1.png
 !proof/intermediate/
 !proof/intermediate/**/*.png
 proof/intermediate/reference-original-*.png
