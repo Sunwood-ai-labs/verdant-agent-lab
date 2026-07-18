@@ -11,6 +11,13 @@ rotating, mirroring, or redrawing any asset.
 
 ## AYANO delivery
 
-Pending delivery after the asset commit. The delivery remains a
-source-direction candidate; same-view reassembly scoring remains open and
-`runtimeEligible` remains false.
+Delivered after asset commit `bf88716` to `アヤノの部屋 /
+#sunwood-lab-recreation` (`1526794078744744077`).
+
+- Message id: `1528025409889767519`
+- `zone-05-studio-west-parts-page-01.png` — 196,911 bytes
+- `zone-05-studio-west-parts-page-02.png` — 92,336 bytes
+- `zone-05-studio-west-parts-page-03.png` — 98,881 bytes
+- `zone-05-studio-west-source-crop.png` — 129,267 bytes
+- Delivery status: source-direction candidate; same-view reassembly scoring
+  remains open and `runtimeEligible` remains false.
