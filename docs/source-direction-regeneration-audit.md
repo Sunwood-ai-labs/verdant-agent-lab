@@ -26,6 +26,11 @@ shearing, or camera correction. Clean alpha separation alone is insufficient.
 - Zone 03 was regenerated character-free as six parts; 102 debris pixels were removed.
 - Zone 04 was regenerated as twelve fixtures; a fridge semantic mismatch was
   rejected and replaced with a scale-normalized coffee machine.
+- Zone 05 reuses the Image Gen v2 bank after auditing all eighteen cells. Every
+  runtime child was trimmed to its exact non-zero alpha bounds, and the cyclic
+  cell/output mismatch in cells 16–18 was corrected by content-aware remapping
+  without rotation, mirroring, or redrawing. It was delivered to AYANO as
+  candidate message `1528025409889767519`; same-view scoring remains open.
 
 Audit preview pages for the rejected existing cafe and quiet-lounge banks are
 preserved under `proof/intermediate/source-direction-audit/`.
