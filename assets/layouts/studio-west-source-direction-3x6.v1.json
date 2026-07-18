@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "source": "parts/work-studio.png",
+  "status": "source-direction-candidate-needs-same-view-score",
+  "grid": {"columns": 3, "rows": 6},
+  "cells": [
+    {"cell":1,"semantic":"continuous irregular wooden desk structure","orientation":"source top-down projection; long edge vertical","output":"generated/source-direction-v1/zone-05-studio-west/01-continuous-irregular-wooden-desk.png"},
+    {"cell":2,"semantic":"rear low shelf with plants","orientation":"horizontal; front faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/02-rear-low-shelf-with-plants.png"},
+    {"cell":3,"semantic":"right tall planter shelf","orientation":"vertical; front faces west in source","output":"generated/source-direction-v1/zone-05-studio-west/03-right-tall-planter-shelf.png"},
+    {"cell":4,"semantic":"black rolling chair","orientation":"chair faces north in source","output":"generated/source-direction-v1/zone-05-studio-west/04-black-rolling-chair.png"},
+    {"cell":5,"semantic":"upper-left large green monitor","orientation":"screen faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/05-upper-left-large-green-monitor.png"},
+    {"cell":6,"semantic":"right black diagonal monitor","orientation":"screen faces north-east; back visible","output":"generated/source-direction-v1/zone-05-studio-west/06-right-black-diagonal-monitor.png"},
+    {"cell":7,"semantic":"lower-left green screen","orientation":"screen faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/07-lower-left-green-screen.png"},
+    {"cell":8,"semantic":"center green screen","orientation":"screen faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/08-center-green-screen.png"},
+    {"cell":9,"semantic":"right vertical gray device","orientation":"upright; top faces north","output":"generated/source-direction-v1/zone-05-studio-west/09-right-vertical-gray-device.png"},
+    {"cell":10,"semantic":"blue notebook","orientation":"vertical page; top faces north","output":"generated/source-direction-v1/zone-05-studio-west/10-blue-notebook.png"},
+    {"cell":11,"semantic":"gold-brown notebook or device","orientation":"vertical; top faces north","output":"generated/source-direction-v1/zone-05-studio-west/11-gold-brown-notebook-device.png"},
+    {"cell":12,"semantic":"central potted plant","orientation":"upright source projection","output":"generated/source-direction-v1/zone-05-studio-west/12-central-potted-plant.png"},
+    {"cell":13,"semantic":"white-blue paper","orientation":"diagonal page matching source","output":"generated/source-direction-v1/zone-05-studio-west/13-white-blue-paper.png"},
+    {"cell":14,"semantic":"white-gray paper","orientation":"diagonal page matching source","output":"generated/source-direction-v1/zone-05-studio-west/14-white-gray-paper.png"},
+    {"cell":15,"semantic":"narrow lamp or bottle","orientation":"vertical source projection","output":"generated/source-direction-v1/zone-05-studio-west/15-narrow-lamp-bottle.png"},
+    {"cell":16,"semantic":"bottom center drawer cabinet","orientation":"front faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/16-bottom-center-drawer-cabinet.png"},
+    {"cell":17,"semantic":"bottom-right open storage cabinet","orientation":"front faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/17-bottom-right-open-storage-cabinet.png"},
+    {"cell":18,"semantic":"tiny gray framed device","orientation":"screen faces south in source","output":"generated/source-direction-v1/zone-05-studio-west/18-tiny-gray-framed-device.png"}
+  ]
+}
