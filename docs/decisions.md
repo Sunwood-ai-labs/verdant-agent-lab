@@ -166,3 +166,15 @@ editor interaction. The accepted capture instead registers a temporary remote
 agent, uses Pixel Agents' built-in character sprite and production
 `OfficeState.walkToTile` path through real canvas context-menu input, and hides
 only the activity-label DOM layer so it cannot cover the small sprite.
+
+## D-019 — capture runtime motion without selection or hover decoration
+
+Decision: selecting a character is allowed only for the instant required to
+issue a real Pixel Agents walk command. Clear selection immediately afterward,
+move the capture cursor away from the character, and visually inspect sampled
+frames before accepting a movement GIF.
+
+Reason: Pixel Agents intentionally renders a one-pixel white outline around a
+selected character. The first walk GIF left the temporary remote Agent selected
+throughout the recording, so a UI affordance was mistaken for part of the
+sprite and baked into every walking frame.

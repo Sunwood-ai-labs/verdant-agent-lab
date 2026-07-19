@@ -10,7 +10,7 @@ const reference = process.env.PIXEL_AGENTS_REFERENCE ?? '/Users/admin/Prj/pixel-
 const { chromium } = require(join(reference, 'node_modules/playwright'));
 
 const root = process.cwd();
-const frameDir = join(root, 'build/pixel-agents-solarpunk-character-walk-frames-v1');
+const frameDir = join(root, 'build/pixel-agents-solarpunk-character-walk-frames-v3');
 const url = process.env.PIXEL_AGENTS_URL ?? 'http://127.0.0.1:3101';
 const serverConfig = JSON.parse(
   readFileSync(join(process.env.HOME ?? '/Users/admin', '.pixel-agents/server.json'), 'utf8'),
@@ -45,6 +45,9 @@ const browser = await chromium.launch({
 const page = await browser.newPage({ viewport: { width: 1000, height: 700 } });
 await page.addInitScript(() => {
   window.__PIXEL_AGENTS_E2E = true;
+  // Keep proof runs reproducible and use built-in palette 0 (dark hair), so a
+  // pale random skin cannot be confused with the selection outline under test.
+  Math.random = () => 0.01;
 });
 const errors = [];
 page.on('console', (message) => {
@@ -87,9 +90,12 @@ try {
     (id) => window.__pixelAgentsTestHooks?.getCharacters?.().some((ch) => ch.id === id),
     localAgentId,
   );
+  // agentCreated auto-selects the new character in normal UI. Clear that
+  // selection before the spawn hold as well as after every walk command.
+  await page.evaluate(() => window.__pixelAgentsTestHooks?.selectAgent?.(null));
+  await page.mouse.move(4, 696);
   await hold(8); // capture the built-in spawn animation
 
-  await page.evaluate((id) => window.__pixelAgentsTestHooks?.selectAgent?.(id), localAgentId);
   const canvas = page.locator('canvas').first();
   const box = await canvas.boundingBox();
   if (!box) throw new Error('Pixel Agents canvas is not visible');
@@ -102,7 +108,13 @@ try {
     { x: box.x + box.width * 0.73, y: box.y + box.height * 0.48 },
   ];
   for (const point of waypoints) {
+    await page.evaluate((id) => window.__pixelAgentsTestHooks?.selectAgent?.(id), localAgentId);
     await page.mouse.click(point.x, point.y, { button: 'right' });
+    // Selection is needed only to issue walkToTile. Clear it immediately so
+    // Pixel Agents' intentional white selected-character outline is never
+    // baked into the animation proof.
+    await page.evaluate(() => window.__pixelAgentsTestHooks?.selectAgent?.(null));
+    await page.mouse.move(box.x + 4, box.y + box.height - 4);
     await hold(22);
   }
 

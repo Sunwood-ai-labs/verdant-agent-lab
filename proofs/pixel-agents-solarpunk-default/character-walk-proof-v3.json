@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "gif": "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif",
+  "contactSheet": "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png",
+  "size": [
+    1000,
+    700
+  ],
+  "sourceFrames": 79,
+  "gifFrames": 47,
+  "sourceCadenceMs": 100,
+  "totalDurationMs": 7900,
+  "gifFrameDurationRangeMs": [
+    100,
+    500
+  ],
+  "loop": 0,
+  "bytes": 170303,
+  "changedFramePairsAfterSpawn": 39,
+  "sequence": [
+    "character-free Verdant office",
+    "real Pixel Agents character spawn effect",
+    "built-in character walks across office waypoints"
+  ],
+  "characterSource": "Pixel Agents built-in character sprite",
+  "movementSource": "Pixel Agents OfficeState.walkToTile via canvas context-menu input",
+  "editorActionsCaptured": false,
+  "activityOverlayHiddenForCapture": true,
+  "selectionClearedAfterEachWalkCommand": true,
+  "selectedCharacterOutlineCaptured": false,
+  "deterministicBuiltInCharacterPalette": 0
+}

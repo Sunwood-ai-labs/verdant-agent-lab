@@ -541,13 +541,25 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - The floating activity panel is hidden only in the capture browser because it
   covered the walking sprite; the canvas, character sprite, pathfinding, walk
   cycle, furniture, and room are unmodified runtime output.
-- `npm run capture:pixel-agents-solarpunk-gif` captured 79 source frames with
-  zero browser errors. The optimized GIF contains 46 frames over 7.9 seconds;
-  38 adjacent post-spawn source-frame pairs changed.
-- Human-inspected contact sheet shows the character absent initially, then
-  spawned and visibly changing position/facing around the east lounge:
-  `proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v1.png`.
-- Accepted animation:
-  `proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v1.gif`.
+- The first published walk GIF (`solarpunk-character-walk-v1.gif`) is rejected:
+  the recording kept the Agent selected after issuing the walk command, so
+  Pixel Agents correctly rendered its one-pixel white selection outline around
+  every walking pose. That border was UI state, not character art.
+- Revision 2 cleared selection after each waypoint and removed the outline, but
+  its randomly selected pale built-in palette made that correction visually
+  ambiguous. It remains an intermediate artifact, not the replacement proof.
+- Revision 3 also clears the automatic `agentCreated` selection before the
+  spawn hold, clears selection immediately after every real context-menu walk
+  command, moves the cursor away, and deterministically chooses built-in
+  palette 0 with brown hair and a blue outfit.
+- The fresh v3 run captured 79 source frames with zero browser errors. The
+  optimized GIF contains 47 frames over 7.9 seconds; 39 adjacent post-spawn
+  source-frame pairs changed.
+- Human inspection of both the six-frame contact sheet and original frame 26
+  confirms a brown-haired walking sprite with no white perimeter, while its
+  position and facing change around the east lounge:
+  `proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png`.
+- Accepted replacement animation:
+  `proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif`.
   Machine record:
-  `proofs/pixel-agents-solarpunk-default/character-walk-proof.json`.
+  `proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json`.

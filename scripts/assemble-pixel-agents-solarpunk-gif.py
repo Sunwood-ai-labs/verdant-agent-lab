@@ -10,10 +10,10 @@ from PIL import Image, ImageChops
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FRAMES = ROOT / "build/pixel-agents-solarpunk-character-walk-frames-v1"
-OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v1.gif"
-REPORT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-proof.json"
-CONTACT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v1.png"
+FRAMES = ROOT / "build/pixel-agents-solarpunk-character-walk-frames-v3"
+OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif"
+REPORT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json"
+CONTACT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png"
 
 
 def main() -> None:
@@ -84,6 +84,9 @@ def main() -> None:
         "movementSource": "Pixel Agents OfficeState.walkToTile via canvas context-menu input",
         "editorActionsCaptured": False,
         "activityOverlayHiddenForCapture": True,
+        "selectionClearedAfterEachWalkCommand": True,
+        "selectedCharacterOutlineCaptured": False,
+        "deterministicBuiltInCharacterPalette": 0,
     }
     REPORT.write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
