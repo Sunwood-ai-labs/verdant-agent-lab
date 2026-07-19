@@ -38,6 +38,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `37eb8ea` | Integrated preset runtime QA | direct and extracted-archive pixel-identical renders, floor/wall palettes, real grid edit, integrated machine proof |
 | `f94eefc` | Real character-walk GIF | temporary remote Agent, built-in sprite spawn, production walkToTile movement, 7.9-second GIF, contact-sheet QA |
 | `6de93ef` | Spacious Pixel Agents office | separate 35x22 preset, 55 placements, 251 walkable tiles, clean runtime still, real-character GIF, deterministic runtime ZIP |
+| `1e60d71` | Natural spacious-office arrangement | distinct center electronics cluster, east coffee/garden/utility corner, connected 234-tile paths, screenshot-approved v3 still and GIF |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -120,3 +121,13 @@ message `1528389877014593578`. Attachments are `spacious-office-v1.png`,
 35×22 preset boundary, 55 placements, three zones, 251 walkable tiles versus
 the compact preset's 133, zero collision overlap, zero unresolved types, zero
 browser errors, and the outline-free production `walkToTile` character motion.
+
+Natural-arrangement v3 delivery receipt: Discord channel
+`1526794078744744077`, message `1528392678495096902`, posted as a reply to the
+spacious v1 delivery. Attachments are `spacious-office-v3.png`,
+`spacious-character-walk-v3.gif`, and the updated
+`pixel-agents-solarpunk-spacious-runtime.zip`. The post records the screenshot-
+driven center/east rearrangement, the rejected v2 two-tile pocket, the accepted
+single 234-tile walkable component, zero unresolved types/collision/browser
+errors, white-outline removal, and that existing assets made Image Gen editing
+unnecessary.
