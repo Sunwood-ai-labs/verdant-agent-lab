@@ -55,3 +55,23 @@ rotation and zero mirroring.
 - A passing DOM/image-load test is not visual QA. If the rendered room is
   cluttered, stretched, overlapping, or visually disordered, the assembly is
   rejected even when all assets loaded successfully.
+
+## Pixel Agents screenshot-first layout acceptance
+
+For Pixel Agents room expansion, rearrangement, or animation work, the clean
+runtime screenshot is the authoritative acceptance surface. Grid size,
+placement count, collision checks, walkable-tile counts, asset-load logs, and
+GIF frame counts are supporting evidence only.
+
+- Inspect the full clean runtime screenshot at original resolution after every
+  layout revision. Check visible width/space gain, clipping on all four edges,
+  furniture overlap, intentional surface placement, empty-area balance,
+  repeated-module appearance, zone transitions, and overall coherence.
+- Inspect a contact sheet or original frames for animated deliveries. Confirm
+  character position changes and that selection outlines, hover outlines,
+  labels, cursors, or other capture-only UI are absent.
+- Record both visible passes and visible open polish items. Do not hide a sparse
+  zone, repetition, awkward divider, or other screenshot-visible issue behind a
+  passing numeric validator.
+- Do not call a layout accepted until the screenshot itself has been opened and
+  inspected in the same run.

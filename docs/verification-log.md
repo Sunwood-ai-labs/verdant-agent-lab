@@ -594,3 +594,26 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   `layout-validation.json`, `spacious-office-v1.png`,
   `character-walk-contact-sheet-v1.png`, `character-walk-proof-v1.json`, and
   `spacious-character-walk-v1.gif`.
+
+## Screenshot-first re-audit
+
+- Authoritative still opened at original 1200×700 resolution:
+  `proofs/pixel-agents-solarpunk-spacious/spacious-office-v1.png`.
+- Visible pass: the office frame is materially wider, all four room edges are
+  contained, the top sign is centered, the original west and east sections
+  remain readable, and the inserted central studio is visibly distinct.
+- Visible pass: no furniture is cut by the room frame. Desks, chairs, plants,
+  shelves, sofa pieces, and lounge table do not visually collide. PCs overlap
+  desks only as intentional surface props.
+- Visible pass: upper and middle circulation lanes remain open across the new
+  central floor, and the green-to-timber transition reads as zoning rather than
+  stretched art.
+- Animated contact sheet opened at original 1800×700 resolution:
+  `character-walk-contact-sheet-v1.png`. The character visibly changes position
+  and facing; no white selection perimeter, floating label, or cursor is shown.
+- Visible open polish item: the lower east lounge remains sparse compared with
+  the west and center zones.
+- Visible open polish item: the center reuses the same workstation module as the
+  west, so a later asset-diversity pass could reduce repetition.
+- Screenshot verdict: accepted for the requested "wider office" variant, with
+  the two polish items above kept explicit rather than hidden behind validators.

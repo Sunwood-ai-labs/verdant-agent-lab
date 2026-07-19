@@ -1,0 +1,27 @@
+{
+  "status": "accepted_with_open_polish_items",
+  "authoritativeStill": "proofs/pixel-agents-solarpunk-spacious/spacious-office-v1.png",
+  "stillResolution": [1200, 700],
+  "authoritativeAnimationContactSheet": "proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-v1.png",
+  "contactSheetResolution": [1800, 700],
+  "visualPasses": {
+    "materiallyWiderOfficeVisible": true,
+    "allFourRoomEdgesContained": true,
+    "topSignCentered": true,
+    "westAndEastSectionsRemainReadable": true,
+    "centralStudioVisiblyDistinct": true,
+    "furnitureFrameClippingAbsent": true,
+    "unintendedFurnitureOverlapAbsent": true,
+    "intentionalPcDeskSurfaceOverlapOnly": true,
+    "openCirculationLanesVisible": true,
+    "characterPositionAndFacingChangeVisible": true,
+    "selectionOutlineAbsent": true,
+    "floatingActivityLabelAbsent": true,
+    "captureCursorAbsent": true
+  },
+  "openPolishItems": [
+    "Lower east lounge is visually sparse relative to west and center zones.",
+    "Central studio repeats the west workstation module and could use a later diversity pass."
+  ],
+  "numericValidatorsAreSupportingOnly": true
+}

@@ -191,3 +191,15 @@ Reason: "make the office wider" should increase usable floor and circulation,
 not stretch raster assets or silently replace the already accepted compact
 preset. The spacious variant is a Pixel Agents product layout; it remains
 separate from the 42×34 source-photo reconstruction fidelity track.
+
+## D-021 — screenshot owns spacious-layout acceptance
+
+Decision: accept or reject room width, spacing, balance, clipping, overlap, and
+animation cleanliness from the actual Pixel Agents runtime screenshot and GIF
+frames. Layout dimensions, placement totals, collision results, and walkable
+tile counts may explain the result but cannot replace visual inspection.
+
+Reason: the user explicitly required screenshot-based confirmation after the
+35×22 expansion. The same clean runtime image showed both the successful width
+increase and the remaining visual polish notes: a deliberately sparse lower
+east zone and repeated workstation-module language in the center.
