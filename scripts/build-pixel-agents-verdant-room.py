@@ -124,29 +124,35 @@ def build() -> dict:
         furniture("PC_FRONT_ON_2", 24, 19),
         furniture("WOODEN_CHAIR_BACK", 24, 22),
 
-        # Compact source-inspired lounge below the work islands.
-        furniture("SOFA_FRONT", 22, 27),
-        furniture("SOFA_SIDE", 20, 27),
-        furniture("SOFA_SIDE:left", 25, 27),
-        furniture("COFFEE_TABLE", 22, 28),
-        furniture("CUSHIONED_BENCH", 22, 31),
+        # Source-facing lounge below the work islands.  The sectional and oval
+        # table are generated as whole, grid-sized objects so the composition
+        # does not depend on a loose cluster of generic sofa fragments.
+        furniture("LOUNGE_SECTIONAL", 23, 27),
+        furniture("LOUNGE_OVAL_TABLE", 24, 29),
+        furniture("FLOWER_PLANTER_LONG", 12, 29),
+
+        # The glass module follows the source image's central-right meeting-room
+        # boundary.  Its two background rows leave the aisle visually enclosed
+        # without turning the full four-row sprite into a collision wall.
+        furniture("MEETING_GLASS_MODULE", 23, 16),
 
         # AI lab, lower right. The rejected humanoid analysis-platform cell is
-        # deliberately absent; only the four approved equipment sprites appear.
+        # deliberately absent.  The empty diagnostic platform is the corrected
+        # equipment-only replacement, with no character or robot baked in.
         furniture("AI_WHITEBOARD", 30, 18),
         furniture("AI_BOOKSHELF", 34, 18),
         furniture("AI_ELECTRONICS_BENCH", 30, 22),
         furniture("AI_ANALYZER_CART", 36, 22),
         furniture("WOODEN_CHAIR_SIDE", 29, 23),
-        furniture("PLANT_2", 38, 29),
-        furniture("BIN", 36, 30),
+        furniture("AI_DIAGNOSTIC_PLATFORM", 31, 26),
+        furniture("RECYCLING_BIN", 37, 28),
     ]
 
     return {
         "version": 1,
         "cols": COLS,
         "rows": ROWS,
-        "layoutRevision": 5,
+        "layoutRevision": 6,
         "tiles": tiles,
         "tileColors": tile_colors,
         "furniture": items,

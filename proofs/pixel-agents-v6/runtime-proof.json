@@ -1,0 +1,50 @@
+{
+  "status": "passed-after-visual-correction",
+  "scope": "six-asset missing-core batch in the 42x34 Verdant Pixel Agents room",
+  "layoutRevision": 6,
+  "placements": 47,
+  "physicalSprites": 64,
+  "manifests": 53,
+  "catalogEntries": 67,
+  "newAssets": [
+    "AI_DIAGNOSTIC_PLATFORM",
+    "MEETING_GLASS_MODULE",
+    "LOUNGE_SECTIONAL",
+    "LOUNGE_OVAL_TABLE",
+    "FLOWER_PLANTER_LONG",
+    "RECYCLING_BIN"
+  ],
+  "packValidation": {
+    "defaultLayoutCoverage": "25/25",
+    "unresolvedTypes": 0,
+    "overlappingCollisionTiles": 0,
+    "walkableTiles": 673,
+    "largestWalkableComponent": 667
+  },
+  "editorDiscovery": {
+    "found": "6/6",
+    "categories": {
+      "AI_DIAGNOSTIC_PLATFORM": "Tech",
+      "MEETING_GLASS_MODULE": "Wall",
+      "LOUNGE_SECTIONAL": "Chairs",
+      "LOUNGE_OVAL_TABLE": "Desks",
+      "FLOWER_PLANTER_LONG": "Decor",
+      "RECYCLING_BIN": "Misc"
+    },
+    "duplicateReplacementLabels": 0
+  },
+  "browser": {
+    "viewport": "1600x1000",
+    "horizontalScroll": false,
+    "verticalScroll": false,
+    "consoleOrPageErrors": 0
+  },
+  "visualCorrection": {
+    "rejectedScreenshot": "live-missing-core-layout-v1.png",
+    "failure": "oval table, long planter, and recycling bin touched or disappeared behind the lower room frame",
+    "retry": "moved the three affected objects and the adjacent AI platform one tile upward",
+    "acceptedScreenshot": "live-missing-core-layout-clean-v3.png",
+    "intermediatePreRenameScreenshot": "live-missing-core-layout-clean-v2.png"
+  },
+  "scopeBoundary": "This proves the six assets are cleanly split, catalog-visible, collision-valid, and visibly placed. It does not prove complete reproduction of the supplied 1280x960 office."
+}

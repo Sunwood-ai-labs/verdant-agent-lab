@@ -417,3 +417,30 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   lifecycle semantics, not a collision failure.
 - Pack-wide visual editor rotation remains open for the other rotation groups;
   this checkpoint closes the default-chair seat/collision/path/depth gates only.
+
+# 2026-07-19 — Missing-core six-asset room correction
+
+- Built-in Image Gen produced one horizontal 3×2 sheet for an empty AI
+  diagnostic platform, meeting glass module, source-facing sectional, oval
+  lounge table, long flowering planter, and blue-green recycling bin. Raw,
+  alpha, split, prompt, and QA records are retained under
+  `assets/generated/pixel-agents-v5/`.
+- `npm run validate:pixel-agents-pack` passes 64 physical sprites across 53
+  manifests, 67 catalog entries, and 25/25 audited default-layout ID coverage.
+- The first revision-6 screenshot passed logical footprint checks but visibly
+  cut the table, planter, and recycling bin against the lower room frame. It is
+  retained as `proofs/pixel-agents-v6/live-missing-core-layout-v1.png` and is
+  rejected.
+- The retry moved those three assets and the adjacent diagnostic platform one
+  tile upward. `npm run validate:pixel-agents-verdant-layout` then passed with
+  47 placements, six required batch assets, zero unresolved types, zero
+  overlapping floor-collision tiles, and a 667/673-tile main walkable component.
+- Fresh live proof `proofs/pixel-agents-v6/live-missing-core-layout-clean-v3.png`
+  has no lower-frame clipping and no browser console/page errors. The focused
+  room proof is `live-missing-core-layout-focus-v2.png`.
+- Actual editor interaction found all six assets in their supported categories.
+  A visible duplicate recycling-bin label was corrected by renaming the new
+  asset `Tall Blue-Green Recycling Bin`; the final palette has no ambiguous
+  replacement label.
+- Scope remains incomplete: this batch does not close west-studio, site-shell,
+  custom floor/wall, or full same-view reference-fidelity coverage.

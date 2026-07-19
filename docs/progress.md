@@ -119,8 +119,10 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] compare upstream and reskinned default offices in the real Pixel Agents runtime with zero browser/HTTP errors
 - [x] rotate the Verdant Desk with `R` and place its side orientation on the actual editor grid
 - [x] verify default-chair four-way rotation, live seating, collision paths, seat return, and seated depth rules with actual Pixel Agents modules
+- [x] generate, split, catalog, and visibly place the empty diagnostic platform, meeting glass module, sectional lounge, oval table, long flower planter, and tall recycling bin
+- [x] reject the first revision-6 render for lower-frame clipping and accept only the one-tile-up retry after a fresh runtime screenshot
 - [ ] visually rotate and inspect every remaining rotation group in the actual editor canvas
-- [ ] add the missing AI diagnostic platform without a robot and complete studio/lounge/site-shell coverage
+- [ ] complete the remaining west-studio and site-shell asset coverage
 - [ ] replace floors/walls only after bitmask joins and direct runtime screenshots pass
 # Directional asset rebuild checkpoint — 2026-07-15
 

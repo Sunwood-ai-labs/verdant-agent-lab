@@ -2,7 +2,7 @@
   "version": 1,
   "cols": 42,
   "rows": 34,
-  "layoutRevision": 5,
+  "layoutRevision": 6,
   "tiles": [
     255,
     255,
@@ -8281,34 +8281,28 @@
       "row": 22
     },
     {
-      "uid": "verdant-sofa_front-22-27",
-      "type": "SOFA_FRONT",
-      "col": 22,
+      "uid": "verdant-lounge_sectional-23-27",
+      "type": "LOUNGE_SECTIONAL",
+      "col": 23,
       "row": 27
     },
     {
-      "uid": "verdant-sofa_side-20-27",
-      "type": "SOFA_SIDE",
-      "col": 20,
-      "row": 27
+      "uid": "verdant-lounge_oval_table-24-29",
+      "type": "LOUNGE_OVAL_TABLE",
+      "col": 24,
+      "row": 29
     },
     {
-      "uid": "verdant-sofa_side-left-25-27",
-      "type": "SOFA_SIDE:left",
-      "col": 25,
-      "row": 27
+      "uid": "verdant-flower_planter_long-12-29",
+      "type": "FLOWER_PLANTER_LONG",
+      "col": 12,
+      "row": 29
     },
     {
-      "uid": "verdant-coffee_table-22-28",
-      "type": "COFFEE_TABLE",
-      "col": 22,
-      "row": 28
-    },
-    {
-      "uid": "verdant-cushioned_bench-22-31",
-      "type": "CUSHIONED_BENCH",
-      "col": 22,
-      "row": 31
+      "uid": "verdant-meeting_glass_module-23-16",
+      "type": "MEETING_GLASS_MODULE",
+      "col": 23,
+      "row": 16
     },
     {
       "uid": "verdant-ai_whiteboard-30-18",
@@ -8341,16 +8335,16 @@
       "row": 23
     },
     {
-      "uid": "verdant-plant_2-38-29",
-      "type": "PLANT_2",
-      "col": 38,
-      "row": 29
+      "uid": "verdant-ai_diagnostic_platform-31-26",
+      "type": "AI_DIAGNOSTIC_PLATFORM",
+      "col": 31,
+      "row": 26
     },
     {
-      "uid": "verdant-bin-36-30",
-      "type": "BIN",
-      "col": 36,
-      "row": 30
+      "uid": "verdant-recycling_bin-37-28",
+      "type": "RECYCLING_BIN",
+      "col": 37,
+      "row": 28
     }
   ],
   "zones": [

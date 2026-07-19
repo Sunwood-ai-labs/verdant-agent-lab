@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "runtime": "actual Pixel Agents layout editor",
+  "browserErrors": 0,
+  "found": 6,
+  "expected": 6,
+  "assets": [
+    { "id": "LOUNGE_OVAL_TABLE", "title": "Verdant Oval Lounge Table", "category": "Desks", "found": true },
+    { "id": "LOUNGE_SECTIONAL", "title": "Verdant Sectional Lounge", "category": "Chairs", "found": true },
+    { "id": "AI_DIAGNOSTIC_PLATFORM", "title": "Empty AI Diagnostic Platform", "category": "Tech", "found": true },
+    { "id": "FLOWER_PLANTER_LONG", "title": "Long Flowering Planter", "category": "Decor", "found": true },
+    { "id": "MEETING_GLASS_MODULE", "title": "Meeting Glass Door Module", "category": "Wall", "found": true },
+    { "id": "RECYCLING_BIN", "title": "Tall Blue-Green Recycling Bin", "category": "Misc", "found": true }
+  ],
+  "labelCollisionCorrection": {
+    "before": "Verdant Recycling Bin appeared twice in Misc",
+    "after": ["Verdant Recycling Bin", "Tall Blue-Green Recycling Bin"],
+    "newTitleCount": 1
+  }
+}

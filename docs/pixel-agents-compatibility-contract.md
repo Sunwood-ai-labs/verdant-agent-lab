@@ -1,7 +1,7 @@
 # Pixel Agents compatibility contract
 
-Status: runtime contract confirmed; 58 physical sprites / 61 runtime catalog
-entries; live load, composed-room rendering, 28/28 editor-catalog discovery,
+Status: runtime contract confirmed; 64 physical sprites / 67 runtime catalog
+entries; live load, composed-room rendering, 34/34 source-batch editor-catalog discovery,
 direct canvas placement, default-chair seat generation, agent walk/return,
 collision rejection, four-way facing, mirror, and seated depth rules confirmed.
 Every remaining rotation group still needs its own visual canvas inspection.
@@ -67,10 +67,11 @@ office:
 | 1×2 plant | Terracotta/brass planted foliage | `PLANT.png` override |
 
 The default furniture IDs now have full audited coverage. Source-facing
-reception, cafe, greenhouse, solar, and equipment-only AI-lab batches are also
-available as independent grid assets. The remaining visual gap is the site
-shell, directional studio/lounge variants, a robot-free diagnostic platform,
-and a validated floor/wall bitmask atlas.
+reception, cafe, greenhouse, solar, equipment-only AI-lab, meeting-glass,
+sectional/lounge-table, planter, and tall-bin batches are also available as
+independent grid assets. The remaining visual gap is the site shell, complete
+directional studio/lounge variants, meeting-room child parts, and a validated
+floor/wall bitmask atlas.
 
 ## Acceptance gate
 
@@ -84,6 +85,9 @@ must pass all of the following:
 5. A chair spawns a usable seat and the character faces the intended desk.
 6. Collision and depth order are checked with an agent walking around and
    sitting at the furniture.
+7. The complete room is freshly rendered after placement changes; a logically
+   valid footprint still fails if the sprite touches or disappears behind the
+   room frame, wall cap, viewport edge, or another asset.
 
 For the default-office Verdant chair, gates 5–6 and the four-way runtime cycle
 now pass through the actual Pixel Agents modules. Gate 4 is visually proven for
