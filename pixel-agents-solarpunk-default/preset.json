@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "name": "Verdant Solarpunk Default Office",
+  "target": "Pixel Agents 1.3",
+  "tileSizePx": 16,
+  "layout": "layout.json",
+  "furniturePack": "../pixel-agents-pack",
+  "theme": "../pixel-agents-theme-v2",
+  "referenceInputs": [
+    "assets/reference-original.jpg",
+    "research/pixel-agents/sources/pixel-agents"
+  ],
+  "preserved": {
+    "grid": "21x22",
+    "tiles": 462,
+    "placements": 36,
+    "uniqueFurnitureTypes": 25
+  },
+  "changedFields": [
+    "layoutRevision",
+    "tileColors"
+  ],
+  "paletteByTileId": {
+    "0": null,
+    "1": {
+      "h": 32,
+      "s": 46,
+      "b": -5,
+      "c": -18
+    },
+    "7": {
+      "h": 102,
+      "s": 34,
+      "b": -8,
+      "c": -22
+    },
+    "9": {
+      "h": 36,
+      "s": 18,
+      "b": -24,
+      "c": -30
+    },
+    "255": null
+  }
+}
