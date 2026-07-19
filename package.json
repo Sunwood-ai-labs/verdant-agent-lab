@@ -16,6 +16,8 @@
     "build:pixel-agents-overrides": "python3 scripts/build-pixel-agents-default-overrides.py",
     "build:pixel-agents-catalog": "python3 scripts/build-pixel-agents-catalog.py",
     "build:pixel-agents-theme": "python3 scripts/build-pixel-agents-theme.py",
+    "build:pixel-agents-theme-v2": "python3 scripts/build-pixel-agents-theme-v2.py",
+    "validate:pixel-agents-theme-v2": "python3 scripts/validate-pixel-agents-theme-v2.py",
     "build:pixel-agents-room": "python3 scripts/build-pixel-agents-verdant-room.py",
     "build:pixel-agents-default-reskin": "python3 scripts/build-pixel-agents-default-reskin.py",
     "build:pixel-agents-verdant-room": "python3 scripts/build-pixel-agents-verdant-room.py",

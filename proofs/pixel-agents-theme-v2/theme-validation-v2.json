@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "floorTiles": 9,
+  "uniqueFloorTiles": 9,
+  "floorSize": [
+    16,
+    16
+  ],
+  "wallAtlasSize": [
+    64,
+    128
+  ],
+  "wallMasks": 16,
+  "uniqueWallMasks": 16,
+  "bitOrder": "N=1,E=2,S=4,W=8",
+  "magentaSpill": 0,
+  "catalog": "theme-catalog-v2.png"
+}
