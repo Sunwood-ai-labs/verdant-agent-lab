@@ -152,3 +152,17 @@ Reason: rejecting a default-layout proof as evidence for the supplied photo does
 not make it invalid for the distinct goal of reskinning Pixel Agents' default
 office. The two claims require different authoritative views and must not be
 collapsed again.
+
+## D-018 — a movement GIF must show the runtime character moving
+
+Decision: when a Pixel Agents room request says to "move it" and asks for a
+GIF/video, the default interpretation is an actual Pixel Agents character
+walking in the room. Editor clicks, palette browsing, camera motion, cursor
+animation, or CSS-only sprite translation are not substitutes unless the user
+explicitly requests an editor demo.
+
+Reason: the first capture plan incorrectly translated "move it" into layout
+editor interaction. The accepted capture instead registers a temporary remote
+agent, uses Pixel Agents' built-in character sprite and production
+`OfficeState.walkToTile` path through real canvas context-menu input, and hides
+only the activity-label DOM layer so it cannot cover the small sprite.

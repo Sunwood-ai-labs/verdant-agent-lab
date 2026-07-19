@@ -525,3 +525,29 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   interrupted rather than treated as review evidence. The accepted result is
   based only on the deterministic validators and direct Pixel Agents browser
   inspection above.
+
+# 2026-07-19 — Real character-walk GIF correction
+
+- Rejected before publication: an initial script plan would have recorded the
+  layout editor opening, one floor-cell edit, Undo, and furniture-palette
+  browsing. That did not satisfy the user's meaning of "a character moving."
+- The retry launches the real assembled Pixel Agents runtime, registers one
+  temporary remote agent, waits for the built-in spawn animation, selects that
+  actual runtime character, and sends canvas context-menu inputs to production
+  `OfficeState.walkToTile` waypoints.
+- The remote agent is deleted in a `finally` cleanup. It is not embedded in the
+  default preset, and the default room remains character-free until a live
+  agent is present.
+- The floating activity panel is hidden only in the capture browser because it
+  covered the walking sprite; the canvas, character sprite, pathfinding, walk
+  cycle, furniture, and room are unmodified runtime output.
+- `npm run capture:pixel-agents-solarpunk-gif` captured 79 source frames with
+  zero browser errors. The optimized GIF contains 46 frames over 7.9 seconds;
+  38 adjacent post-spawn source-frame pairs changed.
+- Human-inspected contact sheet shows the character absent initially, then
+  spawned and visibly changing position/facing around the east lounge:
+  `proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v1.png`.
+- Accepted animation:
+  `proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v1.gif`.
+  Machine record:
+  `proofs/pixel-agents-solarpunk-default/character-walk-proof.json`.

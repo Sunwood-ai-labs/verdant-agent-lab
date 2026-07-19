@@ -23,6 +23,7 @@
     "build:pixel-agents-solarpunk-default": "python3 scripts/build-pixel-agents-solarpunk-default-preset.py",
     "assemble:pixel-agents-solarpunk-runtime": "python3 scripts/assemble-pixel-agents-solarpunk-runtime.py",
     "validate:pixel-agents-solarpunk-default": "python3 scripts/validate-pixel-agents-solarpunk-default.py",
+    "capture:pixel-agents-solarpunk-gif": "node scripts/capture-pixel-agents-solarpunk-gif.mjs && python3 scripts/assemble-pixel-agents-solarpunk-gif.py",
     "build:pixel-agents-verdant-room": "python3 scripts/build-pixel-agents-verdant-room.py",
     "verify:pixel-agents-runtime-interactions": "/Users/admin/Prj/pixel-agents/node_modules/.bin/tsx scripts/verify-pixel-agents-runtime-interactions.ts",
     "validate:pixel-agents-verdant-layout": "/Users/admin/Prj/pixel-agents/node_modules/.bin/tsx scripts/validate-pixel-agents-verdant-layout.ts",
