@@ -1,0 +1,14 @@
+{
+  "id": "LOUNGE_SECTIONAL",
+  "name": "Verdant Sectional Lounge",
+  "category": "chairs",
+  "type": "asset",
+  "file": "LOUNGE_SECTIONAL.png",
+  "width": 96,
+  "height": 48,
+  "footprintW": 6,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

@@ -75,3 +75,16 @@ Each family retains `raw/`, chroma-removed `alpha/`, independently cropped
   references, not literal source-image crops.
 
 The two-page, non-clipped catalog proofs are under `../proofs/pixel-agents-v5/`.
+
+## Pixel Agents missing-core pack v5
+
+`generated/pixel-agents-v5/` preserves the raw and chroma-removed horizontal
+3×2 sheet, all six full-resolution split sprites, the manual prompt record, and
+the deterministic QA report. The six accepted runtime promotions are the empty
+AI diagnostic platform, meeting glass module, sectional lounge, oval table,
+long flowering planter, and tall blue-green recycling bin.
+
+These are generated source-facing interpretations, not literal source-image
+crops. Their 16px-grid runtime versions and manifests live under
+`../pixel-agents-pack/assets/furniture/`. The failed lower-frame placement and
+accepted one-tile-up retry are both retained under `../proofs/pixel-agents-v6/`.

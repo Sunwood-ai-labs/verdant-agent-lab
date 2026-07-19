@@ -1,0 +1,14 @@
+{
+  "id": "AI_DIAGNOSTIC_PLATFORM",
+  "name": "Empty AI Diagnostic Platform",
+  "category": "electronics",
+  "type": "asset",
+  "file": "AI_DIAGNOSTIC_PLATFORM.png",
+  "width": 96,
+  "height": 64,
+  "footprintW": 6,
+  "footprintH": 4,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

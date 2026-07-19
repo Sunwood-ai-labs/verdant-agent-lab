@@ -12,7 +12,7 @@ In Pixel Agents Settings, add this directory as an external asset directory:
 /Users/admin/Prj/sunwood-lab-recreation/pixel-agents-pack
 ```
 
-The current pack contains 58 physical PNG sprites across 47 manifests (61
+The current pack contains 64 physical PNG sprites across 53 manifests (67
 runtime catalog entries after mirrored/animated variants), including:
 
 - `DESK`: front and side orientations, overriding the bundled desk IDs
@@ -22,6 +22,8 @@ runtime catalog entries after mirrored/animated variants), including:
 - sofas, benches, coffee/small/collaboration tables
 - bookshelves, paintings, clock, whiteboard, coffee, bins, and additional plants
 - 28 source-zone assets for reception, cafe, AI lab, greenhouse, and solar wing
+- six missing-core assets for the empty diagnostic platform, meeting glass,
+  sectional lounge, oval table, flowering planter, and tall recycling bin
 
 The matching built-in IDs are intentional: Pixel Agents merges external assets
 after built-ins and the later entry wins. Therefore the existing default layout
@@ -34,14 +36,17 @@ build and metadata check from the repository root:
 python3 scripts/build-pixel-agents-pack.py
 python3 scripts/build-pixel-agents-default-overrides.py
 python3 scripts/build-pixel-agents-source-zones.py
+python3 scripts/build-pixel-agents-missing-core.py
 python3 scripts/build-pixel-agents-catalog.py
 python3 scripts/validate-pixel-agents-pack.py
 python3 scripts/build-pixel-agents-verdant-room.py
+npm run validate:pixel-agents-verdant-layout
 ```
 
-`verdant-runtime-layout.json` is the current 42x34 revision-5, six-zone Pixel
+`verdant-runtime-layout.json` is the current 42x34 revision-6, six-zone Pixel
 Agents room: solar wing, reception, cafe, greenhouse, open office/lounge, and
-AI lab. It uses
+AI lab. It has 47 placements and visibly integrates the six missing-core
+assets. It uses
 the runtime's known-good floor and wall assets because the generated v3 theme
 atlas failed direct visual QA. The custom theme is preserved separately as a
 rejected/prototype checkpoint, not the current room proof.

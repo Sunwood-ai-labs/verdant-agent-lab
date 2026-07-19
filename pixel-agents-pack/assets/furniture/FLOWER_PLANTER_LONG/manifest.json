@@ -1,0 +1,14 @@
+{
+  "id": "FLOWER_PLANTER_LONG",
+  "name": "Long Flowering Planter",
+  "category": "decor",
+  "type": "asset",
+  "file": "FLOWER_PLANTER_LONG.png",
+  "width": 96,
+  "height": 32,
+  "footprintW": 6,
+  "footprintH": 2,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

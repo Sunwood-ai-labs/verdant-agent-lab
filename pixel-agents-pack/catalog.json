@@ -23,6 +23,18 @@
     "backgroundTiles": 0,
     "mirrored": false
   },
+  "AI_DIAGNOSTIC_PLATFORM": {
+    "id": "AI_DIAGNOSTIC_PLATFORM",
+    "src": "assets/furniture/AI_DIAGNOSTIC_PLATFORM/AI_DIAGNOSTIC_PLATFORM.png",
+    "width": 96,
+    "height": 64,
+    "footprintW": 6,
+    "footprintH": 4,
+    "category": "electronics",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 2,
+    "mirrored": false
+  },
   "AI_ELECTRONICS_BENCH": {
     "id": "AI_ELECTRONICS_BENCH",
     "src": "assets/furniture/AI_ELECTRONICS_BENCH/AI_ELECTRONICS_BENCH.png",
@@ -215,6 +227,18 @@
     "backgroundTiles": 0,
     "mirrored": false
   },
+  "FLOWER_PLANTER_LONG": {
+    "id": "FLOWER_PLANTER_LONG",
+    "src": "assets/furniture/FLOWER_PLANTER_LONG/FLOWER_PLANTER_LONG.png",
+    "width": 96,
+    "height": 32,
+    "footprintW": 6,
+    "footprintH": 2,
+    "category": "decor",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 1,
+    "mirrored": false
+  },
   "GREENHOUSE_DOOR": {
     "id": "GREENHOUSE_DOOR",
     "src": "assets/furniture/GREENHOUSE_DOOR/GREENHOUSE_DOOR.png",
@@ -309,6 +333,42 @@
     "category": "wall",
     "canPlaceOnSurfaces": false,
     "backgroundTiles": 0,
+    "mirrored": false
+  },
+  "LOUNGE_OVAL_TABLE": {
+    "id": "LOUNGE_OVAL_TABLE",
+    "src": "assets/furniture/LOUNGE_OVAL_TABLE/LOUNGE_OVAL_TABLE.png",
+    "width": 64,
+    "height": 32,
+    "footprintW": 4,
+    "footprintH": 2,
+    "category": "desks",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 1,
+    "mirrored": false
+  },
+  "LOUNGE_SECTIONAL": {
+    "id": "LOUNGE_SECTIONAL",
+    "src": "assets/furniture/LOUNGE_SECTIONAL/LOUNGE_SECTIONAL.png",
+    "width": 96,
+    "height": 48,
+    "footprintW": 6,
+    "footprintH": 3,
+    "category": "chairs",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 2,
+    "mirrored": false
+  },
+  "MEETING_GLASS_MODULE": {
+    "id": "MEETING_GLASS_MODULE",
+    "src": "assets/furniture/MEETING_GLASS_MODULE/MEETING_GLASS_MODULE.png",
+    "width": 96,
+    "height": 64,
+    "footprintW": 6,
+    "footprintH": 4,
+    "category": "wall",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 2,
     "mirrored": false
   },
   "PC_FRONT_ON_1": {
@@ -489,6 +549,18 @@
     "category": "electronics",
     "canPlaceOnSurfaces": true,
     "backgroundTiles": 0,
+    "mirrored": false
+  },
+  "RECYCLING_BIN": {
+    "id": "RECYCLING_BIN",
+    "src": "assets/furniture/RECYCLING_BIN/RECYCLING_BIN.png",
+    "width": 32,
+    "height": 48,
+    "footprintW": 2,
+    "footprintH": 3,
+    "category": "misc",
+    "canPlaceOnSurfaces": false,
+    "backgroundTiles": 1,
     "mirrored": false
   },
   "SMALL_PAINTING": {

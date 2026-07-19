@@ -1,0 +1,14 @@
+{
+  "id": "MEETING_GLASS_MODULE",
+  "name": "Meeting Glass Door Module",
+  "category": "wall",
+  "type": "asset",
+  "file": "MEETING_GLASS_MODULE.png",
+  "width": 96,
+  "height": 64,
+  "footprintW": 6,
+  "footprintH": 4,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

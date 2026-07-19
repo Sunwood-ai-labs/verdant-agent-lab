@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "sheet": "missing-core-sheet.png",
+  "generatedCells": 6,
+  "approvedRuntimeAssets": 6,
+  "rejected": [],
+  "records": [
+    {
+      "id": "AI_DIAGNOSTIC_PLATFORM",
+      "cell": 0,
+      "sourceSize": [
+        397,
+        334
+      ],
+      "runtimeSize": [
+        96,
+        64
+      ],
+      "runtimeBbox": [
+        11,
+        1,
+        85,
+        63
+      ]
+    },
+    {
+      "id": "MEETING_GLASS_MODULE",
+      "cell": 1,
+      "sourceSize": [
+        435,
+        274
+      ],
+      "runtimeSize": [
+        96,
+        64
+      ],
+      "runtimeBbox": [
+        1,
+        4,
+        95,
+        63
+      ]
+    },
+    {
+      "id": "LOUNGE_SECTIONAL",
+      "cell": 2,
+      "sourceSize": [
+        385,
+        233
+      ],
+      "runtimeSize": [
+        96,
+        48
+      ],
+      "runtimeBbox": [
+        10,
+        1,
+        86,
+        47
+      ]
+    },
+    {
+      "id": "LOUNGE_OVAL_TABLE",
+      "cell": 3,
+      "sourceSize": [
+        269,
+        188
+      ],
+      "runtimeSize": [
+        64,
+        32
+      ],
+      "runtimeBbox": [
+        10,
+        1,
+        53,
+        31
+      ]
+    },
+    {
+      "id": "FLOWER_PLANTER_LONG",
+      "cell": 4,
+      "sourceSize": [
+        463,
+        200
+      ],
+      "runtimeSize": [
+        96,
+        32
+      ],
+      "runtimeBbox": [
+        13,
+        1,
+        82,
+        31
+      ]
+    },
+    {
+      "id": "RECYCLING_BIN",
+      "cell": 5,
+      "sourceSize": [
+        161,
+        241
+      ],
+      "runtimeSize": [
+        32,
+        48
+      ],
+      "runtimeBbox": [
+        1,
+        2,
+        31,
+        47
+      ]
+    }
+  ]
+}
