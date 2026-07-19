@@ -101,4 +101,13 @@ message `1528375585653526540`, attachment
 `solarpunk-character-walk-v1.gif`. The post identifies the 7.9-second loop as
 real Pixel Agents built-in character motion driven through production
 `OfficeState.walkToTile`, and explicitly excludes editor interaction and CSS
-pseudo-movement.
+pseudo-movement. This v1 attachment is now rejected because the captured Agent
+remained selected and therefore retained Pixel Agents' white selection outline.
+
+Corrected character-walk delivery receipt: Discord channel
+`1526794078744744077`, message `1528378290744856676`, posted as a reply to the
+rejected v1 delivery. Attachment `solarpunk-character-walk-v3.gif` clears both
+automatic spawn selection and per-waypoint command selection, uses deterministic
+built-in palette 0, and was visually checked at original resolution with no
+white character perimeter. Commit `aed28bc` contains the v2 intermediate, v3
+replacement, capture fix, QA evidence, and recurrence-prevention decision.
