@@ -29,6 +29,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `b6bac90` | Five source-guided Pixel Agents zone sheets | raw/alpha/split provenance, 28 approved grid assets, seven-category editor-safe manifests |
 | `4f16392` | Source-zone room and editor verification | revision-5 room, 48 placements, two-page catalog, 28/28 editor discovery, direct placement proof |
 | `69a818d` | Literal Pixel Agents default-office reskin | byte-identical 21×22 default layout, 36 unchanged placements, before/after runtime proof, rotated desk placement |
+| `905d2d9` | Verdant runtime interaction verification | 14/14 seats, collision rejection, 15-tile path, seat return, four-way chair facing/mirror/depth proof |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -56,3 +57,10 @@ message `1528352757545963560`. Attachments are
 `default-reskin-before-after-v1.png` and `editor-desk-side-placement.png`. The
 report distinguishes the verified default-office exact-ID substitution from
 the still-incomplete full 1280×960 reference reproduction.
+
+Runtime-interaction delivery receipt: Discord channel `1526794078744744077`,
+message `1528355085355192342`. Attachments are
+`runtime-interaction-proof.png` and `runtime-interaction-proof.json`. The report
+states the exact seat, walk, collision, return, rotation, facing, mirror, and
+depth results and keeps remaining pack-wide visual rotation and source-asset
+coverage open.
