@@ -617,3 +617,33 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   west, so a later asset-diversity pass could reduce repetition.
 - Screenshot verdict: accepted for the requested "wider office" variant, with
   the two polish items above kept explicit rather than hidden behind validators.
+
+# 2026-07-19 — Natural asset-arrangement pass
+
+- Screenshot-first diagnosis of spacious v1 found two non-blocking but visible
+  issues: the center copied the west workstation module, and the lower east
+  lounge had no readable function.
+- Existing approved assets were sufficient, so Image Gen editing was not used.
+  The center now uses `AI_ELECTRONICS_BENCH`, `AI_WHITEBOARD`, a low
+  `RECEPTION_PLANTER`, two seats, and one plant. This removes the largest
+  repeated silhouette while retaining a work-focused zone.
+- The east lower floor now groups the relocated original small table, a surface
+  `COFFEE`, `FLOWER_PLANTER_LONG`, and `RECYCLING_BIN` into one visually readable
+  coffee/garden/utility corner.
+- Spacious v2 is preserved as an intermediate. Its screenshot looked balanced,
+  but runtime connectivity exposed two isolated threshold tiles at `(31,20)`
+  and `(32,20)` below the recycling bin.
+- Spacious v3 moves only the recycling bin one tile upward. The fresh validator
+  passes 53 placements, zero unresolved types, zero collision overlaps, and one
+  connected 234-tile walkable component with no small isolated components.
+- Original-resolution inspection of `spacious-office-v3.png` passes all-edge
+  containment, furniture separation, intentional PC/desk and coffee/table
+  surface overlap, open center circulation, distinct zone silhouettes, and
+  balanced use of the east lower floor.
+- Original-resolution inspection of `character-walk-contact-sheet-v3.png`
+  confirms the built-in character changes position/facing without a white
+  selection outline, floating activity label, or capture cursor.
+- Accepted outputs are `spacious-office-v3.png` and
+  `spacious-character-walk-v3.gif`. Machine records are
+  `screenshot-qa-v3.json`, `layout-validation.json`, and
+  `character-walk-proof-v3.json`.

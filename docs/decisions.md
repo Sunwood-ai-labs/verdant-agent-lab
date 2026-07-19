@@ -203,3 +203,17 @@ Reason: the user explicitly required screenshot-based confirmation after the
 35×22 expansion. The same clean runtime image showed both the successful width
 increase and the remaining visual polish notes: a deliberately sparse lower
 east zone and repeated workstation-module language in the center.
+
+## D-022 — place assets as readable functional clusters
+
+Decision: improve spatial naturalness by giving each furniture group a visible
+purpose, varying major silhouettes between adjacent zones, preserving open
+circulation, and keeping every floor pocket reachable. Reuse an approved asset
+when it fits the needed function and viewing direction; use Image Gen editing
+only when the existing catalog cannot supply a coherent part.
+
+Reason: screenshot QA of spacious v1 exposed two visual issues hidden by valid
+counts: a repeated workstation module and an underused east-lounge floor. The
+accepted v3 replaces the duplicate center table with an AI electronics bench,
+adds a low planter and wall whiteboard, and turns the east floor into a coffee,
+flower, and recycling corner. No new image generation was needed.

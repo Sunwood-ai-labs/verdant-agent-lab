@@ -112,14 +112,17 @@ const state = new OfficeState(layout);
 const walkable = new Set(state.walkableTiles.map((tile: Json) => `${tile.col},${tile.row}`));
 const remaining = new Set(walkable);
 const componentSizes: number[] = [];
+const smallWalkableComponents: string[][] = [];
 while (remaining.size) {
   const seed = remaining.values().next().value as string;
   const queue = [seed];
   let size = 0;
+  const members: string[] = [];
   remaining.delete(seed);
   while (queue.length) {
     const key = queue.shift()!;
     size++;
+    members.push(key);
     const [col, row] = key.split(',').map(Number);
     for (const [dc, dr] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
       const next = `${col + dc},${row + dr}`;
@@ -130,6 +133,7 @@ while (remaining.size) {
     }
   }
   componentSizes.push(size);
+  if (size < 10) smallWalkableComponents.push(members.sort());
 }
 componentSizes.sort((a, b) => b - a);
 const largestWalkableComponent = componentSizes[0] ?? 0;
@@ -146,6 +150,7 @@ const result = {
   overlappingCollisionTiles: collisions.length,
   walkableTiles: state.walkableTiles.length,
   walkableComponents: componentSizes,
+  smallWalkableComponents,
   largestWalkableComponent,
 };
 const reportRelative = process.env.PIXEL_AGENTS_VALIDATION_REPORT;

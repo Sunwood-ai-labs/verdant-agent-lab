@@ -2,14 +2,15 @@
   "status": "passed",
   "layout": "pixel-agents-solarpunk-spacious/layout.json",
   "grid": "35x22",
-  "layoutRevision": 3,
-  "placements": 55,
+  "layoutRevision": 5,
+  "placements": 53,
   "requiredBatchAssets": 0,
   "unresolvedTypes": 0,
   "overlappingCollisionTiles": 0,
-  "walkableTiles": 251,
+  "walkableTiles": 234,
   "walkableComponents": [
-    251
+    234
   ],
-  "largestWalkableComponent": 251
+  "smallWalkableComponents": [],
+  "largestWalkableComponent": 234
 }

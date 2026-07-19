@@ -31,23 +31,21 @@ PALETTE = {
 ADDITIONAL_FURNITURE = [
     {"uid": "spacious-hanging-plant-left", "type": "HANGING_PLANT", "col": 11, "row": 9},
     {"uid": "spacious-bookshelf", "type": "DOUBLE_BOOKSHELF", "col": 14, "row": 9},
-    {"uid": "spacious-hanging-plant-right", "type": "HANGING_PLANT", "col": 21, "row": 9},
+    {"uid": "spacious-ai-whiteboard", "type": "AI_WHITEBOARD", "col": 20, "row": 9},
     {"uid": "spacious-desk-a", "type": "DESK_FRONT", "col": 11, "row": 12},
     {"uid": "spacious-pc-a", "type": "PC_FRONT_OFF", "col": 12, "row": 12},
     {"uid": "spacious-seat-a", "type": "CUSHIONED_BENCH", "col": 12, "row": 14},
     {"uid": "spacious-desk-b", "type": "DESK_FRONT", "col": 18, "row": 12},
     {"uid": "spacious-pc-b", "type": "PC_FRONT_OFF", "col": 19, "row": 12},
     {"uid": "spacious-seat-b", "type": "CUSHIONED_BENCH", "col": 19, "row": 14},
-    {"uid": "spacious-chair-upper-left", "type": "WOODEN_CHAIR_SIDE", "col": 12, "row": 16},
-    {"uid": "spacious-table", "type": "TABLE_FRONT", "col": 13, "row": 16},
-    {"uid": "spacious-pc-upper-left", "type": "PC_SIDE", "col": 13, "row": 16},
-    {"uid": "spacious-pc-upper-right", "type": "PC_SIDE:left", "col": 15, "row": 16},
-    {"uid": "spacious-chair-upper-right", "type": "WOODEN_CHAIR_SIDE:left", "col": 16, "row": 16},
-    {"uid": "spacious-chair-lower-left", "type": "WOODEN_CHAIR_SIDE", "col": 12, "row": 18},
-    {"uid": "spacious-pc-lower-left", "type": "PC_SIDE", "col": 13, "row": 18},
-    {"uid": "spacious-pc-lower-right", "type": "PC_SIDE:left", "col": 15, "row": 18},
-    {"uid": "spacious-chair-lower-right", "type": "WOODEN_CHAIR_SIDE:left", "col": 16, "row": 18},
+    {"uid": "spacious-planter-divider", "type": "RECEPTION_PLANTER", "col": 14, "row": 14},
+    {"uid": "spacious-ai-electronics-bench", "type": "AI_ELECTRONICS_BENCH", "col": 12, "row": 16},
+    {"uid": "spacious-bench-seat-left", "type": "CUSHIONED_BENCH", "col": 13, "row": 19},
+    {"uid": "spacious-bench-seat-right", "type": "CUSHIONED_BENCH", "col": 15, "row": 19},
     {"uid": "spacious-plant", "type": "PLANT", "col": 22, "row": 18},
+    {"uid": "spacious-east-coffee", "type": "COFFEE", "col": 25, "row": 17},
+    {"uid": "spacious-east-flower-planter", "type": "FLOWER_PLANTER_LONG", "col": 25, "row": 19},
+    {"uid": "spacious-east-recycling", "type": "RECYCLING_BIN", "col": 31, "row": 16},
 ]
 
 
@@ -84,7 +82,7 @@ def main() -> None:
 
     layout = json.loads(json.dumps(source))
     layout["cols"] = TARGET_COLS
-    layout["layoutRevision"] = int(source.get("layoutRevision", 0)) + 2
+    layout["layoutRevision"] = int(source.get("layoutRevision", 0)) + 4
     inserted_tiles = [inserted_tile(row) for row in range(source["rows"])]
     layout["tiles"] = expand_rows(
         source["tiles"], source["rows"], source["cols"], inserted_tiles
@@ -96,6 +94,11 @@ def main() -> None:
         clone = dict(item)
         if clone["col"] >= INSERT_AT:
             clone["col"] += EXTRA_COLS
+        # Keep the original small table but move it out of the bottom threshold
+        # so the east lounge gains a natural coffee/utility corner.
+        if clone["uid"] == "f-1773357989802-thws":
+            clone["col"] = 25
+            clone["row"] = 17
         shifted.append(clone)
     layout["furniture"] = shifted + ADDITIONAL_FURNITURE
     layout["zones"] = [
@@ -114,9 +117,13 @@ def main() -> None:
         "gridIs35x22": (layout["cols"], layout["rows"]) == (35, 22),
         "tileCountIs770": len(layout["tiles"]) == 770,
         "tileColorCountMatches": len(layout["tileColors"]) == len(layout["tiles"]),
-        "originalPlacementsPreserved": len(shifted) == len(source["furniture"]),
-        "placementCountIs55": len(layout["furniture"]) == 55,
-        "additionalPlacementCountIs19": len(ADDITIONAL_FURNITURE) == 19,
+        "originalPlacementCountPreserved": len(shifted) == len(source["furniture"]),
+        "placementCountIs53": len(layout["furniture"]) == 53,
+        "additionalPlacementCountIs17": len(ADDITIONAL_FURNITURE) == 17,
+        "oneOriginalTableRepositioned": sum(
+            item["uid"] == "f-1773357989802-thws" and (item["col"], item["row"]) == (25, 17)
+            for item in shifted
+        ) == 1,
         "allTypesResolve": used_types <= set(catalog),
         "placementUidsUnique": len(placement_uids) == len(set(placement_uids)),
         "placementAnchorsInBounds": in_bounds,
@@ -130,7 +137,7 @@ def main() -> None:
     AUDIT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(layout, indent=2) + "\n")
     manifest = {
-        "version": 1,
+        "version": 3,
         "name": "Verdant Solarpunk Spacious Office",
         "target": "Pixel Agents 1.3",
         "tileSizePx": 16,
@@ -139,6 +146,7 @@ def main() -> None:
         "expansion": {"insertAtColumn": INSERT_AT, "addedColumns": EXTRA_COLS},
         "grid": "35x22",
         "placements": len(layout["furniture"]),
+        "arrangementRevision": "v3-natural-balance-connected",
         "zones": [zone["id"] for zone in layout["zones"]],
         "charactersEmbedded": False,
     }

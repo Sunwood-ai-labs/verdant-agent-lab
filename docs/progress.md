@@ -158,6 +158,10 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] add a 14-column central studio with 19 independent furniture placements
 - [x] validate one connected 251-tile walkable component with zero collision overlap
 - [x] capture and inspect an outline-free real-character walk GIF in the spacious runtime
+- [x] replace the repeated center workstation with a distinct AI electronics cluster
+- [x] turn the sparse east floor into a coffee, flower, and recycling corner
+- [x] remove the two-tile unreachable pocket and retain one connected walkable component
+- [x] accept spacious v3 from original-resolution still and animation screenshots
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet

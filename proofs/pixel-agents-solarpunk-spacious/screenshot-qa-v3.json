@@ -1,0 +1,36 @@
+{
+  "status": "accepted",
+  "authoritativeStill": "proofs/pixel-agents-solarpunk-spacious/spacious-office-v3.png",
+  "stillResolution": [1200, 700],
+  "authoritativeAnimationContactSheet": "proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-v3.png",
+  "contactSheetResolution": [1800, 700],
+  "replaces": "proofs/pixel-agents-solarpunk-spacious/screenshot-qa-v1.json",
+  "visualPasses": {
+    "materiallyWiderOfficeVisible": true,
+    "allFourRoomEdgesContained": true,
+    "topSignCentered": true,
+    "furnitureFrameClippingAbsent": true,
+    "unintendedFurnitureOverlapAbsent": true,
+    "intentionalSurfacePlacementReadable": true,
+    "openCentralCirculationVisible": true,
+    "centralWorkClusterHasDistinctSilhouette": true,
+    "eastLowerFloorHasReadablePurpose": true,
+    "zoneDensityFeelsBalanced": true,
+    "characterPositionAndFacingChangeVisible": true,
+    "selectionOutlineAbsent": true,
+    "floatingActivityLabelAbsent": true,
+    "captureCursorAbsent": true
+  },
+  "functionalClusters": {
+    "west": "paired desks and shared workstation",
+    "center": "individual desks, whiteboard, planter divider, and AI electronics bench",
+    "eastUpper": "sofa lounge",
+    "eastLower": "coffee table, flower planter, and recycling utility corner"
+  },
+  "rejectedIntermediate": {
+    "still": "proofs/pixel-agents-solarpunk-spacious/spacious-office-v2.png",
+    "reason": "Two hidden threshold tiles below the recycling bin formed a disconnected walkable pocket."
+  },
+  "imageGenerationUsed": false,
+  "numericValidatorsAreSupportingOnly": true
+}

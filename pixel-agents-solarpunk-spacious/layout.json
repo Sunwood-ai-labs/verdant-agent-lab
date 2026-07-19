@@ -2,7 +2,7 @@
   "version": 1,
   "cols": 35,
   "rows": 22,
-  "layoutRevision": 3,
+  "layoutRevision": 5,
   "tiles": [
     255,
     255,
@@ -3307,8 +3307,8 @@
     {
       "uid": "f-1773357989802-thws",
       "type": "SMALL_TABLE_FRONT",
-      "col": 31,
-      "row": 19
+      "col": 25,
+      "row": 17
     },
     {
       "uid": "f-1773358001163-aqv4",
@@ -3347,9 +3347,9 @@
       "row": 9
     },
     {
-      "uid": "spacious-hanging-plant-right",
-      "type": "HANGING_PLANT",
-      "col": 21,
+      "uid": "spacious-ai-whiteboard",
+      "type": "AI_WHITEBOARD",
+      "col": 20,
       "row": 9
     },
     {
@@ -3389,64 +3389,52 @@
       "row": 14
     },
     {
-      "uid": "spacious-chair-upper-left",
-      "type": "WOODEN_CHAIR_SIDE",
+      "uid": "spacious-planter-divider",
+      "type": "RECEPTION_PLANTER",
+      "col": 14,
+      "row": 14
+    },
+    {
+      "uid": "spacious-ai-electronics-bench",
+      "type": "AI_ELECTRONICS_BENCH",
       "col": 12,
       "row": 16
     },
     {
-      "uid": "spacious-table",
-      "type": "TABLE_FRONT",
+      "uid": "spacious-bench-seat-left",
+      "type": "CUSHIONED_BENCH",
       "col": 13,
-      "row": 16
+      "row": 19
     },
     {
-      "uid": "spacious-pc-upper-left",
-      "type": "PC_SIDE",
-      "col": 13,
-      "row": 16
-    },
-    {
-      "uid": "spacious-pc-upper-right",
-      "type": "PC_SIDE:left",
+      "uid": "spacious-bench-seat-right",
+      "type": "CUSHIONED_BENCH",
       "col": 15,
-      "row": 16
-    },
-    {
-      "uid": "spacious-chair-upper-right",
-      "type": "WOODEN_CHAIR_SIDE:left",
-      "col": 16,
-      "row": 16
-    },
-    {
-      "uid": "spacious-chair-lower-left",
-      "type": "WOODEN_CHAIR_SIDE",
-      "col": 12,
-      "row": 18
-    },
-    {
-      "uid": "spacious-pc-lower-left",
-      "type": "PC_SIDE",
-      "col": 13,
-      "row": 18
-    },
-    {
-      "uid": "spacious-pc-lower-right",
-      "type": "PC_SIDE:left",
-      "col": 15,
-      "row": 18
-    },
-    {
-      "uid": "spacious-chair-lower-right",
-      "type": "WOODEN_CHAIR_SIDE:left",
-      "col": 16,
-      "row": 18
+      "row": 19
     },
     {
       "uid": "spacious-plant",
       "type": "PLANT",
       "col": 22,
       "row": 18
+    },
+    {
+      "uid": "spacious-east-coffee",
+      "type": "COFFEE",
+      "col": 25,
+      "row": 17
+    },
+    {
+      "uid": "spacious-east-flower-planter",
+      "type": "FLOWER_PLANTER_LONG",
+      "col": 25,
+      "row": 19
+    },
+    {
+      "uid": "spacious-east-recycling",
+      "type": "RECYCLING_BIN",
+      "col": 31,
+      "row": 16
     }
   ],
   "zones": [

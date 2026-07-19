@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 3,
   "name": "Verdant Solarpunk Spacious Office",
   "target": "Pixel Agents 1.3",
   "tileSizePx": 16,
@@ -10,7 +10,8 @@
     "addedColumns": 14
   },
   "grid": "35x22",
-  "placements": 55,
+  "placements": 53,
+  "arrangementRevision": "v3-natural-balance-connected",
   "zones": [
     "west-work",
     "central-studio",

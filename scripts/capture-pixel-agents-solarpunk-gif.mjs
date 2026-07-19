@@ -16,7 +16,7 @@ if (!['default', 'spacious'].includes(variant)) throw new Error(`unsupported cap
 const frameDir = join(
   root,
   isSpacious
-    ? 'build/pixel-agents-solarpunk-spacious-character-walk-frames-v1'
+    ? 'build/pixel-agents-solarpunk-spacious-character-walk-frames-v3'
     : 'build/pixel-agents-solarpunk-character-walk-frames-v3',
 );
 const url = process.env.PIXEL_AGENTS_URL ?? 'http://127.0.0.1:3101';
@@ -89,7 +89,7 @@ try {
   if (isSpacious) {
     const stillDir = join(root, 'proofs/pixel-agents-solarpunk-spacious');
     mkdirSync(stillDir, { recursive: true });
-    await page.screenshot({ path: join(stillDir, 'spacious-office-v1.png') });
+    await page.screenshot({ path: join(stillDir, 'spacious-office-v3.png') });
   }
   await hold(5);
 
