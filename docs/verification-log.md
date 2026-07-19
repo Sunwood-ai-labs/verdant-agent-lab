@@ -444,3 +444,10 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   replacement label.
 - Scope remains incomplete: this batch does not close west-studio, site-shell,
   custom floor/wall, or full same-view reference-fidelity coverage.
+- The workspace-requested GPT-5.3-Codex-Spark route was unavailable in the
+  callable subagent model list. The Claude Code team fallback passed its local
+  readiness check and ran through Z.ai, but the mandatory debug inspector never
+  found `spawnInProcessTeammate`; it ended as `TEAM_MODE_NOT_CONFIRMED` and was
+  interrupted rather than treated as review evidence. The accepted result is
+  based only on the deterministic validators and direct Pixel Agents browser
+  inspection above.
