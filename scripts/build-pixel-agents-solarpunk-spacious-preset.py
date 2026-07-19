@@ -33,10 +33,10 @@ ADDITIONAL_FURNITURE = [
     {"uid": "spacious-bookshelf", "type": "DOUBLE_BOOKSHELF", "col": 14, "row": 9},
     {"uid": "spacious-ai-whiteboard", "type": "AI_WHITEBOARD", "col": 20, "row": 9},
     {"uid": "spacious-desk-a", "type": "DESK_FRONT", "col": 11, "row": 12},
-    {"uid": "spacious-pc-a", "type": "PC_FRONT_OFF", "col": 12, "row": 12},
+    {"uid": "spacious-pc-a", "type": "PC_FRONT_OFF", "col": 12, "row": 11},
     {"uid": "spacious-seat-a", "type": "CUSHIONED_BENCH", "col": 12, "row": 14},
     {"uid": "spacious-desk-b", "type": "DESK_FRONT", "col": 18, "row": 12},
-    {"uid": "spacious-pc-b", "type": "PC_FRONT_OFF", "col": 19, "row": 12},
+    {"uid": "spacious-pc-b", "type": "PC_FRONT_OFF", "col": 19, "row": 11},
     {"uid": "spacious-seat-b", "type": "CUSHIONED_BENCH", "col": 19, "row": 14},
     {"uid": "spacious-planter-divider", "type": "RECEPTION_PLANTER", "col": 14, "row": 14},
     {"uid": "spacious-ai-electronics-bench", "type": "AI_ELECTRONICS_BENCH", "col": 12, "row": 16},
@@ -94,6 +94,11 @@ def main() -> None:
         clone = dict(item)
         if clone["col"] >= INSERT_AT:
             clone["col"] += EXTRA_COLS
+        # Front-facing PCs are 16x32 surface props. Their tile anchor must sit
+        # one row above the 48x32 front desk anchor so the monitor rests on the
+        # desktop instead of rendering across the desk's front panel.
+        if clone["type"].startswith("PC_FRONT_") and clone["row"] == 12:
+            clone["row"] = 11
         # Keep the original small table but move it out of the bottom threshold
         # so the east lounge gains a natural coffee/utility corner.
         if clone["uid"] == "f-1773357989802-thws":

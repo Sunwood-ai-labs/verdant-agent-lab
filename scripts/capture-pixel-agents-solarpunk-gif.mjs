@@ -11,13 +11,14 @@ const { chromium } = require(join(reference, 'node_modules/playwright'));
 
 const root = process.cwd();
 const variant = process.env.PIXEL_AGENTS_CAPTURE_VARIANT ?? 'default';
+const captureVersion = process.env.PIXEL_AGENTS_CAPTURE_VERSION ?? 'v3';
 const isSpacious = variant === 'spacious';
 if (!['default', 'spacious'].includes(variant)) throw new Error(`unsupported capture variant: ${variant}`);
 const frameDir = join(
   root,
   isSpacious
-    ? 'build/pixel-agents-solarpunk-spacious-character-walk-frames-v3'
-    : 'build/pixel-agents-solarpunk-character-walk-frames-v3',
+    ? `build/pixel-agents-solarpunk-spacious-character-walk-frames-${captureVersion}`
+    : `build/pixel-agents-solarpunk-character-walk-frames-${captureVersion}`,
 );
 const url = process.env.PIXEL_AGENTS_URL ?? 'http://127.0.0.1:3101';
 const serverConfig = JSON.parse(
@@ -89,7 +90,7 @@ try {
   if (isSpacious) {
     const stillDir = join(root, 'proofs/pixel-agents-solarpunk-spacious');
     mkdirSync(stillDir, { recursive: true });
-    await page.screenshot({ path: join(stillDir, 'spacious-office-v3.png') });
+    await page.screenshot({ path: join(stillDir, `spacious-office-${captureVersion}.png`) });
   }
   await hold(5);
 

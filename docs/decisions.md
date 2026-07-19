@@ -217,3 +217,16 @@ counts: a repeated workstation module and an underused east-lounge floor. The
 accepted v3 replaces the duplicate center table with an AI electronics bench,
 adds a low planter and wall whiteboard, and turns the east floor into a coffee,
 flower, and recycling corner. No new image generation was needed.
+
+## D-023 — align surface props by visible support plane
+
+Decision: for layered furniture, place the supporting asset first and align
+surface props against the support's visible top plane in a runtime screenshot.
+In the Pixel Agents 16 px grid, a 16×32 front-facing PC paired with a 48×32
+`DESK_FRONT` must use an anchor one row above the desk. Apply the relationship
+to every matching workstation, not only the first instance noticed.
+
+Reason: placing `PC_FRONT_*` at the same row as `DESK_FRONT` made the monitors
+render across the desk front instead of resting on the desktop. Placement and
+collision data did not reveal the visual error; the authoritative check is the
+actual composed runtime screenshot.

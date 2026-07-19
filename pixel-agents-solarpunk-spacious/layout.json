@@ -3254,13 +3254,13 @@
       "uid": "f-1773356781294-b69z",
       "type": "PC_FRONT_OFF",
       "col": 7,
-      "row": 12
+      "row": 11
     },
     {
       "uid": "f-1773356782055-vp70",
       "type": "PC_FRONT_OFF",
       "col": 3,
-      "row": 12
+      "row": 11
     },
     {
       "uid": "f-1773356784581-5jw9",
@@ -3362,7 +3362,7 @@
       "uid": "spacious-pc-a",
       "type": "PC_FRONT_OFF",
       "col": 12,
-      "row": 12
+      "row": 11
     },
     {
       "uid": "spacious-seat-a",
@@ -3380,7 +3380,7 @@
       "uid": "spacious-pc-b",
       "type": "PC_FRONT_OFF",
       "col": 19,
-      "row": 12
+      "row": 11
     },
     {
       "uid": "spacious-seat-b",

@@ -647,3 +647,23 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   `spacious-character-walk-v3.gif`. Machine records are
   `screenshot-qa-v3.json`, `layout-validation.json`, and
   `character-walk-proof-v3.json`.
+
+# 2026-07-19 — Front-facing PC support-plane correction
+
+- Original-resolution reinspection confirmed the user's report: all four
+  `PC_FRONT_OFF` sprites shared `row=12` with their `DESK_FRONT` supports, so
+  their monitors rendered across the desk fronts rather than on the desktops.
+- The spacious builder now places all four front PCs at `row=11` while keeping
+  the desks at `row=12`; the correction covers the two inherited west PCs and
+  both added central PCs.
+- Fresh runtime screenshot `spacious-office-v4.png` visibly confirms all four
+  monitors rest above the desktops with no front-panel intersection, clipping,
+  or new unintended overlap.
+- Fresh validation passes 53 placements, zero unresolved types, zero collision
+  overlaps, and one connected 230-tile walkable component with no isolated
+  pockets.
+- Fresh 121-frame production walk capture passes with zero browser errors; the
+  accepted animation and contact sheet are `spacious-character-walk-v4.gif`
+  and `character-walk-contact-sheet-v4.png`.
+- Machine records are `screenshot-qa-v4.json`, `layout-validation.json`, and
+  `character-walk-proof-v4.json`.

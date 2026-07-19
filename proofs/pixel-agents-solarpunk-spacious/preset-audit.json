@@ -3,7 +3,7 @@
   "source": "pixel-agents-pack/solarpunk-default-layout.json",
   "output": "pixel-agents-solarpunk-spacious/layout.json",
   "sourceSha256": "ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616",
-  "outputSha256": "9e2c6cd60bb0c1ab6a995580065385be72230f4ee40541674c83399cefb7aecd",
+  "outputSha256": "2f70a643c6cb00f17069bf665f544f32ffc506708aefe684251b2d72292e55b8",
   "grid": "35x22",
   "placements": 53,
   "additionalPlacements": 17,

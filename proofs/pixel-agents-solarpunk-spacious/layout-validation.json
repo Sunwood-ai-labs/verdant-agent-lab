@@ -7,10 +7,10 @@
   "requiredBatchAssets": 0,
   "unresolvedTypes": 0,
   "overlappingCollisionTiles": 0,
-  "walkableTiles": 234,
+  "walkableTiles": 230,
   "walkableComponents": [
-    234
+    230
   ],
   "smallWalkableComponents": [],
-  "largestWalkableComponent": 234
+  "largestWalkableComponent": 230
 }

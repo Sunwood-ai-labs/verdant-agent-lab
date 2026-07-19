@@ -162,6 +162,7 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] turn the sparse east floor into a coffee, flower, and recycling corner
 - [x] remove the two-tile unreachable pocket and retain one connected walkable component
 - [x] accept spacious v3 from original-resolution still and animation screenshots
+- [x] move all four front-facing PCs one tile above their desks and accept the runtime screenshot
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet

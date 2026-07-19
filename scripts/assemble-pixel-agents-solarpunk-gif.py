@@ -12,16 +12,17 @@ from PIL import Image, ImageChops
 
 ROOT = Path(__file__).resolve().parents[1]
 VARIANT = os.environ.get("PIXEL_AGENTS_CAPTURE_VARIANT", "default")
+CAPTURE_VERSION = os.environ.get("PIXEL_AGENTS_CAPTURE_VERSION", "v3")
 if VARIANT == "spacious":
-    FRAMES = ROOT / "build/pixel-agents-solarpunk-spacious-character-walk-frames-v3"
-    OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-spacious/spacious-character-walk-v3.gif"
-    REPORT = ROOT / "proofs/pixel-agents-solarpunk-spacious/character-walk-proof-v3.json"
-    CONTACT = ROOT / "proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-v3.png"
+    FRAMES = ROOT / f"build/pixel-agents-solarpunk-spacious-character-walk-frames-{CAPTURE_VERSION}"
+    OUTPUT = ROOT / f"proofs/pixel-agents-solarpunk-spacious/spacious-character-walk-{CAPTURE_VERSION}.gif"
+    REPORT = ROOT / f"proofs/pixel-agents-solarpunk-spacious/character-walk-proof-{CAPTURE_VERSION}.json"
+    CONTACT = ROOT / f"proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-{CAPTURE_VERSION}.png"
 elif VARIANT == "default":
-    FRAMES = ROOT / "build/pixel-agents-solarpunk-character-walk-frames-v3"
-    OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif"
-    REPORT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json"
-    CONTACT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png"
+    FRAMES = ROOT / f"build/pixel-agents-solarpunk-character-walk-frames-{CAPTURE_VERSION}"
+    OUTPUT = ROOT / f"proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-{CAPTURE_VERSION}.gif"
+    REPORT = ROOT / f"proofs/pixel-agents-solarpunk-default/character-walk-proof-{CAPTURE_VERSION}.json"
+    CONTACT = ROOT / f"proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-{CAPTURE_VERSION}.png"
 else:
     raise SystemExit(f"unsupported capture variant: {VARIANT}")
 

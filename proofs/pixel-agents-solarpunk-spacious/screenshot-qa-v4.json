@@ -1,0 +1,38 @@
+{
+  "status": "accepted",
+  "authoritativeStill": "proofs/pixel-agents-solarpunk-spacious/spacious-office-v4.png",
+  "stillResolution": [1200, 700],
+  "authoritativeAnimationContactSheet": "proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-v4.png",
+  "contactSheetResolution": [1800, 700],
+  "replaces": "proofs/pixel-agents-solarpunk-spacious/screenshot-qa-v3.json",
+  "correction": {
+    "reportedFailure": "Front-facing PCs were anchored on the desk row and rendered across the desk front.",
+    "appliedRule": "Anchor each 16x32 PC_FRONT prop one tile above its 48x32 DESK_FRONT support.",
+    "affectedInstances": 4,
+    "beforeDeskRow": 12,
+    "beforePcRow": 12,
+    "afterDeskRow": 12,
+    "afterPcRow": 11
+  },
+  "visualPasses": {
+    "allFourFrontPcsRestOnDesktop": true,
+    "frontPanelIntersectionAbsent": true,
+    "allFourRoomEdgesContained": true,
+    "furnitureFrameClippingAbsent": true,
+    "unintendedFurnitureOverlapAbsent": true,
+    "openCentralCirculationVisible": true,
+    "characterPositionAndFacingChangeVisible": true,
+    "selectionOutlineAbsent": true,
+    "floatingActivityLabelAbsent": true,
+    "captureCursorAbsent": true
+  },
+  "layoutValidation": {
+    "placements": 53,
+    "unresolvedTypes": 0,
+    "overlappingCollisionTiles": 0,
+    "walkableComponents": [230],
+    "smallWalkableComponents": []
+  },
+  "imageGenerationUsed": false,
+  "numericValidatorsAreSupportingOnly": true
+}
