@@ -1,5 +1,5 @@
 {
-  "id": "VERDANT_DESK",
+  "id": "DESK",
   "name": "Verdant Desk",
   "category": "desks",
   "type": "group",
@@ -11,8 +11,8 @@
   "members": [
     {
       "type": "asset",
-      "id": "VERDANT_DESK_FRONT",
-      "file": "VERDANT_DESK_FRONT.png",
+      "id": "DESK_FRONT",
+      "file": "DESK_FRONT.png",
       "width": 48,
       "height": 32,
       "footprintW": 3,
@@ -21,8 +21,8 @@
     },
     {
       "type": "asset",
-      "id": "VERDANT_DESK_SIDE",
-      "file": "VERDANT_DESK_SIDE.png",
+      "id": "DESK_SIDE",
+      "file": "DESK_SIDE.png",
       "width": 16,
       "height": 64,
       "footprintW": 1,

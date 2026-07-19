@@ -14,9 +14,13 @@ In Pixel Agents Settings, add this directory as an external asset directory:
 
 The current workstation checkpoint contains:
 
-- `VERDANT_DESK`: front and side orientations
-- `VERDANT_CHAIR`: front, back, right side, and runtime-mirrored left side
-- `VERDANT_PLANT`: compact tall decor
+- `DESK`: front and side orientations, overriding the bundled desk IDs
+- `WOODEN_CHAIR`: front, back, right side, and runtime-mirrored left side
+- `PLANT`: compact tall decor overriding the bundled plant ID
+
+The matching built-in IDs are intentional: Pixel Agents merges external assets
+after built-ins and the later entry wins. Therefore the existing default layout
+uses these replacements without editing its layout JSON.
 
 All runtime canvases use exact 16 px tile multiples. Run the deterministic
 build and metadata check from the repository root:

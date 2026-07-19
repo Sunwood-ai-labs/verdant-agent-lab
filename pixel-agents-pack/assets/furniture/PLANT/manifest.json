@@ -1,9 +1,9 @@
 {
-  "id": "VERDANT_PLANT",
+  "id": "PLANT",
   "name": "Verdant Plant",
   "category": "decor",
   "type": "asset",
-  "file": "VERDANT_PLANT.png",
+  "file": "PLANT.png",
   "width": 16,
   "height": 32,
   "footprintW": 1,

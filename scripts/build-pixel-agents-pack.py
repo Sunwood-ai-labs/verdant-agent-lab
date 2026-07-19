@@ -13,12 +13,12 @@ PACK = ROOT / "pixel-agents-pack/assets/furniture"
 
 ASSETS = (
     # folder, id, measured connected-component bbox in the alpha master, runtime size
-    ("VERDANT_DESK", "VERDANT_DESK_FRONT", (104, 160, 591, 417), (48, 32)),
-    ("VERDANT_DESK", "VERDANT_DESK_SIDE", (759, 122, 921, 430), (16, 64)),
-    ("VERDANT_CHAIR", "VERDANT_CHAIR_FRONT", (1176, 141, 1361, 425), (16, 16)),
-    ("VERDANT_CHAIR", "VERDANT_CHAIR_BACK", (241, 613, 423, 882), (16, 16)),
-    ("VERDANT_CHAIR", "VERDANT_CHAIR_SIDE", (741, 613, 919, 882), (16, 16)),
-    ("VERDANT_PLANT", "VERDANT_PLANT", (1176, 584, 1340, 889), (16, 32)),
+    ("DESK", "DESK_FRONT", (104, 160, 591, 417), (48, 32)),
+    ("DESK", "DESK_SIDE", (759, 122, 921, 430), (16, 64)),
+    ("WOODEN_CHAIR", "WOODEN_CHAIR_FRONT", (1176, 141, 1361, 425), (16, 32)),
+    ("WOODEN_CHAIR", "WOODEN_CHAIR_BACK", (241, 613, 423, 882), (16, 32)),
+    ("WOODEN_CHAIR", "WOODEN_CHAIR_SIDE", (741, 613, 919, 882), (16, 32)),
+    ("PLANT", "PLANT", (1176, 584, 1340, 889), (16, 32)),
 )
 
 

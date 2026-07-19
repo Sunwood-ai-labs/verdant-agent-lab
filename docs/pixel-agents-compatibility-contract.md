@@ -20,6 +20,9 @@ load test still required.
   orientation first, then adjacent desk detection, then the default direction.
 - Runtime draw order is sorted by the sprite/character bottom Y coordinate;
   surface-placeable items receive a small offset above their supporting desk.
+- External furniture is merged after bundled furniture. Matching asset IDs in
+  the external pack replace the bundled catalog/sprite entries, so an existing
+  default layout can be reskinned without rewriting its placement records.
 
 ## Primary-source evidence
 
@@ -32,6 +35,8 @@ load test still required.
   surface layering, and mirrored side variants
 - `webview-ui/src/office/layout/layoutSerializer.ts:102-205` — collision and seats
 - `webview-ui/public/assets/default-layout-1.json:54-90` — real placement records
+- `server/src/assetLoader.ts:49-55` and
+  `adapters/vscode/PixelAgentsViewProvider.ts:711-721` — external override order
 
 Reference checkout audited at commit `928ccd463bf516d67e0700af7e767ca083f795d8`.
 The checkout is read-only reference material and remains outside the new pack.
@@ -43,9 +48,9 @@ office:
 
 | Pixel Agents role | Original replacement | Runtime files |
 |---|---|---|
-| 3×2 / 1×4 desk | Verdant wood-and-vine desk | `VERDANT_DESK_*` |
-| 1×1 rotatable chair | Leaf-green brass chair | `VERDANT_CHAIR_*` |
-| 1×2 plant | Terracotta/brass planted foliage | `VERDANT_PLANT.png` |
+| 3×2 / 1×4 desk | Verdant wood-and-vine desk | `DESK_*` override |
+| 1×2 rotatable chair | Leaf-green brass chair | `WOODEN_CHAIR_*` override |
+| 1×2 plant | Terracotta/brass planted foliage | `PLANT.png` override |
 
 Next replacement batches must add PC/electronics, tables, seating, storage,
 wall decor, cafe/lab props, and original floor/wall tiles before the default

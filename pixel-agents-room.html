@@ -40,12 +40,12 @@
       const status = document.querySelector('#status');
       const layout = await fetch('./pixel-agents-pack/demo-layout.json').then(r => r.json());
       const assets = {
-        VERDANT_DESK_FRONT: ['VERDANT_DESK', 48, 32],
-        VERDANT_DESK_SIDE: ['VERDANT_DESK', 16, 64],
-        VERDANT_CHAIR_FRONT: ['VERDANT_CHAIR', 16, 16],
-        VERDANT_CHAIR_BACK: ['VERDANT_CHAIR', 16, 16],
-        VERDANT_CHAIR_SIDE: ['VERDANT_CHAIR', 16, 16],
-        VERDANT_PLANT: ['VERDANT_PLANT', 16, 32]
+        DESK_FRONT: ['DESK', 48, 32],
+        DESK_SIDE: ['DESK', 16, 64],
+        WOODEN_CHAIR_FRONT: ['WOODEN_CHAIR', 16, 32],
+        WOODEN_CHAIR_BACK: ['WOODEN_CHAIR', 16, 32],
+        WOODEN_CHAIR_SIDE: ['WOODEN_CHAIR', 16, 32],
+        PLANT: ['PLANT', 16, 32]
       };
       for (let row = 0; row < layout.rows; row++) for (let col = 0; col < layout.cols; col++) {
         const tile = document.createElement('div');
