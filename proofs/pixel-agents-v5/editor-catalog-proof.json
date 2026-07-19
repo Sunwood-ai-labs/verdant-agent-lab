@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "runtime": "Pixel Agents CLI v1.3 temporary overlay",
+  "sourceZoneAssetsExpected": 28,
+  "sourceZoneAssetsFound": 28,
+  "missing": [],
+  "supportedCategories": {
+    "desks": 3,
+    "chairs": 0,
+    "storage": 2,
+    "electronics": 8,
+    "decor": 8,
+    "wall": 6,
+    "misc": 1
+  },
+  "placementInteraction": {
+    "asset": "Reception Information Easel",
+    "placedOnCanvas": true,
+    "dirtyStateShown": true,
+    "undoEnabled": true,
+    "saveShown": true,
+    "browserErrors": 0,
+    "proof": "proofs/pixel-agents-v5/editor-placement-proof.png"
+  },
+  "catalogProof": "proofs/pixel-agents-v5/editor-all-assets-v3.png",
+  "stillUnverified": [
+    "direction-group rotation in the editor",
+    "seat reassignment with a live character",
+    "agent collision path around new furniture",
+    "active character/furniture depth crossing"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "accepted-source-zone-room-proof",
+  "runtime": "Pixel Agents CLI",
+  "referenceCheckoutModified": false,
+  "runtimeGrid": {
+    "cols": 42,
+    "rows": 34,
+    "layoutRevision": 5
+  },
+  "layout": "pixel-agents-pack/verdant-runtime-layout.json",
+  "zones": 6,
+  "placedFurniture": 48,
+  "pack": {
+    "physicalSprites": 58,
+    "manifests": 47,
+    "catalogEntries": 61,
+    "sourceZoneAssets": 28,
+    "defaultIdCoverage": "25/25"
+  },
+  "actualRuntimeLoad": {
+    "furniture": "66/66",
+    "floors": 9,
+    "wallPieces": 16
+  },
+  "proof": "proofs/pixel-agents-v5/live-source-zones-v2.png",
+  "browserErrors": 0,
+  "unverified": [
+    "editor rotation interaction",
+    "seat reassignment interaction",
+    "agent collision path test",
+    "active character/furniture depth crossing"
+  ]
+}

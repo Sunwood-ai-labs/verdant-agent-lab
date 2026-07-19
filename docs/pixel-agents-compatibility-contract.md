@@ -1,7 +1,9 @@
 # Pixel Agents compatibility contract
 
-Status: runtime contract confirmed; first six sprites generated; live Pixel Agents
-load test still required.
+Status: runtime contract confirmed; 58 physical sprites / 61 runtime catalog
+entries; live load, composed-room rendering, 28/28 editor-catalog discovery,
+and direct canvas placement confirmed. Editor rotation, seating, collision, and
+depth interaction still require direct input testing.
 
 ## Confirmed contract
 
@@ -23,6 +25,10 @@ load test still required.
 - External furniture is merged after bundled furniture. Matching asset IDs in
   the external pack replace the bundled catalog/sprite entries, so an existing
   default layout can be reskinned without rewriting its placement records.
+- Editor discoverability is limited to `desks`, `chairs`, `storage`,
+  `electronics`, `decor`, `wall`, and `misc`. Descriptive custom category names
+  can load in a composed layout while silently disappearing from the editor
+  catalog, so the source-zone builder restricts manifests to this set.
 
 ## Primary-source evidence
 
@@ -52,9 +58,11 @@ office:
 | 1×2 rotatable chair | Leaf-green brass chair | `WOODEN_CHAIR_*` override |
 | 1×2 plant | Terracotta/brass planted foliage | `PLANT.png` override |
 
-Next replacement batches must add PC/electronics, tables, seating, storage,
-wall decor, cafe/lab props, and original floor/wall tiles before the default
-office can be called fully solarpunk.
+The default furniture IDs now have full audited coverage. Source-facing
+reception, cafe, greenhouse, solar, and equipment-only AI-lab batches are also
+available as independent grid assets. The remaining visual gap is the site
+shell, directional studio/lounge variants, a robot-free diagnostic platform,
+and a validated floor/wall bitmask atlas.
 
 ## Acceptance gate
 

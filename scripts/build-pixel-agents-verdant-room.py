@@ -49,7 +49,7 @@ def build() -> dict:
             border = row in (7, 32) or col in (1, 40)
             put(col, row, WALL if border else WOOD_FLOOR, WALL_COLOR if border else WOOD_COLOR)
 
-    # The lounge gets a green rug-like field. Reception stays on warm timber.
+    # The cafe gets a green rug-like field. Reception stays on warm timber.
     for row in range(9, 16):
         for col in range(28, 40):
             put(col, row, SOFT_FLOOR, LOUNGE_COLOR)
@@ -68,63 +68,76 @@ def build() -> dict:
         for col in range(30, 40):
             put(col, row, SOFT_FLOOR, LAB_COLOR)
 
+    # Greenhouse foundation.
+    for row in range(19, 32):
+        for col in range(2, 11):
+            put(col, row, SOFT_FLOOR, LOUNGE_COLOR)
+
     items = [
-        # Top living wall / library line.
-        furniture("HANGING_PLANT", 2, 7),
-        furniture("DOUBLE_BOOKSHELF", 4, 7),
-        furniture("SMALL_PAINTING", 8, 7),
-        furniture("CLOCK", 10, 7),
-        furniture("LARGE_PAINTING", 12, 7),
-        furniture("SMALL_PAINTING_2", 37, 7),
-        furniture("PLANT_2", 39, 7),
+        # Solar wing, upper left. Panel and frame are separate catalog assets;
+        # the room uses the panel variant directly because it already includes
+        # a readable outer rim at 16px scale.
+        furniture("SOLAR_PANEL", 2, 8),
+        furniture("SOLAR_DASHBOARD", 5, 8),
+        furniture("SOLAR_BATTERY_BANK", 5, 10),
+        furniture("SOLAR_CONTROLLER", 11, 10),
+        furniture("SOLAR_PLANTER", 2, 14),
 
-        # Cafe / ideas nook, upper left.
-        furniture("SMALL_TABLE_FRONT", 5, 11),
-        furniture("WOODEN_CHAIR_SIDE", 4, 11),
-        furniture("WOODEN_CHAIR_SIDE:left", 7, 11),
-        furniture("COFFEE", 6, 11),
-        furniture("WHITEBOARD", 11, 9),
-        furniture("PLANT", 2, 13),
+        # Source-specific reception, upper center. Small pieces are intentionally
+        # layered on the counter surface by Pixel Agents' surface placement.
+        furniture("RECEPTION_COUNTER", 15, 10),
+        furniture("RECEPTION_MONITOR", 17, 9),
+        furniture("RECEPTION_TERMINAL", 19, 10),
+        furniture("RECEPTION_PAPERS", 20, 10),
+        furniture("RECEPTION_PLANTER", 16, 13),
+        furniture("RECEPTION_EASEL", 23, 10),
+        furniture("WOODEN_CHAIR_BACK", 18, 13),
+        furniture("PLANT_2", 25, 12),
 
-        # Reception, upper center. PC intentionally sits on the desk surface.
-        furniture("DESK_FRONT", 18, 11),
-        furniture("PC_FRONT_OFF", 19, 10),
-        furniture("WOODEN_CHAIR_BACK", 19, 13),
-        furniture("CUSHIONED_BENCH", 23, 13),
-        furniture("PLANT_2", 24, 10),
+        # Cafe, upper right.
+        furniture("CAFE_LIVING_WALL", 34, 7),
+        furniture("CAFE_PLANT_SHELF", 28, 8),
+        furniture("CAFE_COUNTER", 28, 11),
+        furniture("CAFE_DISPENSERS", 29, 10),
+        furniture("CAFE_FRIDGE", 34, 11),
+        furniture("CAFE_KIOSK", 37, 10),
+        furniture("COFFEE", 31, 11),
+        furniture("PLANT", 39, 13),
 
-        # Lounge, upper right: one conversational cluster, no repeated quadrant.
-        furniture("SOFA_FRONT", 32, 10),
-        furniture("SOFA_SIDE", 30, 12),
-        furniture("SOFA_SIDE:left", 35, 12),
-        furniture("COFFEE_TABLE", 32, 12),
-        furniture("CUSHIONED_BENCH", 32, 15),
-        furniture("PLANT", 38, 13),
+        # Greenhouse, lower left. Left/right roof pieces remain individually
+        # placeable catalog variants; this composition uses the ridge assembly.
+        furniture("GREENHOUSE_ROOF", 2, 19),
+        furniture("GREENHOUSE_GLASS_WALL", 2, 23),
+        furniture("GREENHOUSE_DOOR", 5, 23),
+        furniture("GREENHOUSE_PLANT_SHELF", 2, 28),
+        furniture("HANGING_PLANT", 9, 24),
 
-        # Collaboration table, lower left.
-        furniture("TABLE_FRONT", 5, 21),
-        furniture("WOODEN_CHAIR_SIDE", 4, 22),
-        furniture("WOODEN_CHAIR_SIDE:left", 8, 22),
-        furniture("WOODEN_CHAIR_FRONT", 6, 25),
-        furniture("PLANT_2", 2, 28),
-        furniture("BIN", 3, 30),
+        # Collaboration and two desk islands, lower center.
+        furniture("TABLE_FRONT", 11, 20),
+        furniture("WOODEN_CHAIR_SIDE", 10, 21),
+        furniture("WOODEN_CHAIR_SIDE:left", 14, 21),
+        furniture("WOODEN_CHAIR_FRONT", 12, 24),
+        furniture("DESK_FRONT", 16, 20),
+        furniture("PC_FRONT_ON_1", 17, 19),
+        furniture("WOODEN_CHAIR_BACK", 17, 22),
+        furniture("DESK_FRONT", 23, 20),
+        furniture("PC_FRONT_ON_2", 24, 19),
+        furniture("WOODEN_CHAIR_BACK", 24, 22),
 
-        # Two desk islands, lower center, oriented consistently toward the aisle.
-        furniture("DESK_FRONT", 13, 21),
-        furniture("PC_FRONT_ON_1", 14, 20),
-        furniture("WOODEN_CHAIR_BACK", 14, 23),
-        furniture("DESK_FRONT", 24, 21),
-        furniture("PC_FRONT_ON_2", 25, 20),
-        furniture("WOODEN_CHAIR_BACK", 25, 23),
-        furniture("SMALL_TABLE_SIDE", 18, 26),
-        furniture("PLANT", 18, 29),
+        # Compact source-inspired lounge below the work islands.
+        furniture("SOFA_FRONT", 22, 27),
+        furniture("SOFA_SIDE", 20, 27),
+        furniture("SOFA_SIDE:left", 25, 27),
+        furniture("COFFEE_TABLE", 22, 28),
+        furniture("CUSHIONED_BENCH", 22, 31),
 
-        # AI lab, lower right. Side-facing workstation follows the source room.
-        furniture("DESK_SIDE", 32, 22),
-        furniture("PC_SIDE", 31, 23),
-        furniture("WOODEN_CHAIR_SIDE", 30, 23),
-        furniture("SMALL_TABLE_FRONT", 35, 25),
-        furniture("PC_SIDE:left", 37, 25),
+        # AI lab, lower right. The rejected humanoid analysis-platform cell is
+        # deliberately absent; only the four approved equipment sprites appear.
+        furniture("AI_WHITEBOARD", 30, 18),
+        furniture("AI_BOOKSHELF", 34, 18),
+        furniture("AI_ELECTRONICS_BENCH", 30, 22),
+        furniture("AI_ANALYZER_CART", 36, 22),
+        furniture("WOODEN_CHAIR_SIDE", 29, 23),
         furniture("PLANT_2", 38, 29),
         furniture("BIN", 36, 30),
     ]
@@ -133,16 +146,16 @@ def build() -> dict:
         "version": 1,
         "cols": COLS,
         "rows": ROWS,
-        "layoutRevision": 4,
+        "layoutRevision": 5,
         "tiles": tiles,
         "tileColors": tile_colors,
         "furniture": items,
         "zones": [
-            {"id": "cafe-ideas", "minCol": 2, "maxCol": 14, "minRow": 8, "maxRow": 15},
-            {"id": "reception", "minCol": 16, "maxCol": 27, "minRow": 8, "maxRow": 15},
-            {"id": "lounge", "minCol": 29, "maxCol": 39, "minRow": 8, "maxRow": 15},
-            {"id": "collaboration", "minCol": 2, "maxCol": 10, "minRow": 18, "maxRow": 31},
-            {"id": "open-office", "minCol": 11, "maxCol": 29, "minRow": 18, "maxRow": 31},
+            {"id": "solar-wing", "minCol": 2, "maxCol": 13, "minRow": 8, "maxRow": 15},
+            {"id": "reception", "minCol": 14, "maxCol": 27, "minRow": 8, "maxRow": 15},
+            {"id": "cafe", "minCol": 28, "maxCol": 39, "minRow": 8, "maxRow": 15},
+            {"id": "greenhouse", "minCol": 2, "maxCol": 10, "minRow": 18, "maxRow": 31},
+            {"id": "open-office-lounge", "minCol": 11, "maxCol": 29, "minRow": 18, "maxRow": 31},
             {"id": "ai-lab", "minCol": 30, "maxCol": 39, "minRow": 18, "maxRow": 31},
         ],
     }

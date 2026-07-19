@@ -327,3 +327,41 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   collaboration, open-office, and AI-lab zones. Browser console/page errors: 0.
 - Scope boundary: this proves the current assets can form a coherent live room;
   it does not prove complete visual fidelity to the supplied 1280x960 office.
+
+# 2026-07-19 — Five source-zone Pixel Agents batch
+
+- Built-in Image Gen used both `assets/reference-original.jpg` for content and
+  facing and the untouched Pixel Agents runtime screenshot for scale/camera.
+- Five horizontal 3x2 sheets preserve raw and alpha masters. Deterministic
+  extraction promoted 28/30 cells; two AI cells were rejected for humanoid or
+  robot-like content.
+- First `SOLAR_CONTROLLER` extraction contained the adjacent planter edge.
+  Runtime bbox/catalog inspection caught it; a targeted 65% left-cell crop
+  removed the fragment before the accepted v2 proofs.
+- The first separator-cleanup retry was too broad and emptied a valid cell.
+  Boundary flood removal was narrowed to near-white opaque separator pixels;
+  all centered partial-alpha subjects are now preserved. The unavailable
+  `python` command was also replaced with the repository-standard `python3`.
+- `npm run validate:pixel-agents-pack`: PASS, 58 physical sprites across 47
+  manifests; 25/25 audited default IDs remain covered; no visible alpha touches
+  a canvas edge and no magenta spill remains.
+- Two self-contained catalog pages render all 28 approved assets without
+  clipping: `proofs/pixel-agents-v5/source-zone-catalog-page-1-v2.png` and
+  `source-zone-catalog-page-2-v2.png`.
+- Actual Pixel Agents loaded 66/66 assets from the temporary untouched-runtime
+  overlay, 9 floor patterns, 16 wall pieces, and the 42x34 revision-5 layout.
+  Accepted live proof: `proofs/pixel-agents-v5/live-source-zones-v2.png`;
+  browser console/page errors: 0.
+- The temporary overlay is testing infrastructure only. The reference checkout
+  remains unmodified.
+- First editor-catalog audit found only 13/28 source assets. Root cause was 15
+  manifests using descriptive but unsupported category names (`plants`,
+  `tables`, `lab`, `architecture`, `solar`). The source builder now emits only
+  Pixel Agents' seven supported furniture categories. A fresh process-level
+  reload found 28/28 assets in the real editor catalog with zero browser errors.
+- Direct interaction proof placed `Reception Information Easel` on the runtime
+  canvas and observed the dirty state plus enabled Undo and Save controls:
+  `proofs/pixel-agents-v5/editor-placement-proof.png`. Machine-readable proof:
+  `proofs/pixel-agents-v5/editor-catalog-proof.json`.
+- Direction-group rotation, seating, collision, and active depth interaction
+  remain open and are not claimed as passing.

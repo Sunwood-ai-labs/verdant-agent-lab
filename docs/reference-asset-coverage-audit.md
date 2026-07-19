@@ -15,6 +15,21 @@ runtime asset.
 The current **48-entry manifest library is not an inventory of every
 source-required asset** and must not be described that way.
 
+### Pixel Agents v4 progress — 2026-07-19
+
+A separate Pixel Agents-native library now adds 28 independently placeable,
+reference-guided assets for reception, cafe, equipment-only AI lab, greenhouse,
+and solar wing. They are generated candidates, not literal crops. Their raw,
+alpha, split, runtime, catalog, and live-room evidence is preserved under
+`assets/generated/pixel-agents-v4/`, `pixel-agents-pack/`, and
+`proofs/pixel-agents-v5/`.
+
+This reduces the independent-runtime gap for those five zones but does not
+change the overall `incomplete` verdict: site-shell tiles, studio and lounge
+variants, the robot-free AI diagnostic platform, wayfinding, and several small
+props are still missing or unverified. Two AI cells were deliberately rejected
+for humanoid/robot-like contamination.
+
 - 48 manifest records: 20 furniture, 16 technology, 12 props.
 - 14 are in `starter.v1.json`; 34 are library-only candidates.
 - 13 records use a decomposed-region **parent composite**, not individually

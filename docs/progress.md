@@ -110,7 +110,13 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] reject the repetitive four-quadrant demo as room-composition evidence
 - [x] author one connected six-zone room with 45 purposeful placements
 - [x] revert to known-good runtime floors/walls after custom theme QA failed
-- [ ] complete source-faithful reception, cafe, greenhouse, solar, and AI-lab object coverage
+- [x] generate and runtime-wire 28 source-facing reception, cafe, greenhouse, solar, and AI-lab assets
+- [x] reject two AI robot-like cells and one neighboring-cell fragment before publication
+- [x] rebuild the live room as revision 5 with 48 placements and source-specific zones
+- [x] normalize all source manifests to the seven supported editor categories and verify 28/28 catalog discovery
+- [x] place a source asset through the real editor and confirm dirty/Undo/Save interaction with zero browser errors
+- [ ] verify direction-group rotation, live seating, collision paths, and depth crossing
+- [ ] add the missing AI diagnostic platform without a robot and complete studio/lounge/site-shell coverage
 - [ ] replace floors/walls only after bitmask joins and direct runtime screenshots pass
 # Directional asset rebuild checkpoint — 2026-07-15
 
