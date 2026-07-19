@@ -34,6 +34,8 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `3469136` | Revision-6 clipping correction | six live placements, rejected lower-frame proof, corrected runtime proof, collision/walkability and 6/6 editor checks |
 | `6d88b8a` | Connected solarpunk theme candidate | nine unique floor tiles, sixteen mask-correct wall pieces, split intermediates, deterministic validator |
 | `87dea2c` | Source-shaped revision-7 room correction | rejects the unrelated 21x22 theme render, restores 42x34 ten-zone topology, 65 placements, direct wall colors, accepted and rejected raster evidence |
+| `18d7bba` | Integrated solarpunk default-office preset | 21x22 preserved layout, furniture/floor/wall preset, separate runtime assembler, deterministic ZIP, Pixel Agents MIT notice |
+| `37eb8ea` | Integrated preset runtime QA | direct and extracted-archive pixel-identical renders, floor/wall palettes, real grid edit, integrated machine proof |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -84,3 +86,11 @@ AYANO delivery receipt: Discord channel `1526794078744744077`, message
 `1528367087288844431`. Attachments are the focused and full revision-7 runtime
 rasters. The report explicitly rejects the 21x22 default-layout candidate and
 labels revision 7 as a current-asset intermediate rather than complete fidelity.
+
+Integrated default-office preset delivery receipt: Discord channel
+`1526794078744744077`, message `1528371008669483189`. Attachments are the clean
+runtime screenshot, the actual floor-grid edit proof, and the deterministic
+`pixel-agents-solarpunk-default-runtime.zip`. The post records 21x22/36 layout
+preservation, 64 sprites, 9 floors, 16 wall masks, extracted-archive smoke,
+pixel-identical rendering, zero browser errors, and the separate full-photo
+reproduction boundary.
