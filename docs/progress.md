@@ -1,5 +1,19 @@
 # Build progress
 
+## 2026-07-19 — Integrated Pixel Agents solarpunk default-office preset
+
+- Promoted the tested 21×22 themed layout from temporary runtime data into
+  `pixel-agents-solarpunk-default/layout.json` and a versioned preset manifest.
+- Kept the current Pixel Agents default grid, 462 tile IDs, and all 36 furniture
+  records unchanged. Only `layoutRevision` and `tileColors` differ.
+- Added a separate runtime assembler that overlays 64 furniture sprites, nine
+  16×16 floors, and one 64×128 connected-wall atlas over a copied Pixel Agents
+  `dist/`, never the reference checkout itself.
+- Added deterministic ZIP output, its Pixel Agents MIT notice, integrated
+  validation, extracted-archive smoke launch, and editor grid-paint proof.
+- The direct assembled runtime and extracted archive rendered pixel-identical
+  1600×1000 screenshots with zero browser errors.
+
 ## 2026-07-19 — Source-shaped Pixel Agents room revision 7
 
 - Rejected the 21x22 default-office theme render: it proved theme loading but
@@ -137,6 +151,9 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [ ] visually rotate and inspect every remaining rotation group in the actual editor canvas
 - [ ] complete the remaining west-studio and site-shell asset coverage
 - [x] replace floors/walls only after bitmask joins and direct runtime screenshots pass
+- [x] package furniture, floors, walls, and default layout as one reproducible preset
+- [x] verify the generated ZIP by extracting and launching it
+- [x] paint a generated floor through the real editor and observe dirty/Undo/Save state
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "source": "pixel-agents-pack/solarpunk-default-layout.json",
+  "output": "pixel-agents-solarpunk-default/layout.json",
+  "sourceSha256": "ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616",
+  "outputSha256": "061416c898209701831d67ad5aacad945be63349b689c4b9abe5fc6224cba448",
+  "grid": "21x22",
+  "placements": 36,
+  "uniqueFurnitureTypes": 25,
+  "tileIds": [
+    0,
+    1,
+    7,
+    9,
+    255
+  ],
+  "changedFields": [
+    "layoutRevision",
+    "tileColors"
+  ],
+  "checks": {
+    "gridPreserved": true,
+    "tilesPreserved": true,
+    "furniturePreserved": true,
+    "placementCountIs36": true,
+    "tileColorCountMatchesGrid": true,
+    "charactersAbsent": true,
+    "onlySupportedTileIds": true
+  }
+}

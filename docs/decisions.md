@@ -138,3 +138,17 @@ Reason: the rejected 21x22 render loaded valid assets but erased the solar,
 greenhouse, studio, meeting, lab, lounge, cafe, and entrance relationships that
 make the reference recognizable. Runtime compatibility and room composition are
 separate acceptance gates.
+
+## D-017 — default-office preset and source-office reconstruction are separate products
+
+Decision: accept the 21×22 integrated preset as the Pixel Agents default-office
+solarpunk reskin requested by the user, while continuing to treat the 42×34
+source-shaped room and full 1280×960 reproduction as a separate fidelity track.
+The preset may preserve Pixel Agents' MIT-licensed default layout, but all
+Verdant furniture/floor/wall art remains project-authored and the reference
+checkout remains read-only.
+
+Reason: rejecting a default-layout proof as evidence for the supplied photo does
+not make it invalid for the distinct goal of reskinning Pixel Agents' default
+office. The two claims require different authoritative views and must not be
+collapsed again.

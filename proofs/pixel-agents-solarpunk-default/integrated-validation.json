@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "claim": "Pixel Agents default geometry and furniture records are preserved while exact-ID furniture, nine floors, and a connected wall atlas provide a solarpunk reskin",
+  "grid": "21x22",
+  "tileSizePx": 16,
+  "placements": 36,
+  "uniqueDefaultFurnitureTypes": 25,
+  "catalogEntries": 67,
+  "furnitureManifests": 53,
+  "physicalFurnitureSprites": 64,
+  "floorTiles": 9,
+  "wallAtlases": 1,
+  "changedFields": [
+    "layoutRevision",
+    "tileColors"
+  ],
+  "checks": {
+    "onlyRevisionAndColorsChanged": true,
+    "gridIs21x22": true,
+    "tileSizeIs16": true,
+    "tileCountIs462": true,
+    "tileColorsCountIs462": true,
+    "furnitureCountIs36": true,
+    "uniqueDefaultTypesIs25": true,
+    "allDefaultTypesResolve": true,
+    "manifestCountIs53": true,
+    "physicalSpriteCountIs64": true,
+    "floorCountIs9": true,
+    "floorSizeIs16x16": true,
+    "wallAtlasCountIs1": true,
+    "wallAtlasSizeIs64x128": true,
+    "charactersAreNotEmbedded": true
+  }
+}

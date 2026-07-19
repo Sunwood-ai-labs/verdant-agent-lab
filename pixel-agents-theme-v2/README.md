@@ -14,5 +14,8 @@ The original `pixel-agents-theme/` remains the rejected provenance checkpoint;
 it duplicated one wall panel in every bitmask slot and is not current proof.
 
 Pixel Agents 1.3 does not merge external floors/walls from the furniture pack.
-Use this theme only through the development overlay until an external theme
-contract exists. Runtime acceptance still requires a direct screenshot.
+The reproducible integration route is therefore
+`npm run assemble:pixel-agents-solarpunk-runtime`, which creates a separate
+development overlay and deterministic zip under ignored `build/` without
+modifying the reference checkout. Runtime acceptance still requires a direct
+screenshot.

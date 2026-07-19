@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "claim": "Pixel Agents default office is reskinned with Verdant furniture, floors, and connected walls while its grid, tile IDs, and furniture records remain unchanged",
+  "pixelAgentsReference": {
+    "path": "/Users/admin/Prj/pixel-agents",
+    "commit": "24c0b1cae18ee9dc43ff43b80fc5c12150c090ab",
+    "defaultLayoutSha256": "ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616",
+    "initialAndFinalWorktreeStatusMatch": true,
+    "preExistingStatus": [
+      "M package-lock.json",
+      "?? artifacts/",
+      "?? evidence/",
+      "?? screenlog.0"
+    ],
+    "modifiedByThisWorkflow": false
+  },
+  "preset": {
+    "layout": "pixel-agents-solarpunk-default/layout.json",
+    "layoutSha256": "061416c898209701831d67ad5aacad945be63349b689c4b9abe5fc6224cba448",
+    "grid": "21x22",
+    "tileSizePx": 16,
+    "tileRecords": 462,
+    "furniturePlacements": 36,
+    "uniqueDefaultFurnitureTypes": 25,
+    "changedFields": [
+      "layoutRevision",
+      "tileColors"
+    ],
+    "sameGridAsCurrentDefault": true,
+    "sameTileIdsAsCurrentDefault": true,
+    "sameFurnitureAsCurrentDefault": true
+  },
+  "assets": {
+    "catalogEntries": 67,
+    "furnitureManifests": 53,
+    "physicalFurnitureSprites": 64,
+    "defaultTypesResolved": "25/25",
+    "floorTiles": 9,
+    "floorSize": "16x16",
+    "wallAtlases": 1,
+    "wallAtlasSize": "64x128",
+    "uniqueWallMasks": 16,
+    "wallBitOrder": "N=1,E=2,S=4,W=8"
+  },
+  "archive": {
+    "generatedPath": "build/pixel-agents-solarpunk-default-runtime.zip",
+    "sha256": "c0d50145703ff068d8696714b588236d0a43fd0549a4a6a71fdd2c02e20c1d67",
+    "zipIntegrity": "passed",
+    "extractedLaunch": "passed",
+    "directAndExtractedRasterPixelIdentical": true
+  },
+  "actualRuntime": {
+    "layoutRevision": 2,
+    "floorsLoaded": 9,
+    "wallPiecesLoaded": 16,
+    "furnitureLoaded": "64/64",
+    "browserConsoleErrors": 0,
+    "charactersEmbeddedInPreset": false
+  },
+  "editorGridControl": {
+    "floorPatternsEnumerated": 9,
+    "wallSetsEnumerated": 1,
+    "furnitureCategoriesEnumerated": 7,
+    "floor9Selected": true,
+    "gridCellPainted": true,
+    "dirtyStateShown": true,
+    "undoEnabled": true,
+    "saveEnabled": true,
+    "browserConsoleErrors": 0
+  },
+  "proofs": {
+    "runtime": "proofs/pixel-agents-solarpunk-default/live-integrated-default-v1.png",
+    "archiveSmoke": "proofs/pixel-agents-solarpunk-default/live-archive-smoke-v1.png",
+    "floorPalette": "proofs/pixel-agents-solarpunk-default/editor-floor-palette-v1.png",
+    "wallPalette": "proofs/pixel-agents-solarpunk-default/editor-wall-palette-v1.png",
+    "furnitureCatalog": "proofs/pixel-agents-solarpunk-default/editor-furniture-catalog-v1.png",
+    "gridEdit": "proofs/pixel-agents-solarpunk-default/editor-floor-grid-edit-v1.png"
+  },
+  "firstFailure": {
+    "symptom": "assembled cli.js inherited the repository ESM boundary and could not use require",
+    "fix": "write a local package.json with type commonjs into every assembled runtime",
+    "usedInAcceptedRetry": true
+  },
+  "scopeBoundary": [
+    "This completes the Pixel Agents default-office reskin preset, not the separate full 1280x960 office-reference reproduction.",
+    "Pixel Agents 1.3 supports external furniture packs but not external floor/wall merging, so the complete theme uses the separate development-overlay assembler.",
+    "The generated archive requires the local Pixel Agents checkout's installed Node dependencies."
+  ]
+}

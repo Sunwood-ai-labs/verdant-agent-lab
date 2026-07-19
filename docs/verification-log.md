@@ -1,5 +1,45 @@
 # Verification and failure log
 
+## Integrated default-office preset and archive smoke — 2026-07-19
+
+The furniture pack, v2 theme, and temporary themed layout were previously
+separate. The accepted route now builds
+`pixel-agents-solarpunk-default/layout.json`, validates the integrated contract,
+and assembles a separate runtime plus deterministic ZIP under ignored `build/`.
+
+Authoritative preservation checks:
+
+- current Pixel Agents commit: `24c0b1cae18ee9dc43ff43b80fc5c12150c090ab`
+- current `dist/assets/default-layout-1.json` SHA-256:
+  `ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616`
+- 21×22 grid, 462 unchanged tile IDs, 36 unchanged furniture records
+- only `layoutRevision` and `tileColors` change in the themed preset
+- 64 physical furniture sprites / 53 manifests / 67 catalog entries
+- nine 16×16 floor tiles / sixteen unique wall masks in one 64×128 atlas
+
+The first assembled runtime failed to launch because the repository's parent
+`package.json` declared ESM while Pixel Agents' bundled `cli.js` is CommonJS.
+The assembler now writes a local `{ "type": "commonjs" }` boundary. A separate
+retry command was mistakenly started from `/tmp`, where `npm` correctly failed
+with missing `package.json`; the build and launch steps are now documented with
+their required working directories.
+
+The corrected deterministic archive SHA-256 is
+`c0d50145703ff068d8696714b588236d0a43fd0549a4a6a71fdd2c02e20c1d67`.
+`unzip -t` passed. The extracted archive loaded 9 floors, 16 wall pieces, and
+64/64 furniture sprites, then rendered a screenshot pixel-identical to the
+direct assembled runtime. Both browser captures had zero console errors.
+
+Editor verification opened the actual layout editor, enumerated Floor 1–9 and
+Wall 1, selected Floor 9, painted a real grid cell, and observed enabled Undo
+and Save controls with zero browser errors. Evidence is under
+`proofs/pixel-agents-solarpunk-default/`, with the machine-readable summary in
+`runtime-proof.json`.
+
+The Pixel Agents reference checkout began and ended with the same pre-existing
+status (`package-lock.json`, `artifacts/`, `evidence/`, and `screenlog.0`). No
+reference-repository file was edited by this preset workflow.
+
 ## Default-layout substitution failure and source-shaped retry — 2026-07-19
 
 The first custom-theme screenshot used Pixel Agents' unrelated 21x22 default

@@ -77,6 +77,11 @@ The machine-readable audit is
 before/after comparison is
 `proofs/pixel-agents-default-reskin/default-reskin-before-after-v1.png`.
 
+The complete furniture + floor + wall preset is now under
+`../pixel-agents-solarpunk-default/`. It preserves this same grid and furniture
+array, changes only `layoutRevision` and `tileColors`, and can assemble a
+separate runnable overlay without modifying the Pixel Agents checkout.
+
 Runtime interaction verification:
 
 ```bash

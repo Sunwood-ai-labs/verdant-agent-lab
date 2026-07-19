@@ -18,6 +18,8 @@
 - キーボード操作、フォーカス表示、動き低減設定
 - 写真を40×30へ正規化した41オブジェクトの構造プロトタイプレイアウト
 - 14アンカー構造配置スコア（94.2/100、画像再現度や完成度ではない）
+- Pixel Agents既定21×22間取りを保持した、16pxグリッド対応ソーラーパンクプリセット
+- 家具64枚・床9枚・接続壁16マスクをまとめる再現可能な開発ランタイムZIP生成
 
 ## Preview
 
@@ -30,6 +32,16 @@ Then open <http://127.0.0.1:4173>.
 - Scene: <http://127.0.0.1:4173/index.html>
 - Characterless canonical render: <http://127.0.0.1:4173/canonical.html>
 - Builder: <http://127.0.0.1:4173/builder.html>
+
+Pixel Agents向けプリセット:
+
+```bash
+npm run build:pixel-agents-solarpunk-default
+npm run validate:pixel-agents-solarpunk-default
+npm run assemble:pixel-agents-solarpunk-runtime
+```
+
+詳細は [`pixel-agents-solarpunk-default/README.md`](pixel-agents-solarpunk-default/README.md) を参照してください。
 
 ## Project structure
 
@@ -48,7 +60,7 @@ Then open <http://127.0.0.1:4173>.
 
 設計上の参考は [Pixel Agents](https://github.com/pixel-agents-hq/pixel-agents) の公開ドキュメントです。特に、manifest駆動の家具カタログ、配置JSONと描画資産の分離、Canvasベースのシーン状態という抽象的な構造を参考にしています。
 
-Pixel Agentsの名称、ロゴ、キャラクター、家具画像、既定レイアウト、UI文言、ソースコードは利用しません。本プロジェクトの画像、部屋構成、名称、マニフェスト、UIは独自に制作します。
+本プロジェクトの家具・床・壁画像、名称、マニフェスト、HTML UIは独自に制作しています。オプションの互換性プリセットだけは、Pixel Agentsの既定21×22配置JSONをMIT Licenseに従って保持し、画像資産を差し替えます。出典とライセンス境界は [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) に記録しています。
 
 ## License
 
