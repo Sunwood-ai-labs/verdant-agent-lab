@@ -365,3 +365,29 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   `proofs/pixel-agents-v5/editor-catalog-proof.json`.
 - Direction-group rotation, seating, collision, and active depth interaction
   remain open and are not claimed as passing.
+
+# 2026-07-19 — Literal Pixel Agents default-office reskin
+
+- Added `pixel-agents-pack/solarpunk-default-layout.json` as a byte-identical
+  copy of the audited upstream `default-layout-1.json`. Both files have SHA-256
+  `ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616`.
+- The reproducible audit confirms 21×22 tiles, 462 tile records, 36 unchanged
+  placements, 25 unique furniture types, integer grid coordinates, 25/25
+  catalog resolution, and no embedded characters or pets.
+- Two actual Pixel Agents processes rendered the same default layout: upstream
+  built-ins loaded 38/38 physical sprites, while the Verdant pack loaded 58/58.
+  Both browser captures had zero console/page errors and zero failed responses.
+- Accepted before/after proof:
+  `proofs/pixel-agents-default-reskin/default-reskin-before-after-v1.png`.
+  It proves the requested default-office asset substitution without using the
+  separate 42×34 custom room as a substitute for that claim.
+- Actual editor interaction selected `Verdant Desk`, showed the runtime's
+  `Rotate (R)` affordance, rotated to the side member, placed it on the 16px
+  grid, and exposed dirty/Undo/Save state with zero browser errors. Proof:
+  `proofs/pixel-agents-default-reskin/editor-desk-side-placement.png`.
+- The first rotated-desk placement targeted the bottom edge and correctly
+  remained a red invalid preview with no dirty state. That rejected interaction
+  is preserved in `editor-desk-rotated-placement.png`; the accepted retry moved
+  the four-tile side footprint fully inside the walkable grid.
+- Live chair seating, collision paths, and character/furniture depth crossing
+  remain open and are not claimed as passing.

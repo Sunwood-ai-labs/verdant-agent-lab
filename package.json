@@ -17,6 +17,7 @@
     "build:pixel-agents-catalog": "python3 scripts/build-pixel-agents-catalog.py",
     "build:pixel-agents-theme": "python3 scripts/build-pixel-agents-theme.py",
     "build:pixel-agents-room": "python3 scripts/build-pixel-agents-verdant-room.py",
+    "build:pixel-agents-default-reskin": "python3 scripts/build-pixel-agents-default-reskin.py",
     "build:pixel-agents-source-zones": "python3 scripts/build-pixel-agents-source-zones.py",
     "validate:pixel-agents-pack": "python3 scripts/validate-pixel-agents-pack.py",
     "validate:sprites": "python3 scripts/validate_sprite_purity.py",

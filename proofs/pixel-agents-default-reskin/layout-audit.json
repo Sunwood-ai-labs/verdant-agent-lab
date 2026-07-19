@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "source": "research/pixel-agents/sources/pixel-agents/webview-ui/public/assets/default-layout-1.json",
+  "output": "pixel-agents-pack/solarpunk-default-layout.json",
+  "sourceSha256": "ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616",
+  "outputSha256": "ac4a7ea4bb9ddaedead465dd2a9cd0761dc46361f19b1a609cfbf5cd3e7ff616",
+  "byteIdenticalToAuditedDefaultLayout": true,
+  "grid": {
+    "cols": 21,
+    "rows": 22,
+    "tileSizePx": 16
+  },
+  "furniturePlacements": 36,
+  "uniqueFurnitureTypes": 25,
+  "resolvedFurnitureTypes": 25,
+  "checks": {
+    "versionIs1": true,
+    "gridIs21x22": true,
+    "tileCountIs462": true,
+    "furnitureCountIs36": true,
+    "requiredTypesMatchExactly": true,
+    "allUsedTypesResolveInCatalog": true,
+    "allPlacementsUseIntegerGrid": true,
+    "noCharactersOrPetsEmbedded": true
+  }
+}

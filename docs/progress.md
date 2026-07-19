@@ -115,6 +115,9 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] rebuild the live room as revision 5 with 48 placements and source-specific zones
 - [x] normalize all source manifests to the seven supported editor categories and verify 28/28 catalog discovery
 - [x] place a source asset through the real editor and confirm dirty/Undo/Save interaction with zero browser errors
+- [x] preserve upstream default-layout-1 byte-for-byte and render its 36 placements with the 25/25 exact-ID solarpunk overrides
+- [x] compare upstream and reskinned default offices in the real Pixel Agents runtime with zero browser/HTTP errors
+- [x] rotate the Verdant Desk with `R` and place its side orientation on the actual editor grid
 - [ ] verify direction-group rotation, live seating, collision paths, and depth crossing
 - [ ] add the missing AI diagnostic platform without a robot and complete studio/lounge/site-shell coverage
 - [ ] replace floors/walls only after bitmask joins and direct runtime screenshots pass

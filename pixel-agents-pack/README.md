@@ -50,3 +50,22 @@ The room demonstrates a coherent use of the current assets. It is not yet a
 complete visual reproduction of every object in the supplied office reference.
 The two rejected AI cells remain only in the raw/alpha provenance sheets and
 are not in the runtime pack.
+
+## Literal default-office reskin
+
+`solarpunk-default-layout.json` is byte-for-byte identical to the audited
+upstream `default-layout-1.json`: 21×22 tiles, 36 furniture placements, and 25
+unique furniture IDs. The transformation is performed only by the exact-ID
+sprites in this pack, so the same grid and furniture records render as the
+Verdant solarpunk office without a layout rewrite.
+
+Rebuild and audit it with:
+
+```bash
+npm run build:pixel-agents-default-reskin
+```
+
+The machine-readable audit is
+`proofs/pixel-agents-default-reskin/layout-audit.json`; the accepted live
+before/after comparison is
+`proofs/pixel-agents-default-reskin/default-reskin-before-after-v1.png`.
