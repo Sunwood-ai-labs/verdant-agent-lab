@@ -1,0 +1,5 @@
+{
+  "id": "BIN", "name": "Verdant Recycling Bin", "category": "misc", "type": "asset",
+  "file": "BIN.png", "width": 16, "height": 16, "footprintW": 1, "footprintH": 1,
+  "canPlaceOnWalls": false, "canPlaceOnSurfaces": false, "backgroundTiles": 0
+}

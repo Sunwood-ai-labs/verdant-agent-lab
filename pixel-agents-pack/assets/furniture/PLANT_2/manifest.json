@@ -1,0 +1,5 @@
+{
+  "id": "PLANT_2", "name": "Verdant Fern", "category": "decor", "type": "asset",
+  "file": "PLANT_2.png", "width": 16, "height": 32, "footprintW": 1, "footprintH": 2,
+  "canPlaceOnWalls": false, "canPlaceOnSurfaces": false, "backgroundTiles": 1
+}

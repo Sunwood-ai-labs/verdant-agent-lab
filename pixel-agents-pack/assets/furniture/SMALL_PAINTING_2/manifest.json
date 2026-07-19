@@ -1,0 +1,5 @@
+{
+  "id": "SMALL_PAINTING_2", "name": "Verdant Solar Print", "category": "wall", "type": "asset",
+  "file": "SMALL_PAINTING_2.png", "width": 16, "height": 32, "footprintW": 1, "footprintH": 2,
+  "canPlaceOnWalls": true, "canPlaceOnSurfaces": false, "backgroundTiles": 0
+}

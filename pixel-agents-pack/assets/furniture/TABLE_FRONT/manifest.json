@@ -1,0 +1,5 @@
+{
+  "id": "TABLE_FRONT", "name": "Verdant Table", "category": "desks", "type": "asset",
+  "file": "TABLE_FRONT.png", "width": 48, "height": 64, "footprintW": 3, "footprintH": 4,
+  "canPlaceOnWalls": false, "canPlaceOnSurfaces": false, "backgroundTiles": 1
+}

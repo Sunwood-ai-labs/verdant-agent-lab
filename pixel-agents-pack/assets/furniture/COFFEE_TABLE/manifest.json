@@ -1,0 +1,5 @@
+{
+  "id": "COFFEE_TABLE", "name": "Verdant Coffee Table", "category": "desks", "type": "asset",
+  "file": "COFFEE_TABLE.png", "width": 32, "height": 32, "footprintW": 2, "footprintH": 2,
+  "canPlaceOnWalls": false, "canPlaceOnSurfaces": false, "backgroundTiles": 0
+}

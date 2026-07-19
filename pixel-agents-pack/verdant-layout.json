@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "cols": 21,
+  "rows": 22,
+  "furniture": [
+    { "uid": "wall-plant", "type": "HANGING_PLANT", "col": 1, "row": 3 },
+    { "uid": "wall-books", "type": "DOUBLE_BOOKSHELF", "col": 3, "row": 3 },
+    { "uid": "wall-print-a", "type": "SMALL_PAINTING", "col": 7, "row": 3 },
+    { "uid": "wall-clock", "type": "CLOCK", "col": 9, "row": 3 },
+    { "uid": "wall-landscape", "type": "LARGE_PAINTING", "col": 13, "row": 3 },
+    { "uid": "wall-print-b", "type": "SMALL_PAINTING_2", "col": 18, "row": 3 },
+
+    { "uid": "desk-a", "type": "DESK_FRONT", "col": 2, "row": 7 },
+    { "uid": "pc-a", "type": "PC_FRONT_OFF", "col": 3, "row": 7 },
+    { "uid": "chair-a", "type": "WOODEN_CHAIR_SIDE", "col": 1, "row": 8 },
+    { "uid": "desk-b", "type": "DESK_FRONT", "col": 7, "row": 7 },
+    { "uid": "pc-b", "type": "PC_SIDE", "col": 8, "row": 7 },
+    { "uid": "chair-b", "type": "WOODEN_CHAIR_SIDE:left", "col": 10, "row": 8 },
+
+    { "uid": "sofa-front", "type": "SOFA_FRONT", "col": 15, "row": 7 },
+    { "uid": "sofa-side", "type": "SOFA_SIDE", "col": 13, "row": 9 },
+    { "uid": "sofa-side-left", "type": "SOFA_SIDE:left", "col": 18, "row": 9 },
+    { "uid": "sofa-back", "type": "SOFA_BACK", "col": 15, "row": 12 },
+    { "uid": "coffee-table", "type": "COFFEE_TABLE", "col": 15, "row": 9 },
+    { "uid": "coffee", "type": "COFFEE", "col": 16, "row": 10 },
+
+    { "uid": "small-table-front", "type": "SMALL_TABLE_FRONT", "col": 2, "row": 13 },
+    { "uid": "bench", "type": "CUSHIONED_BENCH", "col": 2, "row": 15 },
+    { "uid": "small-table-side", "type": "SMALL_TABLE_SIDE", "col": 6, "row": 13 },
+    { "uid": "pc-side-left", "type": "PC_SIDE:left", "col": 6, "row": 14 },
+
+    { "uid": "meeting-table", "type": "TABLE_FRONT", "col": 9, "row": 14 },
+    { "uid": "meeting-chair-right", "type": "WOODEN_CHAIR_SIDE", "col": 8, "row": 16 },
+    { "uid": "meeting-chair-left", "type": "WOODEN_CHAIR_SIDE:left", "col": 12, "row": 16 },
+
+    { "uid": "plant-a", "type": "PLANT", "col": 1, "row": 18 },
+    { "uid": "plant-b", "type": "PLANT_2", "col": 18, "row": 17 },
+    { "uid": "bin", "type": "BIN", "col": 19, "row": 20 }
+  ]
+}

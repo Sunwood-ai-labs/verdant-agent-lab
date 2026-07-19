@@ -42,6 +42,12 @@ def fit_nearest(sprite: Image.Image, size: tuple[int, int]) -> Image.Image:
     x = max(1, (target_w - width) // 2)
     y = target_h - height - 1
     canvas.alpha_composite(sprite, (x, y))
+    pixels = canvas.load()
+    for py in range(target_h):
+        for px in range(target_w):
+            r, g, b, a = pixels[px, py]
+            if a and r > 100 and b > 100 and g < 60 and r > g * 1.5 and b > g * 1.5:
+                pixels[px, py] = (0, 0, 0, 0)
     return canvas
 
 

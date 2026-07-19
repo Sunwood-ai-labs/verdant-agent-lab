@@ -1,0 +1,5 @@
+{
+  "id": "DOUBLE_BOOKSHELF", "name": "Verdant Double Bookshelf", "category": "wall", "type": "asset",
+  "file": "DOUBLE_BOOKSHELF.png", "width": 32, "height": 32, "footprintW": 2, "footprintH": 2,
+  "canPlaceOnWalls": true, "canPlaceOnSurfaces": false, "backgroundTiles": 0
+}

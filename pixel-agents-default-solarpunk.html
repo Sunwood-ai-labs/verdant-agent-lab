@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Verdant Pixel Agents — full default-ID proof</title>
+    <style>
+      :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b120d; color: #e1edd9; }
+      main { width: min(1120px, 96vw); padding: 26px; }
+      header, footer { display: flex; justify-content: space-between; gap: 20px; align-items: end; }
+      header { margin-bottom: 16px; }
+      h1 { margin: 0; font-size: 18px; letter-spacing: .08em; }
+      p { margin: 6px 0 0; color: #8da586; font-size: 11px; }
+      .meta { text-align: right; color: #b8d6aa; font-size: 11px; }
+      .frame { padding: 18px; overflow: auto; border: 1px solid #38513a; background: #111a13; box-shadow: 0 24px 70px #0009; }
+      .viewport { width: 1008px; height: 1056px; }
+      #room { position: relative; width: 336px; height: 352px; transform: scale(3); transform-origin: top left; image-rendering: pixelated; overflow: hidden; background: #b88b57; }
+      .tile { position: absolute; width: 16px; height: 16px; background: #b78955; border-top: 1px solid #c69a66; border-left: 1px solid #a67949; }
+      .tile.wall { background: #45613d; border-color: #66805b #30452f #30452f #66805b; }
+      .tile.path { background: #c2a16f; }
+      .tile.zone { background: #aa8050; }
+      .sprite { position: absolute; image-rendering: pixelated; object-fit: contain; }
+      .mirrored { transform: scaleX(-1); }
+      #room.grid::after { content: ''; position: absolute; inset: 0; z-index: 9999; pointer-events: none; background-image: linear-gradient(#f5ffd00d 1px, transparent 1px), linear-gradient(90deg, #f5ffd00d 1px, transparent 1px); background-size: 16px 16px; }
+      footer { margin-top: 13px; color: #738b71; font-size: 11px; }
+      button { appearance: none; font: inherit; color: #cce5bd; background: #213025; border: 1px solid #4e6b4c; padding: 7px 10px; cursor: pointer; }
+      .ok { color: #9ddc82; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <h1>VERDANT DEFAULT-OFFICE OVERRIDE</h1>
+          <p>Original solarpunk sprites • Pixel Agents 16px contract • no characters</p>
+        </div>
+        <div class="meta">21 × 22 tiles<br><span id="coverage">checking IDs…</span></div>
+      </header>
+      <section class="frame"><div class="viewport"><div id="room" class="grid"></div></div></section>
+      <footer><span id="status">loading…</span><button id="toggle">GRID: ON</button></footer>
+    </main>
+    <script type="module">
+      const [catalog, layout, required] = await Promise.all([
+        fetch('./pixel-agents-pack/catalog.json').then(r => r.json()),
+        fetch('./pixel-agents-pack/verdant-layout.json').then(r => r.json()),
+        fetch('./pixel-agents-pack/default-layout-required-types.json').then(r => r.json())
+      ]);
+      const room = document.querySelector('#room');
+      for (let row = 0; row < layout.rows; row++) for (let col = 0; col < layout.cols; col++) {
+        const tile = document.createElement('div');
+        const wall = row < 6 || col === 0 || col === layout.cols - 1;
+        const path = !wall && (col === 11 || col === 12);
+        const zone = !wall && row >= 13 && col < 8;
+        tile.className = `tile ${wall ? 'wall' : ''} ${path ? 'path' : ''} ${zone ? 'zone' : ''}`;
+        tile.style.left = `${col * 16}px`; tile.style.top = `${row * 16}px`; room.append(tile);
+      }
+      const missing = required.filter(id => !catalog[id]);
+      document.querySelector('#coverage').textContent = missing.length ? `missing ${missing.length}` : `${required.length}/${required.length} default IDs`;
+      document.querySelector('#coverage').className = missing.length ? '' : 'ok';
+      const ordered = layout.furniture.map(item => ({item, asset: catalog[item.type]})).sort((a, b) => {
+        const az = a.item.row * 16 + a.asset.height + (a.asset.canPlaceOnSurfaces ? .5 : 0);
+        const bz = b.item.row * 16 + b.asset.height + (b.asset.canPlaceOnSurfaces ? .5 : 0);
+        return az - bz;
+      });
+      await Promise.all(ordered.map(({item, asset}) => new Promise((resolve, reject) => {
+        const img = new Image(asset.width, asset.height);
+        img.className = `sprite ${asset.mirrored ? 'mirrored' : ''}`;
+        img.alt = item.type; img.dataset.uid = item.uid;
+        img.style.left = `${item.col * 16}px`; img.style.top = `${item.row * 16}px`;
+        img.style.zIndex = `${Math.round((item.row * 16 + asset.height + (asset.canPlaceOnSurfaces ? .5 : 0)) * 2)}`;
+        img.onload = resolve; img.onerror = reject; img.src = `./pixel-agents-pack/${asset.src}`; room.append(img);
+      })));
+      document.querySelector('#status').textContent = `${ordered.length} placed instances • ${Object.keys(catalog).length} runtime catalog entries • ${missing.length} missing`;
+      document.querySelector('#toggle').onclick = event => {
+        const on = room.classList.toggle('grid'); event.currentTarget.textContent = `GRID: ${on ? 'ON' : 'OFF'}`;
+      };
+    </script>
+  </body>
+</html>
