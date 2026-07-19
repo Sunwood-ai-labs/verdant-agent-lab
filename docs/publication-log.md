@@ -32,6 +32,8 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `905d2d9` | Verdant runtime interaction verification | 14/14 seats, collision rejection, 15-tile path, seat return, four-way chair facing/mirror/depth proof |
 | `3b45f4a` | Missing-core six-asset batch | raw/alpha/split provenance, six grid sprites, manifests, and 67-entry catalog |
 | `3469136` | Revision-6 clipping correction | six live placements, rejected lower-frame proof, corrected runtime proof, collision/walkability and 6/6 editor checks |
+| `6d88b8a` | Connected solarpunk theme candidate | nine unique floor tiles, sixteen mask-correct wall pieces, split intermediates, deterministic validator |
+| `87dea2c` | Source-shaped revision-7 room correction | rejects the unrelated 21x22 theme render, restores 42x34 ten-zone topology, 65 placements, direct wall colors, accepted and rejected raster evidence |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -74,3 +76,9 @@ asset sheet, and `runtime-proof.json`. The report explicitly records the first
 lower-frame clipping failure, the corrected 64-sprite / 53-manifest / 67-entry
 runtime, 6/6 editor discovery, zero collision overlap, zero browser errors, and
 the still-incomplete west-studio/site-shell coverage.
+
+Revision-7 publication checkpoint: commit `87dea2c`. The accepted current-asset
+proof is `proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix.png`; the
+three default-layout theme screenshots remain explicitly rejected evidence.
+AYANO delivery is pending until the room checkpoint is posted and its message
+ID is recorded here.
