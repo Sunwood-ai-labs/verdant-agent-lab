@@ -37,6 +37,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `18d7bba` | Integrated solarpunk default-office preset | 21x22 preserved layout, furniture/floor/wall preset, separate runtime assembler, deterministic ZIP, Pixel Agents MIT notice |
 | `37eb8ea` | Integrated preset runtime QA | direct and extracted-archive pixel-identical renders, floor/wall palettes, real grid edit, integrated machine proof |
 | `f94eefc` | Real character-walk GIF | temporary remote Agent, built-in sprite spawn, production walkToTile movement, 7.9-second GIF, contact-sheet QA |
+| `6de93ef` | Spacious Pixel Agents office | separate 35x22 preset, 55 placements, 251 walkable tiles, clean runtime still, real-character GIF, deterministic runtime ZIP |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -111,3 +112,11 @@ automatic spawn selection and per-waypoint command selection, uses deterministic
 built-in palette 0, and was visually checked at original resolution with no
 white character perimeter. Commit `aed28bc` contains the v2 intermediate, v3
 replacement, capture fix, QA evidence, and recurrence-prevention decision.
+
+Spacious-office delivery receipt: Discord channel `1526794078744744077`,
+message `1528389877014593578`. Attachments are `spacious-office-v1.png`,
+`spacious-character-walk-v1.gif`, and
+`pixel-agents-solarpunk-spacious-runtime.zip`. The post records the separate
+35×22 preset boundary, 55 placements, three zones, 251 walkable tiles versus
+the compact preset's 133, zero collision overlap, zero unresolved types, zero
+browser errors, and the outline-free production `walkToTile` character motion.
