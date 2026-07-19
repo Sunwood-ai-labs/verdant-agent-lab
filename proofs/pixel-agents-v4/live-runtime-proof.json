@@ -1,0 +1,23 @@
+{
+  "status": "accepted-current-room-proof",
+  "runtime": "Pixel Agents CLI",
+  "runtimeReference": "/Users/admin/Prj/pixel-agents",
+  "runtimeGrid": {
+    "cols": 42,
+    "rows": 34,
+    "layoutRevision": 4
+  },
+  "layout": "pixel-agents-pack/verdant-runtime-layout.json",
+  "zones": 6,
+  "placedFurniture": 45,
+  "assetLoad": {
+    "furniture": "38/38",
+    "floors": 9,
+    "wallPieces": 16
+  },
+  "proof": "proofs/pixel-agents-v4/live-verdant-room-v2.png",
+  "browserErrors": 0,
+  "method": "Untracked copy of the built runtime with repository furniture overlaid; reference checkout was not modified.",
+  "rejectedPredecessor": "proofs/pixel-agents-v3/live-pixel-agents-full-theme.png",
+  "scopeBoundary": "Coherent live room proof only; not complete same-view fidelity to the supplied office reference."
+}

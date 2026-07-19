@@ -115,3 +115,14 @@ scale, count, layer, and canonical rendered evidence.
 Reason: the prior 14-anchor score allowed wrong furniture, wrong directions,
 and whole missing rooms to be labeled as close. The correction is encoded in
 `reference-instance-ledger.v1.json` and the failing fidelity validator.
+
+## D-015 — default asset loading is not a composed-room proof
+
+Decision: reject the repeated four-quadrant Pixel Agents demo and the unverified
+v3 floor/wall overlay as current room evidence. Use one connected six-zone
+layout and keep built-in floors/walls until custom atlases pass direct runtime
+inspection.
+
+Reason: replacing IDs in a repetitive default layout proved loader compatibility
+but produced a visually chaotic office. The authoritative proof surface is the
+actual Pixel Agents screenshot, not manifest coverage or server logs alone.

@@ -96,7 +96,7 @@ validate:reference-fidelity` must fail until each is visually verified.
 
 ## Checkpoint 4 — Pixel Agents native asset contract
 
-Status: workstation replacement batch complete; full office replacement in progress
+Status: default furniture-ID coverage complete; coherent custom room v1 verified; full reference reproduction in progress
 
 - [x] audit Pixel Agents at reference commit `928ccd4`
 - [x] replace the rejected project-native 32px assumption with the real 16px contract
@@ -105,8 +105,13 @@ Status: workstation replacement batch complete; full office replacement in progr
 - [x] validate six PNG dimensions, tile multiples, unique IDs, and safe alpha borders
 - [x] register `pixel-agents-pack/` in the local Pixel Agents external asset configuration
 - [x] render and inspect a no-character 14-instance room proof
-- [ ] verify the override pack inside a live Pixel Agents canvas
-- [ ] replace PC/electronics, tables, sofa/bench, storage, wall decor, cafe/lab props, floors, and walls
+- [x] verify the override pack inside a live Pixel Agents 42x34 canvas
+- [x] replace all 25 furniture IDs used by the audited default layout
+- [x] reject the repetitive four-quadrant demo as room-composition evidence
+- [x] author one connected six-zone room with 45 purposeful placements
+- [x] revert to known-good runtime floors/walls after custom theme QA failed
+- [ ] complete source-faithful reception, cafe, greenhouse, solar, and AI-lab object coverage
+- [ ] replace floors/walls only after bitmask joins and direct runtime screenshots pass
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet

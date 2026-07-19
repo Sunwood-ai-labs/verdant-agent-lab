@@ -308,3 +308,22 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Local config registration parsed successfully. A live Pixel Agents process
   was not running on port 3100, so actual editor rotation, seat, collision, and
   depth interaction remain open and are not claimed as verified.
+
+# 2026-07-19 — Full default-ID pack and room-composition correction
+
+- Pack validation passes for 30 physical sprites across 19 manifests with
+  25/25 audited default furniture IDs covered. The runtime catalog expands to
+  33 entries through mirrors and animation frames.
+- Live Pixel Agents loaded 38/38 furniture assets, 9 built-in floor patterns,
+  16 built-in wall pieces, and the custom 42x34 revision-4 layout.
+- Rejected proof: `proofs/pixel-agents-v3/live-pixel-agents-full-theme.png`.
+  It repeated the same upstream quadrant four times and used an unverified
+  floor/wall atlas; it is retained only as failure evidence.
+- Retry rule: asset-load proof is not room-composition proof. A room proof must
+  be one connected purpose-zoned layout, with direct checks for repetition,
+  overlaps, circulation, direction, wall contact, and density.
+- Accepted current proof: `proofs/pixel-agents-v4/live-verdant-room-v2.png`.
+  It uses 45 furniture placements across cafe/ideas, reception, lounge,
+  collaboration, open-office, and AI-lab zones. Browser console/page errors: 0.
+- Scope boundary: this proves the current assets can form a coherent live room;
+  it does not prove complete visual fidelity to the supplied 1280x960 office.
