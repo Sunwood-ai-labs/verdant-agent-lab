@@ -22,6 +22,10 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `70af0e7` | Pixel Agents compatibility contract | locks 16px tiles, manifests, direction, collision, seat, and live-runtime acceptance gates |
 | `a1507ea` | First solarpunk external asset pack | raw/alpha/split provenance, six runtime sprites, manifests, validator, and room proof |
 | `686d105` | Default workstation ID override | changes the pack from additive IDs to actual `DESK` / `WOODEN_CHAIR` / `PLANT` replacements |
+| `fe340d3` | First Pixel Agents QA receipt | validation, local registration, proof limits, and AYANO delivery record |
+| `5f1d981` | Complete default furniture override pack | 30 physical sprites, 19 manifests, 25/25 default ID coverage, raw/alpha/split masters |
+| `50d96c2` | Rejected floor/wall theme prototype | preserves generated theme inputs and failed repetitive live proof as QA evidence |
+| `2e35887` | Coherent Verdant live room correction | 42x34 six-zone layout, 45 placements, runtime proof, and recurrence-prevention decision |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -29,3 +33,9 @@ new rows whenever a new public checkpoint is created.
 AYANO delivery receipt: Discord channel `1526794078744744077`, message
 `1528331042551889970`, attachment `room-16px-grid.png`. The report explicitly
 labels this as the workstation batch and lists the still-missing office classes.
+
+Corrected room delivery receipt: Discord channel `1526794078744744077`, message
+`1528340047852470414`, attachment `live-verdant-room-v2.png`. The report states
+42x34, six zones, 45 placements, 38/38 furniture loaded, zero browser errors,
+and explicitly labels the image as a coherent current-asset room rather than a
+complete reproduction.
