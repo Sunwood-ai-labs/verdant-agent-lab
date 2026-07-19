@@ -12,6 +12,8 @@
     "trim:runtime-sprites": "python3 scripts/trim-runtime-sprites.py",
     "validate:reference-fidelity": "node scripts/validate-reference-fidelity.mjs",
     "audit:asset-provenance": "node scripts/audit-asset-provenance.mjs",
+    "build:pixel-agents-pack": "python3 scripts/build-pixel-agents-pack.py",
+    "validate:pixel-agents-pack": "python3 scripts/validate-pixel-agents-pack.py",
     "validate:sprites": "python3 scripts/validate_sprite_purity.py",
     "test": "playwright test",
     "test:update-proofs": "UPDATE_PROOFS=1 playwright test tests/proof.spec.js tests/similarity.spec.js",

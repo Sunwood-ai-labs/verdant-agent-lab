@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "tileSize": 16,
+  "cols": 20,
+  "rows": 14,
+  "furniture": [
+    { "uid": "desk-a", "type": "VERDANT_DESK_FRONT", "col": 3, "row": 3 },
+    { "uid": "chair-a", "type": "VERDANT_CHAIR_BACK", "col": 4, "row": 5 },
+    { "uid": "desk-b", "type": "VERDANT_DESK_FRONT", "col": 9, "row": 3 },
+    { "uid": "chair-b", "type": "VERDANT_CHAIR_BACK", "col": 10, "row": 5 },
+    { "uid": "desk-c", "type": "VERDANT_DESK_FRONT", "col": 3, "row": 8 },
+    { "uid": "chair-c", "type": "VERDANT_CHAIR_FRONT", "col": 4, "row": 7 },
+    { "uid": "desk-d", "type": "VERDANT_DESK_FRONT", "col": 9, "row": 8 },
+    { "uid": "chair-d", "type": "VERDANT_CHAIR_FRONT", "col": 10, "row": 7 },
+    { "uid": "desk-side", "type": "VERDANT_DESK_SIDE", "col": 16, "row": 5 },
+    { "uid": "chair-side", "type": "VERDANT_CHAIR_SIDE", "col": 15, "row": 7 },
+    { "uid": "plant-1", "type": "VERDANT_PLANT", "col": 1, "row": 2 },
+    { "uid": "plant-2", "type": "VERDANT_PLANT", "col": 18, "row": 2 },
+    { "uid": "plant-3", "type": "VERDANT_PLANT", "col": 1, "row": 10 },
+    { "uid": "plant-4", "type": "VERDANT_PLANT", "col": 18, "row": 10 }
+  ]
+}
