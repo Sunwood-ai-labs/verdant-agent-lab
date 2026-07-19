@@ -80,5 +80,7 @@ the still-incomplete west-studio/site-shell coverage.
 Revision-7 publication checkpoint: commit `87dea2c`. The accepted current-asset
 proof is `proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix.png`; the
 three default-layout theme screenshots remain explicitly rejected evidence.
-AYANO delivery is pending until the room checkpoint is posted and its message
-ID is recorded here.
+AYANO delivery receipt: Discord channel `1526794078744744077`, message
+`1528367087288844431`. Attachments are the focused and full revision-7 runtime
+rasters. The report explicitly rejects the 21x22 default-layout candidate and
+labels revision 7 as a current-asset intermediate rather than complete fidelity.
