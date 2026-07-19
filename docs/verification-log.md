@@ -288,3 +288,23 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
 - Direct masked grayscale SSIM improved from 29.27% to 42.02%; still fails the
   60% fidelity gate.
 - `npx playwright test tests/current-room.spec.js`: 1 passed.
+
+# 2026-07-19 — Pixel Agents workstation override batch
+
+- Pixel Agents reference audit confirmed 16px tiles, furniture top-left anchors,
+  integer tile placement, bottom-Y depth order, direction groups, and derived
+  seat/collision behavior.
+- The first equal-cell split was rejected because all six runtime exports
+  touched at least one canvas edge. Extraction changed to measured connected
+  component bounds plus a one-pixel runtime safety border.
+- `npm run validate:pixel-agents-pack`: PASS, 6 sprites / 3 manifests; all
+  dimensions equal manifest values, all canvases use 16px multiples, and 0/6
+  alpha bounds touch a canvas edge.
+- `pixel-agents-room.html` loaded 14 instances with six direction sprites and
+  no browser console/page errors. Proof:
+  `proofs/pixel-agents-v1/room-16px-grid.png`.
+- The pack intentionally overrides bundled IDs `DESK_*`, `WOODEN_CHAIR_*`, and
+  `PLANT`; Pixel Agents merges external assets after built-ins and later IDs win.
+- Local config registration parsed successfully. A live Pixel Agents process
+  was not running on port 3100, so actual editor rotation, seat, collision, and
+  depth interaction remain open and are not claimed as verified.

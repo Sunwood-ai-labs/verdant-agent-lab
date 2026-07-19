@@ -19,6 +19,13 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `2b149f3` | Negative-control regression gate | proves the sprite validator rejects both preserved known-bad furniture fixtures |
 | `bf466b4` | Fidelity-claim correction | canonical characterless render, object-level failing ledger, rotation/aspect rendering, v6 comparison proof |
 | `9b3735d` | Crop provenance correction | records that 30 derivative opaque crops are not runtime single-object source assets |
+| `70af0e7` | Pixel Agents compatibility contract | locks 16px tiles, manifests, direction, collision, seat, and live-runtime acceptance gates |
+| `a1507ea` | First solarpunk external asset pack | raw/alpha/split provenance, six runtime sprites, manifests, validator, and room proof |
+| `686d105` | Default workstation ID override | changes the pack from additive IDs to actual `DESK` / `WOODEN_CHAIR` / `PLANT` replacements |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
+
+AYANO delivery receipt: Discord channel `1526794078744744077`, message
+`1528331042551889970`, attachment `room-16px-grid.png`. The report explicitly
+labels this as the workstation batch and lists the still-missing office classes.

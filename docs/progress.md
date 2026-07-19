@@ -93,6 +93,20 @@ validate:reference-fidelity` must fail until each is visually verified.
 - [x] add a visual snapshot for the REFERENCE compositing state
 - [ ] snap monitors, keyboards, mugs, lamps, and plants to declared desk surfaces
 - [ ] keep characters optional and disabled by default
+
+## Checkpoint 4 — Pixel Agents native asset contract
+
+Status: workstation replacement batch complete; full office replacement in progress
+
+- [x] audit Pixel Agents at reference commit `928ccd4`
+- [x] replace the rejected project-native 32px assumption with the real 16px contract
+- [x] preserve the Image Gen raw sheet, alpha master, split sprites, prompt, and runtime exports
+- [x] build exact-ID overrides for `DESK`, `WOODEN_CHAIR`, and `PLANT`
+- [x] validate six PNG dimensions, tile multiples, unique IDs, and safe alpha borders
+- [x] register `pixel-agents-pack/` in the local Pixel Agents external asset configuration
+- [x] render and inspect a no-character 14-instance room proof
+- [ ] verify the override pack inside a live Pixel Agents canvas
+- [ ] replace PC/electronics, tables, sofa/bench, storage, wall decor, cafe/lab props, floors, and walls
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet
