@@ -26,6 +26,8 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `5f1d981` | Complete default furniture override pack | 30 physical sprites, 19 manifests, 25/25 default ID coverage, raw/alpha/split masters |
 | `50d96c2` | Rejected floor/wall theme prototype | preserves generated theme inputs and failed repetitive live proof as QA evidence |
 | `2e35887` | Coherent Verdant live room correction | 42x34 six-zone layout, 45 placements, runtime proof, and recurrence-prevention decision |
+| `b6bac90` | Five source-guided Pixel Agents zone sheets | raw/alpha/split provenance, 28 approved grid assets, seven-category editor-safe manifests |
+| `4f16392` | Source-zone room and editor verification | revision-5 room, 48 placements, two-page catalog, 28/28 editor discovery, direct placement proof |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -39,3 +41,11 @@ Corrected room delivery receipt: Discord channel `1526794078744744077`, message
 42x34, six zones, 45 placements, 38/38 furniture loaded, zero browser errors,
 and explicitly labels the image as a coherent current-asset room rather than a
 complete reproduction.
+
+Source-zone v5 delivery receipt: Discord channel `1526794078744744077`, message
+`1528349981579280554`. Attachments are `live-source-zones-v2.png`, both accepted
+source-zone catalog pages, and `editor-placement-proof.png`. The report states
+the 28/30 acceptance boundary, pack counts, 28/28 editor discovery, zero browser
+errors, and the remaining incomplete fidelity and interaction gates. An earlier
+multipart draft (`1528349884715892828`) was deleted immediately because it
+incorrectly exposed `payload.json` as a user-visible attachment.
