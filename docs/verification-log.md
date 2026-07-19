@@ -391,3 +391,29 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   the four-tile side footprint fully inside the walkable grid.
 - Live chair seating, collision paths, and character/furniture depth crossing
   remain open and are not claimed as passing.
+
+# 2026-07-19 — Default-chair seat, collision, path, and depth verification
+
+- `npm run verify:pixel-agents-runtime-interactions` loads the Verdant manifests
+  into Pixel Agents' real dynamic catalog and executes the upstream
+  `layoutSerializer`, `tileMap`, and `OfficeState` implementations directly.
+- The standard 21×22 layout resolves 25/25 used types and produces exactly
+  14/14 expected seats from 10 chair/sofa placements. Every seat tile remains
+  collision-protected for other agents.
+- A proof agent spawned at an assigned Verdant seat, rejected a walk command
+  into a blocked desk tile, completed a 15-tile path without crossing blocked
+  furniture, and returned to the same seat with the declared facing.
+- The Verdant chair cycle passed front → right → back → mirrored left → front,
+  with DOWN/RIGHT/UP/LEFT character facings. Numeric draw-order assertions prove
+  front/side chairs render behind the seated character and the back chair in
+  front. Machine proof:
+  `proofs/pixel-agents-runtime-interactions/runtime-interaction-proof.json`.
+- Human-readable inspected proof:
+  `proofs/pixel-agents-runtime-interactions/runtime-interaction-proof.png`.
+- First verifier run failed because an active Pixel Agents agent intentionally
+  repaths to its workstation before an arbitrary walk completes. The accepted
+  test marks the proof agent inactive for the explicit walk command, then calls
+  the real `sendToSeat` path to validate the return behavior. This is runtime
+  lifecycle semantics, not a collision failure.
+- Pack-wide visual editor rotation remains open for the other rotation groups;
+  this checkpoint closes the default-chair seat/collision/path/depth gates only.

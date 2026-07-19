@@ -39,6 +39,7 @@
   "scopeBoundary": [
     "This proves a default-office furniture reskin, not full reproduction of the supplied 1280x960 office.",
     "Characters shown in runtime screenshots are live Pixel Agents sessions and are not part of the asset pack.",
-    "Live chair seating, collision paths, and character/furniture depth crossing remain separate interaction gates."
-  ]
+    "Chair seating, collision paths, and seated depth behavior are verified separately in proofs/pixel-agents-runtime-interactions/runtime-interaction-proof.json."
+  ],
+  "interactionProof": "proofs/pixel-agents-runtime-interactions/runtime-interaction-proof.json"
 }

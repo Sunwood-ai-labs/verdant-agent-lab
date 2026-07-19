@@ -69,3 +69,15 @@ The machine-readable audit is
 `proofs/pixel-agents-default-reskin/layout-audit.json`; the accepted live
 before/after comparison is
 `proofs/pixel-agents-default-reskin/default-reskin-before-after-v1.png`.
+
+Runtime interaction verification:
+
+```bash
+npm run verify:pixel-agents-runtime-interactions
+```
+
+This executes Pixel Agents' real catalog, seat, collision, pathfinding,
+`OfficeState`, and depth-order modules against this pack. The current proof
+passes 14/14 generated seats, a 15-tile walk avoiding blocked furniture,
+blocked-desk rejection, return-to-seat facing, the four-way chair cycle, left
+mirroring, and seated front/back depth behavior.

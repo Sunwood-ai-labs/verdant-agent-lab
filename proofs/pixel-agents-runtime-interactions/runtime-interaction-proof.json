@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "pixelAgentsReference": "/Users/admin/Prj/pixel-agents",
+  "pack": "pixel-agents-pack",
+  "realModules": [
+    "furnitureCatalog.buildDynamicCatalog",
+    "layoutSerializer.layoutToSeats",
+    "layoutSerializer.getBlockedTiles",
+    "layoutSerializer.layoutToFurnitureInstances",
+    "OfficeState.addAgent",
+    "OfficeState.walkToTile",
+    "OfficeState.sendToSeat"
+  ],
+  "defaultLayout": {
+    "grid": "21x22",
+    "placements": 36,
+    "usedTypes": 25,
+    "unresolvedTypes": [],
+    "chairPlacements": 10,
+    "generatedSeats": 14,
+    "expectedSeats": 14,
+    "allSeatTilesCollisionProtected": true
+  },
+  "liveState": {
+    "preferredSeatId": "f-1773354664329-hxsh",
+    "assignedAtSpawn": true,
+    "spawnFacing": 2,
+    "rejectedBlockedDeskCommand": true,
+    "successfulWalkPathLength": 15,
+    "walkPathAvoidedBlockedTiles": true,
+    "returnedToAssignedSeat": true,
+    "returnedFacingMatchesSeat": true
+  },
+  "chairRotation": {
+    "cycle": [
+      "WOODEN_CHAIR_FRONT",
+      "WOODEN_CHAIR_SIDE",
+      "WOODEN_CHAIR_BACK",
+      "WOODEN_CHAIR_SIDE:left",
+      "WOODEN_CHAIR_FRONT"
+    ],
+    "facings": {
+      "front": "DOWN",
+      "back": "UP",
+      "right": "RIGHT",
+      "left": "LEFT"
+    },
+    "leftUsesRuntimeMirror": true
+  },
+  "depth": {
+    "seatedCharacterZY": 64.5,
+    "frontChairZY": 48,
+    "rightChairZY": 48,
+    "backChairZY": 65,
+    "frontAndSideRenderBehindCharacter": true,
+    "backRendersInFrontOfCharacter": true
+  }
+}

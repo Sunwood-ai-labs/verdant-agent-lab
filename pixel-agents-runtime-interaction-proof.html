@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Verdant Pixel Agents runtime interaction proof</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #10131d; color: #f7f1d1; }
+    main { width: 1600px; height: 900px; margin: auto; padding: 40px 48px; }
+    header { display: flex; justify-content: space-between; align-items: end; margin-bottom: 24px; }
+    h1 { margin: 0; font-size: 28px; letter-spacing: .02em; }
+    .pass { color: #a5df78; font-size: 16px; }
+    .content { display: grid; grid-template-columns: 1.35fr .65fr; gap: 24px; height: 610px; }
+    .panel { border: 2px solid #454c63; background: #171b29; box-shadow: 0 10px 0 #090b12; }
+    .panel h2 { margin: 0; padding: 13px 16px; border-bottom: 2px solid #454c63; color: #ffcf62; font-size: 16px; }
+    .room img { display: block; width: 100%; height: 560px; object-fit: cover; image-rendering: pixelated; }
+    .directions { padding: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .direction { min-height: 232px; display: grid; place-items: center; align-content: center; gap: 12px; border: 1px solid #454c63; background: #202637; }
+    .sprite-box { width: 96px; height: 112px; display: grid; place-items: center; background: repeating-conic-gradient(#30384b 0 25%, #252c3d 0 50%) 50% / 32px 32px; }
+    .sprite-box img { width: 48px; height: 96px; object-fit: contain; image-rendering: pixelated; }
+    .direction.side .sprite-box img { width: 48px; height: 96px; }
+    .direction.left img { transform: scaleX(-1); }
+    .direction b { color: #a5df78; font-size: 16px; }
+    .direction span { color: #aeb5cb; font-size: 12px; }
+    footer { margin-top: 24px; display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; }
+    .metric { min-height: 102px; padding: 15px 16px; border: 1px solid #454c63; background: #171b29; }
+    .metric b { display: block; color: #a5df78; font-size: 24px; margin-bottom: 6px; }
+    .metric span { color: #aeb5cb; font-size: 12px; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>VERDANT ASSETS — GRID CONTROL RUNTIME PROOF</h1>
+      <div class="pass">PASS · real Pixel Agents seat / path / depth modules</div>
+    </header>
+    <section class="content">
+      <article class="panel room">
+        <h2>21×22 DEFAULT OFFICE · 36 UNCHANGED PLACEMENTS</h2>
+        <img src="proofs/pixel-agents-default-reskin/live-default-reskin-v1.png" alt="Solarpunk default Pixel Agents office">
+      </article>
+      <article class="panel">
+        <h2>VERDANT CHAIR · 4-WAY RUNTIME CYCLE</h2>
+        <div class="directions">
+          <div class="direction"><div class="sprite-box"><img src="pixel-agents-pack/assets/furniture/WOODEN_CHAIR/WOODEN_CHAIR_FRONT.png"></div><b>FRONT ↓</b><span>character faces DOWN</span></div>
+          <div class="direction side"><div class="sprite-box"><img src="pixel-agents-pack/assets/furniture/WOODEN_CHAIR/WOODEN_CHAIR_SIDE.png"></div><b>RIGHT →</b><span>character faces RIGHT</span></div>
+          <div class="direction"><div class="sprite-box"><img src="pixel-agents-pack/assets/furniture/WOODEN_CHAIR/WOODEN_CHAIR_BACK.png"></div><b>BACK ↑</b><span>chair draws in front</span></div>
+          <div class="direction side left"><div class="sprite-box"><img src="pixel-agents-pack/assets/furniture/WOODEN_CHAIR/WOODEN_CHAIR_SIDE.png"></div><b>LEFT ←</b><span>runtime horizontal mirror</span></div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <div class="metric"><b>14 / 14</b><span>generated seats match expected footprints</span></div>
+      <div class="metric"><b>15 tiles</b><span>walk command completed without crossing blocked furniture</span></div>
+      <div class="metric"><b>REJECTED</b><span>command into blocked desk tile</span></div>
+      <div class="metric"><b>RETURNED</b><span>agent returned to assigned seat with matching facing</span></div>
+      <div class="metric"><b>DEPTH PASS</b><span>front/side behind character · back chair in front</span></div>
+    </footer>
+  </main>
+</body>
+</html>

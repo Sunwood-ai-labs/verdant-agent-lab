@@ -2,8 +2,9 @@
 
 Status: runtime contract confirmed; 58 physical sprites / 61 runtime catalog
 entries; live load, composed-room rendering, 28/28 editor-catalog discovery,
-and direct canvas placement confirmed. Editor rotation, seating, collision, and
-depth interaction still require direct input testing.
+direct canvas placement, default-chair seat generation, agent walk/return,
+collision rejection, four-way facing, mirror, and seated depth rules confirmed.
+Every remaining rotation group still needs its own visual canvas inspection.
 
 ## Confirmed contract
 
@@ -29,6 +30,13 @@ depth interaction still require direct input testing.
   `electronics`, `decor`, `wall`, and `misc`. Descriptive custom category names
   can load in a composed layout while silently disappearing from the editor
   catalog, so the source-zone builder restricts manifests to this set.
+- The literal default layout produces 14/14 expected seats from 10 chair/sofa
+  placements. A real `OfficeState` agent can spawn at an assigned Verdant seat,
+  walk 15 tiles without crossing blocked furniture, reject a command into a
+  desk footprint, and return to its seat with the declared facing.
+- The Verdant chair rotation cycle is front → right → back → mirrored left →
+  front. Front/right chairs sort behind a seated character; the back-facing
+  chair sorts in front to occlude the character correctly.
 
 ## Primary-source evidence
 
@@ -76,3 +84,8 @@ must pass all of the following:
 5. A chair spawns a usable seat and the character faces the intended desk.
 6. Collision and depth order are checked with an agent walking around and
    sitting at the furniture.
+
+For the default-office Verdant chair, gates 5–6 and the four-way runtime cycle
+now pass through the actual Pixel Agents modules. Gate 4 is visually proven for
+the Verdant Desk; visual editor inspection of every other rotation group remains
+an explicit pack-wide follow-up rather than being inferred from the chair test.
