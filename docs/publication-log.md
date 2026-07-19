@@ -30,6 +30,8 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `4f16392` | Source-zone room and editor verification | revision-5 room, 48 placements, two-page catalog, 28/28 editor discovery, direct placement proof |
 | `69a818d` | Literal Pixel Agents default-office reskin | byte-identical 21×22 default layout, 36 unchanged placements, before/after runtime proof, rotated desk placement |
 | `905d2d9` | Verdant runtime interaction verification | 14/14 seats, collision rejection, 15-tile path, seat return, four-way chair facing/mirror/depth proof |
+| `3b45f4a` | Missing-core six-asset batch | raw/alpha/split provenance, six grid sprites, manifests, and 67-entry catalog |
+| `3469136` | Revision-6 clipping correction | six live placements, rejected lower-frame proof, corrected runtime proof, collision/walkability and 6/6 editor checks |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -64,3 +66,11 @@ message `1528355085355192342`. Attachments are
 states the exact seat, walk, collision, return, rotation, facing, mirror, and
 depth results and keeps remaining pack-wide visual rotation and source-asset
 coverage open.
+
+Missing-core revision-6 delivery receipt: Discord channel
+`1526794078744744077`, message `1528360598478524527`. Attachments are the final
+character-free room proof `live-missing-core-layout-clean-v3.png`, the raw 3×2
+asset sheet, and `runtime-proof.json`. The report explicitly records the first
+lower-frame clipping failure, the corrected 64-sprite / 53-manifest / 67-entry
+runtime, 6/6 editor discovery, zero collision overlap, zero browser errors, and
+the still-incomplete west-studio/site-shell coverage.
