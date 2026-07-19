@@ -131,3 +131,12 @@ driven center/east rearrangement, the rejected v2 two-tile pocket, the accepted
 single 234-tile walkable component, zero unresolved types/collision/browser
 errors, white-outline removal, and that existing assets made Image Gen editing
 unnecessary.
+
+Front-PC correction v4 delivery receipt: Discord channel
+`1526794078744744077`, message `1528394936146460904`, posted as a reply to the
+natural-arrangement v3 delivery. Attachments are `spacious-office-v4.png`,
+`spacious-character-walk-v4.gif`, and the corrected runtime ZIP. The post
+records that all four `PC_FRONT_OFF` placements moved from the desk anchor row
+12 to surface-prop row 11, plus 53 placements, zero unresolved types, zero
+collision overlap, one connected 230-tile walkable component, and zero browser
+errors across the 121-frame capture. Implementation commit: `e234577`.
