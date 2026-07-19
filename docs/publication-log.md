@@ -28,6 +28,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `2e35887` | Coherent Verdant live room correction | 42x34 six-zone layout, 45 placements, runtime proof, and recurrence-prevention decision |
 | `b6bac90` | Five source-guided Pixel Agents zone sheets | raw/alpha/split provenance, 28 approved grid assets, seven-category editor-safe manifests |
 | `4f16392` | Source-zone room and editor verification | revision-5 room, 48 placements, two-page catalog, 28/28 editor discovery, direct placement proof |
+| `69a818d` | Literal Pixel Agents default-office reskin | byte-identical 21×22 default layout, 36 unchanged placements, before/after runtime proof, rotated desk placement |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -48,4 +49,10 @@ source-zone catalog pages, and `editor-placement-proof.png`. The report states
 the 28/30 acceptance boundary, pack counts, 28/28 editor discovery, zero browser
 errors, and the remaining incomplete fidelity and interaction gates. An earlier
 multipart draft (`1528349884715892828`) was deleted immediately because it
-incorrectly exposed `payload.json` as a user-visible attachment.
+  incorrectly exposed `payload.json` as a user-visible attachment.
+
+Default-office reskin delivery receipt: Discord channel `1526794078744744077`,
+message `1528352757545963560`. Attachments are
+`default-reskin-before-after-v1.png` and `editor-desk-side-placement.png`. The
+report distinguishes the verified default-office exact-ID substitution from
+the still-incomplete full 1280×960 reference reproduction.
