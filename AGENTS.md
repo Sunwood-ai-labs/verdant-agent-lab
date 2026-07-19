@@ -1,5 +1,16 @@
 # Sunwood Lab Recreation Instructions
 
+## Pixel Agents compatibility gate
+
+When the deliverable is intended for Pixel Agents, the Pixel Agents runtime
+contract overrides this project's older 32px/40x30 HTML-builder conventions.
+Use exact 16px tile multiples, external-pack folder structure, per-item
+manifests, declared footprints, supported orientation groups, and runtime seat,
+collision, mirroring, and depth semantics. Never claim compatibility from an
+HTML screenshot or project-native manifest alone; load and inspect the pack in
+the actual Pixel Agents canvas first. Treat the Pixel Agents checkout as
+read-only reference material and create original art only.
+
 ## Reference-direction asset decomposition
 
 When decomposing the supplied reference office into reusable assets, preserve
