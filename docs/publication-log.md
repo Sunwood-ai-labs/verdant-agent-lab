@@ -36,6 +36,7 @@ Repository: <https://github.com/Sunwood-ai-labs/verdant-agent-lab>
 | `87dea2c` | Source-shaped revision-7 room correction | rejects the unrelated 21x22 theme render, restores 42x34 ten-zone topology, 65 placements, direct wall colors, accepted and rejected raster evidence |
 | `18d7bba` | Integrated solarpunk default-office preset | 21x22 preserved layout, furniture/floor/wall preset, separate runtime assembler, deterministic ZIP, Pixel Agents MIT notice |
 | `37eb8ea` | Integrated preset runtime QA | direct and extracted-archive pixel-identical renders, floor/wall palettes, real grid edit, integrated machine proof |
+| `f94eefc` | Real character-walk GIF | temporary remote Agent, built-in sprite spawn, production walkToTile movement, 7.9-second GIF, contact-sheet QA |
 
 Each checkpoint was pushed to `origin/main` immediately after validation. Add
 new rows whenever a new public checkpoint is created.
@@ -94,3 +95,10 @@ runtime screenshot, the actual floor-grid edit proof, and the deterministic
 preservation, 64 sprites, 9 floors, 16 wall masks, extracted-archive smoke,
 pixel-identical rendering, zero browser errors, and the separate full-photo
 reproduction boundary.
+
+Character-walk GIF delivery receipt: Discord channel `1526794078744744077`,
+message `1528375585653526540`, attachment
+`solarpunk-character-walk-v1.gif`. The post identifies the 7.9-second loop as
+real Pixel Agents built-in character motion driven through production
+`OfficeState.walkToTile`, and explicitly excludes editor interaction and CSS
+pseudo-movement.
