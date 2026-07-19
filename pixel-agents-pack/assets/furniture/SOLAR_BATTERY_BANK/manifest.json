@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_BATTERY_BANK",
+  "name": "Solar Battery Server Bank",
+  "category": "electronics",
+  "type": "asset",
+  "file": "SOLAR_BATTERY_BANK.png",
+  "width": 96,
+  "height": 64,
+  "footprintW": 6,
+  "footprintH": 4,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

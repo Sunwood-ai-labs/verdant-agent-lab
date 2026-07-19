@@ -1,0 +1,14 @@
+{
+  "id": "GREENHOUSE_ROOF_LEFT",
+  "name": "Greenhouse Left Roof",
+  "category": "wall",
+  "type": "asset",
+  "file": "GREENHOUSE_ROOF_LEFT.png",
+  "width": 64,
+  "height": 64,
+  "footprintW": 4,
+  "footprintH": 4,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

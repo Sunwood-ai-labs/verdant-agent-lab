@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_DASHBOARD",
+  "name": "Solar Output Dashboard",
+  "category": "electronics",
+  "type": "asset",
+  "file": "SOLAR_DASHBOARD.png",
+  "width": 48,
+  "height": 32,
+  "footprintW": 3,
+  "footprintH": 2,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

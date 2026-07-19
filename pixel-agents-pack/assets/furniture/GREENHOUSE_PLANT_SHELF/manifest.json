@@ -1,0 +1,14 @@
+{
+  "id": "GREENHOUSE_PLANT_SHELF",
+  "name": "Greenhouse Grow Shelf",
+  "category": "decor",
+  "type": "asset",
+  "file": "GREENHOUSE_PLANT_SHELF.png",
+  "width": 96,
+  "height": 48,
+  "footprintW": 6,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

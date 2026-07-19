@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_PLANTER",
+  "name": "Solar Wing Vine Planter",
+  "category": "decor",
+  "type": "asset",
+  "file": "SOLAR_PLANTER.png",
+  "width": 96,
+  "height": 32,
+  "footprintW": 6,
+  "footprintH": 2,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

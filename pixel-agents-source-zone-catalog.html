@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pixel Agents Source-Zone Assets</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #07120c; color: #e8f5df; }
+    main { width: 1440px; min-height: 1000px; padding: 32px 44px 28px; }
+    header { height: 92px; display: flex; align-items: flex-start; justify-content: space-between; border-bottom: 2px solid #315a3c; }
+    h1 { margin: 0 0 8px; font-size: 27px; letter-spacing: .04em; }
+    header p { margin: 0; color: #92b69b; font-size: 13px; }
+    .page { text-align: right; color: #b8df8f; font-weight: 700; line-height: 1.6; }
+    .grid { display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(3, 248px); gap: 14px; padding-top: 18px; }
+    article { min-width: 0; border: 1px solid #315a3c; background: #0d1c13; display: grid; grid-template-rows: 158px auto; overflow: hidden; }
+    .stage { position: relative; display: grid; place-items: center; overflow: hidden; background-color: #15291c; background-image: linear-gradient(#294731 1px, transparent 1px), linear-gradient(90deg, #294731 1px, transparent 1px); background-size: 16px 16px; border-bottom: 1px solid #315a3c; }
+    .stage img { image-rendering: pixelated; display: block; }
+    .meta { padding: 11px 13px; }
+    .id { font-size: 13px; font-weight: 800; color: #d9f0a9; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .detail { margin-top: 6px; display: flex; justify-content: space-between; color: #86aa90; font-size: 11px; }
+    footer { height: 72px; margin-top: 17px; border-top: 1px solid #315a3c; padding-top: 13px; color: #789884; font-size: 12px; display: flex; justify-content: space-between; }
+    .rejected { color: #e6b76d; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>VERDANT × PIXEL AGENTS — SOURCE-ZONE ASSETS</h1>
+      <p>16px grid runtime exports • source-facing orientation • no characters • approved candidates only</p>
+    </div>
+    <div class="page" id="pageLabel"></div>
+  </header>
+  <section class="grid" id="grid"></section>
+  <footer>
+    <span>Raw → chroma-alpha → 3×2 split → nearest-neighbour 16px runtime export</span>
+    <span class="rejected">2 AI cells rejected: humanoid / robot-like contamination</span>
+  </footer>
+</main>
+<script>
+const ids = [
+  'RECEPTION_COUNTER','RECEPTION_PLANTER','RECEPTION_MONITOR','RECEPTION_TERMINAL','RECEPTION_PAPERS','RECEPTION_EASEL',
+  'CAFE_PLANT_SHELF','CAFE_COUNTER','CAFE_DISPENSERS','CAFE_FRIDGE','CAFE_KIOSK','CAFE_LIVING_WALL',
+  'AI_ANALYZER_CART','AI_BOOKSHELF','AI_WHITEBOARD','AI_ELECTRONICS_BENCH',
+  'GREENHOUSE_ROOF','GREENHOUSE_ROOF_LEFT','GREENHOUSE_ROOF_RIGHT','GREENHOUSE_GLASS_WALL','GREENHOUSE_DOOR','GREENHOUSE_PLANT_SHELF',
+  'SOLAR_PANEL','SOLAR_FRAME','SOLAR_DASHBOARD','SOLAR_BATTERY_BANK','SOLAR_CONTROLLER','SOLAR_PLANTER'
+];
+const page = Math.max(1, Math.min(2, Number(new URLSearchParams(location.search).get('page') || 1)));
+const current = ids.slice((page - 1) * 15, page * 15);
+document.getElementById('pageLabel').innerHTML = `PAGE ${page} / 2<br>${current.length} OF ${ids.length} ASSETS`;
+const grid = document.getElementById('grid');
+for (const id of current) {
+  const folder = `pixel-agents-pack/assets/furniture/${id}`;
+  const article = document.createElement('article');
+  article.innerHTML = `<div class="stage"><img alt="${id}" src="${folder}/${id}.png"></div><div class="meta"><div class="id">${id}</div><div class="detail"><span class="dims">loading</span><span>16px GRID</span></div></div>`;
+  const img = article.querySelector('img');
+  img.addEventListener('load', () => {
+    const scale = Math.min(3, 220 / img.naturalWidth, 128 / img.naturalHeight);
+    img.style.width = `${Math.floor(img.naturalWidth * scale)}px`;
+    img.style.height = `${Math.floor(img.naturalHeight * scale)}px`;
+    article.querySelector('.dims').textContent = `${img.naturalWidth}×${img.naturalHeight}px • ${img.naturalWidth/16}×${img.naturalHeight/16} tiles`;
+  });
+  grid.appendChild(article);
+}
+</script>
+</body>
+</html>

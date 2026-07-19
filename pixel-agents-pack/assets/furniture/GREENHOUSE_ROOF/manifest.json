@@ -1,0 +1,14 @@
+{
+  "id": "GREENHOUSE_ROOF",
+  "name": "Greenhouse Ridge Roof",
+  "category": "wall",
+  "type": "asset",
+  "file": "GREENHOUSE_ROOF.png",
+  "width": 96,
+  "height": 64,
+  "footprintW": 6,
+  "footprintH": 4,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_FRAME",
+  "name": "Solar Panel Mounting Frame",
+  "category": "misc",
+  "type": "asset",
+  "file": "SOLAR_FRAME.png",
+  "width": 48,
+  "height": 80,
+  "footprintW": 3,
+  "footprintH": 5,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

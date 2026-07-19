@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_PANEL",
+  "name": "Six-Module Solar Panel",
+  "category": "decor",
+  "type": "asset",
+  "file": "SOLAR_PANEL.png",
+  "width": 48,
+  "height": 80,
+  "footprintW": 3,
+  "footprintH": 5,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

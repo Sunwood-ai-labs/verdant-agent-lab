@@ -1,0 +1,14 @@
+{
+  "id": "AI_BOOKSHELF",
+  "name": "AI Lab Device Bookshelf",
+  "category": "storage",
+  "type": "asset",
+  "file": "AI_BOOKSHELF.png",
+  "width": 32,
+  "height": 64,
+  "footprintW": 2,
+  "footprintH": 4,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

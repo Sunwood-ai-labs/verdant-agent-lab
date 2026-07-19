@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_COUNTER",
+  "name": "Verdant Cafe Counter",
+  "category": "desks",
+  "type": "asset",
+  "file": "CAFE_COUNTER.png",
+  "width": 80,
+  "height": 32,
+  "footprintW": 5,
+  "footprintH": 2,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

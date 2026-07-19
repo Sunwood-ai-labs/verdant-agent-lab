@@ -55,3 +55,23 @@ These crops preserve nearby derivative-scene appearance but include rectangular
 surroundings. They are not raw-original crops, transparent isolated sprites, or
 builder runtime assets. Generated alpha sprites are a separate family and must
 not be described as source-image decompositions.
+
+## Pixel Agents source-zone pack v4
+
+`generated/pixel-agents-v4/` preserves five new reference-guided 3-column by
+2-row Image Gen sheets for reception, cafe, AI lab, greenhouse, and solar wing.
+Each family retains `raw/`, chroma-removed `alpha/`, independently cropped
+`split/`, and the cell/prompt record.
+
+- 30 generated cells are preserved in the five raw/alpha sheets.
+- 28 cells passed semantic, character-exclusion, fragment, alpha-border,
+  magenta-spill, and 16px-runtime checks.
+- AI-lab cells 1 and 6 are rejected because one contains a humanoid robot and
+  the other still reads as a robot head/body.
+- `SOLAR_CONTROLLER` uses a documented targeted crop because the first equal
+  cell extraction included a fragment of the neighboring planter.
+- The 28 approved cells are runtime assets under
+  `../pixel-agents-pack/assets/furniture/`; they are generated from the two
+  references, not literal source-image crops.
+
+The two-page, non-clipped catalog proofs are under `../proofs/pixel-agents-v5/`.

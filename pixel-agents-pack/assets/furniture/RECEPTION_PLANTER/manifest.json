@@ -1,0 +1,14 @@
+{
+  "id": "RECEPTION_PLANTER",
+  "name": "Reception Leaf Planter",
+  "category": "decor",
+  "type": "asset",
+  "file": "RECEPTION_PLANTER.png",
+  "width": 64,
+  "height": 16,
+  "footprintW": 4,
+  "footprintH": 1,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

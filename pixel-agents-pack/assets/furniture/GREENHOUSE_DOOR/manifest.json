@@ -1,0 +1,14 @@
+{
+  "id": "GREENHOUSE_DOOR",
+  "name": "Greenhouse Entrance Door",
+  "category": "wall",
+  "type": "asset",
+  "file": "GREENHOUSE_DOOR.png",
+  "width": 32,
+  "height": 64,
+  "footprintW": 2,
+  "footprintH": 4,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

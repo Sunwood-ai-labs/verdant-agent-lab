@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_PLANT_SHELF",
+  "name": "Cafe Six-Plant Shelf",
+  "category": "decor",
+  "type": "asset",
+  "file": "CAFE_PLANT_SHELF.png",
+  "width": 80,
+  "height": 32,
+  "footprintW": 5,
+  "footprintH": 2,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

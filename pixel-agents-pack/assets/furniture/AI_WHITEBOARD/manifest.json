@@ -1,0 +1,14 @@
+{
+  "id": "AI_WHITEBOARD",
+  "name": "AI Lab Diagram Board",
+  "category": "wall",
+  "type": "asset",
+  "file": "AI_WHITEBOARD.png",
+  "width": 48,
+  "height": 48,
+  "footprintW": 3,
+  "footprintH": 3,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

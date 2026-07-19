@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_DISPENSERS",
+  "name": "Cafe Triple Dispensers",
+  "category": "electronics",
+  "type": "asset",
+  "file": "CAFE_DISPENSERS.png",
+  "width": 48,
+  "height": 32,
+  "footprintW": 3,
+  "footprintH": 2,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": true,
+  "backgroundTiles": 1
+}

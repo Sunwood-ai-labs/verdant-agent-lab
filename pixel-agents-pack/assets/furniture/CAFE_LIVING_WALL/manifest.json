@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_LIVING_WALL",
+  "name": "Cafe Framed Living Wall",
+  "category": "decor",
+  "type": "asset",
+  "file": "CAFE_LIVING_WALL.png",
+  "width": 64,
+  "height": 48,
+  "footprintW": 4,
+  "footprintH": 3,
+  "canPlaceOnWalls": true,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 0
+}

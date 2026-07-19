@@ -1,0 +1,14 @@
+{
+  "id": "SOLAR_CONTROLLER",
+  "name": "Solar Controller Cabinet",
+  "category": "electronics",
+  "type": "asset",
+  "file": "SOLAR_CONTROLLER.png",
+  "width": 32,
+  "height": 48,
+  "footprintW": 2,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

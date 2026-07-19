@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_KIOSK",
+  "name": "Cafe Control Kiosk",
+  "category": "electronics",
+  "type": "asset",
+  "file": "CAFE_KIOSK.png",
+  "width": 16,
+  "height": 48,
+  "footprintW": 1,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

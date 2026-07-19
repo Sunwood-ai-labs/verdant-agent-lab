@@ -1,0 +1,45 @@
+{
+  "generatedCells": 30,
+  "approvedRuntimeAssets": 28,
+  "rejected": [
+    {
+      "sheet": "ai-lab",
+      "cell": 0,
+      "reason": "humanoid robot contamination"
+    },
+    {
+      "sheet": "ai-lab",
+      "cell": 5,
+      "reason": "sensor pedestal still reads as a robot head/body"
+    }
+  ],
+  "corrected": [
+    {
+      "id": "SOLAR_CONTROLLER",
+      "failure": "neighboring planter fragment in equal-cell crop",
+      "correction": "retain the left 65 percent of the extracted cell before alpha-bbox trim"
+    },
+    {
+      "scope": "editor catalog",
+      "failure": "15 assets used descriptive categories unsupported by Pixel Agents and were hidden from the editor",
+      "correction": "normalize every manifest to desks, chairs, storage, electronics, decor, wall, or misc",
+      "result": "28/28 source-zone assets found after a process-level reload"
+    }
+  ],
+  "runtime": {
+    "physicalSprites": 58,
+    "manifests": 47,
+    "catalogEntries": 61,
+    "defaultIdCoverage": "25/25",
+    "layoutRevision": 5,
+    "layoutPlacements": 48
+  },
+  "acceptedProofs": [
+    "proofs/pixel-agents-v5/source-zone-catalog-page-1-v2.png",
+    "proofs/pixel-agents-v5/source-zone-catalog-page-2-v2.png",
+    "proofs/pixel-agents-v5/live-source-zones-v2.png",
+    "proofs/pixel-agents-v5/editor-all-assets-v3.png",
+    "proofs/pixel-agents-v5/editor-placement-proof.png",
+    "proofs/pixel-agents-v5/editor-catalog-proof.json"
+  ]
+}

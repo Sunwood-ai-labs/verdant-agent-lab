@@ -1,0 +1,14 @@
+{
+  "id": "GREENHOUSE_ROOF_RIGHT",
+  "name": "Greenhouse Right Roof",
+  "category": "wall",
+  "type": "asset",
+  "file": "GREENHOUSE_ROOF_RIGHT.png",
+  "width": 64,
+  "height": 64,
+  "footprintW": 4,
+  "footprintH": 4,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 2
+}

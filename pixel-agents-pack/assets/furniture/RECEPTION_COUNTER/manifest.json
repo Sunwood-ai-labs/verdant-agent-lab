@@ -1,0 +1,14 @@
+{
+  "id": "RECEPTION_COUNTER",
+  "name": "Curved Verdant Reception Counter",
+  "category": "desks",
+  "type": "asset",
+  "file": "RECEPTION_COUNTER.png",
+  "width": 96,
+  "height": 48,
+  "footprintW": 6,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

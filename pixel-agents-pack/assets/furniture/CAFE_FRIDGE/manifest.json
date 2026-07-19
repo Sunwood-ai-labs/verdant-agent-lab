@@ -1,0 +1,14 @@
+{
+  "id": "CAFE_FRIDGE",
+  "name": "Cafe Refrigerator",
+  "category": "storage",
+  "type": "asset",
+  "file": "CAFE_FRIDGE.png",
+  "width": 32,
+  "height": 48,
+  "footprintW": 2,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}

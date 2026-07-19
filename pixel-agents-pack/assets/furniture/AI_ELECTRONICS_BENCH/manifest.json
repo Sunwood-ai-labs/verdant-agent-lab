@@ -1,0 +1,14 @@
+{
+  "id": "AI_ELECTRONICS_BENCH",
+  "name": "AI Lab Electronics Bench",
+  "category": "desks",
+  "type": "asset",
+  "file": "AI_ELECTRONICS_BENCH.png",
+  "width": 80,
+  "height": 48,
+  "footprintW": 5,
+  "footprintH": 3,
+  "canPlaceOnWalls": false,
+  "canPlaceOnSurfaces": false,
+  "backgroundTiles": 1
+}
