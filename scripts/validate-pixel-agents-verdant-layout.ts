@@ -2,8 +2,8 @@
 /** Validate the custom Verdant room with Pixel Agents' real catalog semantics. */
 
 import assert from 'node:assert/strict';
-import { readFileSync, readdirSync } from 'node:fs';
-import { join } from 'node:path';
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
 const root = process.cwd();
@@ -75,11 +75,14 @@ for (const folder of readdirSync(manifestRoot).sort()) {
 }
 assert.equal(catalogModule.buildDynamicCatalog({ catalog: loadedCatalog, sprites }), true);
 
-const layout = JSON.parse(readFileSync(join(root, 'pixel-agents-pack/verdant-runtime-layout.json'), 'utf8'));
-const required = new Set([
-  'AI_DIAGNOSTIC_PLATFORM', 'MEETING_GLASS_MODULE', 'LOUNGE_SECTIONAL',
-  'LOUNGE_OVAL_TABLE', 'FLOWER_PLANTER_LONG', 'RECYCLING_BIN',
-]);
+const layoutRelative = process.env.PIXEL_AGENTS_LAYOUT ?? 'pixel-agents-pack/verdant-runtime-layout.json';
+const layout = JSON.parse(readFileSync(join(root, layoutRelative), 'utf8'));
+const required = layoutRelative.endsWith('verdant-runtime-layout.json')
+  ? new Set([
+      'AI_DIAGNOSTIC_PLATFORM', 'MEETING_GLASS_MODULE', 'LOUNGE_SECTIONAL',
+      'LOUNGE_OVAL_TABLE', 'FLOWER_PLANTER_LONG', 'RECYCLING_BIN',
+    ])
+  : new Set<string>();
 const present = new Set<string>(layout.furniture.map((item: Json) => item.type));
 assert.deepEqual([...required].filter((type) => !present.has(type)), []);
 
@@ -132,8 +135,9 @@ componentSizes.sort((a, b) => b - a);
 const largestWalkableComponent = componentSizes[0] ?? 0;
 assert.ok(largestWalkableComponent / state.walkableTiles.length >= 0.95);
 
-console.log(JSON.stringify({
+const result = {
   status: 'passed',
+  layout: layoutRelative,
   grid: `${layout.cols}x${layout.rows}`,
   layoutRevision: layout.layoutRevision,
   placements: layout.furniture.length,
@@ -143,4 +147,11 @@ console.log(JSON.stringify({
   walkableTiles: state.walkableTiles.length,
   walkableComponents: componentSizes,
   largestWalkableComponent,
-}, null, 2));
+};
+const reportRelative = process.env.PIXEL_AGENTS_VALIDATION_REPORT;
+if (reportRelative) {
+  const reportPath = join(root, reportRelative);
+  mkdirSync(dirname(reportPath), { recursive: true });
+  writeFileSync(reportPath, `${JSON.stringify(result, null, 2)}\n`);
+}
+console.log(JSON.stringify(result, null, 2));

@@ -26,6 +26,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pixel-agents", type=Path, default=DEFAULT_REFERENCE)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--variant", choices=("default", "spacious"), default="default")
     return parser.parse_args()
 
 
@@ -61,8 +62,18 @@ def main() -> None:
     if not (dist / "cli.js").is_file():
         raise SystemExit(f"Pixel Agents dist is missing: {dist}")
 
+    builder = (
+        "build-pixel-agents-solarpunk-spacious-preset.py"
+        if args.variant == "spacious"
+        else "build-pixel-agents-solarpunk-default-preset.py"
+    )
+    preset_dir = (
+        ROOT / "pixel-agents-solarpunk-spacious"
+        if args.variant == "spacious"
+        else ROOT / "pixel-agents-solarpunk-default"
+    )
     subprocess.run(
-        ["python3", str(ROOT / "scripts/build-pixel-agents-solarpunk-default-preset.py")],
+        ["python3", str(ROOT / "scripts" / builder)],
         check=True,
         cwd=ROOT,
     )
@@ -81,7 +92,7 @@ def main() -> None:
     copy_exact_dir(ROOT / "pixel-agents-pack/assets/furniture", assets / "furniture")
     copy_exact_dir(ROOT / "pixel-agents-theme-v2/assets/floors", assets / "floors")
     copy_exact_dir(ROOT / "pixel-agents-theme-v2/assets/walls", assets / "walls")
-    layout = ROOT / "pixel-agents-solarpunk-default/layout.json"
+    layout = preset_dir / "layout.json"
     shutil.copy2(layout, assets / "default-layout-1.json")
     shutil.copy2(layout, assets / "default-layout-2.json")
 
@@ -92,18 +103,24 @@ def main() -> None:
     source_commit = subprocess.check_output(
         ["git", "-C", str(reference), "rev-parse", "HEAD"], text=True
     ).strip()
+    layout_data = json.loads(layout.read_text())
     receipt = {
-        "name": "Verdant Solarpunk Default Office runtime overlay",
+        "name": f"Verdant Solarpunk {args.variant.title()} Office runtime overlay",
         "pixelAgentsReference": str(reference),
         "pixelAgentsCommit": source_commit,
         "referenceCheckoutModified": False,
-        "layout": {"grid": "21x22", "placements": 36, "path": "assets/default-layout-1.json"},
+        "variant": args.variant,
+        "layout": {
+            "grid": f"{layout_data['cols']}x{layout_data['rows']}",
+            "placements": len(layout_data["furniture"]),
+            "path": "assets/default-layout-1.json",
+        },
         "assets": {"furnitureManifests": 53, "physicalFurnitureSprites": 64, "floors": 9, "wallAtlases": 1},
         "launch": f"NODE_PATH={reference / 'node_modules'} node {output / 'cli.js'} --port 3101",
     }
     (staging / "VERDANT_PRESET.json").write_text(json.dumps(receipt, indent=2) + "\n")
     (staging / "README-VERDANT.md").write_text(
-        "# Verdant Solarpunk Default Office runtime\n\n"
+        f"# Verdant Solarpunk {args.variant.title()} Office runtime\n\n"
         "This is an assembled development overlay. The original Pixel Agents checkout was not modified.\n\n"
         "Launch from an unrelated working directory so project agents are not shown:\n\n"
         f"```bash\ncd /tmp\nNODE_PATH={reference / 'node_modules'} node {output / 'cli.js'} --port 3101\n```\n"

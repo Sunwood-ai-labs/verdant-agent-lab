@@ -178,3 +178,16 @@ Reason: Pixel Agents intentionally renders a one-pixel white outline around a
 selected character. The first walk GIF left the temporary remote Agent selected
 throughout the recording, so a UI affordance was mistaken for part of the
 sprite and baked into every walking frame.
+
+## D-020 — spacious office is a separate additive preset
+
+Decision: keep the accepted 21×22 default-office preset intact and publish the
+wider office as a separate 35×22 variant. Insert a new 14-column central studio,
+shift the original east lounge without changing its internal arrangement, and
+retain the original west work area. New desks, PCs, chairs, shelving, and plants
+must remain independent Pixel Agents placements.
+
+Reason: "make the office wider" should increase usable floor and circulation,
+not stretch raster assets or silently replace the already accepted compact
+preset. The spacious variant is a Pixel Agents product layout; it remains
+separate from the 42×34 source-photo reconstruction fidelity track.

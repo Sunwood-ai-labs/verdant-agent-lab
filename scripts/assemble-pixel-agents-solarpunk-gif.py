@@ -4,16 +4,26 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
 from PIL import Image, ImageChops
 
 
 ROOT = Path(__file__).resolve().parents[1]
-FRAMES = ROOT / "build/pixel-agents-solarpunk-character-walk-frames-v3"
-OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif"
-REPORT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json"
-CONTACT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png"
+VARIANT = os.environ.get("PIXEL_AGENTS_CAPTURE_VARIANT", "default")
+if VARIANT == "spacious":
+    FRAMES = ROOT / "build/pixel-agents-solarpunk-spacious-character-walk-frames-v1"
+    OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-spacious/spacious-character-walk-v1.gif"
+    REPORT = ROOT / "proofs/pixel-agents-solarpunk-spacious/character-walk-proof-v1.json"
+    CONTACT = ROOT / "proofs/pixel-agents-solarpunk-spacious/character-walk-contact-sheet-v1.png"
+elif VARIANT == "default":
+    FRAMES = ROOT / "build/pixel-agents-solarpunk-character-walk-frames-v3"
+    OUTPUT = ROOT / "proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif"
+    REPORT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json"
+    CONTACT = ROOT / "proofs/pixel-agents-solarpunk-default/character-walk-contact-sheet-v3.png"
+else:
+    raise SystemExit(f"unsupported capture variant: {VARIANT}")
 
 
 def main() -> None:
@@ -50,11 +60,16 @@ def main() -> None:
         disposal=1,
     )
 
-    sample_indexes = [4, 14, 26, 38, 50, 62]
-    thumbs = [images[min(i, len(images) - 1)].resize((500, 350)) for i in sample_indexes]
-    contact = Image.new("RGB", (1500, 700), "#11131d")
+    sample_indexes = (
+        [4, 14, 34, 58, 86, 112]
+        if VARIANT == "spacious"
+        else [4, 14, 26, 38, 50, 62]
+    )
+    thumb_size = (600, 350) if VARIANT == "spacious" else (500, 350)
+    thumbs = [images[min(i, len(images) - 1)].resize(thumb_size) for i in sample_indexes]
+    contact = Image.new("RGB", (thumb_size[0] * 3, thumb_size[1] * 2), "#11131d")
     for index, thumb in enumerate(thumbs):
-        contact.paste(thumb, ((index % 3) * 500, (index // 3) * 350))
+        contact.paste(thumb, ((index % 3) * thumb_size[0], (index // 3) * thumb_size[1]))
     contact.save(CONTACT)
 
     result = Image.open(OUTPUT)
@@ -64,6 +79,7 @@ def main() -> None:
         gif_durations.append(result.info.get("duration", 0))
     report = {
         "status": "passed",
+        "variant": VARIANT,
         "gif": str(OUTPUT.relative_to(ROOT)),
         "contactSheet": str(CONTACT.relative_to(ROOT)),
         "size": list(result.size),

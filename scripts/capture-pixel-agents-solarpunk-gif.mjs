@@ -10,12 +10,20 @@ const reference = process.env.PIXEL_AGENTS_REFERENCE ?? '/Users/admin/Prj/pixel-
 const { chromium } = require(join(reference, 'node_modules/playwright'));
 
 const root = process.cwd();
-const frameDir = join(root, 'build/pixel-agents-solarpunk-character-walk-frames-v3');
+const variant = process.env.PIXEL_AGENTS_CAPTURE_VARIANT ?? 'default';
+const isSpacious = variant === 'spacious';
+if (!['default', 'spacious'].includes(variant)) throw new Error(`unsupported capture variant: ${variant}`);
+const frameDir = join(
+  root,
+  isSpacious
+    ? 'build/pixel-agents-solarpunk-spacious-character-walk-frames-v1'
+    : 'build/pixel-agents-solarpunk-character-walk-frames-v3',
+);
 const url = process.env.PIXEL_AGENTS_URL ?? 'http://127.0.0.1:3101';
 const serverConfig = JSON.parse(
   readFileSync(join(process.env.HOME ?? '/Users/admin', '.pixel-agents/server.json'), 'utf8'),
 );
-const remoteUrl = `${url}/api/remote/v1/hosts/verdant-demo/agents/walker`;
+const remoteUrl = `${url}/api/remote/v1/hosts/${isSpacious ? 'verdant-spacious' : 'verdant-demo'}/agents/walker`;
 const authorization = `Bearer ${serverConfig.remoteApiToken}`;
 
 rmSync(frameDir, { recursive: true, force: true });
@@ -42,7 +50,9 @@ const browser = await chromium.launch({
   headless: true,
   executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
 });
-const page = await browser.newPage({ viewport: { width: 1000, height: 700 } });
+const page = await browser.newPage({
+  viewport: isSpacious ? { width: 1200, height: 700 } : { width: 1000, height: 700 },
+});
 await page.addInitScript(() => {
   window.__PIXEL_AGENTS_E2E = true;
   // Keep proof runs reproducible and use built-in palette 0 (dark hair), so a
@@ -76,6 +86,11 @@ try {
   await page.addStyleTag({
     content: '[data-testid="agent-overlay"] { display: none !important; }',
   });
+  if (isSpacious) {
+    const stillDir = join(root, 'proofs/pixel-agents-solarpunk-spacious');
+    mkdirSync(stillDir, { recursive: true });
+    await page.screenshot({ path: join(stillDir, 'spacious-office-v1.png') });
+  }
   await hold(5);
 
   const created = await remoteRequest('PUT', {
@@ -102,11 +117,18 @@ try {
 
   // These are open-floor waypoints in the checked Verdant 21x22 preset.
   // Right-click uses Pixel Agents' production walkToTile path, not a fake CSS move.
-  const waypoints = [
-    { x: box.x + box.width * 0.70, y: box.y + box.height * 0.72 },
-    { x: box.x + box.width * 0.47, y: box.y + box.height * 0.63 },
-    { x: box.x + box.width * 0.73, y: box.y + box.height * 0.48 },
-  ];
+  const waypoints = isSpacious
+    ? [
+        { x: box.x + box.width * 0.30, y: box.y + box.height * 0.62 },
+        { x: box.x + box.width * 0.50, y: box.y + box.height * 0.69 },
+        { x: box.x + box.width * 0.72, y: box.y + box.height * 0.58 },
+      ]
+    : [
+        { x: box.x + box.width * 0.70, y: box.y + box.height * 0.72 },
+        { x: box.x + box.width * 0.47, y: box.y + box.height * 0.63 },
+        { x: box.x + box.width * 0.73, y: box.y + box.height * 0.48 },
+      ];
+  const waypointHoldFrames = isSpacious ? 36 : 22;
   for (const point of waypoints) {
     await page.evaluate((id) => window.__pixelAgentsTestHooks?.selectAgent?.(id), localAgentId);
     await page.mouse.click(point.x, point.y, { button: 'right' });
@@ -115,7 +137,7 @@ try {
     // baked into the animation proof.
     await page.evaluate(() => window.__pixelAgentsTestHooks?.selectAgent?.(null));
     await page.mouse.move(box.x + 4, box.y + box.height - 4);
-    await hold(22);
+    await hold(waypointHoldFrames);
   }
 
   if (errors.length) throw new Error(`browser errors: ${JSON.stringify(errors)}`);
@@ -128,6 +150,7 @@ try {
         localAgentId,
         browserErrors: errors.length,
         capture: 'real Pixel Agents built-in character spawn and walkToTile movement',
+        variant,
       },
       null,
       2,

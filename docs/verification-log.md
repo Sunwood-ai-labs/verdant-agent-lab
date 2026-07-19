@@ -563,3 +563,34 @@ sprite must be 362×362 RGBA with both transparent and nontransparent pixels.
   `proofs/pixel-agents-solarpunk-default/solarpunk-character-walk-v3.gif`.
   Machine record:
   `proofs/pixel-agents-solarpunk-default/character-walk-proof-v3.json`.
+
+# 2026-07-19 — Spacious 35×22 office variant
+
+- Added a separate `pixel-agents-solarpunk-spacious/` preset; the accepted
+  compact 21×22 layout remains unchanged.
+- The builder inserts 14 columns between the original west work area and east
+  lounge, expands the grid to 35×22, shifts the east furniture as one coherent
+  section, and adds 19 independent central-studio placements. Total furniture
+  count is 55 across three named activity zones.
+- Deterministic preset validation passes 770 tiles/colors, 55 unique placement
+  UIDs, catalog resolution for every type, in-bounds anchors, no embedded
+  characters/pets, and exact preservation of all 36 original placements.
+- Pixel Agents' actual dynamic catalog and `OfficeState` validation passes with
+  zero unresolved types, zero overlapping floor-collision tiles, and one
+  connected 251-tile walkable component. The compact source had 133 walkable
+  tiles, so the spacious variant adds 118 walkable tiles (+88.7%).
+- The assembled development runtime loads 6 built-in character sets, 2 pets,
+  64/64 furniture sprites, 9 floor tiles, one 16-piece wall atlas, and the
+  35×22 revision-3 layout.
+- Human inspection of `spacious-office-v1.png` confirms the full room frame is
+  visible without clipping, the original west/east sections remain coherent,
+  and the added central studio is visibly wider rather than sprite-stretched.
+- The real-character GIF captures 121 source frames with zero browser errors.
+  Its optimized 107-frame, 12.1-second loop uses the built-in palette-0
+  character and production `OfficeState.walkToTile`; automatic and per-command
+  selection are cleared, so no white outline is present.
+- Proofs:
+  `proofs/pixel-agents-solarpunk-spacious/preset-audit.json`,
+  `layout-validation.json`, `spacious-office-v1.png`,
+  `character-walk-contact-sheet-v1.png`, `character-walk-proof-v1.json`, and
+  `spacious-character-walk-v1.gif`.

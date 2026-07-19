@@ -154,6 +154,10 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] package furniture, floors, walls, and default layout as one reproducible preset
 - [x] verify the generated ZIP by extracting and launching it
 - [x] paint a generated floor through the real editor and observe dirty/Undo/Save state
+- [x] preserve the compact preset and add a separate 35×22 spacious variant
+- [x] add a 14-column central studio with 19 independent furniture placements
+- [x] validate one connected 251-tile walkable component with zero collision overlap
+- [x] capture and inspect an outline-free real-character walk GIF in the spacious runtime
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet
