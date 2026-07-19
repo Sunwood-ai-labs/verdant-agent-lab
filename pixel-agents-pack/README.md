@@ -43,13 +43,15 @@ python3 scripts/build-pixel-agents-verdant-room.py
 npm run validate:pixel-agents-verdant-layout
 ```
 
-`verdant-runtime-layout.json` is the current 42x34 revision-6, six-zone Pixel
-Agents room: solar wing, reception, cafe, greenhouse, open office/lounge, and
-AI lab. It has 47 placements and visibly integrates the six missing-core
-assets. It uses
-the runtime's known-good floor and wall assets because the generated v3 theme
-atlas failed direct visual QA. The custom theme is preserved separately as a
-rejected/prototype checkpoint, not the current room proof.
+`verdant-runtime-layout.json` is the current 42x34 revision-7, ten-zone Pixel
+Agents room. Its 65 placements follow the reference's top solar/reception/
+north-lounge/cafe band, middle west-studio/meeting/AI-lab band, and bottom
+greenhouse/workstation/quiet-lounge band. The living-wall bitmask atlas is used
+without the old `brightness: -100` override that had crushed it to black.
+
+The unrelated 21x22 default-office theme render is retained only as rejected
+compatibility evidence under `proofs/pixel-agents-theme-v2/`; it is not the
+current room or a reference-reconstruction candidate.
 
 The room demonstrates a coherent use of the current assets. It is not yet a
 complete visual reproduction of every object in the supplied office reference.

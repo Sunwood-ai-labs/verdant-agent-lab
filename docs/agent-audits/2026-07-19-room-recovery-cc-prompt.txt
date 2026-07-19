@@ -1,0 +1,12 @@
+Create an agent team in this workspace. Spawn exactly 3 teammates yourself: layout-auditor, visual-designer, and reviewer. Before any work, create a short QA inventory of deliverables, final claims, and checks.
+
+Task: audit the rejected current Pixel Agents room render against assets/reference-original.jpg and the existing 42x34 custom layout. Do not edit source files. The rejected screenshots are proofs/pixel-agents-theme-v2/live-default-theme-v2-palette-v1.png and proofs/pixel-agents-v6/live-missing-core-layout-clean-v3.png. Inspect pixel-agents-pack/verdant-runtime-layout.json, pixel-agents-pack/catalog.json, and the furniture manifests.
+
+Ownership:
+- layout-auditor: identify structural mismatches in zones, coordinates, topology, and scale; propose a concrete 42x34 zone grid matching the reference.
+- visual-designer: identify asset orientation, density, overlap, hierarchy, and readability problems; propose exact placement principles using only current assets.
+- reviewer: challenge both audits against the supplied reference and produce strict pass/fail acceptance criteria.
+
+Non-goals: no image generation, no source edits, no claiming visual fidelity, no character assets.
+
+Finish line: write one report to tmp/cc-room-recovery-audit.md with teammate-by-teammate findings, a proposed coordinate map, concrete placement corrections, QA inventory, reviewer disposition, and all remaining unknowns. Clean up the team when done.

@@ -1,5 +1,39 @@
 # Verification and failure log
 
+## Default-layout substitution failure and source-shaped retry — 2026-07-19
+
+The first custom-theme screenshot used Pixel Agents' unrelated 21x22 default
+office. Although the asset loader and wall bitmask worked, that view discarded
+the supplied office's zone order, relative areas, and circulation. It is
+rejected as a current-room proof and preserved at:
+
+- `proofs/pixel-agents-theme-v2/live-default-theme-v2-first.png`
+- `proofs/pixel-agents-theme-v2/live-default-theme-v2-no-color.png`
+- `proofs/pixel-agents-theme-v2/live-default-theme-v2-palette-v1.png`
+
+The retry rebuilt `verdant-runtime-layout.json` as revision 7 on the 42x34
+reference coordinate system. It uses ten named zones and 65 placements. The
+actual Pixel Agents runtime loaded 64 physical sprites and rendered with zero
+browser-console errors. `npm run validate:pixel-agents-verdant-layout` reports
+0 unresolved types, 0 collision overlaps, and a 775/780 main walkable component.
+
+Accepted current-asset evidence:
+
+- `proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix.png`
+- `proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix-focus.png`
+- `proofs/pixel-agents-v7/runtime-proof.json`
+
+The raster still does not prove complete object/facing/count fidelity. It only
+proves that the current assets now form a legible source-shaped room.
+
+The workspace-required Spark route was unavailable because this session did
+not expose `gpt-5.3-codex-spark`. The prescribed Claude Code fallback was run
+with a three-role audit prompt, but its debug inspector returned
+`MISSING_EVIDENCE=spawnInProcessTeammate` / `TEAM_MODE_NOT_CONFIRMED` after more
+than six minutes. It was interrupted and none of its output was used as QA.
+The exact prompt is preserved at
+`docs/agent-audits/2026-07-19-room-recovery-cc-prompt.txt`.
+
 ## Direct screenshot-similarity correction — 2026-07-15
 
 - Retracted: a previous `PASS` used 69.96% from a weighted edge/palette score

@@ -1,5 +1,18 @@
 # Build progress
 
+## 2026-07-19 — Source-shaped Pixel Agents room revision 7
+
+- Rejected the 21x22 default-office theme render: it proved theme loading but
+  discarded the supplied office's topology and therefore looked chaotic.
+- Rebuilt the 42x34 room around ten reference-derived zones and increased the
+  purposeful current-asset placement set from 47 to 65.
+- Removed the `brightness: -100` wall tint that made the connected living-wall
+  atlas black in the real runtime.
+- Runtime validation passes with 64 loaded sprites, 65 placements, 0 unresolved
+  types, 0 collision overlaps, and 775/780 walkable tiles in the main component.
+- Direct 1600x1100 and focused 660x540 rasters were inspected. This is an
+  improved current-asset room, not a complete reference-fidelity signoff.
+
 ## 2026-07-15 — Zone 04 Cafe source comparison and v2 regeneration
 
 - Direct comparison against `assets/reference-original.jpg` bbox
@@ -123,7 +136,7 @@ Status: default furniture-ID coverage complete; coherent custom room v1 verified
 - [x] reject the first revision-6 render for lower-frame clipping and accept only the one-tile-up retry after a fresh runtime screenshot
 - [ ] visually rotate and inspect every remaining rotation group in the actual editor canvas
 - [ ] complete the remaining west-studio and site-shell asset coverage
-- [ ] replace floors/walls only after bitmask joins and direct runtime screenshots pass
+- [x] replace floors/walls only after bitmask joins and direct runtime screenshots pass
 # Directional asset rebuild checkpoint — 2026-07-15
 
 ## Zone 01 — solar wing 2×3 candidate sheet

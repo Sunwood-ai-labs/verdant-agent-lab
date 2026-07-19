@@ -126,3 +126,15 @@ inspection.
 Reason: replacing IDs in a repetitive default layout proved loader compatibility
 but produced a visually chaotic office. The authoritative proof surface is the
 actual Pixel Agents screenshot, not manifest coverage or server logs alone.
+
+## D-016 — the supplied office owns the accepted room coordinate system
+
+Decision: never present a Pixel Agents default-layout reskin as the current
+reconstruction of the supplied office. Compatibility diagnostics may use it,
+but accepted room candidates must keep a named zone-to-grid mapping derived
+from the 1280x960 reference and must be checked as a full runtime raster.
+
+Reason: the rejected 21x22 render loaded valid assets but erased the solar,
+greenhouse, studio, meeting, lab, lounge, cafe, and entrance relationships that
+make the reference recognizable. Runtime compatibility and room composition are
+separate acceptance gates.

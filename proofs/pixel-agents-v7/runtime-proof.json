@@ -1,0 +1,42 @@
+{
+  "status": "current-asset-room-passed",
+  "claimBoundary": "source-shaped current-asset composition; not complete reference fidelity",
+  "reference": {
+    "path": "assets/reference-original.jpg",
+    "sha256": "3eaeeb787a3e9d10f2612c7f20f2d963e38bae3870d1b03d03e3b57290868c5d"
+  },
+  "layout": {
+    "path": "pixel-agents-pack/verdant-runtime-layout.json",
+    "sha256": "7593e1f39b0c3fe7bfd47851bbb6034da2d750b4541c3651ab46797c07835848",
+    "grid": "42x34",
+    "revision": 7,
+    "zones": 10,
+    "placements": 65
+  },
+  "runtime": {
+    "physicalSpritesLoaded": 64,
+    "unresolvedTypes": 0,
+    "collisionOverlaps": 0,
+    "walkableTiles": 780,
+    "largestWalkableComponent": 775,
+    "browserConsoleErrors": 0
+  },
+  "acceptedProofs": [
+    {
+      "path": "proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix.png",
+      "size": "1600x1100",
+      "sha256": "4679bf7e6a0820104515b9adb1f48f0d24d233d7bf0417a12cdb22f1e2abea0b"
+    },
+    {
+      "path": "proofs/pixel-agents-v7/live-source-shaped-layout-wall-fix-focus.png",
+      "size": "660x540",
+      "sha256": "c641ecda2510cd70b53a6797366ec2e4b48e8afb97434b40b816f778f24eb9c5"
+    }
+  ],
+  "rejectedProofFamily": "proofs/pixel-agents-theme-v2/live-default-theme-v2-*.png",
+  "remainingOpen": [
+    "complete source-required asset inventory",
+    "per-instance facing/content/count verification",
+    "same-view full reference fidelity threshold"
+  ]
+}
